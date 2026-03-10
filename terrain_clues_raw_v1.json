@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "version": "1.0-v1",
+    "generatedAt": "2026-03-10",
+    "mapId": 180750,
+    "source": "comment-api topic_detail"
+  },
+  "topics": [
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "lineCount": 51,
+      "clueCount": 33
+    },
+    {
+      "topicId": "6089035f15bcad784d0b424e",
+      "title": "肉鸽地牢BOSS全图鉴",
+      "lineCount": 1,
+      "clueCount": 0
+    },
+    {
+      "topicId": "65151b52cdddb63ebc890efc",
+      "title": "肉鸽地牢详细攻略（一）流派选择＆伤害计算",
+      "lineCount": 41,
+      "clueCount": 0
+    },
+    {
+      "topicId": "652901ba7195182decd4240e",
+      "title": "肉鸽地牢详细攻略（二）基础流派介绍——咒文、战旗、特效、负债",
+      "lineCount": 49,
+      "clueCount": 5
+    },
+    {
+      "topicId": "652905cb7195182decd42434",
+      "title": "肉鸽地牢详细攻略（三）——充能、灵魂",
+      "lineCount": 39,
+      "clueCount": 0
+    },
+    {
+      "topicId": "65299d107195182decd42c6e",
+      "title": "肉鸽地牢详细攻略（四）流派介绍——齿轮、结算、三月",
+      "lineCount": 38,
+      "clueCount": 1
+    }
+  ],
+  "terrainClues": [
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "技能二、雷霆一击   俗称砸地板 大范围减速高伤 近战基本躲不了"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "圈",
+      "normalizedTag": "circle_aoe_zone",
+      "clueText": "技能四、大跳    这个技能不常用  目测机制是转移仇恨目标的时候 如果离他过远 就会飞过去踩你脸 圈子小 基本能躲开"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "line_skill_lane",
+      "clueText": "2号BOSS 暗影猎手 俗称小Y 自带特效攻击会吧武器丢出去直线飞行再回来 期间伤害中招的英雄 打小Y要求就有点高了  需要走位  还需要队友别乱走 不然很容易把队友都害死 仇恨目标是你的时候一定不要慌 站在原地打 等队友奶或者牺牲自己让队友尽快输出 毕竟 死一个人比团灭要好得多  注意 期间如果在蛇棒范围内 记得把BOSS拉出蛇棒范围再锤他  先弄死BOSS 再杀蛇棒好的多 毕竟蛇棒属于守卫 不吃很多技能 但是如果有守望者的话 他的刀阵旋风可以对守卫造成伤害"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "kite_and_pull",
+      "clueText": "技能一、召唤蛇棒  随机召唤变动蛇棒位置  大概率他身边会召唤到蛇棒  这时候就要换地盘打架了  把他拉开蛇棒范围再干他"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "技能二、回旋镖  给当前仇恨脚下丢一个持续造成伤害的飞镖 输出很高 注意走位"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "集合",
+      "normalizedTag": "stack_requirement",
+      "clueText": "技能三、给所有英雄上一个环绕英雄飞行的飞镖 期间飞镖刮到队友会造成伤害  这个技能要吗赶紧全体集合 要么全体散开  不然互相刮血  三两下人就没了"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "技能四、BOSS给自己召唤一个环绕自己飞行的飞镖 期间刮到英雄 造成伤害 范围挺大的    这个技能放出来 尽快靠近BOSS  要吗远离BOSS不贪输出"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "3号BOSS 大萨满 阴间BOSS一枚  老恶心了  减速 逼走位  不小心就给给了     建议先清小兵再锤BOSS  半血之后放技能很频繁 攻击自带AOE  小兵的每一下普攻都是闪电链"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "技能一、对当前仇恨目标方向 放出一个连环雷击 注意走位还是很好躲"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "随机位置",
+      "normalizedTag": "random_reposition_pressure",
+      "clueText": "技能四、地图随机位置飞翔   就纯恶心人"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "line_skill_lane",
+      "clueText": "4号BOSS 地穴领主 俗称小强 清好小怪 走走位算是很好打了  注意 他钻地后是带反伤的哦 攻击自带AOE 对近战不是很友好 小怪自带技能蛛网 直线飞行 捆住第一个挨到的英雄"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "fan_aoe_facing",
+      "clueText": "技能二、大地刺 对仇恨目标方向施法 BOSS面前扇形大范围戳刺 击飞 眩晕 高伤   因为这个技能  输出尽量在BOSS身后输出"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "技能三、对所有英雄脚下释放地刺 高伤害   这时候就需要尽量和队友们散开了  不然的话封走位不好躲  还容易直接吃两个地刺伤害致死 有移速装备的话 保持移动很好躲"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "卡位",
+      "normalizedTag": "anti_stuck_layout",
+      "clueText": "技能四、和大萨满的四技能同理 随机飞向地图位置  防卡位 恶心近战用"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "line_skill_lane",
+      "clueText": "5号BOSS  月之女祭司 俗称白虎 攻击自带直线范围伤害 而且射程很远并且穿透  不是很难 杀小怪 再杀BOSS  小怪也和BOSS攻击同理"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "注意走位 还是可以一战  半血后技能频率加快"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "技能一、对随机英雄释放星落  高伤  注意走位 有移动速度装备就很好躲"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "fan_aoe_facing",
+      "clueText": "技能二、3箭齐发 对当前仇恨目标方向 扇形释放3根月神之箭  贴脸会吃到3下伤害  走位躲"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "卡位",
+      "normalizedTag": "anti_stuck_layout",
+      "clueText": "技能四、机制如大萨满  地图随机位移 防卡位   不过要注意的一点就是他位移了之后会在终点反方向秒射3根月神之箭   不要跟太紧哦"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "circle_aoe_zone",
+      "clueText": "技能一、连环冰冻 在自身范围 召唤多圈范围冰冻  高伤 如果站两个圈边上 会吃到两发伤害  圈与圈的中间有空隙（如图） 活用H即可躲避"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "技能三、在BOSS自身范围大范围击退   近战基本是躲不了了  所幸伤害不是很高  带减速  近战不友好+1"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "随机位置",
+      "normalizedTag": "random_reposition_pressure",
+      "clueText": "技能四、自身传送到地图随机位置  并召唤数个只有一点血的分身   分身一碰就碎  但是耐不住分身射程远 还带减速 近战不友好+2"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "7号BOSS  圣骑士   萌新杀手来了   专杀没什么走位基础的弟弟  小兵带很长时间无敌  烦~  集火弄死BOSS再慢慢料理 会无敌的小怪"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "地形",
+      "normalizedTag": "random_reposition_pressure",
+      "clueText": "技能二、如图 持续施法 地图随机位置召唤圣光  高伤害 有的地方因为地形问题  不会显示红圈  是生是死全看运气了"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "技能一、暴风雪  小范围连续冰片砸人   保持移动即可   伤害无视敌我"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "fan_aoe_facing",
+      "clueText": "技能二、如图  对当前目标施放扇形光波  光波高伤  注意走位躲   离光波过近  光波甚至会A你~  连续放3次光波"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "随机位置",
+      "normalizedTag": "random_reposition_pressure",
+      "clueText": "技能三、地图随机位置传送  并召唤4只水元素   还好水元素伤害不高  而且持续时间不长  不然的话只能顶着小怪的伤害硬杀BOSS了"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "分散",
+      "normalizedTag": "spread_requirement",
+      "clueText": "技能三、对所有英雄脚下释放血爆  高伤  而且英雄不分散站位的话会吃到多下伤害"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "卡位",
+      "normalizedTag": "anti_stuck_layout",
+      "clueText": "技能四、机制如同山丘之王四技能  防卡位"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "10号BOSS  恶魔猎手  弟弟一枚   走位好会骗前摇可以几乎无伤 平A自带AOE  小怪带冲锋  先杀小怪 还是先杀BOSS随意 建议先杀小怪"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "技能一、对面前范围击飞   前摇大  侧走即可"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "范围",
+      "normalizedTag": "circle_aoe_zone",
+      "clueText": "技能二、献祭  自身造成持续伤害 并且在自身一圈范围召唤火柱  离火柱近的话 火柱会A你"
+    },
+    {
+      "topicId": "60038404a4f7ad546d152df9",
+      "title": "BOSS图鉴",
+      "keyword": "卡位",
+      "normalizedTag": "anti_stuck_layout",
+      "clueText": "技能四、直线范围冲锋   高伤 注意侧走躲开  防卡位"
+    },
+    {
+      "topicId": "652901ba7195182decd4240e",
+      "title": "肉鸽地牢详细攻略（二）基础流派介绍——咒文、战旗、特效、负债",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "阿卡兰的魔匝：除开智力、法伤提升外，魔匝还会使你每次魔法伤害都可以触发3秒的灼烧，而单人的魔匝灼烧效果是可以叠加的，即4个魔匝可使你每次法伤附加3秒300%智力每秒的灼烧伤害，注意，是每次法伤，哪怕你携带火焰风衣、自动机炮同样可以触发。部分输出手段较为贫乏的角色，1书+3魔匝+火焰风衣，逛街即可造成大范围灼烧伤害，我之前暗牧带三家狮鹫35min通关就是用的这种思路，发散思维你也可以1书+3魔匝+组装器打咒文自动。但魔匝也有自己的问题，如果是几个玩家一起玩咒文，那么灼烧效果会被覆盖，也就是说，你三个魔匝扔了个技能触发灼烧，接着一个魔匝的队友扔了个技能触发灼烧，后续那个灼烧会覆盖你的灼烧。这也是为什么开玩笑说“两家咒文，谁胡谁尴尬”的原因，因为胡了的那个肯定或多或少会被不胡那个队友压制伤害。"
+    },
+    {
+      "topicId": "652901ba7195182decd4240e",
+      "title": "肉鸽地牢详细攻略（二）基础流派介绍——咒文、战旗、特效、负债",
+      "keyword": "边缘",
+      "normalizedTag": "edge_hugging",
+      "clueText": "3.玩法介绍成型快和难胡放在一个流派中看似非常矛盾，但如果把上限低加上去，就很正常了。因为上限低，所以当你选择咒文时，一般这把处于翻车边缘，队友没有靠得住的，这时看见了魔匝。所以不用纠结上限，1书1魔匝+2到3个通天藤，直接所有咒文全吃，主打一手强势打工，速杀18，至于18之后：我都选咒文拖队友了，打不过21是你们的问题，不是我的问题。"
+    },
+    {
+      "topicId": "652901ba7195182decd4240e",
+      "title": "肉鸽地牢详细攻略（二）基础流派介绍——咒文、战旗、特效、负债",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "图示中，左边四件装备均可触发特效，分别是攻速特效、道具等级特效、生命最大值特效和攻速特效，当然，还有一件装备是攻击力35%特效的【火花奇书手】，但其效果被白虎诅咒完爆；而毁灭之怒是唯一一件范围特效的装备。"
+    },
+    {
+      "topicId": "652901ba7195182decd4240e",
+      "title": "肉鸽地牢详细攻略（二）基础流派介绍——咒文、战旗、特效、负债",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "右边的装备基本是配合左边使用的：如火花飞矢提供每次物理伤害20%攻速，可以无限叠加，4秒内你能触发多少次物理伤害，则可以获得多少倍20%攻速提升，大范围AOE的物理伤害同样计入，100只怪1次物理伤害即2000攻速，持续4秒，且每层独立计算持续时间。虽然攻速的实际表现有上限，但作为基础属性是不会有上限的，即你有4w攻速，可能攻击表现和400一样，但破败仍旧会触发4w的基础特效伤害。遗失者眼球和飞矢的机制类似，只不过一个提高攻速一个提高法伤。注释中（非攻击特效）的意思是：不会被火花环刃翻倍其叠加速度（所以符文石叠血速度是可以被环刃翻倍的）。"
+    },
+    {
+      "topicId": "652901ba7195182decd4240e",
+      "title": "肉鸽地牢详细攻略（二）基础流派介绍——咒文、战旗、特效、负债",
+      "keyword": "范围",
+      "normalizedTag": "unknown",
+      "clueText": "还记得流派框图中的灵魂吗？灵魂可以获得约4w攻速，这时拿破败配合4把环刃，再来一个眼球，对着十只怪使用大范围高频物理伤害，比如火枪R，小黑W等，获得约1000%法伤。那么伤害一下就来到了40000×16×11=704w每次特效伤害，这就是灵魂攻速特效。或者，1500层邪灵宝珠，配合白虎爪+4把环刃，道具等级共1530，6k法伤，16倍特效，则可以获得15300×16×61=1493w的特效伤害，这就是摧毁��效。"
+    },
+    {
+      "topicId": "65299d107195182decd42c6e",
+      "title": "肉鸽地牢详细攻略（四）流派介绍——齿轮、结算、三月",
+      "keyword": "走位",
+      "normalizedTag": "movement_check",
+      "clueText": "成型卡手+难胡、生存环境堪忧是齿轮的劣势，改装钳和五个齿轮合出来以前的驱动核心基本没用，而改装钳是5级道具，金齿轮是4级道具，红齿轮又成了2级道具，无论在多少等级商店刷装备，都非常尴尬，合出来以后还需要大量的5级道具驱动核心；其次，白齿轮的血量加成很低，基本只是让你有前18抗一下的能力，18以后基本上见光死，生存环境很依赖走位。此外，齿轮前期强度提升速度有限，如果不顺，很可能见光死。"
+    }
+  ]
+}

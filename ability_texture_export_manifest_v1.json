@@ -1,0 +1,1517 @@
+{
+  "meta": {
+    "version": "1.0-export-ability-textures-from-map-v1",
+    "generatedAt": "2026-03-10",
+    "requested": 210,
+    "exported": 152,
+    "failed": 58
+  },
+  "rows": [
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxmfs4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxmfs4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxmfs4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsymw3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsymw3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsymw3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsqs2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsqs2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsqs2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsymw1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsymw1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsymw1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsymw4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsymw4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsymw4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyq2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyq2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyq2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNdmfs3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNdmfs3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNdmfs3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNWellSpring.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyq1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyq1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyq1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNEnt.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNclshz2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNclshz2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNclshz2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNUnstableConcoction.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNlw2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNlw2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNlw2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNlw4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNlw4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNlw4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNemls3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNemls3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNemls3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNemls1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNemls1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNemls1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNayls3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNayls3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNayls3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNemls4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNemls4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNemls4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNlw3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNlw3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNlw3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNlw1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNlw1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNlw1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsqs4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsqs4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsqs4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjx3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjx3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjx3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjx2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjx2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjx2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFire.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNCancel.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNGolemThunderclap.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNntqz3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNntqz3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNntqz3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyznjs3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyznjs3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyznjs3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxxg2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxxg2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxxg2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxxg3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxxg3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxxg3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNCarrionSwarm.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSWQSW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNSWQSW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNSWQSW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxxg4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxxg4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxxg4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyznjs2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyznjs2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyznjs2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxh3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxh3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxh3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNTheBlackArrow.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNShadowMeld.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxxg1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxxg1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxxg1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfsq1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfsq1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfsq1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfsq3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfsq3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfsq3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNdxlz3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNdxlz3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNdxlz3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNDarkRitual.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNwy3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNwy3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNwy3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNOrcMeleeUpThree.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNBattleRoar.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNpsz3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNpsz3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNpsz3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjsc5.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjsc5.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjsc5.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjsc1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjsc1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjsc1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjsc2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjsc2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjsc2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjsc3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjsc3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjsc3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjsc4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjsc4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjsc4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNInfernal.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsssdx3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsssdx3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsssdx3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsssdx4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsssdx4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsssdx4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNazz1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNazz1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNazz1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNazz3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNazz3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNazz3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNGenericSpellImmunity.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNGenericSpellImmunity.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNgc3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNgc3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNgc3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNEnchantedBears.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyznjs4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyznjs4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyznjs4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNElunesBlessing.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNBigBadVoodooSpell.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNXL2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNXL2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNXL2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNXL4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNXL4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNXL4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNXL3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNXL3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNXL3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNXL1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNXL1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNXL1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanlc2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanlc2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanlc2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanlc3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanlc3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanlc3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanlc4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanlc4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanlc4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNtn3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNtn3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNtn3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNtn4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNtn4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNtn4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNtn2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNtn2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNtn2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyg1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyg1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyg1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyg4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyg4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyg4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyg2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyg2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyg2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNzltt2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNzltt2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNzltt2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNzltt1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNzltt1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNzltt1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNzltt3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNzltt3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNzltt3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNzltt4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNzltt4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNzltt4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNgl1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNgl1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNgl1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNgl2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNgl2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNgl2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjs3.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNgl5.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNgl5.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNgl5.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanly1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanly1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanly1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanly2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanly2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanly2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanly4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanly4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanly4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanly3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanly3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanly3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNEarthquake.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNmkl3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNmkl3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNmkl3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNmkl2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNmkl2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNmkl2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNmkl5.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNmkl5.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNmkl5.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNStampede.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfhdqs4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfhdqs4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfhdqs4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfhdqs3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfhdqs3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfhdqs3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfhdqs2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfhdqs2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfhdqs2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfhdqs1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfhdqs1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfhdqs1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNFeedBack.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNBlizzard.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsymw2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsymw2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsymw2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNanlc1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNanlc1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNanlc1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNStormBolt.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNShadowStrike.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNcs.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNcs.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNcs.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNSpiritOfVengeance.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNGolemStormBolt.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSpellBreakerMagicDefend.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSpellBreakerMagicUnDefend.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNAdvancedUnholyStrength.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNntqz1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNntqz1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNntqz1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNTreant.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNStrongDrink.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNjx1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNjx1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNjx1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNDrunkenDodge.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNclswzE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNclswzE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNclswzE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNclswzW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNclswzW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNclswzW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNclswzW2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNclswzW2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNclswzW2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNFragmentationBombs.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNDemolish.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNReplay-Loop.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNExhumeCorpses.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsqs1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsqs1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsqs1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNgl3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNgl3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNgl3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNEntanglingRoots.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNThorns.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNThorns.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNazz2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNazz2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNazz2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNazz4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNazz4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNazz4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNkwsj.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNkwsj.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNkwsj.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNemls2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNemls2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNemls2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxh4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxh4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxh4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNFrostArmor.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJSQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJSQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJSQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJSW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJSW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJSW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJSE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJSE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJSE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJSR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJSR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJSR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNKLSTW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNKLSTW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNKLSTW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNKLSTE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNKLSTE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNKLSTE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNKLSTR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNKLSTR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNKLSTR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNHQSQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNHQSQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNHQSQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyxx.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyxx.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyxx.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNHQSR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNHQSR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNHQSR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNHQSE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNHQSE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNHQSE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNResistantSkin.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNChime.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSelectUnit.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNZWZQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNZWZQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNZWZQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNZWZW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNZWZW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNZWZW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNZWZE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNZWZE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNZWZE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNZWZR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNZWZR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNZWZR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNarfm.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNarfm.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNarfm.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSWQSQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNSWQSQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNSWQSQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSWQSE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNSWQSE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNSWQSE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSWQSR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNSWQSR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNSWQSR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsqs3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsqs3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsqs3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNColdArrows.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNMarkOfFire.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNIncinerate.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNVolcano.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNhm4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNhm4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNhm4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNNeutralManaShield.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNclswzR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNclswzR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNclswzR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNShockWave.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNntqz2.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNntqz2.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNntqz2.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsfq.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsfq.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsfq.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsfW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsfW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsfW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsfE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsfE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsfE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNsfR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNsfR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNsfR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJMQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJMQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJMQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJMW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJMW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJMW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJME.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJME.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJME.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNJMR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNJMR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNJMR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNtn1.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNtn1.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNtn1.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNtqtj.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNtqtj.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNtqtj.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNAFSW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNAFSW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNAFSW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNAFSE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNAFSE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNAFSE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNAFSR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNAFSR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNAFSR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyq4.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyq4.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyq4.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNPebble.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNlgcc.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNlgcc.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNlgcc.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNYXQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNYXQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNYXQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNYXW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNYXW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNYXW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNYXR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNYXR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNYXR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNYXE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNYXE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNYXE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNMRQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNMRQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNMRQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNMRW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNMRW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNMRW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNMRE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNMRE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNMRE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNMRR.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNMRR.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNMRR.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNTYJ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNTYJ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNTYJ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNBreathOfFrost.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNMGExchange.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNxmfs3.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNxmfs3.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNxmfs3.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNcrhh.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNcrhh.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNcrhh.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNfhcj.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNfhcj.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNfhcj.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNhxb.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNhxb.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNhxb.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSerpentWard.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\DISBTNys.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\DISBTNys.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_DISBTNys.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNVoodooLounge.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNUnLoad.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNCorrosiveBreath.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNWatcherQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNWatcherQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNWatcherQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNWatcherW.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNWatcherW.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNWatcherW.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNWatcherE.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNWatcherE.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNWatcherE.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNSentinel.blp",
+      "ok": false,
+      "reason": "not found in map archive"
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNclswzQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNclswzQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNclswzQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNKLSTQ.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNKLSTQ.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNKLSTQ.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyldq.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyldq.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyldq.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyldw.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyldw.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyldw.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\PassiveButtons\\PASBTNylde.blp",
+      "archiveName": "ReplaceableTextures\\PassiveButtons\\PASBTNylde.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_PassiveButtons_PASBTNylde.png",
+      "width": 64,
+      "height": 64
+    },
+    {
+      "ref": "ReplaceableTextures\\CommandButtons\\BTNyldr.blp",
+      "archiveName": "ReplaceableTextures\\CommandButtons\\BTNyldr.blp",
+      "ok": true,
+      "pngPath": "godot-assets/textures/ReplaceableTextures_CommandButtons_BTNyldr.png",
+      "width": 64,
+      "height": 64
+    }
+  ]
+}

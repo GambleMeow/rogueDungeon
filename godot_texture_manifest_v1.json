@@ -1,0 +1,555 @@
+{
+  "meta": {
+    "version": "1.0-blp-to-png-v1",
+    "generatedAt": "2026-03-10",
+    "total": 68,
+    "okCount": 68,
+    "failedCount": 0
+  },
+  "rows": [
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/bossjinggaozhixian.blp",
+      "pngPath": "godot-assets/textures/bossjinggaozhixian.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/HeroArchSorceressFZ1.blp",
+      "pngPath": "godot-assets/textures/HeroArchSorceressFZ1.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n2s_glowyellow.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n2s_glowyellow.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n2s_object5.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n2s_object5.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n2s_shockwave21.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n2s_shockwave21.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n2s_smoke.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n2s_smoke.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n2s_star2.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n2s_star2.png",
+      "width": 32,
+      "height": 32,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n3s_fire2.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n3s_fire2.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n3s_fire3.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n3s_fire3.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n3s_fire4.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n3s_fire4.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n3s_fire6x6.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n3s_fire6x6.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_invoker_n3s_smoke.blp",
+      "pngPath": "godot-assets/textures/hero_invoker_n3s_smoke.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_ragnaros_lil01.blp",
+      "pngPath": "godot-assets/textures/hero_ragnaros_lil01.png",
+      "width": 1024,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_ragnaros_lil01_gaoguang.blp",
+      "pngPath": "godot-assets/textures/hero_ragnaros_lil01_gaoguang.png",
+      "width": 512,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_ragnaros_lil02.blp",
+      "pngPath": "godot-assets/textures/hero_ragnaros_lil02.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/hero_ragnaros_lil02_gaoguang.blp",
+      "pngPath": "godot-assets/textures/hero_ragnaros_lil02_gaoguang.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/lava_splash_01.blp",
+      "pngPath": "godot-assets/textures/lava_splash_01.png",
+      "width": 256,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/NightmareSpiderBoss.blp",
+      "pngPath": "godot-assets/textures/NightmareSpiderBoss.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/NightmareSpiderBossArmor.blp",
+      "pngPath": "godot-assets/textures/NightmareSpiderBossArmor.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Textures_Flare.blp",
+      "pngPath": "godot-assets/textures/Textures_Flare.png",
+      "width": 32,
+      "height": 32,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Textures_GenericGlow2c.blp",
+      "pngPath": "godot-assets/textures/Textures_GenericGlow2c.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Textures_GenericGlow64.blp",
+      "pngPath": "godot-assets/textures/Textures_GenericGlow64.png",
+      "width": 64,
+      "height": 64,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Textures_GenericGlowX.blp",
+      "pngPath": "godot-assets/textures/Textures_GenericGlowX.png",
+      "width": 32,
+      "height": 32,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Textures_pixies1.blp",
+      "pngPath": "godot-assets/textures/Textures_pixies1.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Textures_RibbonNE1_White.blp",
+      "pngPath": "godot-assets/textures/Textures_RibbonNE1_White.png",
+      "width": 64,
+      "height": 32,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/tx_fire3.blp",
+      "pngPath": "godot-assets/textures/tx_fire3.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_antimage_arms.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_antimage_arms.png",
+      "width": 128,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_antimage_belt.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_antimage_belt.png",
+      "width": 256,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_antimage_color.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_antimage_color.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_antimage_head.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_antimage_head.png",
+      "width": 128,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_antimage_PBG.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_antimage_PBG.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_antimage_shoulder.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_antimage_shoulder.png",
+      "width": 256,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_beam_blue_energy_01.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_beam_blue_energy_01.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_electrical_arc_white.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_electrical_arc_white.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_particle_glow_04.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_particle_glow_04.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_particle_glow_05.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_particle_glow_05.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_plasma_flame.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_plasma_flame.png",
+      "width": 1024,
+      "height": 1024,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_skullbasher.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_skullbasher.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroDemonHunter_ti7_immortal_armor.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroDemonHunter_ti7_immortal_armor.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_anam_blue.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_anam_blue.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_DK Slash.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_DK Slash.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_Flare.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_Flare.png",
+      "width": 32,
+      "height": 32,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_Lionheart CKCritStrike.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_Lionheart CKCritStrike.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_PA Crit Strike.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_PA Crit Strike.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_particle_glow_01.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_particle_glow_01.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_pa_arcana_detail.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_pa_arcana_detail.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_pa_arcana_detail_tintable.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_pa_arcana_detail_tintable.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_pa_arcana_full_color.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_pa_arcana_full_color.png",
+      "width": 1024,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/Units_Nightelf_HeroWarden_smoke1.blp",
+      "pngPath": "godot-assets/textures/Units_Nightelf_HeroWarden_smoke1.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/zsgzhenji0.blp",
+      "pngPath": "godot-assets/textures/zsgzhenji0.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/zsgzhenjixz.blp",
+      "pngPath": "godot-assets/textures/zsgzhenjixz.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt1.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt1.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt2.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt2.png",
+      "width": 128,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt3.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt3.png",
+      "width": 1024,
+      "height": 1024,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt4.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt4.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt5.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt5.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt6.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt6.png",
+      "width": 64,
+      "height": 64,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt7.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt7.png",
+      "width": 1024,
+      "height": 1024,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt8.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt8.png",
+      "width": 256,
+      "height": 64,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt9.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_hai_pa_de_lao_ban_sha_boss_of_fear_tt9.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt1.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt1.png",
+      "width": 512,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt2.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt2.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt3.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt3.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt4.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt4.png",
+      "width": 512,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt5.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt5.png",
+      "width": 256,
+      "height": 256,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt6.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt6.png",
+      "width": 256,
+      "height": 128,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt7.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt7.png",
+      "width": 512,
+      "height": 512,
+      "ok": true
+    },
+    {
+      "sourceDir": "boss-hero-model-deps",
+      "sourcePath": "boss-hero-model-deps/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt8.blp",
+      "pngPath": "godot-assets/textures/z_heduim_qq_qun_650151236_tt_h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_tt8.png",
+      "width": 512,
+      "height": 256,
+      "ok": true
+    }
+  ]
+}

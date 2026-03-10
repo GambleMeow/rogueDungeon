@@ -1,0 +1,1654 @@
+{
+  "meta": {
+    "version": "1.0-v1",
+    "generatedAt": "2026-03-10",
+    "mapId": 180750,
+    "sourceFile": "hero_static_data.json",
+    "note": "Heuristic hero behavior model for Godot runtime setup."
+  },
+  "summary": {
+    "heroCount": 43,
+    "archetypeCount": {
+      "auto_attack": 1,
+      "hybrid": 30,
+      "caster": 7,
+      "summoner": 5
+    }
+  },
+  "heroes": [
+    {
+      "heroId": 1,
+      "heroName": "龙卵领主",
+      "guideCount": 4,
+      "combatArchetype": "auto_attack",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed",
+        "crit"
+      ],
+      "triggerStyle": [
+        "on_attack",
+        "on_cast"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "maintain_attack_uptime",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "medium",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "龙卵领主现在会随着震荡波前冲，击飞敌人，且在冲锋时获得50点护甲。",
+        "震荡波现在会造成物理伤害，可以触发暴击/物理吸血/攻击特效",
+        "如果裂地一击没有伤害到任何敌人,该技能便会将生命值最低的友军拉至面前并为其提供自身20%生命最大值的治疗与护盾.",
+        "裂地一击永久降低敌人15%的护甲",
+        "使用技能后,提高40%攻速,持续3秒."
+      ]
+    },
+    {
+      "heroId": 2,
+      "heroName": "守望者",
+      "guideCount": 6,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "hp",
+        "mana",
+        "crit",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.88,
+      "evidence": [
+        "淬毒环刃主动效果改为召唤一个巨型刃环，伤害周围敌人并偷取他们的护甲",
+        "每次攻击降低敌人1点护甲持续5秒（可叠加，多选加成持续时间）\n",
+        "+5%暴击率\n",
+        "进入复仇天神状态时恢复100+5%已损失生命值\n",
+        "淬毒环刃对负护甲敌人额外造成一次40%攻击力的伤害"
+      ]
+    },
+    {
+      "heroId": 3,
+      "heroName": "哨卫",
+      "guideCount": 4,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect",
+        "mana",
+        "attack_speed"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.89,
+      "evidence": [
+        "鬼影迷踪现在可以短距离冲刺,但不再生成迷雾,伤害加成改为150%全属性并降低其冷却.5级Q效果改为:大幅提高减速幅度与减速时间.5级W的效果改为:根据穿行距离降低Q冷却时间.",
+        "+100%暗影疾行攻速加成",
+        "+0.75秒月轮恶爪减速时间"
+      ]
+    },
+    {
+      "heroId": 4,
+      "heroName": "寄生虫",
+      "guideCount": 5,
+      "combatArchetype": "caster",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.87,
+      "evidence": [
+        "病菌喷吐不再能够充能，提高冷却时间，效果改为：在目标位置生成一瓶生命药剂",
+        "+4%宿主暴击率",
+        "病菌喷吐使敌人在25秒内减少1.5点护甲",
+        "+3%护盾转化生命值百分比",
+        "药剂有10%的几率变成能同时恢复魔法和生命值的高级药剂"
+      ]
+    },
+    {
+      "heroId": 52,
+      "heroName": "龙鹰骑士",
+      "guideCount": 4,
+      "combatArchetype": "caster",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.79,
+      "evidence": [
+        "奥术冲击伤害加成改为3%生命最大值 天空镣铐伤害加成改为5%生命最大值 无穷智慧改为提高10/20/30/40/50点生命最大值",
+        "W的禁锢效果降低为60%减速,伤害降低25%,其伤害现在可以叠加.",
+        "崇高之智提供25%额外法术吸血和魔抗"
+      ]
+    },
+    {
+      "heroId": 102,
+      "heroName": "岩石巨像",
+      "guideCount": 7,
+      "combatArchetype": "hybrid",
+      "damageProfile": "spell",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "巨幅提高W冷却时间。每移动600码,自动触发一次无减速的W。.",
+        "吸收碎石额外提供1%最大生命值的护盾值",
+        "攻击有3%的几率触发无减速的雷霆一击",
+        "+1.5秒雷霆一击减速时间",
+        "+1护甲成长"
+      ]
+    },
+    {
+      "heroId": 103,
+      "heroName": "女猎手",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "所有技能伤害翻倍,加成改为智力且造成魔法伤害.月刃护身伤害(Q被动与R主动)现在还会根据目标已损失百分比提高伤害(伤害加成等同于目标的已损失生命值百分比).",
+        "W不再提供移速加成而是提供150%的攻速,你的物理伤害可以减少W的冷却时间.",
+        "每个被月刃飞盘主动效果伤害的敌人可以为你恢复20%攻击力的生命值",
+        "永久降低猎手美技落点附近的敌人3点护甲",
+        "每个被月刃飞盘伤害的敌人可以为你恢复10%攻击力的生命值"
+      ]
+    },
+    {
+      "heroId": 104,
+      "heroName": "毒蛇大师",
+      "guideCount": 2,
+      "combatArchetype": "summoner",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp",
+        "attack_speed",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "on_kill"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "summon_first_then_kite",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.82,
+      "evidence": [
+        "回旋镖不再造成伤害，而是对友军提供50%数值的护盾，如果目标是毒蛇守卫，还会使其攻速永久提高50%（不叠加）。 敌人死亡不再刷新毒蛇守卫冷却时间，而是50%直接生成一个毒蛇守卫。",
+        "+0.5秒回旋镖和蛤蟆跳减速时间",
+        "毒蛇守卫获得1%英雄生命值的额外攻击力",
+        "终极蛊降额外降低敌人4%护甲",
+        "+15%召唤强化"
+      ]
+    },
+    {
+      "heroId": 105,
+      "heroName": "弧光豺狼",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp"
+      ],
+      "triggerStyle": [
+        "on_round_end"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.8,
+      "evidence": [
+        "叉状闪电的加成改为20%生命最大值.\\n闪电球现在无法主动使用,而是会自动消耗来伤害周围敌人或者治疗周围友军,治疗量是伤害值的50%但会提供加速效果.\\n触发频率可以由闪电球数量与冷却缩减来提高.",
+        "道具的结算效果有70%概率额外触发一次",
+        "不稳定电弧永久降低敌人0.4点护甲"
+      ]
+    },
+    {
+      "heroId": 106,
+      "heroName": "巨魔狂战士",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "medium",
+      "economyCoupling": "low",
+      "confidence": 0.86,
+      "evidence": [
+        "接住旋转飞斧可以为你回复（10+3%攻击力）点生命值",
+        "+1秒致命空翻减速时间",
+        "绝命时刻额外降低5%护甲",
+        "+0.25秒绝命冲锋免伤,加速与眩晕时间",
+        "绝命冲锋永久降低目标1.5护甲"
+      ]
+    },
+    {
+      "heroId": 107,
+      "heroName": "月之女祭司",
+      "guideCount": 4,
+      "combatArchetype": "summoner",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "summon_first_then_kite",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.92,
+      "evidence": [
+        "跳跃不再刷新与被刷新CD,降低跳跃距离,跳跃可以恢复25%已损失生命值并提供50%的移动速度加成,持续2秒。",
+        "+400猫头鹰攻击范围,+4秒流星冷却时间.天赋:流星有概率再次落下改为+50召唤物攻击范围.",
+        "跳跃后提高40%攻速和10%移速,持续5秒.",
+        "+15%召唤强化",
+        "强力魔法箭永久降低敌人1点护甲"
+      ]
+    },
+    {
+      "heroId": 108,
+      "heroName": "疫蛇",
+      "guideCount": 14,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "on_kill"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.85,
+      "evidence": [
+        "腐蛇游行期间禁用其他技能且不再提高移动速度.同时降低50%基础攻击间隔并基于魔抗获得额外护甲.",
+        "恶瘴吐息效果改为对周围所有敌人造成伤害并施加慢性毒素,400码内的敌人还会受到双倍伤害与双倍毒素。同时移除慢性毒素攻击力加成,生命最大值加成提升至1.5%.",
+        "移除恶瘴吐息攻击力加成,疫父慈针不再降低魔抗,但每段伤害可以吸收目标0.08%的生命值转化为自身的不衰减护盾.",
+        "主属性改为智力,同时获得额外效果'战备:获得30%魔法最大值的临时生命值上限.'",
+        "疫父慈针每段伤害吸收敌人0.2点护甲,持续30秒."
+      ]
+    },
+    {
+      "heroId": 109,
+      "heroName": "圣骑士",
+      "guideCount": 3,
+      "combatArchetype": "caster",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "intellect",
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.92,
+      "evidence": [
+        "攻击有几率锤击敌人，造成（150%攻击力）的额外范围物理伤害并将敌人短暂减速",
+        "守护之光会回复范围内所有友军25%的生命值",
+        "神圣之光额外恢复目标150%力量值的生命值",
+        "攻击附带等同于护甲值的特效伤害",
+        "神圣之光使目标获得10点额外护甲，持续10秒"
+      ]
+    },
+    {
+      "heroId": 110,
+      "heroName": "剑圣",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana",
+        "crit",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.89,
+      "evidence": [
+        "剑刃风暴效果改为在原地留下一个持续造成魔法伤害并减速周围敌人的风暴. 如果在Q使用后立即使用该技能,该技能还会使自身会返回Q的起始点(镜像无效). 由镜像使用时,伤害降低至35%",
+        "苦修之道持续时间降低70%,英雄拥有战备:召唤一个无法操控且无敌的幻影.幻影继承25%攻击力,且会自动战斗.",
+        "+0.25摧心剑击护甲降低",
+        "+5%暴击率",
+        "+1%剑刃风暴生命最大值加成"
+      ]
+    },
+    {
+      "heroId": 111,
+      "heroName": "牛头人酋长",
+      "guideCount": 4,
+      "combatArchetype": "caster",
+      "damageProfile": "spell",
+      "scalingAxes": [
+        "strength",
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed"
+      ],
+      "triggerStyle": [
+        "on_attack"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "maintain_attack_uptime",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.89,
+      "evidence": [
+        "热血燃烧不再提供攻速加成,但生命回复提高60%",
+        "Q技能不再冲锋,而是原地蓄力,蓄力可以提高伤害,眩晕时间,影响范围,蓄力期间获得50%的伤害减免.",
+        "蛮牛冲撞不再会造成伤害和眩晕,使用后必定返还70%的消耗和冷却时间",
+        "热血燃烧不再提供攻速加成,而是提供法伤加成(数值为攻速加成的12.5%) 每个灵魂提供的主属性从4点降低至3点.",
+        "攻击有2%的几率触发蛮牛冲撞的眩晕效果"
+      ]
+    },
+    {
+      "heroId": 112,
+      "heroName": "死亡骑士",
+      "guideCount": 5,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "intellect",
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "on_kill"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.86,
+      "evidence": [
+        "黑暗冲锋提供3%生命值最大值的额外攻击力",
+        "霜之哀伤额外附加敌人1.5%已损失生命值的真实伤害.",
+        "+3无光之盾护甲值",
+        "无光之盾立即恢复目标（50%死亡骑士力量）点生命值。",
+        "霜之哀伤触发后永久+1最大值生命值上限"
+      ]
+    },
+    {
+      "heroId": 113,
+      "heroName": "灵鸽骑士",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "intellect",
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.87,
+      "evidence": [
+        "黑暗冲锋提供3%生命值最大值的额外攻击力",
+        "霜之哀伤额外附加敌人1.5%已损失生命值的真实伤害.",
+        "+3灵技搓刺BUFF提供的护甲",
+        "灵技搓刺立即恢复自身（50%灵鸽骑士力量）点生命值。",
+        "霜之哀伤触发后永久+1最大值生命值上限"
+      ]
+    },
+    {
+      "heroId": 114,
+      "heroName": "巫妖",
+      "guideCount": 2,
+      "combatArchetype": "caster",
+      "damageProfile": "spell",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "on_attack"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "maintain_attack_uptime",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "medium",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "W现在会额外为目标施加霜冻护甲.\\n对友军使用时,友军会增加护甲,持续恢复魔法值,并获得自身的天赋[被攻击有概率使用Q反击]的效果(自身获得霜冻护甲时,触发概率翻倍).\\n对敌军使用时,敌人会受到持续伤害并降低护甲,且巫妖对该敌人使用Q时,返还Q40%冷却时间.\\n霜冻护甲持续8秒.",
+        "W会将目标冰冻,被冰冻单位无法移动和受到伤害,如果是友军还会持续恢复生命值。",
+        "提高R冷却时间,每9秒使你的下次攻击可以造成额外范围伤害并减速敌人,每次攻击可以使这个计时加快1秒.",
+        "黑暗锁链对友军使用时,使其回复自身75%智力值的生命值",
+        "黑暗锁链永久降低受影响敌方单位1点护甲"
+      ]
+    },
+    {
+      "heroId": 115,
+      "heroName": "吸血鬼",
+      "guideCount": 4,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect",
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.89,
+      "evidence": [
+        "鲜血剥离(Q)替换为血腥冲锋,可以使吸血鬼跃击目标位置,造成物理伤害,恢复自身生命值,并击飞范围内敌人.",
+        "血梦之境(W)持续期间,吸血鬼会附身周围一个英雄(不会以寄生虫为目标),为其提供等额的攻击移动速度加成,并在持续结束后与吸血鬼一齐恢复生命值.附着期间,吸血鬼可以攻击周围敌人且获得攻击距离提升. 并使猩红之魔(E)的伤害加成改为(50%攻击速度\\\\1%生命最大值),治疗加成为伤害值的40%",
+        "+4%暴击率",
+        "渴血之握获得生命最大值时,额外获得4%该值的攻击力"
+      ]
+    },
+    {
+      "heroId": 116,
+      "heroName": "丛林守护者",
+      "guideCount": 2,
+      "combatArchetype": "summoner",
+      "damageProfile": "spell",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "on_kill"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "summon_first_then_kite",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "medium",
+      "economyCoupling": "low",
+      "confidence": 0.9,
+      "evidence": [
+        "你召唤物的攻击不再会触发（E），但你的攻击可以100%触发",
+        "攻击有几率在目标周围召唤一个树人",
+        "树人死亡时可以回复丛林游魂的生命值",
+        "树人攻击可以造成15%的减速效果",
+        "+1不可侵犯召唤的树人数量"
+      ]
+    },
+    {
+      "heroId": 117,
+      "heroName": "影舞者",
+      "guideCount": 4,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "hp",
+        "mana",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.91,
+      "evidence": [
+        "移形换影替换为恶魔暴食，可以对范围内敌人造成伤害并抢夺他们的生命最大值。",
+        "Q改为恶魔斩击,可以使影舞者瞬移至目标位置,并斩击最近的敌人,造成取决于攻击力和生命最大值的伤害,斩击2次后,第三次还会进行强化斩击.",
+        "+15%召唤强化",
+        "影子攻击有4%的几率+1最大生命值",
+        "+1.2%瞬影斩击生命最大值加成"
+      ]
+    },
+    {
+      "heroId": 118,
+      "heroName": "炎魔之王",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp",
+        "mana",
+        "crit",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.87,
+      "evidence": [
+        "5层火能不再召唤小火灵,而是永久提高3点攻击力. 灭烬改为熔灭射线,可对前方造成扇形物理伤害.",
+        "+2秒焚坑燃烧持续时间. +1次焚坑持续燃烧天赋. 暴击不再施加灼烧,而是由焚坑施加.",
+        "+15%召唤强化",
+        "额外回复灼烧伤害3%的生命值",
+        "+4%暴击率"
+      ]
+    },
+    {
+      "heroId": 119,
+      "heroName": "深渊魔王",
+      "guideCount": 5,
+      "combatArchetype": "hybrid",
+      "damageProfile": "physical",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.85,
+      "evidence": [
+        "末日皮层的反弹效果现在可以造成物理伤害，触发攻击特效/暴击/物理吸血",
+        "你的体型和技能范围不再随生命值提高,火焰雨范围锁定为400,大幅减少你的技能冷却时间。",
+        "火焰炼狱改为恐怖痛击,可以对周围敌人造成10%生命最大值的伤害与短暂晕眩,并对直线敌人造成200%攻击力的伤害与击飞.",
+        "末日皮层反弹伤害时恢复0.4%最大生命值",
+        "+70生命成长"
+      ]
+    },
+    {
+      "heroId": 120,
+      "heroName": "娜迦女海巫",
+      "guideCount": 1,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.81,
+      "evidence": [
+        "潮汐光环不再提供生命回复，而是提高移动速度 大幅提高潮汐涌动的治疗量。",
+        "潮汐蛇吻对每个敌人的第一次攻击现在会造成物理伤害，可触发攻击特效/物理吸血/暴击。",
+        "潮汐深渊和潮汐涌动的主动和被动效果将造成物理伤害，触发攻击特效/暴击/物理吸血",
+        "+12%潮汐光环生命恢复"
+      ]
+    },
+    {
+      "heroId": 121,
+      "heroName": "黑暗游侠",
+      "guideCount": 3,
+      "combatArchetype": "summoner",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect",
+        "hp",
+        "mana",
+        "crit",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "summon_first_then_kite",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.87,
+      "evidence": [
+        "大幅降低枯萎箭雨的冷却时间，巨幅降低骷髅战士的生命值。",
+        "+4%暴击率",
+        "+20%召唤物攻击力",
+        "+15%召唤强化",
+        "每7秒自动召唤1个骷髅战士（多选叠加属性）"
+      ]
+    },
+    {
+      "heroId": 122,
+      "heroName": "矮人火枪手",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.93,
+      "evidence": [
+        "穿透弹替换为粘稠燃油，可以降低范围内敌人魔法抗性，并使他们受到火枪手的伤害时被短暂大幅减速",
+        "脚底抹油改为喷火器。精准射击不再提供攻击距离加成，而是提供护甲加成.每点敏捷额外提供12点生命最大值.",
+        "穿透弹降低2点护甲10秒",
+        "+5%暴击率",
+        "地毯式轰炸永久降低0.3点护甲"
+      ]
+    },
+    {
+      "heroId": 152,
+      "heroName": "织网者",
+      "guideCount": 1,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp",
+        "mana",
+        "crit",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "on_kill"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "瓮中捉鳖不再眩晕敌人。巨幅提高瓮中捉鳖伤害。",
+        "蛛网中你的单位每秒恢复1.5%最大生命值",
+        "守株待兔额外召唤一只蜘蛛",
+        "蜘蛛死亡时造成100%攻击力的范围物理伤害（可触发暴击/攻击特效）",
+        "+15%召唤强化"
+      ]
+    },
+    {
+      "heroId": 153,
+      "heroName": "潮汐领主",
+      "guideCount": 2,
+      "combatArchetype": "caster",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "hp",
+        "mana",
+        "attack_speed",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "地突泉和突泉甲壳现在会造成物理伤害，可以触发攻击特效/物理吸血/暴击. 突泉甲壳持续期间提高100%攻击速度.",
+        "E技能的影响范围大幅度提高,并且能为范围内所有友军回复生命值,治疗加成改为25%攻击速度/2%生命最大值,伤害加成改为50%攻击速度/4%生命最大值. 突泉甲壳持续期间额外提高275攻击距离",
+        "+3护甲",
+        "激流突泉激活时每秒恢复2%最大生命值",
+        "突泉甲壳激活时获得55%攻速和30%移速"
+      ]
+    },
+    {
+      "heroId": 154,
+      "heroName": "女妖之王",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.9,
+      "evidence": [
+        "恶鬼风暴不再提供法术吸血并大幅降低冷却时间,持续期间根据伤害值提供关卡临时生命值上限.",
+        "所有技能加成改为生命最大值加成(Q:8%,W:1.5%,R:4%),魂魄新星伤害不再衰减.",
+        "每使用三次腐臭蜂群,刷新腐臭蜂群冷却.魂魄新星伤害时有3%概率触发腐臭蜂群.魂魄新星频率不再随着魂魄数量提高.",
+        "+5%纳魂女妖减速",
+        "+5%恶鬼风暴法术吸血"
+      ]
+    },
+    {
+      "heroId": 155,
+      "heroName": "暗牧者",
+      "guideCount": 3,
+      "combatArchetype": "caster",
+      "damageProfile": "spell",
+      "scalingAxes": [
+        "intellect",
+        "mana",
+        "attack_speed"
+      ],
+      "triggerStyle": [
+        "on_cast"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.84,
+      "evidence": [
+        "获得新技能'幽冥冲击',该技能可以对目标及其周围敌人造成攻速加成的伤害,且会在使用其他普通技能后刷新冷却.",
+        "+1.5(对BOSS0.5)秒扭曲邪力眩晕时间",
+        "邪恶狂热提供5点护甲",
+        "扭曲邪力使敌人永久-2护甲"
+      ]
+    },
+    {
+      "heroId": 156,
+      "heroName": "神父",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana"
+      ],
+      "triggerStyle": [
+        "on_kill"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.82,
+      "evidence": [
+        "赎罪不再提供护盾，而是恢复生命值，从而可以享受治疗强度加成。",
+        "赎罪可以永久降低敌人2点护甲",
+        "每层亵渎使你提高1点护甲"
+      ]
+    },
+    {
+      "heroId": 157,
+      "heroName": "奥法师",
+      "guideCount": 4,
+      "combatArchetype": "summoner",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "summon_first_then_kite",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.88,
+      "evidence": [
+        "你可以传送至召唤物处,使召唤物爆炸,根据传送距离,附加1~10%召唤物生命值的传送伤害,该效果生效时,传送将造成魔法伤害",
+        "传送不再造成伤害，天赋也不再提供伤害和召唤，移除传送冷却时间",
+        "奥术飞弹命中恢复5(+10%智力值）点生命值",
+        "传送可以召唤一个水元素(属性取决于英雄智力)"
+      ]
+    },
+    {
+      "heroId": 158,
+      "heroName": "游侠",
+      "guideCount": 4,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect"
+      ],
+      "triggerStyle": [
+        "on_round_end"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.9,
+      "evidence": [
+        "蹬墙跳现在不会造成伤害和眩晕。移除蹬墙跳冷却时间。",
+        "元素冲击永久降低敌人0.35点护甲",
+        "+0.75秒蹬墙跳眩晕时间",
+        "天落箭雨使用时永久降低敌人范围内敌人0.5点护甲"
+      ]
+    },
+    {
+      "heroId": 159,
+      "heroName": "末日守卫",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.83,
+      "evidence": [
+        "恶魔之环降低敌人1点护甲或2%魔抗（取决于恶魔之眼颜色）",
+        "恶魔之环造成（3%最大生命值）的额外伤害",
+        "恶魔之魂攻速加成提高50%，移速提高5%",
+        "恶魔之魂持续期间，每秒对周围敌人造成（0.5%最大生命值）点伤害",
+        "+5%暴击率"
+      ]
+    },
+    {
+      "heroId": 160,
+      "heroName": "巫女",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "intellect",
+        "hp",
+        "mana",
+        "crit"
+      ],
+      "triggerStyle": [
+        "on_attack"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "maintain_attack_uptime",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.78,
+      "evidence": [
+        "+5%暴击率",
+        "灼日焚化附带目标生命最大值2%的真实伤害"
+      ]
+    },
+    {
+      "heroId": 161,
+      "heroName": "伊利丹",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "agility",
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed",
+        "crit"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "medium",
+      "confidence": 0.88,
+      "evidence": [
+        "月刃回斩替换为月刃回舞,这是一个敏捷加成的多段位移伤害技能。 埃辛诺德战刃伤害加成改为50%敏捷,且不再提供额外攻击距离. 大幅降低破碎穿梭蓄力时间. 你无法再进入恶魔形态,但大招可以使你被动的获得20/25/30%伤害抗性,且每移动100码,便能获得5/15/25(+5%敏捷)的护盾. 破碎穿梭命中敌人时为自身提供15%生命最大值的治疗,命中BOSS效果翻倍 破碎穿梭冷却时间降低至全等级11秒.",
+        "进入和结束恶魔形态时,月刃回斩会被短暂禁用1秒,随后刷新冷却并切换技能形态,恶魔形态下,月刃回斩变为远程打击技能,伤害加成改为200%攻击力,造成魔法伤害且拥有3层额外充能.",
+        "普通形态下,月刃回斩命中会减少破碎穿梭和恶魔形态的冷却. 恶魔形态下受到致命伤害时,立即结束恶魔形态并恢复部分生命值.",
+        "破碎穿梭永久降低敌人1点护甲和2%魔抗",
+        "+6%艾辛诺德战刃攻速加成"
+      ]
+    },
+    {
+      "heroId": 162,
+      "heroName": "矮人直升机",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect",
+        "mana"
+      ],
+      "triggerStyle": [
+        "on_attack"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "maintain_attack_uptime",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.77,
+      "evidence": [
+        "锁定飞弹降低敌人0.4护甲"
+      ]
+    },
+    {
+      "heroId": 163,
+      "heroName": "先知",
+      "guideCount": 5,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "hp",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.92,
+      "evidence": [
+        "盈能爆裂恢复100+10%生命最大值",
+        "+15%召唤强化",
+        "盈能爆裂召唤1只有时限的幽灵狼",
+        "赋能爆发恢复300+30%生命最大值",
+        "赋能爆发召唤2只临时的幽灵狼"
+      ]
+    },
+    {
+      "heroId": 164,
+      "heroName": "白狼萨满",
+      "guideCount": 5,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "strength",
+        "agility",
+        "intellect",
+        "hp",
+        "mana",
+        "attack_speed"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.92,
+      "evidence": [
+        "净化之雷伤害加成改为40%智力,能也只能对选定范围内所有敌人持续造成伤害和减速.",
+        "攻击有15%触发超负荷,超负荷伤害改为3%生命最大值加成. 消耗品'灵魂'现在会为你提供力量而非敏捷.",
+        "萨满之爪攻速提升100%,移速提升20%",
+        "+2%萨满之爪的护盾生命最大值加成",
+        "萨满之爪附加超负荷状态,下次攻击造成1秒的范围减速(叠加次数)"
+      ]
+    },
+    {
+      "heroId": 168,
+      "heroName": "渊狱守卫",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "agility",
+        "intellect",
+        "hp"
+      ],
+      "triggerStyle": [
+        "on_attack"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "maintain_attack_uptime",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.93,
+      "evidence": [
+        "渊狱猛袭的伤害加成改为5%生命最大值.罪孽魔盾伤害改为1.5%生命最大值. 渊狱猛袭总会向目标位置发动冲锋并产生额外扩散伤害. 终末劫临可以直接降低渊狱猛袭40%冷却并在使用时永久降低敌人5点护甲和10%魔抗.",
+        "罪孽魔盾改为罪心破碎,可以造成伤害并为范围内敌人施加3层碎骨恶罚,随后英雄还会进入短暂的终末劫临强化状态. 终末劫临额外使英雄获得远程攻击能力,但每秒的生命回复减半.",
+        "终末劫临每秒额外恢复1%生命最大值",
+        "+0.3%罪孽魔盾生命最大值加成",
+        "+1.5%渊狱猛袭生命最大值加成"
+      ]
+    },
+    {
+      "heroId": 169,
+      "heroName": "蒸汽战车",
+      "guideCount": 6,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {},
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "reposition_on_focus_fire"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.45,
+      "evidence": []
+    },
+    {
+      "heroId": 202,
+      "heroName": "机枪兵",
+      "guideCount": 2,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "medium",
+      "economyCoupling": "low",
+      "confidence": 0.84,
+      "evidence": [
+        "+1秒爆破手雷减速时间",
+        "爆破手雷永久降低敌人2点护甲",
+        "兴奋剂损失的生命值转化为30%的护盾",
+        "+0.3%每秒生命最大值恢复"
+      ]
+    },
+    {
+      "heroId": 252,
+      "heroName": "驯兽师",
+      "guideCount": 3,
+      "combatArchetype": "hybrid",
+      "damageProfile": "mixed",
+      "scalingAxes": [
+        "hp",
+        "mana",
+        "summon_power"
+      ],
+      "triggerStyle": [
+        "mixed"
+      ],
+      "accessoryTypeDistribution": {
+        "NORMAL_ATTACK": 1,
+        "NORMAL_DEFENSE": 1,
+        "RARE_ATTACK": 1,
+        "RARE_DEFENSE": 1,
+        "TREASURE_ATTACK": 1,
+        "TREASURE_DEFENSE": 1
+      },
+      "behaviorTreeHints": {
+        "opener": "apply_core_buff_then_trade",
+        "loop": "skill_cycle_priority",
+        "survival": "frontline_with_defensive_windows"
+      },
+      "controlLevel": "low",
+      "economyCoupling": "low",
+      "confidence": 0.87,
+      "evidence": [
+        "不再召唤巨熊,巨熊猛扑将使自身扑出且冷却时间降低35%.巨熊相关天赋替换为强化自身的天赋.野性狂暴还会使自身获得极限移速.",
+        "+7%巨熊生命值",
+        "狂怒战斧永久降低敌人15%护甲",
+        "+12%召唤强化",
+        "+5%生命最大值"
+      ]
+    }
+  ]
+}

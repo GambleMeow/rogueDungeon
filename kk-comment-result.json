@@ -1,0 +1,138 @@
+{
+  "commentApis": [
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/count?mapId=180750",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750"
+      },
+      "postData": null,
+      "sample": {
+        "status": 200,
+        "data": 2876
+      },
+      "bodySample": "{\"status\":200,\"data\":2876}"
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/comment/comment_info?mapId=180750",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750"
+      },
+      "postData": null,
+      "sample": {
+        "status": 200,
+        "data": [
+          "id",
+          "mapId",
+          "totalCommentCounts",
+          "totalScoreCounts",
+          "score1Count",
+          "score2Count",
+          "score3Count",
+          "score4Count",
+          "score5Count",
+          "mapScoreView",
+          "sevenDayScoreCounts",
+          "lastVersionScoreCounts"
+        ]
+      },
+      "bodySample": "{\"status\":200,\"data\":{\"id\":8285,\"mapId\":180750,\"totalCommentCounts\":5888,\"totalScoreCounts\":4015,\"score1Count\":1466,\"score2Count\":75,\"score3Count\":84,\"score4Count\":197,\"score5Count\":2193,\"mapScoreView\":6.8,\"sevenDayScoreCounts\":4,\"lastVersionScoreCounts\":9,\"mapVersionScoreView\":0.0,\"sevenDayScoreView\":0.0}}"
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/topic_class",
+      "method": "GET",
+      "status": 200,
+      "params": null,
+      "postData": null,
+      "sample": {
+        "status": 200,
+        "data": "[6 items]"
+      },
+      "bodySample": "{\"status\":200,\"data\":[{\"classId\":1,\"className\":\"攻略\"},{\"classId\":2,\"className\":\"bug反馈\"},{\"classId\":3,\"className\":\"建议\"},{\"classId\":4,\"className\":\"灌水\"},{\"classId\":5,\"className\":\"活动\"},{\"classId\":6,\"className\":\"其他\"}]}"
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/top_data?mapId=180750",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750"
+      },
+      "postData": null,
+      "sample": {
+        "status": 200,
+        "data": "[4 items]"
+      },
+      "bodySample": "{\"status\":200,\"data\":[{\"title\":\"KK对战平台社区使用协议\",\"content\":\"<p>欢迎来到<span lang=\\\"EN-US\\\">KK</span>对战平台！</p>\\n<p>本社区旨在为玩家提供友好和谐的讨论环境，供大家探讨想法、提出游戏建议、角色扮演，以及与其他玩家探讨<span lang=\\\"EN-US\\\">RPG</span>游戏其他任何方面的内容。只有当参与讨论的所有用户都能尊重并礼貌对待他人时，社区讨论区的作用才能得到最大发挥。因此，我们要求您参与讨论时能文明规范自己的言行。</p>\\n<p>下面列出的规范和规则阐明了我们希望您的行为举止如何以及您能希望其他社区成员的行为举止如何。注意，下述规范并非没有遗漏，也未必涵盖所有不当行为。因此，社区管理员具有完全的判断力，指出他们觉得那些行为是不当的。游戏内受到暂时冻结或永久冻结的处罚也总是会导致到社区账号的暂时冻结或永久冻结。您使用本社区是一种&ldquo;权限&rdquo;，而并非&ldquo;权利&rdquo;。运营方保留在任何时候由于某些原因（包括但不必限于您未遵守本规范或者适用的其他公开规则）暂时或者永久冻结您社区权限或者采取警告等其他合理措施的权利。<span lang=\\\"EN-US\\\"><br /></span>我们保留根据每个个案的具体情况来权衡该个案处罚的权利。</p>\\n<div>\\n<p align=\\\"left\\\">您不得利用本社区从事以下活动：<br /><span lang=\\\"EN-US\\\">1.&nbsp; &nbsp;&nbsp;</span>发布反对中华人民共和国所确定的基本原则的信息和内容；&nbsp;<br /><span lang=\\\"EN-US\\\">2.&nbsp; &nbsp;&nbsp;</span>发布危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一和领土完整的信息和内容；<br /><span lang=\\\"EN-US\\\">3.&nbsp; &nbsp;&nbsp;</span>发布危害国家荣誉和利益的信息和内容；<br /><span lang=\\\"EN-US\\\">4.&nbsp; &nbsp;&nbsp;</span>发布煽动民族仇恨、民族歧视，破坏民族团结的信息或内容；<br /><span lang=\\\"EN-US\\\">5.&nbsp; &nbsp;&nbsp;</span>发布破坏国家宗教政策，宣扬邪教和封建迷信的信息和内容；<br /><span lang=\\\"EN-US\\\">6.&nbsp; &nbsp;&nbsp;</span>散布谣言，扰乱社会秩序，破坏社会稳定的；<br /><span lang=\\\"EN-US\\\">7.&nbsp; &nbsp;&nbsp;</span>散布淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪；<br /><span lang=\\\"EN-US\\\">8.&nbsp; &nbsp;&nbsp;</span>发布侮辱或者诽谤他人，侵害他人合法权益的信息和内容；<br /><span lang=\\\"EN-US\\\">9.&nbsp; &nbsp;&nbsp;</span>发布违背社会公德的信息和内容；<br /><span lang=\\\"EN-US\\\">10.&nbsp;&nbsp;</span>从事法律法规所禁止的其他行为。</p>\\n<p align=\\\"left\\\">&nbsp;</p>\\n<p align=\\\"left\\\"><strong>发布反对中华人民共和国所确定的基本原则</strong></p>\\n<p align=\\\"left\\\">&nbsp;</p>\\n<div>\\n<p align=\\\"left\\\">包括使用清晰或隐晦的语言，以及<span lang=\\\"EN-US\\\">/</span>或提供包含此类语言或图片的网站链接。<span lang=\\\"EN-US\\\"><br /> </span>若发现某用户有上述行为，处罚如下：<br />&middot;<span lang=\\\"EN-US\\\">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</span>永久冻结社区账号。</p>\\n<p align=\\\"left\\\">&nbsp;</p>\\n<p align=\\\"left\\\"><strong>危害国家安全、泄漏国家秘密、颠覆国家政权、破坏国家统一、危害国家荣誉或利益</strong><br />包括使用清晰或隐晦的语言，以及/或提供包含此类语言或图片的网站链接。<br />若发现某用户有上述行为，处罚如下：<br />&middot;&nbsp; &nbsp; &nbsp; &nbsp; "
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/page_query_topics?mapId=180750&orderType=1&start=0&limit=10",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750",
+        "orderType": "1",
+        "start": "0",
+        "limit": "10"
+      },
+      "postData": null,
+      "sample": {
+        "status": 200,
+        "data": "[10 items]"
+      },
+      "bodySample": "{\"status\":200,\"data\":[{\"topicId\":\"690db781bb679dd31e61f791\",\"topicType\":1,\"playerId\":31345088,\"userViewRes\":{\"playerGuid\":31345088,\"playerName\":\"windmove\",\"headFrame\":\"https://up5.nosdn.127.net/4/dz/res/player/frame/activity/war3rpg/2023spring/frame_2.png\",\"headIcon\":\"https://up5.nosdn.127.net/4/dz/res/player/header/static/normal/tx250307.jpg\",\"hasGuild\":false,\"deleteFlag\":false,\"vipLevel\":\"00000000\",\"moneyVipLv\":0,\"mapConsumeLv\":0},\"mapId\":180750,\"mapVersion\":\"3.1.162\",\"mapName\":\"肉鸽地牢\",\"gameTimeSec\":1248485,\"title\":\"肉鸽地牢的热度达到了现有最高水平！\",\"content\":\"<p>如图！5090！不开玩笑，现有最高！<img src=\\\"https://up5.nosdn.127.net/topic/8329bd868ac44cb5aa2e9a26ee9db1fc.png?size=1074*185\\\" style=\\\"background-color: transparent; max-width: 100%;\\\"></p>\",\"images\":[\"https://up5.nosdn.127.net/topic/8329bd868ac44cb5aa2e9a26ee9db1fc.png?size=1074*185\"],\"isAuthor\":false,\"status\":0,\"channel\":4,\"showMobileSource\":false,\"happyCount\":0,\"praisedCount\":0,\"unpraisedCount\":0,\"commentCount\":4,\"shareCount\":1,\"browseCount\":549,\"releaseTime\":\"2025-11-07 17:10:25\",\"replyTime\":\"2026-03-10 16:24:46\",\"classId\":4,\"className\":\"灌水\",\"isUpdateTopic\":false,\"playerRegion\":\"辽宁省\",\"releaseTimeStamp\":1762506625646},{\"topicId\":\"69776e8b3c522b2bc0549ea0\",\"topicType\":1,\"playerId\":30153727,\"userViewRes\":{\"playerGuid\":30153727,\"playerName\":\"阿卡坤\",\"headFrame\":\"https://up5.nosdn.127.net/4/dz/res/player/frame/frame_2.png\",\"headIcon\":\"https://up5.nosdn.127.net/4/dz/res/player/header/static/normal/icon5.jpg\",\"hasGuild\":false,\"deleteFlag\":false,\"vipLevel\":\"00000000\",\"moneyVipLv\":0,\"mapConsumeLv\":0},\"mapId\":180750,\"mapVersion\":\"3.1.165\",\"mapName\":\"肉鸽地牢\",\"gameTimeSec\":211299,\"title\":\"*****的两回合6000块刷一个空洞宝珠刷不出来作者你做了\",\"content\":\"<p>*****的两回合6000块刷一个空洞宝珠刷不出来作者你做了j8图啊</p>\",\"images\":[],\"isAuthor\":false,\"status\":0,\"channel\":4,\"showMobileSource\":false,\"happyCount\":0,\"praisedCount\":0,\"unpraisedCount\":0,\"commentCount\":2,\"browseCount\":116,\"releaseTime\":\"2026-01-26 21:39:23\",\"replyTime\":\"2026-03-10 16:21:39\",\"classId\":4,\"className\":\"灌水\",\"isUpdateTopic\":"
+    }
+  ],
+  "directAccess": [
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/comments?mapId=180750&topicId=65151b52cdddb63ebc890efc&start=0&limit=10",
+      "status": 403,
+      "sample": {
+        "status": 40301,
+        "message": "token is required"
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/comment/list?mapId=180750&topicId=65151b52cdddb63ebc890efc&start=0&limit=10",
+      "status": 404,
+      "sample": {
+        "status": 404,
+        "message": "No message available"
+      }
+    },
+    {
+      "url": "https://kk-web-gateway.kkdzpt.com/platform-comment-api/api/v1/topic/comments?mapId=180750&topicId=65151b52cdddb63ebc890efc&start=0&limit=10",
+      "status": 403,
+      "sample": {
+        "status": 40301,
+        "message": "token is required"
+      }
+    },
+    {
+      "url": "https://kk-web-gateway.kkdzpt.com/platform-comment-api/api/v1/comment/reply_list?mapId=180750&topicId=65151b52cdddb63ebc890efc&start=0&limit=10",
+      "status": 404,
+      "sample": {
+        "status": 404,
+        "message": "No message available"
+      }
+    },
+    {
+      "url": "https://kk-web-gateway.kkdzpt.com/platform-comment-api/api/v1/topic/replies?mapId=180750&topicId=65151b52cdddb63ebc890efc&start=0&limit=10",
+      "status": 403,
+      "sample": {
+        "status": 40301,
+        "message": "token is required"
+      }
+    }
+  ],
+  "blockers": [],
+  "domHints": [
+    {
+      "foundLinks": []
+    }
+  ],
+  "summary": "",
+  "inPageFetchError": "page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:290:30), <anonymous>:3:25)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+}

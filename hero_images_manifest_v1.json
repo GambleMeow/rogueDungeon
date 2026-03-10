@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "version": "1.0-hero-images-v1",
+    "generatedAt": "2026-03-10",
+    "heroCount": 43,
+    "okCount": 43,
+    "failedCount": 0
+  },
+  "heroes": [
+    {
+      "heroId": 1,
+      "heroName": "龙卵领主",
+      "iconClass": "icon-lllz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 204,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/001_icon-lllz.png",
+      "ok": true
+    },
+    {
+      "heroId": 2,
+      "heroName": "守望者",
+      "iconClass": "icon-swz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 340,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/002_icon-swz.png",
+      "ok": true
+    },
+    {
+      "heroId": 3,
+      "heroName": "哨卫",
+      "iconClass": "icon-sw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 272,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/003_icon-sw.png",
+      "ok": true
+    },
+    {
+      "heroId": 4,
+      "heroName": "寄生虫",
+      "iconClass": "icon-jsc",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 68,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/004_icon-jsc.png",
+      "ok": true
+    },
+    {
+      "heroId": 52,
+      "heroName": "龙鹰骑士",
+      "iconClass": "icon-lyqs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 272,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/052_icon-lyqs.png",
+      "ok": true
+    },
+    {
+      "heroId": 102,
+      "heroName": "岩石巨像",
+      "iconClass": "icon-ysjx",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 408,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/102_icon-ysjx.png",
+      "ok": true
+    },
+    {
+      "heroId": 103,
+      "heroName": "女猎手",
+      "iconClass": "icon-nls",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 272,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/103_icon-nls.png",
+      "ok": true
+    },
+    {
+      "heroId": 104,
+      "heroName": "毒蛇大师",
+      "iconClass": "icon-dsds",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 68,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/104_icon-dsds.png",
+      "ok": true
+    },
+    {
+      "heroId": 105,
+      "heroName": "弧光豺狼",
+      "iconClass": "icon-hgcl",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 204,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/105_icon-hgcl.png",
+      "ok": true
+    },
+    {
+      "heroId": 106,
+      "heroName": "巨魔狂战士",
+      "iconClass": "icon-jmkzs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 204,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/106_icon-jmkzs.png",
+      "ok": true
+    },
+    {
+      "heroId": 107,
+      "heroName": "月之女祭司",
+      "iconClass": "icon-yznjs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 408,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/107_icon-yznjs.png",
+      "ok": true
+    },
+    {
+      "heroId": 108,
+      "heroName": "疫蛇",
+      "iconClass": "icon-ys",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 340,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/108_icon-ys.png",
+      "ok": true
+    },
+    {
+      "heroId": 109,
+      "heroName": "圣骑士",
+      "iconClass": "icon-sqs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 204,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/109_icon-sqs.png",
+      "ok": true
+    },
+    {
+      "heroId": 110,
+      "heroName": "剑圣",
+      "iconClass": "icon-js",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/110_icon-js.png",
+      "ok": true
+    },
+    {
+      "heroId": 111,
+      "heroName": "牛头人酋长",
+      "iconClass": "icon-ntrqz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/111_icon-ntrqz.png",
+      "ok": true
+    },
+    {
+      "heroId": 112,
+      "heroName": "死亡骑士",
+      "iconClass": "icon-swqs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 340,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/112_icon-swqs.png",
+      "ok": true
+    },
+    {
+      "heroId": 113,
+      "heroName": "灵鸽骑士",
+      "iconClass": "icon-lgqs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 136,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/113_icon-lgqs.png",
+      "ok": true
+    },
+    {
+      "heroId": 114,
+      "heroName": "巫妖",
+      "iconClass": "icon-wy",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 340,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/114_icon-wy.png",
+      "ok": true
+    },
+    {
+      "heroId": 115,
+      "heroName": "吸血鬼",
+      "iconClass": "icon-xxg",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 68,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/115_icon-xxg.png",
+      "ok": true
+    },
+    {
+      "heroId": 116,
+      "heroName": "丛林守护者",
+      "iconClass": "icon-clshz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 136,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/116_icon-clshz.png",
+      "ok": true
+    },
+    {
+      "heroId": 117,
+      "heroName": "影舞者",
+      "iconClass": "icon-ywz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 408,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/117_icon-ywz.png",
+      "ok": true
+    },
+    {
+      "heroId": 118,
+      "heroName": "炎魔之王",
+      "iconClass": "icon-ymzw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 272,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/118_icon-ymzw.png",
+      "ok": true
+    },
+    {
+      "heroId": 119,
+      "heroName": "深渊魔王",
+      "iconClass": "icon-symw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 340,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/119_icon-symw.png",
+      "ok": true
+    },
+    {
+      "heroId": 120,
+      "heroName": "娜迦女海巫",
+      "iconClass": "icon-njnhw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 272,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/120_icon-njnhw.png",
+      "ok": true
+    },
+    {
+      "heroId": 121,
+      "heroName": "黑暗游侠",
+      "iconClass": "icon-hayx",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 136,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/121_icon-hayx.png",
+      "ok": true
+    },
+    {
+      "heroId": 122,
+      "heroName": "矮人火枪手",
+      "iconClass": "icon-arhqs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/122_icon-arhqs.png",
+      "ok": true
+    },
+    {
+      "heroId": 152,
+      "heroName": "织网者",
+      "iconClass": "icon-zwz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 408,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/152_icon-zwz.png",
+      "ok": true
+    },
+    {
+      "heroId": 153,
+      "heroName": "潮汐领主",
+      "iconClass": "icon-cxlz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/153_icon-cxlz.png",
+      "ok": true
+    },
+    {
+      "heroId": 154,
+      "heroName": "女妖之王",
+      "iconClass": "icon-nyzw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 68,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/154_icon-nyzw.png",
+      "ok": true
+    },
+    {
+      "heroId": 155,
+      "heroName": "暗牧者",
+      "iconClass": "icon-amz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 68,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/155_icon-amz.png",
+      "ok": true
+    },
+    {
+      "heroId": 156,
+      "heroName": "神父",
+      "iconClass": "icon-sf",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 136,
+        "y": 272,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/156_icon-sf.png",
+      "ok": true
+    },
+    {
+      "heroId": 157,
+      "heroName": "奥法师",
+      "iconClass": "icon-afs",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/157_icon-afs.png",
+      "ok": true
+    },
+    {
+      "heroId": 158,
+      "heroName": "游侠",
+      "iconClass": "icon-yx",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 408,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/158_icon-yx.png",
+      "ok": true
+    },
+    {
+      "heroId": 159,
+      "heroName": "末日守卫",
+      "iconClass": "icon-mrsw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 272,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/159_icon-mrsw.png",
+      "ok": true
+    },
+    {
+      "heroId": 160,
+      "heroName": "巫女",
+      "iconClass": "icon-wn",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 340,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/160_icon-wn.png",
+      "ok": true
+    },
+    {
+      "heroId": 161,
+      "heroName": "伊利丹",
+      "iconClass": "icon-yld",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 204,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/161_icon-yld.png",
+      "ok": true
+    },
+    {
+      "heroId": 162,
+      "heroName": "矮人直升机",
+      "iconClass": "icon-arzsj",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 68,
+        "y": 68,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/162_icon-arzsj.png",
+      "ok": true
+    },
+    {
+      "heroId": 163,
+      "heroName": "先知",
+      "iconClass": "icon-xz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 136,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/163_icon-xz.png",
+      "ok": true
+    },
+    {
+      "heroId": 164,
+      "heroName": "白狼萨满",
+      "iconClass": "icon-blsm",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 136,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/164_icon-blsm.png",
+      "ok": true
+    },
+    {
+      "heroId": 168,
+      "heroName": "渊狱守卫",
+      "iconClass": "icon-yysw",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 408,
+        "y": 204,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/168_icon-yysw.png",
+      "ok": true
+    },
+    {
+      "heroId": 169,
+      "heroName": "蒸汽战车",
+      "iconClass": "icon-zqzz",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 408,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/169_icon-zqzz.png",
+      "ok": true
+    },
+    {
+      "heroId": 202,
+      "heroName": "机枪兵",
+      "iconClass": "icon-jqb",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 204,
+        "y": 136,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/202_icon-jqb.png",
+      "ok": true
+    },
+    {
+      "heroId": 252,
+      "heroName": "驯兽师",
+      "iconClass": "icon-xss",
+      "spriteUrl": "https://rouge-guides-img.oss-cn-beijing.aliyuncs.com/sprites/hero-avatars-sprite.png?v=5ba57d90",
+      "rect": {
+        "x": 0,
+        "y": 340,
+        "width": 64,
+        "height": 64
+      },
+      "imagePath": "hero-images/252_icon-xss.png",
+      "ok": true
+    }
+  ]
+}

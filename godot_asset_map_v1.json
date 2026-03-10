@@ -1,0 +1,809 @@
+{
+  "meta": {
+    "version": "1.0-godot-asset-map-v1",
+    "generatedAt": "2026-03-10",
+    "mapId": 180750
+  },
+  "heroPortraits": [
+    {
+      "heroId": 1,
+      "heroName": "龙卵领主",
+      "iconClass": "icon-lllz",
+      "imagePath": "hero-images/001_icon-lllz.png"
+    },
+    {
+      "heroId": 2,
+      "heroName": "守望者",
+      "iconClass": "icon-swz",
+      "imagePath": "hero-images/002_icon-swz.png"
+    },
+    {
+      "heroId": 3,
+      "heroName": "哨卫",
+      "iconClass": "icon-sw",
+      "imagePath": "hero-images/003_icon-sw.png"
+    },
+    {
+      "heroId": 4,
+      "heroName": "寄生虫",
+      "iconClass": "icon-jsc",
+      "imagePath": "hero-images/004_icon-jsc.png"
+    },
+    {
+      "heroId": 52,
+      "heroName": "龙鹰骑士",
+      "iconClass": "icon-lyqs",
+      "imagePath": "hero-images/052_icon-lyqs.png"
+    },
+    {
+      "heroId": 102,
+      "heroName": "岩石巨像",
+      "iconClass": "icon-ysjx",
+      "imagePath": "hero-images/102_icon-ysjx.png"
+    },
+    {
+      "heroId": 103,
+      "heroName": "女猎手",
+      "iconClass": "icon-nls",
+      "imagePath": "hero-images/103_icon-nls.png"
+    },
+    {
+      "heroId": 104,
+      "heroName": "毒蛇大师",
+      "iconClass": "icon-dsds",
+      "imagePath": "hero-images/104_icon-dsds.png"
+    },
+    {
+      "heroId": 105,
+      "heroName": "弧光豺狼",
+      "iconClass": "icon-hgcl",
+      "imagePath": "hero-images/105_icon-hgcl.png"
+    },
+    {
+      "heroId": 106,
+      "heroName": "巨魔狂战士",
+      "iconClass": "icon-jmkzs",
+      "imagePath": "hero-images/106_icon-jmkzs.png"
+    },
+    {
+      "heroId": 107,
+      "heroName": "月之女祭司",
+      "iconClass": "icon-yznjs",
+      "imagePath": "hero-images/107_icon-yznjs.png"
+    },
+    {
+      "heroId": 108,
+      "heroName": "疫蛇",
+      "iconClass": "icon-ys",
+      "imagePath": "hero-images/108_icon-ys.png"
+    },
+    {
+      "heroId": 109,
+      "heroName": "圣骑士",
+      "iconClass": "icon-sqs",
+      "imagePath": "hero-images/109_icon-sqs.png"
+    },
+    {
+      "heroId": 110,
+      "heroName": "剑圣",
+      "iconClass": "icon-js",
+      "imagePath": "hero-images/110_icon-js.png"
+    },
+    {
+      "heroId": 111,
+      "heroName": "牛头人酋长",
+      "iconClass": "icon-ntrqz",
+      "imagePath": "hero-images/111_icon-ntrqz.png"
+    },
+    {
+      "heroId": 112,
+      "heroName": "死亡骑士",
+      "iconClass": "icon-swqs",
+      "imagePath": "hero-images/112_icon-swqs.png"
+    },
+    {
+      "heroId": 113,
+      "heroName": "灵鸽骑士",
+      "iconClass": "icon-lgqs",
+      "imagePath": "hero-images/113_icon-lgqs.png"
+    },
+    {
+      "heroId": 114,
+      "heroName": "巫妖",
+      "iconClass": "icon-wy",
+      "imagePath": "hero-images/114_icon-wy.png"
+    },
+    {
+      "heroId": 115,
+      "heroName": "吸血鬼",
+      "iconClass": "icon-xxg",
+      "imagePath": "hero-images/115_icon-xxg.png"
+    },
+    {
+      "heroId": 116,
+      "heroName": "丛林守护者",
+      "iconClass": "icon-clshz",
+      "imagePath": "hero-images/116_icon-clshz.png"
+    },
+    {
+      "heroId": 117,
+      "heroName": "影舞者",
+      "iconClass": "icon-ywz",
+      "imagePath": "hero-images/117_icon-ywz.png"
+    },
+    {
+      "heroId": 118,
+      "heroName": "炎魔之王",
+      "iconClass": "icon-ymzw",
+      "imagePath": "hero-images/118_icon-ymzw.png"
+    },
+    {
+      "heroId": 119,
+      "heroName": "深渊魔王",
+      "iconClass": "icon-symw",
+      "imagePath": "hero-images/119_icon-symw.png"
+    },
+    {
+      "heroId": 120,
+      "heroName": "娜迦女海巫",
+      "iconClass": "icon-njnhw",
+      "imagePath": "hero-images/120_icon-njnhw.png"
+    },
+    {
+      "heroId": 121,
+      "heroName": "黑暗游侠",
+      "iconClass": "icon-hayx",
+      "imagePath": "hero-images/121_icon-hayx.png"
+    },
+    {
+      "heroId": 122,
+      "heroName": "矮人火枪手",
+      "iconClass": "icon-arhqs",
+      "imagePath": "hero-images/122_icon-arhqs.png"
+    },
+    {
+      "heroId": 152,
+      "heroName": "织网者",
+      "iconClass": "icon-zwz",
+      "imagePath": "hero-images/152_icon-zwz.png"
+    },
+    {
+      "heroId": 153,
+      "heroName": "潮汐领主",
+      "iconClass": "icon-cxlz",
+      "imagePath": "hero-images/153_icon-cxlz.png"
+    },
+    {
+      "heroId": 154,
+      "heroName": "女妖之王",
+      "iconClass": "icon-nyzw",
+      "imagePath": "hero-images/154_icon-nyzw.png"
+    },
+    {
+      "heroId": 155,
+      "heroName": "暗牧者",
+      "iconClass": "icon-amz",
+      "imagePath": "hero-images/155_icon-amz.png"
+    },
+    {
+      "heroId": 156,
+      "heroName": "神父",
+      "iconClass": "icon-sf",
+      "imagePath": "hero-images/156_icon-sf.png"
+    },
+    {
+      "heroId": 157,
+      "heroName": "奥法师",
+      "iconClass": "icon-afs",
+      "imagePath": "hero-images/157_icon-afs.png"
+    },
+    {
+      "heroId": 158,
+      "heroName": "游侠",
+      "iconClass": "icon-yx",
+      "imagePath": "hero-images/158_icon-yx.png"
+    },
+    {
+      "heroId": 159,
+      "heroName": "末日守卫",
+      "iconClass": "icon-mrsw",
+      "imagePath": "hero-images/159_icon-mrsw.png"
+    },
+    {
+      "heroId": 160,
+      "heroName": "巫女",
+      "iconClass": "icon-wn",
+      "imagePath": "hero-images/160_icon-wn.png"
+    },
+    {
+      "heroId": 161,
+      "heroName": "伊利丹",
+      "iconClass": "icon-yld",
+      "imagePath": "hero-images/161_icon-yld.png"
+    },
+    {
+      "heroId": 162,
+      "heroName": "矮人直升机",
+      "iconClass": "icon-arzsj",
+      "imagePath": "hero-images/162_icon-arzsj.png"
+    },
+    {
+      "heroId": 163,
+      "heroName": "先知",
+      "iconClass": "icon-xz",
+      "imagePath": "hero-images/163_icon-xz.png"
+    },
+    {
+      "heroId": 164,
+      "heroName": "白狼萨满",
+      "iconClass": "icon-blsm",
+      "imagePath": "hero-images/164_icon-blsm.png"
+    },
+    {
+      "heroId": 168,
+      "heroName": "渊狱守卫",
+      "iconClass": "icon-yysw",
+      "imagePath": "hero-images/168_icon-yysw.png"
+    },
+    {
+      "heroId": 169,
+      "heroName": "蒸汽战车",
+      "iconClass": "icon-zqzz",
+      "imagePath": "hero-images/169_icon-zqzz.png"
+    },
+    {
+      "heroId": 202,
+      "heroName": "机枪兵",
+      "iconClass": "icon-jqb",
+      "imagePath": "hero-images/202_icon-jqb.png"
+    },
+    {
+      "heroId": 252,
+      "heroName": "驯兽师",
+      "iconClass": "icon-xss",
+      "imagePath": "hero-images/252_icon-xss.png"
+    }
+  ],
+  "terrainImages": [
+    {
+      "terrainId": "arena_open",
+      "name": "开放圆形战场",
+      "imagePath": "terrain-images/arena_open.png"
+    },
+    {
+      "terrainId": "arena_outer_ring",
+      "name": "外圈风筝战场",
+      "imagePath": "terrain-images/arena_outer_ring.png"
+    },
+    {
+      "terrainId": "arena_edge_risky",
+      "name": "边缘高风险战场",
+      "imagePath": "terrain-images/arena_edge_risky.png"
+    },
+    {
+      "terrainId": "arena_line_skill",
+      "name": "直线技压制战场",
+      "imagePath": "terrain-images/arena_line_skill.png"
+    },
+    {
+      "terrainId": "arena_fan_facing",
+      "name": "扇形朝向战场",
+      "imagePath": "terrain-images/arena_fan_facing.png"
+    },
+    {
+      "terrainId": "arena_circle_warning",
+      "name": "圈型预警战场",
+      "imagePath": "terrain-images/arena_circle_warning.png"
+    },
+    {
+      "terrainId": "arena_random_reposition",
+      "name": "随机位移压力战场",
+      "imagePath": "terrain-images/arena_random_reposition.png"
+    },
+    {
+      "terrainId": "arena_stack_spread_switch",
+      "name": "集合/分散切换战场",
+      "imagePath": "terrain-images/arena_stack_spread_switch.png"
+    }
+  ],
+  "modelCurated": [
+    {
+      "name": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "guessClass": "hero",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl"
+    },
+    {
+      "name": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+      "guessClass": "hero",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx"
+    },
+    {
+      "name": "herowarden.mdx",
+      "guessClass": "hero",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/herowarden.mdx"
+    },
+    {
+      "name": "NightmareSpiderBoss.mdx",
+      "guessClass": "boss",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/NightmareSpiderBoss.mdx"
+    },
+    {
+      "name": "HeroDemonHunter.mdx",
+      "guessClass": "hero",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/HeroDemonHunter.mdx"
+    },
+    {
+      "name": "HeroTyrael.mdx",
+      "guessClass": "hero",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/HeroTyrael.mdx"
+    },
+    {
+      "name": "hero_invoker_n3s_d_mover.mdx",
+      "guessClass": "hero",
+      "guessScore": 8,
+      "modelPath": "boss-hero-models-curated/hero_invoker_n3s_d_mover.mdx"
+    },
+    {
+      "name": "HeroDemonHunter_portrait.mdx",
+      "guessClass": "hero",
+      "guessScore": 6,
+      "modelPath": "boss-hero-models-curated/HeroDemonHunter_portrait.mdx"
+    }
+  ],
+  "sourceMapDelta": {
+    "stats": {
+      "stringCount": 5220,
+      "unitCustomCount": 387,
+      "abilityCustomCount": 441,
+      "doodadCustomCount": 0,
+      "buffCustomCount": 78,
+      "upgradeCustomCount": 5,
+      "itemCustomCount": 174,
+      "destructableCustomCount": 8,
+      "bossHeroCandidateCount": 39
+    },
+    "bossHeroCandidates": [
+      {
+        "oldId": "hfoo",
+        "newId": "h009",
+        "name": "å½±å­",
+        "modelPath": "units\\nightelf\\HeroDemonHunter\\HeroDemonHunter.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp",
+        "hp": 500000,
+        "moveSpeed": 1,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h00A",
+        "name": "å½±å­",
+        "modelPath": "units\\nightelf\\HeroDemonHunter\\HeroDemonHunter.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp",
+        "hp": 5000,
+        "moveSpeed": 10,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h018",
+        "name": "é©¬ç²åä½ - æ¸´è¡ä¹é­",
+        "modelPath": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNyq2.blp",
+        "hp": 680,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h01T",
+        "name": "é©¬ç²åä½ - çº¿å½¢æç¤ºå¨",
+        "modelPath": "bossjinggaoh.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNRegeneration.blp",
+        "hp": 410,
+        "moveSpeed": 0,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "ohun",
+        "newId": "o007",
+        "name": "å·«å¦ä¹å½±",
+        "modelPath": "units\\undead\\HeroLich\\HeroLich.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp",
+        "hp": 10,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "nfel",
+        "newId": "n006",
+        "name": "|cff00ffff[å¬å¤]|rå¹»å½±",
+        "modelPath": "units\\nightelf\\herowarden\\herowarden.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNWarden2.blp",
+        "hp": 200,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h02A",
+        "name": "é©¬ç²åä½ - çº¿å½¢æç¤ºå¨",
+        "modelPath": "bossjinggaoh1.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNRegeneration.blp",
+        "hp": 410,
+        "moveSpeed": 1,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h02B",
+        "name": "é©¬ç²åä½ - åå£éèº«",
+        "modelPath": "units\\orc\\HeroBladeMaster\\HeroBladeMaster.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNPurge.blp",
+        "hp": 410,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Udre",
+        "newId": "U00M",
+        "name": "å°ç©´é¢ä¸»",
+        "modelPath": "units\\undead\\HeroCryptLord\\HeroCryptLord.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroCryptLord.blp",
+        "hp": 6000,
+        "moveSpeed": 325,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Udre",
+        "newId": "U00N",
+        "name": "æ­»äº¡éªå£«",
+        "modelPath": "units\\undead\\HeroDeathKnight\\HeroDeathKnight.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp",
+        "hp": 5000,
+        "moveSpeed": 425,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Hblm",
+        "newId": "H02D",
+        "name": "æä¹å¥³ç¥­å¸",
+        "modelPath": "units\\nightelf\\HeroMoonPriestess\\HeroMoonPriestess.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNPriestessOfTheMoon.blp",
+        "hp": 5000,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Udre",
+        "newId": "U00P",
+        "name": "æ¶é­çæ",
+        "modelPath": "units\\nightelf\\HeroDemonHunter\\HeroDemonHunter.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroDemonHunter.blp",
+        "hp": 5000,
+        "moveSpeed": 450,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h02G",
+        "name": "é©¬ç²åä½ - çº¿å½¢æç¤ºå¨",
+        "modelPath": "bossjinggaoh2.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNRegeneration.blp",
+        "hp": 410,
+        "moveSpeed": 0,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Hblm",
+        "newId": "H02J",
+        "name": "å¨è¿¦å¥³æµ·å·«",
+        "modelPath": "units\\naga\\HeroNagaSeawitch\\HeroNagaSeawitch.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNNagaSeaWitch.blp",
+        "hp": 5000,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Udre",
+        "newId": "U00Q",
+        "name": "æ·±æ¸é­ç",
+        "modelPath": "units\\demon\\HeroPitLord\\HeroPitLord.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNPitLord.blp",
+        "hp": 7000,
+        "moveSpeed": 325,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Edem",
+        "newId": "E003",
+        "name": "",
+        "modelPath": "HeroDemonHunter.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNpmls.blp",
+        "hp": 600,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "Ulic",
+        "newId": "U00S",
+        "name": "å°æ¶ä¹å¿",
+        "modelPath": "zsghero65.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNbjzx.blp",
+        "hp": 645,
+        "moveSpeed": 305,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "Ulic",
+        "newId": "U00T",
+        "name": "å£çº¦è",
+        "modelPath": "HeroTyrael.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNsyz.blp",
+        "hp": 675,
+        "moveSpeed": 330,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h030",
+        "name": "å½±å­",
+        "modelPath": "HeroDemonHunter.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp",
+        "hp": 500000,
+        "moveSpeed": 1,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h031",
+        "name": "å½±å­",
+        "modelPath": "HeroDemonHunter.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNWispSplode.blp",
+        "hp": 5000,
+        "moveSpeed": 10,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "Udre",
+        "newId": "U00U",
+        "name": "å®æè",
+        "modelPath": "units\\nightelf\\herowarden\\herowarden.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNWarden2.blp",
+        "hp": 5000,
+        "moveSpeed": 340,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Nplh",
+        "newId": "N00E",
+        "name": "å¥è½æ¯éè",
+        "modelPath": "hai_pa_de_lao_ban_sha_boss_of_fear.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNnlzpz.blp",
+        "hp": 775,
+        "moveSpeed": 260,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hdhw",
+        "newId": "h039",
+        "name": "ä¼å¤§çé©¬ç²ä¹å½±éªåè¢­ï¼",
+        "modelPath": "units\\orc\\HeroBladeMaster\\HeroBladeMaster.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNRejuvenation.blp",
+        "hp": 100,
+        "moveSpeed": 0,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Ewar",
+        "newId": "E004",
+        "name": "æ åé­å½±",
+        "modelPath": "herowarden.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNwsmy.blp",
+        "hp": 550,
+        "moveSpeed": 335,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "Ofar",
+        "newId": "O00A",
+        "name": "ä¸ææ¸¸è¡è",
+        "modelPath": "units\\nightelf\\HeroKeeperoftheGroveGhost\\HeroKeeperoftheGroveGhost.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNKeeperGhostBlue.blp",
+        "hp": 4500,
+        "moveSpeed": 165,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "ohun",
+        "newId": "o00B",
+        "name": "ä¸æä¹é­",
+        "modelPath": "units\\nightelf\\HeroKeeperoftheGroveGhost\\HeroKeeperoftheGroveGhost.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNLichVersion2.blp",
+        "hp": 200,
+        "moveSpeed": 180,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Nbrn",
+        "newId": "N00N",
+        "name": "æ¢¦é­èè",
+        "modelPath": "NightmareSpiderBoss.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNMYZZ.blp",
+        "hp": 510,
+        "moveSpeed": 235,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "nnwa",
+        "newId": "n00O",
+        "name": "|cff00ffff[å¬å¤]|rå°æ¢¦é­",
+        "modelPath": "NightmareSpiderBoss.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNMYZZ.blp",
+        "hp": "",
+        "moveSpeed": 220,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "nfel",
+        "newId": "n00P",
+        "name": "|cff00ffff[å¬å¤]|ré»æçµä½",
+        "modelPath": "units\\undead\\HeroDeathKnight\\HeroDeathKnight.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroDeathKnight.blp",
+        "hp": 200,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Udea",
+        "newId": "U018",
+        "name": "è¿·é¾éªå£«",
+        "modelPath": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNmwqs.blp",
+        "hp": 710,
+        "moveSpeed": 325,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "Udea",
+        "newId": "U019",
+        "name": "|cff00ffff[å¬å¤]|rè¿·é¾å¹½çµ",
+        "modelPath": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNmwqs.blp",
+        "hp": 710,
+        "moveSpeed": 365,
+        "guessClass": "hero",
+        "guessScore": 3
+      },
+      {
+        "oldId": "Nfir",
+        "newId": "N00U",
+        "name": "å°ææ ¼",
+        "modelPath": "boss_027.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNxlg.blp",
+        "hp": 635,
+        "moveSpeed": 300,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Udre",
+        "newId": "U01D",
+        "name": "ä¿®è¡¥å",
+        "modelPath": "Units\\Creeps\\HeroTinker\\HeroTinker.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroTinker.blp",
+        "hp": 6250,
+        "moveSpeed": 400,
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h04M",
+        "name": "å°æºå¨äºº",
+        "modelPath": "Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNClockWerkGoblin.blp",
+        "hp": 700,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h04O",
+        "name": "å°æºå¨äºº",
+        "modelPath": "Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNClockWerkGoblin.blp",
+        "hp": 700,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h055",
+        "name": "é©¬ç²åä½ - çº¿å½¢æç¤ºå¨",
+        "modelPath": "bossjinggaoh.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNRegeneration.blp",
+        "hp": 410,
+        "moveSpeed": 1,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "hfoo",
+        "newId": "h059",
+        "name": "é©¬ç²åä½ - çº¿å½¢æç¤ºå¨",
+        "modelPath": "bossjinggaohzc.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNRegeneration.blp",
+        "hp": 410,
+        "moveSpeed": 1,
+        "guessClass": "boss",
+        "guessScore": 7
+      },
+      {
+        "oldId": "Ofar",
+        "newId": "O00L",
+        "name": "çé­ä¹ç",
+        "modelPath": "Units\\Creeps\\HeroFlameLord\\HeroFlameLord.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroAvatarOfFlame.blp",
+        "hp": 4500,
+        "moveSpeed": "",
+        "guessClass": "hero",
+        "guessScore": 7
+      },
+      {
+        "oldId": "nfel",
+        "newId": "n01F",
+        "name": "|cff00ffff[å¬å¤]|réå",
+        "modelPath": "units\\orc\\HeroBladeMaster\\HeroBladeMaster.mdl",
+        "iconPath": "ReplaceableTextures\\CommandButtons\\BTNHeroBlademaster.blp",
+        "hp": 200,
+        "moveSpeed": 320,
+        "guessClass": "hero",
+        "guessScore": 7
+      }
+    ]
+  },
+  "sanity": {
+    "heroPortraitCount": 43,
+    "terrainImageCount": 8,
+    "curatedModelCount": 8,
+    "sourceMapBossHeroCandidateCount": 39
+  }
+}

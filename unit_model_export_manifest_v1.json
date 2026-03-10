@@ -1,0 +1,2137 @@
+{
+  "meta": {
+    "version": "1.0-unit-model-export-v1",
+    "generatedAt": "2026-03-10",
+    "refCount": 408,
+    "exported": 43,
+    "failed": 365
+  },
+  "rows": [
+    {
+      "ref": ".mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "1111.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "123.mdx,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "123.mdx,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "123.mdx,arise.mdx",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "123.mdx,xiao.mdx,xiao.mdx,xiao.mdx,xiao.mdx",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "555111.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "5566.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "6or_garris.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "814.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_DD029_240.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_DD038.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_Dragonus_C.MDX",
+      "archiveName": "AZ_Dragonus_C.MDX",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_Dragonus_C.MDX",
+      "size": 13344
+    },
+    {
+      "ref": "AZ_Dragonus_C.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_F020_1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_F020_2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_F020_3.MDX",
+      "archiveName": "AZ_F020_3.MDX",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_F020_3.MDX",
+      "size": 5332
+    },
+    {
+      "ref": "AZ_G029.MDX",
+      "archiveName": "AZ_G029.MDX",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_G029.MDX",
+      "size": 249716
+    },
+    {
+      "ref": "AZ_G030.mdx",
+      "archiveName": "AZ_G030.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_G030.mdx",
+      "size": 82234
+    },
+    {
+      "ref": "AZ_Z013_2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_chenmoshushi01_w.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "AZ_zise-toushewu.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Demon\\DarkConversion\\ZombifyTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Demon\\DarkPortal\\DarkPortalTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Demon\\DemonBoltImpact\\DemonBoltImpact.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\Banish\\BanishTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\Brilliance\\Brilliance.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\CloudOfFog\\CloudOfFog.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\HolyBolt\\HolyBoltMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\MagicSentry\\MagicSentryCaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBoltImpact.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBoltImpact.mdl,Abilities\\Spells\\Human\\ManaFlare\\ManaFlareBoltImpact.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\MarkOfChaos\\MarkOfChaosDone.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Human\\StormBolt\\StormBoltMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Items\\AIob\\AIobTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Items\\AIsp\\SpeedTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Items\\AItb\\AItbTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Items\\ScrollOfRejuvenation\\ScrollManaHealth.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Items\\StaffOfSanctuary\\Staff_Sanctuary_Target.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Items\\TomeOfRetraining\\TomeOfRetrainingCaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\Blink\\BlinkTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\EntanglingRoots\\EntanglingRootsTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\ReviveNightElf\\ReviveNightElf.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\Starfall\\StarfallTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\Taunt\\TauntCaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\NightElf\\TrueshotAura\\TrueshotAura.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Spells\\Orc\\Bloodlust\\BloodlustTarget.mdl,Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile_mini.mdl,Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile_mini.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Orc\\LightningBolt\\LightningBoltMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Orc\\LightningShield\\LightningShieldTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Orc\\Purge\\PurgeBuffTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\AcidBomb\\BottleImpact.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Andt\\Andt.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\BlackArrow\\BlackArrowMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\CrushingWave\\CrushingWaveDamage.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\CrushingWave\\CrushingWaveMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Doom\\DoomTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\FrostArrows\\NagaColdArrowMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Incinerate\\FireLordDeathExplode.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Parasite\\ParasiteTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Stampede\\StampedeMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Stampede\\StampedeMissileDeath.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\TinkerRocket\\TinkerRocketMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Tornado\\TornadoElemental.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Tornado\\TornadoElementalSmall.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Volcano\\VolcanoDeath.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Other\\Volcano\\VolcanoMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\DarkRitual\\DarkRitualTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\DarkSummoning\\DarkSummonMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\DeathCoil\\DeathCoilMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathTargetArt.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\FrostArmor\\FrostArmorDamage.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\OrbOfDeath\\OrbOfDeathMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Possession\\PossessionMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Possession\\PossessionTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Sleep\\SleepSpecialArt.mdl,Abilities\\Spells\\Undead\\Sleep\\SleepTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\UnholyAura\\UnholyAura.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\UnholyFrenzy\\UnholyFrenzyTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Unsummon\\UnsummonTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Web\\WebTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Web\\Web_AirTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Spells\\Undead\\Web\\Web_AirTarget.mdl,Abilities\\Spells\\Undead\\Web\\WebTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\Arrow\\ArrowMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\AvengerMissile\\AvengerMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\BallistaMissile\\BallistaMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\BallsOfFireMissile\\BallsOfFireMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\BansheeMissile\\BansheeMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\BloodElfSpellThiefMISSILE\\BloodElfSpellThiefMISSILE.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\BristleBackMissile\\BristleBackMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\ChimaeraAcidMissile\\ChimaeraAcidMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\ColdArrow\\ColdArrowMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\CryptFiendMissile\\CryptFiendMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\DragonHawkMissile\\DragonHawkMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\DruidoftheTalonMissile\\DruidoftheTalonMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\FaerieDragonMissile\\FaerieDragonMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\FarseerMissile\\FarseerMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\FireBallMissile\\FireBallMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\FrostWyrmMissile\\FrostWyrmMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\GreenDragonMissile\\GreenDragonMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\GryphonRiderMissile\\GryphonRiderMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\GyroCopter\\GyroCopterImpact.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\GyroCopter\\GyroCopterMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\IllidanMissile\\IllidanMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\KeeperGroveMissile\\KeeperGroveMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\LavaSpawnMissile\\LavaSpawnMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\LichMissile\\LichMissile.mdl,Abilities\\Spells\\Undead\\FreezingBreath\\FreezingBreathMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\LordofFlameMissile\\LordofFlameMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\MoonPriestessMissile\\MoonPriestessMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\Mortar\\MortarMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\NecromancerMissile\\NecromancerMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\PhoenixMissile\\Phoenix_Missile_mini.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\RedDragonBreath\\RedDragonMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\RexxarMissile\\RexxarMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\Rifle\\RifleImpact.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\RocketMissile\\RocketMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SeaElementalMissile\\SeaElementalMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SearingArrow\\SearingArrowMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SentinelMissile\\SentinelMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SerpentWardMissile\\SerpentWardMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\ShadowHunterMissile\\ShadowHunterMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SkeletalMageMissile\\SkeletalMageMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SludgeMissile\\SludgeMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\SorceressMissile\\SorceressMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\VengeanceMissile\\VengeanceMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\WardenMissile\\WardenMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\WingedSerpentMissile\\WingedSerpentMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\WitchDoctorMissile\\WitchDoctorMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\ZigguratFrostMissile\\ZigguratFrostMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Abilities\\Weapons\\flamingArrow\\flamingArrowMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Apheraz Lucent Lady Hive.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Arcade Bolt Blues.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Arcade Bolt Lime.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "ArthaswithSword.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Blizzard II.mdx",
+      "archiveName": "Blizzard II.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Blizzard II.mdx",
+      "size": 18053
+    },
+    {
+      "ref": "BonefireArrow1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "BonefireArrow1.mdx",
+      "archiveName": "BonefireArrow1.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/BonefireArrow1.mdx",
+      "size": 14652
+    },
+    {
+      "ref": "Cenarius TeamColor.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Cosmic Wings.mdx",
+      "archiveName": "Cosmic Wings.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Cosmic Wings.mdx",
+      "size": 116094
+    },
+    {
+      "ref": "Doodads\\BlackCitadel\\Props\\RuneArt\\RuneArt3.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Doodads\\Cinematic\\EyeOfSargeras\\EyeOfSargeras.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Doodads\\Cinematic\\ShimmeringPortal\\ShimmeringPortal.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Doodads\\Cityscape\\Props\\MagicRunes\\MagicRunes1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Doodads\\Icecrown\\Terrain\\IceCrownThroneGate\\IceCrownThroneGate.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Doodads\\Northrend\\Rocks\\North_Rocks\\North_Rocks7.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Doodads\\Terrain\\CliffDoodad\\Waterfall\\Waterfall.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Effect_chuanfengjian.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Ephemeral Cut Teal.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Firebrand Shot Blue.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Firebrand Shot Orange.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Firebrand Shot Red.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Firebrand Shot Teal.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Firebrand Shot Yellow.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "FirecrackerArrow.mdx",
+      "archiveName": "FirecrackerArrow.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/FirecrackerArrow.mdx",
+      "size": 16083
+    },
+    {
+      "ref": "Fireravengodmount.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Fomor.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "GLSLZQ035X.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "GlowingAura.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Grave.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "HM_172.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "HeroDemonHunter.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "HeroTyrael.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Hm_GSYL.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Hm_HSISES.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Hm_HSISES_TXJ1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Hm_HYMFS.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Hm_LHYL.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Hm_ZULONGTY.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Incendiary Bullet Blue.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Interceptor Shell.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Interceptor Shell.mdx",
+      "archiveName": "Interceptor Shell.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Interceptor Shell.mdx",
+      "size": 93537
+    },
+    {
+      "ref": "JSAY.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "LongB2S.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "LordofFlameMissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "M09603.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "MOJIA.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Maiz con Arrow.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Maiz con Arrow.mdx",
+      "archiveName": "Maiz con Arrow.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Maiz con Arrow.mdx",
+      "size": 57523
+    },
+    {
+      "ref": "MirrorZI_effect_03_02_01.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "NightmareSpiderBoss.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Objects\\InventoryItems\\CrystalShard\\CrystalShard.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Objects\\InventoryItems\\TreasureChest\\treasurechest.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Objects\\Spawnmodels\\Critters\\Albatross\\CritterBloodAlbatross.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Objects\\Spawnmodels\\Naga\\NagaDeath\\NagaDeath.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Objects\\Spawnmodels\\Other\\NeutralBuildingExplosion\\NeutralBuildingExplosion.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Objects\\Spawnmodels\\Undead\\UndeadDissipate\\UndeadDissipate.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Piercing Thrust.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "PotionBlueLesser.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "PotionGreenSmall.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "PotionPurpleSmall.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "PrismBeam_Adept.mdx",
+      "archiveName": "PrismBeam_Adept.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/PrismBeam_Adept.mdx",
+      "size": 9346
+    },
+    {
+      "ref": "Psionic Shot Orange.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Psionic Shot Purple.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Psionic Shot Red.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Psionic Shot Teal.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Radiance Crimson.mdx",
+      "archiveName": "Radiance Crimson.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Crimson.mdx",
+      "size": 4328
+    },
+    {
+      "ref": "Radiance Holy.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Radiance Psionic.mdx",
+      "archiveName": "Radiance Psionic.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Psionic.mdx",
+      "size": 4328
+    },
+    {
+      "ref": "Radiance Royal.mdx",
+      "archiveName": "Radiance Royal.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Royal.mdx",
+      "size": 4328
+    },
+    {
+      "ref": "Rain of Fire Vol. II.mdx",
+      "archiveName": "Rain of Fire Vol. II.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Rain of Fire Vol. II.mdx",
+      "size": 7421
+    },
+    {
+      "ref": "Reflection.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA01.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA02.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA03.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA04.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA05.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA06.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUA07.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "SHUB01.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Shuijing3.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Soul Armor Crimson.mdx",
+      "archiveName": "Soul Armor Crimson.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Armor Crimson.mdx",
+      "size": 131181
+    },
+    {
+      "ref": "Soul Bow Enchantment Blood.mdx",
+      "archiveName": "Soul Bow Enchantment Blood.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Blood.mdx",
+      "size": 16028
+    },
+    {
+      "ref": "Soul Bow Enchantment Chilled.mdx",
+      "archiveName": "Soul Bow Enchantment Chilled.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Chilled.mdx",
+      "size": 17772
+    },
+    {
+      "ref": "Soul Bow Enchantment Cinder.mdx",
+      "archiveName": "Soul Bow Enchantment Cinder.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Cinder.mdx",
+      "size": 16720
+    },
+    {
+      "ref": "Soul Bow Enchantment Necro.mdx",
+      "archiveName": "Soul Bow Enchantment Necro.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Necro.mdx",
+      "size": 16344
+    },
+    {
+      "ref": "Soul Bow Enchantment Radiant.mdx",
+      "archiveName": "Soul Bow Enchantment Radiant.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Radiant.mdx",
+      "size": 16264
+    },
+    {
+      "ref": "Soul Bow Enchantment Void.mdx",
+      "archiveName": "Soul Bow Enchantment Void.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Void.mdx",
+      "size": 17532
+    },
+    {
+      "ref": "StaryNight.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\Beastmaster\\Beastmaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\BurningArcher\\BurningArcher.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\DragonSpawnBlue\\DragonSpawnBlue.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\EarthPandarenBrewmaster\\EarthPandarenBrewmaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\EarthPandarenBrewmaster\\EarthPandarenBrewmaster_Missile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\FirePandarenBrewmaster\\FirePandarenBrewmaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\HeroFlameLord\\HeroFlameLord.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\HeroTinkerRobot\\HeroTinkerRobot.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\HeroTinker\\HeroTinker.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\LavaSpawn\\LavaSpawn.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\Lobstrokkgreen\\Lobstrokkgreen.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\QuillBeast\\QuillBeast.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Creeps\\StormPandarenBrewmaster\\StormPandarenBrewmaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Human\\Phoenix\\PhoenixEgg.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Human\\Priest\\Priest.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Naga\\NagaSiren\\NagaSiren.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Units\\Naga\\NagaSummoner\\NagaSummoner.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Voidfall Medium.mdx",
+      "archiveName": "Voidfall Medium.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Voidfall Medium.mdx",
+      "size": 32097
+    },
+    {
+      "ref": "WebTarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "Windwalk Blood.mdx",
+      "archiveName": "Windwalk Blood.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Windwalk Blood.mdx",
+      "size": 8703
+    },
+    {
+      "ref": "Windwalk Blue Soul.mdx",
+      "archiveName": "Windwalk Blue Soul.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Windwalk Blue Soul.mdx",
+      "size": 8463
+    },
+    {
+      "ref": "WuLe_Jin6.mdx",
+      "archiveName": "WuLe_Jin6.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/WuLe_Jin6.mdx",
+      "size": 21947
+    },
+    {
+      "ref": "XHM.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "YUNYU.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[AKE]war3AKE.com - 1293313172235456003386950.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[AKE]war3AKE.com - 5943780070165096770806272.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[AKE]war3AKE.com - 6066773539508500345184343.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[AKE]war3AKE.com - 9983224796335425726108466.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[Spell]_074.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[ake]  77.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "[ake]330.mdx",
+      "archiveName": "[ake]330.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/[ake]330.mdx",
+      "size": 43198
+    },
+    {
+      "ref": "[effect][0010].mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "abilities\\weapons\\catapult\\catapultmissile.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "airen.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "ar-1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "arise.mdx",
+      "archiveName": "arise.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/arise.mdx",
+      "size": 1840
+    },
+    {
+      "ref": "atx (50).mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "ayao.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "az_firewall.mdx",
+      "archiveName": "az_firewall.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/az_firewall.mdx",
+      "size": 3854
+    },
+    {
+      "ref": "az_lanaya_d_ballistic.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "az_lanaya_d_ballistic.mdx",
+      "archiveName": "az_lanaya_d_ballistic.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/az_lanaya_d_ballistic.mdx",
+      "size": 6294
+    },
+    {
+      "ref": "boss_027.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "bossjinggaoh.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "bossjinggaoh1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "bossjinggaoh2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "bossjinggaohzc.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "buildings\\human\\HumanBarracks\\HumanBarracks.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "buildings\\other\\PowerGenerator\\PowerGenerator.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "ch2.mdx",
+      "archiveName": "ch2.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/ch2.mdx",
+      "size": 3364
+    },
+    {
+      "ref": "chanrao_target.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "cranegodice01.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "cwln.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "cwtuziok.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "daiweibadehuoyan.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "daiweibadehuoyan.mdx",
+      "archiveName": "daiweibadehuoyan.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/daiweibadehuoyan.mdx",
+      "size": 8381
+    },
+    {
+      "ref": "dchm.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "dmyx003.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "dsd.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "dwjyx.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "energyblade.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "file.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "ggl.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "gh_huanxianglingyu.mdx",
+      "archiveName": "gh_huanxianglingyu.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/gh_huanxianglingyu.mdx",
+      "size": 4048
+    },
+    {
+      "ref": "guipaiqigong_orange.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "gza01.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "archiveName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "size": 4598524
+    },
+    {
+      "ref": "hai_pa_de_lao_ban_sha_boss_of_fear.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "herowarden.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "hulan.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "jingling.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "jn_zx_lianhua.mdx",
+      "archiveName": "jn_zx_lianhua.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/jn_zx_lianhua.mdx",
+      "size": 212480
+    },
+    {
+      "ref": "jzsyunmeng.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "kaijo.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "lansejian.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "lansejian.mdx",
+      "archiveName": "lansejian.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/lansejian.mdx",
+      "size": 35749
+    },
+    {
+      "ref": "moguthunder.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "mr.war3_ring.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "mr.war3_ring2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "mr.war3_sxxq.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "mr.war3_ykai13.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "msg1.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "potionred.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "qtds.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "sc2-mineral-field-bravo-1.0edited.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "seawitch.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "shuaiqidaoshi.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "slowtarget.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "sn.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "sniper.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "t_demonhuntermissile.mdx",
+      "archiveName": "t_demonhuntermissile.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/t_demonhuntermissile.mdx",
+      "size": 17359
+    },
+    {
+      "ref": "t_rejuvenationtarget2.mdx",
+      "archiveName": "t_rejuvenationtarget2.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/t_rejuvenationtarget2.mdx",
+      "size": 59141
+    },
+    {
+      "ref": "tpdoor2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "tx (142).mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "tx_25.mdx",
+      "archiveName": "tx_25.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/tx_25.mdx",
+      "size": 6058
+    },
+    {
+      "ref": "tx_53.mdx,fenghuang2134.mdx,qishirongyao.mdx",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "tx_58.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\BansheeGhost\\BansheeGhost.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\DarkTrollTrapper\\DarkTrollTrappe.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\GnollWarden\\GnollWarden.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\GoblinLandMine\\GoblinLandMine.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\GrizzlyBear\\GrizzlyBear.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\HighElfArcher\\HighElfArcher.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\InfernalCannonFlame\\InfernalCannonFlame.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\LordGarithos\\LordGarithos.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\Nerubian\\Nerubian.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\Owlbear\\Owlbear.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\RockGolem\\RockGolem.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\SkeletonArcher\\SkeletonArcher.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\SylvanusWindrunner\\SylvanusWindrunner.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\ThunderLizard\\ThunderLizard.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\VoidWalker\\VoidWalker.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\WarEagle\\WarEagle.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\Zombie\\Zombie.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\assassin\\assassin.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\creeps\\watcher\\watcher.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\critters\\DuneWorm\\DuneWorm.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\demon\\ChaosWarlord\\ChaosWarlord.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\demon\\DoomGuard\\DoomGuard.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\demon\\Felgaurd\\Felgaurd.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\demon\\HeroPitLord\\HeroPitLord.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\demon\\Infernal\\Infernal.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\demon\\Kiljaeden\\Kiljaeden.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\BloodElfDragonHawk\\BloodElfDragonHawk.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\BloodElfSpellThief\\BloodElfSpellThief.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Footman\\Footman.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\GryphonRider\\GryphonRider.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Gyrocopter\\Gyrocopter.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Jaina\\Jaina.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Knight\\Knight.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Peasant\\Peasant.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Rifleman\\Rifleman.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\Sorceress\\Sorceress.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\human\\phoenix\\phoenix.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\naga\\HeroNagaSeawitch\\HeroNagaSeawitch.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\Archer\\Archer.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\DruidoftheTalon\\DruidoftheTalon.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\EvilIllidan\\IllidanEvil.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\HeroDemonHunter\\HeroDemonHunter.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\HeroKeeperoftheGroveGhost\\HeroKeeperoftheGroveGhost.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\HeroMoonPriestess\\HeroMoonPriestess.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\Huntress\\Huntress.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\OwlSCOUT\\OwlSCOUT.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\Runner\\Runner.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\nightelf\\herowarden\\herowarden.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\orc\\HealingWard\\HealingWard.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\orc\\HeroBladeMaster\\HeroBladeMaster.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\orc\\SentryWard\\SentryWard.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\orc\\Shaman\\Shaman.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\orc\\Spiritwolf\\Spiritwolf.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\orc\\Tauren\\Tauren.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\Abomination\\Abomination.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\Acolyte\\Acolyte.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\CryptFiend\\CryptFiend.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\HeroCryptLord\\HeroCryptLord.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\HeroDeathKnight\\HeroDeathKnight.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\HeroDreadLord\\HeroDreadLord.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\HeroLich\\HeroLich.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\ObsidianStatue\\ObsidianStatue.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "units\\undead\\SkeletonMage\\SkeletonMage.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "uther2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3AKE.com - ay.mdx",
+      "archiveName": "war3AKE.com - ay.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/war3AKE.com - ay.mdx",
+      "size": 3435
+    },
+    {
+      "ref": "war3mapImported\\BS002.mdx",
+      "archiveName": "war3mapImported\\BS002.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/war3mapImported_BS002.mdx",
+      "size": 67791
+    },
+    {
+      "ref": "war3mapImported\\CSY-002.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\LSQW[DA].mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\NWS.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\SWSL.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\TXMO.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\XGTS.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\YXFW.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\YXML.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\ZY.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\dmyx003.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\lllll.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "war3mapImported\\null.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "wheat.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "xianzhang.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "xiao.mdx",
+      "archiveName": "xiao.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/xiao.mdx",
+      "size": 1840
+    },
+    {
+      "ref": "xiao.mdx,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,Abilities\\Spells\\Orc\\TrollBerserk\\TrollBeserkerTarget.mdl,123.mdx",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "xiaoqi.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "xinyujiok2.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "xssr.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "yinhe.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "youlinggongzhu.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "zi1.mdx,[AKE]war3AKE.com - 3594158049766645852919043.mdx",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "zm(164).mdx",
+      "archiveName": "zm(164).mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/zm(164).mdx",
+      "size": 52823
+    },
+    {
+      "ref": "zsghero65.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    },
+    {
+      "ref": "zsgskin_caozhi_01.mdl",
+      "ok": false,
+      "reason": "not found in archive"
+    }
+  ]
+}

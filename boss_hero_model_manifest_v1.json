@@ -1,0 +1,103 @@
+{
+  "meta": {
+    "version": "1.0-boss-hero-model-export-v1",
+    "generatedAt": "2026-03-10",
+    "mapPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/map-archive-extract/3DMGAME-KKrgdlV29982/1462FAF4C66A5DA039CC9CC506A457EB.w3x",
+    "totalModelFilesInMap": 420,
+    "keywordMatched": 15,
+    "exported": 15,
+    "failed": 0
+  },
+  "files": [
+    {
+      "name": "bossjinggaoh.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh.mdx",
+      "size": 2340
+    },
+    {
+      "name": "bossjinggaoh1.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh1.mdx",
+      "size": 2340
+    },
+    {
+      "name": "bossjinggaoh2.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh2.mdx",
+      "size": 2340
+    },
+    {
+      "name": "HeroDemonHunter.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
+      "size": 911158
+    },
+    {
+      "name": "HeroDemonHunter_portrait.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter_portrait.mdx",
+      "size": 187257
+    },
+    {
+      "name": "zsghero65.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/zsghero65.mdx",
+      "size": 758074
+    },
+    {
+      "name": "HeroTyrael.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
+      "size": 225733
+    },
+    {
+      "name": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "size": 3698576
+    },
+    {
+      "name": "herowarden.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
+      "size": 1808607
+    },
+    {
+      "name": "NightmareSpiderBoss.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/NightmareSpiderBoss.mdx",
+      "size": 1694524
+    },
+    {
+      "name": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "size": 4598524
+    },
+    {
+      "name": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+      "size": 1826829
+    },
+    {
+      "name": "boss_027.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/boss_027.mdx",
+      "size": 773197
+    },
+    {
+      "name": "bossjinggaohzc.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaohzc.mdx",
+      "size": 2340
+    },
+    {
+      "name": "hero_invoker_n3s_d_mover.mdx",
+      "ok": true,
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
+      "size": 16878
+    }
+  ]
+}

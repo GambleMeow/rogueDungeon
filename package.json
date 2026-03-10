@@ -1,0 +1,27 @@
+{
+  "name": "roguedungeon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape-rouge-wiki.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GambleMeow/rogueDungeon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GambleMeow/rogueDungeon/issues"
+  },
+  "homepage": "https://github.com/GambleMeow/rogueDungeon#readme",
+  "dependencies": {
+    "node-unrar-js": "^2.0.2",
+    "playwright": "^1.58.2",
+    "pngjs": "^7.0.0",
+    "w3x-parser": "^2.0.0",
+    "war3-model": "^4.0.0"
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "hasSearchUI": true,
+  "hasFilterUI": true,
+  "uiElements": {
+    "found": [
+      {
+        "type": "search",
+        "selector": "input[placeholder*=\"搜索\"]",
+        "placeholder": "搜索贴子",
+        "visible": true
+      },
+      {
+        "type": "search",
+        "selector": "[class*=\"search\"] input",
+        "placeholder": "搜索贴子",
+        "visible": true
+      },
+      {
+        "type": "search",
+        "selector": "input[class*=\"search\"]",
+        "placeholder": "搜索贴子",
+        "visible": true
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "全部攻略bug反馈建议灌水活动其他"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "全部"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "攻略"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "bug反馈"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "建议"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "灌水"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "活动"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"filter\"]",
+        "text": "其他"
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"select\"]",
+        "text": ""
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"select\"]",
+        "text": ""
+      },
+      {
+        "type": "filter",
+        "selector": "[class*=\"tab\"]",
+        "text": "如何游戏社区攻略 2876评论"
+      }
+    ],
+    "allInputs": [
+      {
+        "type": "text",
+        "placeholder": "搜索贴子",
+        "name": ""
+      }
+    ],
+    "allButtons": [
+      {
+        "text": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": ""
+      },
+      {
+        "text": "最新"
+      },
+      {
+        "text": "热门"
+      },
+      {
+        "text": "精华"
+      }
+    ]
+  },
+  "searchApis": [
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/page_query_topics?mapId=180750&orderType=1&start=0&limit=10",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750",
+        "orderType": "1",
+        "start": "0",
+        "limit": "10"
+      },
+      "sample": {
+        "status": 200,
+        "data": "[10 items]"
+      }
+    }
+  ],
+  "allCommunityApis": [
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/count?mapId=180750",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750"
+      },
+      "sample": {
+        "status": 200,
+        "data": 2876
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/comment/comment_info?mapId=180750",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750"
+      },
+      "sample": {
+        "status": 200,
+        "dataKeys": [
+          "id",
+          "mapId",
+          "totalCommentCounts",
+          "totalScoreCounts",
+          "score1Count",
+          "score2Count",
+          "score3Count",
+          "score4Count",
+          "score5Count",
+          "mapScoreView",
+          "sevenDayScoreCounts",
+          "lastVersionScoreCounts",
+          "mapVersionScoreView",
+          "sevenDayScoreView"
+        ]
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/topic_class",
+      "method": "GET",
+      "status": 200,
+      "params": null,
+      "sample": {
+        "status": 200,
+        "data": "[6 items]"
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/page_query_topics?mapId=180750&orderType=1&start=0&limit=10",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750",
+        "orderType": "1",
+        "start": "0",
+        "limit": "10"
+      },
+      "sample": {
+        "status": 200,
+        "data": "[10 items]"
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/top_data?mapId=180750",
+      "method": "GET",
+      "status": 200,
+      "params": {
+        "mapId": "180750"
+      },
+      "sample": {
+        "status": 200,
+        "data": "[4 items]"
+      }
+    }
+  ],
+  "directProbes": [
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/search?mapId=180750&keyword=攻略&start=0&limit=10",
+      "status": 200,
+      "sample": {
+        "status": 200,
+        "dataKeys": [
+          "total",
+          "rows"
+        ]
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/query?mapId=180750&keyword=攻略&start=0&limit=10",
+      "status": 403,
+      "sample": {
+        "status": 40301,
+        "message": "token is required"
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/search/topic?mapId=180750&keyword=攻略",
+      "status": 404,
+      "sample": {
+        "status": 404,
+        "message": "No message available"
+      }
+    },
+    {
+      "url": "https://kk-web-gateway.kkdzpt.com/platform-comment-api/api/v1/topic/search?mapId=180750&keyword=攻略&start=0&limit=10",
+      "status": 200,
+      "sample": {
+        "status": 200,
+        "dataKeys": [
+          "total",
+          "rows"
+        ]
+      }
+    },
+    {
+      "url": "https://comment-api.kkdzpt.com/api/v1/topic/page_query_topics?mapId=180750&orderType=1&keyword=攻略&start=0&limit=10",
+      "status": 200,
+      "sample": {
+        "status": 200,
+        "dataLength": 10
+      }
+    }
+  ],
+  "blockers": []
+}

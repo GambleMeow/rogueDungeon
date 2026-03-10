@@ -1,0 +1,586 @@
+{
+  "meta": {
+    "version": "1.0-boss-hero-model-candidates-v2",
+    "generatedAt": "2026-03-10",
+    "totalExportedModels": 57
+  },
+  "stats": {
+    "heroLike": 8,
+    "bossLike": 7,
+    "mixedLike": 0,
+    "highConfidence": 8
+  },
+  "candidates": [
+    {
+      "name": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "size": 4598524,
+      "source": [
+        "keyword_export_v1",
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 8
+    },
+    {
+      "name": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+      "size": 1826829,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 8
+    },
+    {
+      "name": "herowarden.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
+      "size": 1808607,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 8
+    },
+    {
+      "name": "NightmareSpiderBoss.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/NightmareSpiderBoss.mdx",
+      "size": 1694524,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 8
+    },
+    {
+      "name": "HeroDemonHunter.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
+      "size": 911158,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 8
+    },
+    {
+      "name": "HeroTyrael.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
+      "size": 225733,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 8
+    },
+    {
+      "name": "hero_invoker_n3s_d_mover.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
+      "size": 16878,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 8
+    },
+    {
+      "name": "HeroDemonHunter_portrait.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter_portrait.mdx",
+      "size": 187257,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 6
+    },
+    {
+      "name": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "size": 3698576,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 5
+    },
+    {
+      "name": "boss_027.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/boss_027.mdx",
+      "size": 773197,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 5
+    },
+    {
+      "name": "zsghero65.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/zsghero65.mdx",
+      "size": 758074,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "hero",
+      "guessScore": 5
+    },
+    {
+      "name": "t_demonhuntermissile.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/t_demonhuntermissile.mdx",
+      "size": 17359,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 3
+    },
+    {
+      "name": "bossjinggaoh.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh.mdx",
+      "size": 2340,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 3
+    },
+    {
+      "name": "bossjinggaoh1.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh1.mdx",
+      "size": 2340,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 3
+    },
+    {
+      "name": "bossjinggaoh2.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh2.mdx",
+      "size": 2340,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 3
+    },
+    {
+      "name": "bossjinggaohzc.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaohzc.mdx",
+      "size": 2340,
+      "source": [
+        "keyword_export_v1"
+      ],
+      "guessClass": "boss",
+      "guessScore": 3
+    },
+    {
+      "name": "AZ_G029.MDX",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_G029.MDX",
+      "size": 249716,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "jn_zx_lianhua.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/jn_zx_lianhua.mdx",
+      "size": 212480,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Armor Crimson.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Armor Crimson.mdx",
+      "size": 131181,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Cosmic Wings.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Cosmic Wings.mdx",
+      "size": 116094,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Interceptor Shell.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Interceptor Shell.mdx",
+      "size": 93537,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "AZ_G030.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_G030.mdx",
+      "size": 82234,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "war3mapImported\\BS002.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/war3mapImported_BS002.mdx",
+      "size": 67791,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "t_rejuvenationtarget2.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/t_rejuvenationtarget2.mdx",
+      "size": 59141,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Maiz con Arrow.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Maiz con Arrow.mdx",
+      "size": 57523,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "zm(164).mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/zm(164).mdx",
+      "size": 52823,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "[ake]330.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/[ake]330.mdx",
+      "size": 43198,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "lansejian.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/lansejian.mdx",
+      "size": 35749,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Voidfall Medium.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Voidfall Medium.mdx",
+      "size": 32097,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "WuLe_Jin6.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/WuLe_Jin6.mdx",
+      "size": 21947,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Blizzard II.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Blizzard II.mdx",
+      "size": 18053,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Bow Enchantment Chilled.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Chilled.mdx",
+      "size": 17772,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Bow Enchantment Void.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Void.mdx",
+      "size": 17532,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Bow Enchantment Cinder.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Cinder.mdx",
+      "size": 16720,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Bow Enchantment Necro.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Necro.mdx",
+      "size": 16344,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Bow Enchantment Radiant.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Radiant.mdx",
+      "size": 16264,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "FirecrackerArrow.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/FirecrackerArrow.mdx",
+      "size": 16083,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Soul Bow Enchantment Blood.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Blood.mdx",
+      "size": 16028,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "BonefireArrow1.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/BonefireArrow1.mdx",
+      "size": 14652,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "AZ_Dragonus_C.MDX",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_Dragonus_C.MDX",
+      "size": 13344,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "PrismBeam_Adept.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/PrismBeam_Adept.mdx",
+      "size": 9346,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Windwalk Blood.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Windwalk Blood.mdx",
+      "size": 8703,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Windwalk Blue Soul.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Windwalk Blue Soul.mdx",
+      "size": 8463,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "daiweibadehuoyan.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/daiweibadehuoyan.mdx",
+      "size": 8381,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Rain of Fire Vol. II.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Rain of Fire Vol. II.mdx",
+      "size": 7421,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "az_lanaya_d_ballistic.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/az_lanaya_d_ballistic.mdx",
+      "size": 6294,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "tx_25.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/tx_25.mdx",
+      "size": 6058,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "AZ_F020_3.MDX",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_F020_3.MDX",
+      "size": 5332,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Radiance Crimson.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Crimson.mdx",
+      "size": 4328,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Radiance Psionic.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Psionic.mdx",
+      "size": 4328,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "Radiance Royal.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Royal.mdx",
+      "size": 4328,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "gh_huanxianglingyu.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/gh_huanxianglingyu.mdx",
+      "size": 4048,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "az_firewall.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/az_firewall.mdx",
+      "size": 3854,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "war3AKE.com - ay.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/war3AKE.com - ay.mdx",
+      "size": 3435,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "ch2.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/ch2.mdx",
+      "size": 3364,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "arise.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/arise.mdx",
+      "size": 1840,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    },
+    {
+      "name": "xiao.mdx",
+      "outPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/xiao.mdx",
+      "size": 1840,
+      "source": [
+        "unit_ref_export_v1"
+      ],
+      "guessClass": "unknown",
+      "guessScore": 0
+    }
+  ]
+}

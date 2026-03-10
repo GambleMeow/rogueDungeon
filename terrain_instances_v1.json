@@ -1,0 +1,573 @@
+{
+  "meta": {
+    "version": "1.0-v1",
+    "generatedAt": "2026-03-10",
+    "mapId": 180750,
+    "source": "terrain_schema_v1.json"
+  },
+  "instanceCount": 8,
+  "terrainInstances": [
+    {
+      "terrainId": "arena_open",
+      "name": "开放圆形战场",
+      "tags": [
+        "open_arena",
+        "movement_check"
+      ],
+      "geometry": {
+        "shape": "circle",
+        "obstacles": "low",
+        "lanes": "none"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 20,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 24,
+          "y": 40
+        },
+        {
+          "id": "h3",
+          "x": 24,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 30,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 78,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [],
+      "warningZones": [],
+      "safeZones": [
+        {
+          "id": "safe_kite",
+          "type": "open_band",
+          "xMin": 25,
+          "xMax": 55,
+          "yMin": 25,
+          "yMax": 75
+        }
+      ],
+      "navHints": {
+        "preferredLanes": "none",
+        "avoidEdge": false,
+        "spreadRecommended": false,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_outer_ring",
+      "name": "外圈风筝战场",
+      "tags": [
+        "outer_ring_pathing",
+        "kite_and_pull"
+      ],
+      "geometry": {
+        "shape": "ring",
+        "obstacles": "low",
+        "lanes": "outer_ring"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 18,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 26,
+          "y": 36
+        },
+        {
+          "id": "h3",
+          "x": 26,
+          "y": 64
+        },
+        {
+          "id": "h4",
+          "x": 36,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 70,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [],
+      "warningZones": [],
+      "safeZones": [
+        {
+          "id": "safe_outer",
+          "type": "ring_lane",
+          "cx": 50,
+          "cy": 50,
+          "rMin": 28,
+          "rMax": 40
+        }
+      ],
+      "navHints": {
+        "preferredLanes": "outer_ring",
+        "avoidEdge": false,
+        "spreadRecommended": false,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_edge_risky",
+      "name": "边缘高风险战场",
+      "tags": [
+        "edge_hugging",
+        "corner_risk"
+      ],
+      "geometry": {
+        "shape": "irregular",
+        "obstacles": "medium",
+        "lanes": "edge_bias"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 18,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 22,
+          "y": 40
+        },
+        {
+          "id": "h3",
+          "x": 22,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 28,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 75,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [
+        {
+          "id": "blk_1",
+          "x": 84,
+          "y": 20,
+          "w": 8,
+          "h": 16
+        },
+        {
+          "id": "blk_2",
+          "x": 84,
+          "y": 64,
+          "w": 8,
+          "h": 16
+        }
+      ],
+      "warningZones": [
+        {
+          "id": "hz_edge_pinch",
+          "type": "edge_risk",
+          "edge": "right"
+        }
+      ],
+      "safeZones": [],
+      "navHints": {
+        "preferredLanes": "edge_bias",
+        "avoidEdge": true,
+        "spreadRecommended": false,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_line_skill",
+      "name": "直线技压制战场",
+      "tags": [
+        "line_skill_lane",
+        "movement_check"
+      ],
+      "geometry": {
+        "shape": "rectangle",
+        "obstacles": "low",
+        "lanes": "long_line"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 15,
+          "y": 30
+        },
+        {
+          "id": "h2",
+          "x": 15,
+          "y": 45
+        },
+        {
+          "id": "h3",
+          "x": 15,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 15,
+          "y": 75
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 85,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [],
+      "warningZones": [
+        {
+          "id": "hz_line_1",
+          "type": "line_lane",
+          "x1": 35,
+          "y1": 20,
+          "x2": 90,
+          "y2": 20
+        },
+        {
+          "id": "hz_line_2",
+          "type": "line_lane",
+          "x1": 35,
+          "y1": 50,
+          "x2": 90,
+          "y2": 50
+        },
+        {
+          "id": "hz_line_3",
+          "type": "line_lane",
+          "x1": 35,
+          "y1": 80,
+          "x2": 90,
+          "y2": 80
+        }
+      ],
+      "safeZones": [],
+      "navHints": {
+        "preferredLanes": "long_line",
+        "avoidEdge": false,
+        "spreadRecommended": false,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_fan_facing",
+      "name": "扇形朝向战场",
+      "tags": [
+        "fan_aoe_facing",
+        "movement_check"
+      ],
+      "geometry": {
+        "shape": "semi_open",
+        "obstacles": "medium",
+        "lanes": "frontal_cone"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 18,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 22,
+          "y": 40
+        },
+        {
+          "id": "h3",
+          "x": 22,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 28,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 75,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [],
+      "warningZones": [
+        {
+          "id": "hz_fan_front",
+          "type": "frontal_fan_zone",
+          "cx": 70,
+          "cy": 50,
+          "radius": 28,
+          "angleDeg": 70
+        }
+      ],
+      "safeZones": [],
+      "navHints": {
+        "preferredLanes": "frontal_cone",
+        "avoidEdge": false,
+        "spreadRecommended": false,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_circle_warning",
+      "name": "圈型预警战场",
+      "tags": [
+        "circle_aoe_zone",
+        "spread_requirement"
+      ],
+      "geometry": {
+        "shape": "circle",
+        "obstacles": "medium",
+        "lanes": "multi_zone"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 20,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 24,
+          "y": 40
+        },
+        {
+          "id": "h3",
+          "x": 24,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 30,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 78,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [],
+      "warningZones": [
+        {
+          "id": "hz_ring_1",
+          "type": "circle_warning",
+          "cx": 60,
+          "cy": 45,
+          "r": 12
+        },
+        {
+          "id": "hz_ring_2",
+          "type": "circle_warning",
+          "cx": 74,
+          "cy": 62,
+          "r": 10
+        }
+      ],
+      "safeZones": [
+        {
+          "id": "safe_gap",
+          "type": "gap_between_rings",
+          "xMin": 40,
+          "xMax": 55,
+          "yMin": 30,
+          "yMax": 70
+        }
+      ],
+      "navHints": {
+        "preferredLanes": "multi_zone",
+        "avoidEdge": false,
+        "spreadRecommended": true,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_random_reposition",
+      "name": "随机位移压力战场",
+      "tags": [
+        "random_reposition_pressure",
+        "anti_stuck_layout"
+      ],
+      "geometry": {
+        "shape": "irregular",
+        "obstacles": "medium",
+        "lanes": "dynamic"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 18,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 22,
+          "y": 40
+        },
+        {
+          "id": "h3",
+          "x": 22,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 28,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 75,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [
+        {
+          "id": "blk_1",
+          "x": 48,
+          "y": 50,
+          "w": 6,
+          "h": 24
+        },
+        {
+          "id": "blk_2",
+          "x": 66,
+          "y": 36,
+          "w": 6,
+          "h": 14
+        },
+        {
+          "id": "blk_3",
+          "x": 66,
+          "y": 64,
+          "w": 6,
+          "h": 14
+        }
+      ],
+      "warningZones": [
+        {
+          "id": "hz_blink_pressure",
+          "type": "reposition_hotspots",
+          "points": [
+            {
+              "x": 62,
+              "y": 30
+            },
+            {
+              "x": 80,
+              "y": 50
+            },
+            {
+              "x": 62,
+              "y": 70
+            }
+          ]
+        }
+      ],
+      "safeZones": [],
+      "navHints": {
+        "preferredLanes": "dynamic",
+        "avoidEdge": false,
+        "spreadRecommended": false,
+        "stackRecommended": false
+      }
+    },
+    {
+      "terrainId": "arena_stack_spread_switch",
+      "name": "集合/分散切换战场",
+      "tags": [
+        "stack_requirement",
+        "spread_requirement"
+      ],
+      "geometry": {
+        "shape": "open",
+        "obstacles": "low",
+        "lanes": "team_split_merge"
+      },
+      "heroSpawnPoints": [
+        {
+          "id": "h1",
+          "x": 18,
+          "y": 50
+        },
+        {
+          "id": "h2",
+          "x": 22,
+          "y": 40
+        },
+        {
+          "id": "h3",
+          "x": 22,
+          "y": 60
+        },
+        {
+          "id": "h4",
+          "x": 28,
+          "y": 50
+        }
+      ],
+      "bossSpawnPoint": {
+        "x": 75,
+        "y": 50
+      },
+      "objectivePoint": {
+        "x": 50,
+        "y": 50
+      },
+      "blockers": [
+        {
+          "id": "blk_center",
+          "x": 52,
+          "y": 50,
+          "w": 5,
+          "h": 5
+        }
+      ],
+      "warningZones": [],
+      "safeZones": [],
+      "navHints": {
+        "preferredLanes": "team_split_merge",
+        "avoidEdge": false,
+        "spreadRecommended": true,
+        "stackRecommended": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "meta": {
+    "version": "1.0-v1",
+    "generatedAt": "2026-03-10",
+    "mapId": 180750,
+    "sources": [
+      "terrain_clues_raw_v1.json",
+      "boss_wave_schema_v1.json"
+    ],
+    "note": "Terrain templates inferred from strategy text clues."
+  },
+  "stats": {
+    "clueCount": 39,
+    "tagDistribution": {
+      "unknown": 9,
+      "circle_aoe_zone": 3,
+      "line_skill_lane": 3,
+      "kite_and_pull": 1,
+      "movement_check": 9,
+      "stack_requirement": 1,
+      "random_reposition_pressure": 4,
+      "fan_aoe_facing": 3,
+      "anti_stuck_layout": 4,
+      "spread_requirement": 1,
+      "edge_hugging": 1
+    }
+  },
+  "templates": [
+    {
+      "terrainId": "arena_open",
+      "name": "开放圆形战场",
+      "tags": [
+        "open_arena",
+        "movement_check"
+      ],
+      "geometry": {
+        "shape": "circle",
+        "obstacles": "low",
+        "lanes": "none"
+      },
+      "useCases": [
+        "基础近战Boss",
+        "全局走位教学"
+      ]
+    },
+    {
+      "terrainId": "arena_outer_ring",
+      "name": "外圈风筝战场",
+      "tags": [
+        "outer_ring_pathing",
+        "kite_and_pull"
+      ],
+      "geometry": {
+        "shape": "ring",
+        "obstacles": "low",
+        "lanes": "outer_ring"
+      },
+      "useCases": [
+        "绕外圈拉怪",
+        "持续AOE规避"
+      ]
+    },
+    {
+      "terrainId": "arena_edge_risky",
+      "name": "边缘高风险战场",
+      "tags": [
+        "edge_hugging",
+        "corner_risk"
+      ],
+      "geometry": {
+        "shape": "irregular",
+        "obstacles": "medium",
+        "lanes": "edge_bias"
+      },
+      "useCases": [
+        "不贴边作战",
+        "防边缘封位"
+      ]
+    },
+    {
+      "terrainId": "arena_line_skill",
+      "name": "直线技压制战场",
+      "tags": [
+        "line_skill_lane",
+        "movement_check"
+      ],
+      "geometry": {
+        "shape": "rectangle",
+        "obstacles": "low",
+        "lanes": "long_line"
+      },
+      "useCases": [
+        "直线冲锋/投射技能",
+        "侧向规避"
+      ]
+    },
+    {
+      "terrainId": "arena_fan_facing",
+      "name": "扇形朝向战场",
+      "tags": [
+        "fan_aoe_facing",
+        "movement_check"
+      ],
+      "geometry": {
+        "shape": "semi_open",
+        "obstacles": "medium",
+        "lanes": "frontal_cone"
+      },
+      "useCases": [
+        "背后输出",
+        "前方扇形规避"
+      ]
+    },
+    {
+      "terrainId": "arena_circle_warning",
+      "name": "圈型预警战场",
+      "tags": [
+        "circle_aoe_zone",
+        "spread_requirement"
+      ],
+      "geometry": {
+        "shape": "circle",
+        "obstacles": "medium",
+        "lanes": "multi_zone"
+      },
+      "useCases": [
+        "红圈分散",
+        "圈间缝隙走位"
+      ]
+    },
+    {
+      "terrainId": "arena_random_reposition",
+      "name": "随机位移压力战场",
+      "tags": [
+        "random_reposition_pressure",
+        "anti_stuck_layout"
+      ],
+      "geometry": {
+        "shape": "irregular",
+        "obstacles": "medium",
+        "lanes": "dynamic"
+      },
+      "useCases": [
+        "Boss频繁换位",
+        "防卡位重定位"
+      ]
+    },
+    {
+      "terrainId": "arena_stack_spread_switch",
+      "name": "集合/分散切换战场",
+      "tags": [
+        "stack_requirement",
+        "spread_requirement"
+      ],
+      "geometry": {
+        "shape": "open",
+        "obstacles": "low",
+        "lanes": "team_split_merge"
+      },
+      "useCases": [
+        "队伍集合吸收",
+        "快速散开避伤"
+      ]
+    }
+  ],
+  "bossTerrainHints": [
+    {
+      "bossNo": 1,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 2,
+      "dominantTags": [
+        "line_skill_lane"
+      ],
+      "clueCount": 1,
+      "sampleClues": [
+        {
+          "topicId": "60038404a4f7ad546d152df9",
+          "normalizedTag": "line_skill_lane",
+          "clueText": "2号BOSS 暗影猎手 俗称小Y 自带特效攻击会吧武器丢出去直线飞行再回来 期间伤害中招的英雄 打小Y要求就有点高了  需要走位  还需要队友别乱走 不然很容易把队友都害死 仇恨目标是你的时候一定不要慌 站在原地打 等队友奶或者牺牲自己让队友尽快输出 毕竟 死一个人比团灭要好得多  注意 期间如果在蛇棒范围内 记得把BOSS拉出蛇棒范围再锤他  先弄死BOSS 再杀蛇棒好的多 毕竟蛇棒属于守卫 不吃很多技能 但是如果有守望者的话 他的刀阵旋风可以对守卫造成伤害"
+        }
+      ]
+    },
+    {
+      "bossNo": 3,
+      "dominantTags": [
+        "movement_check"
+      ],
+      "clueCount": 1,
+      "sampleClues": [
+        {
+          "topicId": "60038404a4f7ad546d152df9",
+          "normalizedTag": "movement_check",
+          "clueText": "3号BOSS 大萨满 阴间BOSS一枚  老恶心了  减速 逼走位  不小心就给给了     建议先清小兵再锤BOSS  半血之后放技能很频繁 攻击自带AOE  小兵的每一下普攻都是闪电链"
+        }
+      ]
+    },
+    {
+      "bossNo": 4,
+      "dominantTags": [
+        "line_skill_lane"
+      ],
+      "clueCount": 1,
+      "sampleClues": [
+        {
+          "topicId": "60038404a4f7ad546d152df9",
+          "normalizedTag": "line_skill_lane",
+          "clueText": "4号BOSS 地穴领主 俗称小强 清好小怪 走走位算是很好打了  注意 他钻地后是带反伤的哦 攻击自带AOE 对近战不是很友好 小怪自带技能蛛网 直线飞行 捆住第一个挨到的英雄"
+        }
+      ]
+    },
+    {
+      "bossNo": 5,
+      "dominantTags": [
+        "line_skill_lane"
+      ],
+      "clueCount": 1,
+      "sampleClues": [
+        {
+          "topicId": "60038404a4f7ad546d152df9",
+          "normalizedTag": "line_skill_lane",
+          "clueText": "5号BOSS  月之女祭司 俗称白虎 攻击自带直线范围伤害 而且射程很远并且穿透  不是很难 杀小怪 再杀BOSS  小怪也和BOSS攻击同理"
+        }
+      ]
+    },
+    {
+      "bossNo": 6,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 7,
+      "dominantTags": [
+        "movement_check"
+      ],
+      "clueCount": 1,
+      "sampleClues": [
+        {
+          "topicId": "60038404a4f7ad546d152df9",
+          "normalizedTag": "movement_check",
+          "clueText": "7号BOSS  圣骑士   萌新杀手来了   专杀没什么走位基础的弟弟  小兵带很长时间无敌  烦~  集火弄死BOSS再慢慢料理 会无敌的小怪"
+        }
+      ]
+    },
+    {
+      "bossNo": 8,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 9,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 10,
+      "dominantTags": [
+        "movement_check"
+      ],
+      "clueCount": 1,
+      "sampleClues": [
+        {
+          "topicId": "60038404a4f7ad546d152df9",
+          "normalizedTag": "movement_check",
+          "clueText": "10号BOSS  恶魔猎手  弟弟一枚   走位好会骗前摇可以几乎无伤 平A自带AOE  小怪带冲锋  先杀小怪 还是先杀BOSS随意 建议先杀小怪"
+        }
+      ]
+    },
+    {
+      "bossNo": 11,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 12,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 13,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 14,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 15,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 16,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 17,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 18,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 19,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 20,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    },
+    {
+      "bossNo": 21,
+      "dominantTags": [],
+      "clueCount": 0,
+      "sampleClues": []
+    }
+  ],
+  "waves": [
+    {
+      "wave": 1,
+      "bossId": "boss_01",
+      "terrainPool": [
+        "arena_open",
+        "arena_line_skill",
+        "arena_fan_facing"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 2,
+      "bossId": "boss_02",
+      "terrainPool": [
+        "arena_open",
+        "arena_line_skill",
+        "arena_fan_facing"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 3,
+      "bossId": "boss_03",
+      "terrainPool": [
+        "arena_open",
+        "arena_line_skill",
+        "arena_fan_facing"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 4,
+      "bossId": "boss_04",
+      "terrainPool": [
+        "arena_open",
+        "arena_line_skill",
+        "arena_fan_facing"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 5,
+      "bossId": "boss_05",
+      "terrainPool": [
+        "arena_open",
+        "arena_line_skill",
+        "arena_fan_facing"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 6,
+      "bossId": "boss_06",
+      "terrainPool": [
+        "arena_circle_warning",
+        "arena_outer_ring",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 7,
+      "bossId": "boss_07",
+      "terrainPool": [
+        "arena_circle_warning",
+        "arena_outer_ring",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 8,
+      "bossId": "boss_08",
+      "terrainPool": [
+        "arena_circle_warning",
+        "arena_outer_ring",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 9,
+      "bossId": "boss_09",
+      "terrainPool": [
+        "arena_circle_warning",
+        "arena_outer_ring",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 10,
+      "bossId": "boss_10",
+      "terrainPool": [
+        "arena_circle_warning",
+        "arena_outer_ring",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 11,
+      "bossId": "boss_11",
+      "terrainPool": [
+        "arena_edge_risky",
+        "arena_stack_spread_switch",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 12,
+      "bossId": "boss_12",
+      "terrainPool": [
+        "arena_edge_risky",
+        "arena_stack_spread_switch",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 13,
+      "bossId": "boss_13",
+      "terrainPool": [
+        "arena_edge_risky",
+        "arena_stack_spread_switch",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 14,
+      "bossId": "boss_14",
+      "terrainPool": [
+        "arena_edge_risky",
+        "arena_stack_spread_switch",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 15,
+      "bossId": "boss_15",
+      "terrainPool": [
+        "arena_edge_risky",
+        "arena_stack_spread_switch",
+        "arena_random_reposition"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 16,
+      "bossId": "boss_16",
+      "terrainPool": [
+        "arena_random_reposition",
+        "arena_outer_ring",
+        "arena_circle_warning",
+        "arena_edge_risky"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 17,
+      "bossId": "boss_17",
+      "terrainPool": [
+        "arena_random_reposition",
+        "arena_outer_ring",
+        "arena_circle_warning",
+        "arena_edge_risky"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 18,
+      "bossId": "boss_18",
+      "terrainPool": [
+        "arena_random_reposition",
+        "arena_outer_ring",
+        "arena_circle_warning",
+        "arena_edge_risky"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 19,
+      "bossId": "boss_19",
+      "terrainPool": [
+        "arena_random_reposition",
+        "arena_outer_ring",
+        "arena_circle_warning",
+        "arena_edge_risky"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 20,
+      "bossId": "boss_20",
+      "terrainPool": [
+        "arena_random_reposition",
+        "arena_outer_ring",
+        "arena_circle_warning",
+        "arena_edge_risky"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    },
+    {
+      "wave": 21,
+      "bossId": "boss_21",
+      "terrainPool": [
+        "arena_random_reposition",
+        "arena_outer_ring",
+        "arena_circle_warning",
+        "arena_edge_risky"
+      ],
+      "selectionPolicy": "pick_by_boss_tag_then_rotate",
+      "confidence": "medium"
+    }
+  ],
+  "implementationHints": {
+    "godot": [
+      "Use TileMap layers: floor, obstacle, warning_zone.",
+      "Each terrain template maps to a scene chunk with spawn points.",
+      "At wave start choose terrain by dominant boss tags."
+    ]
+  }
+}

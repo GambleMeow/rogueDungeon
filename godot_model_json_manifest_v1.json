@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "version": "1.0-war3-model-json-v1",
+    "generatedAt": "2026-03-10",
+    "total": 8,
+    "okCount": 8,
+    "failedCount": 0
+  },
+  "rows": [
+    {
+      "sourcePath": "godot-assets/models_war3/HeroDemonHunter.mdx",
+      "jsonPath": "godot-assets/models_json/HeroDemonHunter.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/HeroDemonHunter_portrait.mdx",
+      "jsonPath": "godot-assets/models_json/HeroDemonHunter_portrait.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/HeroTyrael.mdx",
+      "jsonPath": "godot-assets/models_json/HeroTyrael.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/herowarden.mdx",
+      "jsonPath": "godot-assets/models_json/herowarden.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/hero_invoker_n3s_d_mover.mdx",
+      "jsonPath": "godot-assets/models_json/hero_invoker_n3s_d_mover.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
+      "jsonPath": "godot-assets/models_json/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+      "jsonPath": "godot-assets/models_json/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.json",
+      "ok": true
+    },
+    {
+      "sourcePath": "godot-assets/models_war3/NightmareSpiderBoss.mdx",
+      "jsonPath": "godot-assets/models_json/NightmareSpiderBoss.json",
+      "ok": true
+    }
+  ]
+}
