@@ -1,0 +1,318 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "convert-model-json-to-gltf-v1"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Bonefire Arrow",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Bonefire Arrow",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        },
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 1
+        }
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "images": [
+    {
+      "uri": "../textures/Textures_HeroCryptLord.png"
+    },
+    {
+      "uri": "../textures/UI_Console_Undead_UndeadUI1Texture.png"
+    },
+    {
+      "uri": "../textures/Textures_GenericGlowX.png"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "BonefireArrow1_mdx.bin",
+      "byteLength": 10416
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 300,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 300,
+      "byteLength": 300,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 600,
+      "byteLength": 200,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 800,
+      "byteLength": 792,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1592,
+      "byteLength": 1272,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2864,
+      "byteLength": 1272,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4136,
+      "byteLength": 848,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 4984,
+      "byteLength": 2448,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 7432,
+      "byteLength": 768,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8200,
+      "byteLength": 768,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8968,
+      "byteLength": 512,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 9480,
+      "byteLength": 936,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 25,
+      "type": "VEC3",
+      "min": [
+        -33.5,
+        -0.9338112473487854,
+        -1.0782719850540161
+      ],
+      "max": [
+        26.000900268554688,
+        0.9512806534767151,
+        1.0782719850540161
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 25,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 25,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 198,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 106,
+      "type": "VEC3",
+      "min": [
+        -39.062767028808594,
+        -10.59345817565918,
+        -1
+      ],
+      "max": [
+        44.201881408691406,
+        10.59345817565918,
+        1
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 106,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 106,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 612,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC3",
+      "min": [
+        -38.92472457885742,
+        -10.805327415466309,
+        -0.0011493233032524586
+      ],
+      "max": [
+        45.3647346496582,
+        11.271636962890625,
+        0.004774073138833046
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 64,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5125,
+      "count": 234,
+      "type": "SCALAR"
+    }
+  ]
+}

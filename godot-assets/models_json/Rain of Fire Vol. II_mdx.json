@@ -1,0 +1,3298 @@
+{
+  "Version": 800,
+  "Info": {
+    "Name": "Rain of Fire Vol. II\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000PDR",
+    "MinimumExtent": {
+      "0": -10,
+      "1": -15.728599548339844,
+      "2": -4.528639793395996
+    },
+    "MaximumExtent": {
+      "0": 10,
+      "1": 15.728599548339844,
+      "2": 26.928600311279297
+    },
+    "BoundsRadius": 23.446800231933594,
+    "BlendTime": 150,
+    "NumGeosets": 1,
+    "NumGeosetAnims": 1,
+    "NumBones": 3,
+    "NumLights": 1,
+    "NumAttachments": 0,
+    "NumEvents": 0,
+    "NumParticleEmitters": 0,
+    "NumParticleEmitters2": 12,
+    "NumRibbonEmitters": 1
+  },
+  "Sequences": [
+    {
+      "Name": "Stand",
+      "Interval": {
+        "0": 1000,
+        "1": 3000
+      },
+      "MoveSpeed": 0,
+      "NonLooping": true,
+      "Rarity": 0,
+      "BoundsRadius": 23.446800231933594,
+      "MinimumExtent": {
+        "0": -20,
+        "1": -15.728599548339844,
+        "2": -4.528639793395996
+      },
+      "MaximumExtent": {
+        "0": 20,
+        "1": 15.728599548339844,
+        "2": 26.928600311279297
+      }
+    }
+  ],
+  "GlobalSequences": [
+    900
+  ],
+  "Textures": [
+    {
+      "ReplaceableId": 0,
+      "Image": "Textures\\Flare.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "Textures\\Clouds8x8Fire.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "Textures\\LavaLump2.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "Textures\\RingOFire.blp",
+      "Flags": 0
+    }
+  ],
+  "Materials": [
+    {
+      "Layers": [
+        {
+          "FilterMode": 4,
+          "Shading": 17,
+          "TextureID": 2,
+          "TVertexAnimId": null,
+          "CoordId": 0,
+          "Alpha": 1
+        },
+        {
+          "FilterMode": 4,
+          "Shading": 49,
+          "TextureID": 2,
+          "TVertexAnimId": null,
+          "CoordId": 0,
+          "Alpha": 1
+        }
+      ],
+      "PriorityPlane": 0,
+      "RenderMode": 17
+    }
+  ],
+  "TextureAnims": [],
+  "Geosets": [
+    {
+      "Vertices": {
+        "0": 0,
+        "1": -15.728599548339844,
+        "2": 26.928600311279297,
+        "3": 0,
+        "4": 15.728599548339844,
+        "5": 26.928600311279297,
+        "6": 0,
+        "7": 15.728599548339844,
+        "8": -4.528639793395996
+      },
+      "Normals": {
+        "0": 1,
+        "1": 0,
+        "2": 0,
+        "3": 1,
+        "4": 0,
+        "5": 0,
+        "6": 1,
+        "7": 0,
+        "8": 0
+      },
+      "Faces": {
+        "0": 0,
+        "1": 2,
+        "2": 1
+      },
+      "VertexGroup": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      },
+      "Groups": [
+        [
+          1
+        ]
+      ],
+      "TotalGroupsCount": 1,
+      "MaterialID": 0,
+      "SelectionGroup": 0,
+      "Unselectable": false,
+      "BoundsRadius": 23.446800231933594,
+      "MinimumExtent": {
+        "0": 0,
+        "1": -15.728599548339844,
+        "2": -4.528639793395996
+      },
+      "MaximumExtent": {
+        "0": 0,
+        "1": 15.728599548339844,
+        "2": 26.928600311279297
+      },
+      "Anims": [
+        {
+          "BoundsRadius": 23.446800231933594,
+          "MinimumExtent": {
+            "0": 0,
+            "1": -15.728599548339844,
+            "2": -4.528639793395996
+          },
+          "MaximumExtent": {
+            "0": 0,
+            "1": 15.728599548339844,
+            "2": 26.928600311279297
+          }
+        },
+        {
+          "BoundsRadius": 23.446800231933594,
+          "MinimumExtent": {
+            "0": 0,
+            "1": -15.728599548339844,
+            "2": -4.528639793395996
+          },
+          "MaximumExtent": {
+            "0": 0,
+            "1": 15.728599548339844,
+            "2": 26.928600311279297
+          }
+        },
+        {
+          "BoundsRadius": 23.446800231933594,
+          "MinimumExtent": {
+            "0": 0,
+            "1": -15.728599548339844,
+            "2": -4.528639793395996
+          },
+          "MaximumExtent": {
+            "0": 0,
+            "1": 15.728599548339844,
+            "2": 26.928600311279297
+          }
+        }
+      ],
+      "TVertices": [
+        {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 0,
+          "4": 1,
+          "5": 1
+        }
+      ]
+    }
+  ],
+  "GeosetAnims": [
+    {
+      "Alpha": 0,
+      "Flags": 2,
+      "Color": {
+        "0": 0.992156982421875,
+        "1": 1,
+        "2": 0.6823530197143555
+      },
+      "GeosetId": 0
+    }
+  ],
+  "Bones": [
+    {
+      "Name": "Bone_Root",
+      "ObjectId": 0,
+      "Parent": null,
+      "Flags": 256,
+      "Translation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": 0
+      },
+      "GeosetId": null,
+      "GeosetAnimId": null,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Billboard Mag",
+      "ObjectId": 1,
+      "Parent": 0,
+      "Flags": 264,
+      "GeosetId": null,
+      "GeosetAnimId": null,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 7
+      }
+    },
+    {
+      "Name": "Shard",
+      "ObjectId": 2,
+      "Parent": 0,
+      "Flags": 256,
+      "Translation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0
+            }
+          },
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0
+            }
+          },
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": -200,
+              "1": 200,
+              "2": -1200
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": -200,
+              "1": 200,
+              "2": -1200
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0.030024999752640724,
+              "1": 0.07248680293560028,
+              "2": -0.38150399923324585,
+              "3": 0.9210320115089417
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": 0.030024999752640724,
+              "1": 0.07248680293560028,
+              "2": -0.38150399923324585,
+              "3": 0.9210320115089417
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "GeosetId": null,
+      "GeosetAnimId": null,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    }
+  ],
+  "Helpers": [
+    {
+      "Name": "Trail",
+      "ObjectId": 4,
+      "Parent": 2,
+      "Flags": 0,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": 0
+      },
+      "PivotPoint": {
+        "0": 300,
+        "1": -300,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Impact",
+      "ObjectId": 5,
+      "Parent": 0,
+      "Flags": 0,
+      "Translation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 20
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 20
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Ribmaster",
+      "ObjectId": 6,
+      "Parent": 2,
+      "Flags": 0,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": -0.4999989867210388,
+              "1": 0.5000010132789612,
+              "2": -0.4999989867210388,
+              "3": 0.5000010132789612
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": -0.4999989867210388,
+              "1": 0.5000010132789612,
+              "2": -0.4999989867210388,
+              "3": 0.5000010132789612
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    }
+  ],
+  "Attachments": [],
+  "EventObjects": [],
+  "ParticleEmitters": [],
+  "ParticleEmitters2": [
+    {
+      "Name": "Flames Med",
+      "ObjectId": 7,
+      "Parent": 4,
+      "Flags": 102400,
+      "Speed": 230,
+      "Variation": 1.7999999523162842,
+      "Latitude": 5,
+      "Gravity": 0,
+      "LifeSpan": 0.800000011920929,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 60
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 7,
+      "Length": 7,
+      "FilterMode": 0,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.4000000059604645,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.3882350027561188,
+          "2": 0.01568629965186119
+        },
+        {
+          "0": 1,
+          "1": 0.3921569883823395,
+          "2": 0.1333329975605011
+        },
+        {
+          "0": 1,
+          "1": 0.19215700030326843,
+          "2": 0.050980400294065475
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 20,
+        "1": 20,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 0,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Red Dead",
+      "ObjectId": 8,
+      "Parent": 5,
+      "Flags": 1085440,
+      "Speed": 1,
+      "Variation": 1,
+      "Latitude": 1,
+      "Gravity": 0,
+      "LifeSpan": 0.36000001430511475,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 24
+            }
+          },
+          {
+            "Frame": 2000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.11999999731779099,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.8274509906768799,
+          "2": 0.4313730001449585
+        },
+        {
+          "0": 1,
+          "1": 0.564706027507782,
+          "2": 0.17647099494934082
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.4117650091648102,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 30,
+        "1": 50,
+        "2": 150
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Clouds",
+      "ObjectId": 9,
+      "Parent": 4,
+      "Flags": 102400,
+      "Speed": 150,
+      "Variation": 1.5,
+      "Latitude": 10,
+      "Gravity": 0,
+      "LifeSpan": 0.800000011920929,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 90
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 20,
+      "Length": 20,
+      "FilterMode": 0,
+      "Rows": 8,
+      "Columns": 8,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.30000001192092896,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.4627450108528137,
+          "2": 0.06666669994592667
+        },
+        {
+          "0": 1,
+          "1": 0.23921599984169006,
+          "2": 0.01568629965186119
+        },
+        {
+          "0": 0.9019610285758972,
+          "1": 0.10980399698019028,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 200,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 40,
+        "1": 25,
+        "2": 15
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 32,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 33,
+        "1": 64,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 1,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Lumps Small",
+      "ObjectId": 10,
+      "Parent": 4,
+      "Flags": 102400,
+      "Speed": 220,
+      "Variation": 1.5,
+      "Latitude": 20,
+      "Gravity": 0,
+      "LifeSpan": 0.5400000214576721,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 120
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 10,
+      "Length": 10,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.18000000715255737,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.7294120192527771,
+          "2": 0.5294119715690613
+        },
+        {
+          "0": 1,
+          "1": 0.6392160058021545,
+          "2": 0.3098039925098419
+        },
+        {
+          "0": 1,
+          "1": 0.6470590233802795,
+          "2": 0.5019609928131104
+        }
+      ],
+      "Alpha": {
+        "0": 120,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 8,
+        "1": 9,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Tails Short",
+      "ObjectId": 11,
+      "Parent": 4,
+      "Flags": 364544,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Speed": 480,
+      "Variation": 0.5,
+      "Latitude": 15,
+      "Gravity": 0,
+      "LifeSpan": 0.5400000214576721,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 75
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 2,
+      "Length": 2,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 2,
+      "TailLength": 0.12999999523162842,
+      "Time": 0.18000000715255737,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.6588240265846252,
+          "2": 0.4039219915866852
+        },
+        {
+          "0": 1,
+          "1": 0.4196079969406128,
+          "2": 0.23137299716472626
+        },
+        {
+          "0": 0.9137259721755981,
+          "1": 0.20392200350761414,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 120
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 22,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 3,
+        "1": 3,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Tails Yellow",
+      "ObjectId": 12,
+      "Parent": 4,
+      "Flags": 364544,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Speed": 480,
+      "Variation": 0.4000000059604645,
+      "Latitude": 15,
+      "Gravity": 0,
+      "LifeSpan": 0.47999998927116394,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 40
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 2,
+      "Length": 2,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 2,
+      "TailLength": 0.10000000149011612,
+      "Time": 0.1599999964237213,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.6588240265846252,
+          "2": 0.4039219915866852
+        },
+        {
+          "0": 0.9960780143737793,
+          "1": 0.7294120192527771,
+          "2": 0.05490199849009514
+        },
+        {
+          "0": 0.9960780143737793,
+          "1": 0.7294120192527771,
+          "2": 0.05490199849009514
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 120
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 22,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 3,
+        "1": 3,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Tails Hetero",
+      "ObjectId": 13,
+      "Parent": 4,
+      "Flags": 364544,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Speed": 360,
+      "Variation": 0.4000000059604645,
+      "Latitude": 0,
+      "Gravity": 0,
+      "LifeSpan": 0.5400000214576721,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 40
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 2,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.18000000715255737,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.4352940022945404,
+          "2": 0.24313700199127197
+        },
+        {
+          "0": 1,
+          "1": 0.274509996175766,
+          "2": 0.06666669994592667
+        },
+        {
+          "0": 1,
+          "1": 0.35686299204826355,
+          "2": 0.17647099494934082
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 15,
+        "2": 2
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Glow",
+      "ObjectId": 14,
+      "Parent": 4,
+      "Flags": 561152,
+      "Speed": 240,
+      "Variation": 0.30000001192092896,
+      "Latitude": 0,
+      "Gravity": 0,
+      "LifeSpan": 0.47999998927116394,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 30
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.1599999964237213,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.8274509906768799,
+          "2": 0.4313730001449585
+        },
+        {
+          "0": 1,
+          "1": 0.5372549891471863,
+          "2": 0.3215689957141876
+        },
+        {
+          "0": 1,
+          "1": 0.6117650270462036,
+          "2": 0.3215689957141876
+        }
+      ],
+      "Alpha": {
+        "0": 10,
+        "1": 255,
+        "2": 10
+      },
+      "ParticleScaling": {
+        "0": 20,
+        "1": 20,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Rings",
+      "ObjectId": 15,
+      "Parent": 5,
+      "Flags": 1085440,
+      "Speed": 7,
+      "Variation": 1,
+      "Latitude": 180,
+      "Gravity": 0,
+      "LifeSpan": 0.33000001311302185,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 30
+            }
+          },
+          {
+            "Frame": 2000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 5,
+      "Length": 5,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.10999999940395355,
+      "SegmentColor": [
+        {
+          "0": 0.992156982421875,
+          "1": 0.6470590233802795,
+          "2": 0.4392159879207611
+        },
+        {
+          "0": 0.9137259721755981,
+          "1": 0.22745099663734436,
+          "2": 0
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.12156900018453598,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 5
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 25,
+        "2": 96
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 3,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Spark",
+      "ObjectId": 16,
+      "Parent": 5,
+      "Flags": 36864,
+      "Speed": 320,
+      "Variation": 0.30000001192092896,
+      "Latitude": 90,
+      "Gravity": 0,
+      "LifeSpan": 0.30000001192092896,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 160
+            }
+          },
+          {
+            "Frame": 2050,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.10000000149011612,
+      "SegmentColor": [
+        {
+          "0": 0.992156982421875,
+          "1": 0.6470590233802795,
+          "2": 0.4392159879207611
+        },
+        {
+          "0": 1,
+          "1": 0.4117650091648102,
+          "2": 0.05490199849009514
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.2862749993801117,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 22,
+        "1": 24,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Dust Clouds",
+      "ObjectId": 17,
+      "Parent": 4,
+      "Flags": 36864,
+      "Speed": 100,
+      "Variation": 1.899999976158142,
+      "Latitude": 6,
+      "Gravity": 0,
+      "LifeSpan": 0.8999999761581421,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 200
+            }
+          },
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 30,
+      "Length": 30,
+      "FilterMode": 0,
+      "Rows": 8,
+      "Columns": 8,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.4000000059604645,
+      "SegmentColor": [
+        {
+          "0": 0.4078429937362671,
+          "1": 0.3058820068836212,
+          "2": 0.20000000298023224
+        },
+        {
+          "0": 0.21176500618457794,
+          "1": 0.12156900018453598,
+          "2": 0.09411770105361938
+        },
+        {
+          "0": 0.137254998087883,
+          "1": 0.01568629965186119,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 120,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 14,
+        "1": 14,
+        "2": 30
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 32,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 33,
+        "1": 64,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 1,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Spark BFlares",
+      "ObjectId": 18,
+      "Parent": 5,
+      "Flags": 36864,
+      "Speed": 320,
+      "Variation": 0.30000001192092896,
+      "Latitude": 90,
+      "Gravity": 0,
+      "LifeSpan": 0.30000001192092896,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 160
+            }
+          },
+          {
+            "Frame": 2050,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 0,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.10000000149011612,
+      "SegmentColor": [
+        {
+          "0": 0.992156982421875,
+          "1": 0.6470590233802795,
+          "2": 0.4392159879207611
+        },
+        {
+          "0": 1,
+          "1": 0.4117650091648102,
+          "2": 0.05490199849009514
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.2862749993801117,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 22,
+        "1": 24,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 0,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    }
+  ],
+  "Cameras": [],
+  "Lights": [
+    {
+      "Name": "Lite",
+      "ObjectId": 3,
+      "Parent": null,
+      "Flags": 0,
+      "LightType": 0,
+      "AttenuationStart": 30,
+      "AttenuationEnd": 120,
+      "Color": {
+        "0": 0.9215689897537231,
+        "1": 0.137254998087883,
+        "2": 0
+      },
+      "Intensity": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0
+            }
+          },
+          {
+            "Frame": 1500,
+            "Vector": {
+              "0": 0
+            }
+          },
+          {
+            "Frame": 1700,
+            "Vector": {
+              "0": 4
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 12
+            }
+          },
+          {
+            "Frame": 2200,
+            "Vector": {
+              "0": 0
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "AmbColor": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "AmbIntensity": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    }
+  ],
+  "RibbonEmitters": [
+    {
+      "Name": "Centro",
+      "ObjectId": 19,
+      "Parent": 6,
+      "Flags": 4194304,
+      "HeightAbove": 20,
+      "HeightBelow": 20,
+      "Alpha": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 1
+            }
+          },
+          {
+            "Frame": 2000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Color": {
+        "0": 0.9960780143737793,
+        "1": 0.7294120192527771,
+        "2": 0.05490199849009514
+      },
+      "LifeSpan": 0.4000000059604645,
+      "TextureSlot": 0,
+      "EmissionRate": 0,
+      "Rows": 1,
+      "Columns": 1,
+      "MaterialID": 0,
+      "Gravity": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    }
+  ],
+  "CollisionShapes": [],
+  "PivotPoints": [
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 7
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 300,
+      "1": -300,
+      "2": 1200
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    },
+    {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    {
+      "0": 200,
+      "1": -200,
+      "2": 1200
+    }
+  ],
+  "Nodes": [
+    {
+      "Name": "Bone_Root",
+      "ObjectId": 0,
+      "Parent": null,
+      "Flags": 256,
+      "Translation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": 0
+      },
+      "GeosetId": null,
+      "GeosetAnimId": null,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Billboard Mag",
+      "ObjectId": 1,
+      "Parent": 0,
+      "Flags": 264,
+      "GeosetId": null,
+      "GeosetAnimId": null,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 7
+      }
+    },
+    {
+      "Name": "Shard",
+      "ObjectId": 2,
+      "Parent": 0,
+      "Flags": 256,
+      "Translation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0
+            }
+          },
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0
+            }
+          },
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": -200,
+              "1": 200,
+              "2": -1200
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": -200,
+              "1": 200,
+              "2": -1200
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0.030024999752640724,
+              "1": 0.07248680293560028,
+              "2": -0.38150399923324585,
+              "3": 0.9210320115089417
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": 0.030024999752640724,
+              "1": 0.07248680293560028,
+              "2": -0.38150399923324585,
+              "3": 0.9210320115089417
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "GeosetId": null,
+      "GeosetAnimId": null,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Lite",
+      "ObjectId": 3,
+      "Parent": null,
+      "Flags": 0,
+      "LightType": 0,
+      "AttenuationStart": 30,
+      "AttenuationEnd": 120,
+      "Color": {
+        "0": 0.9215689897537231,
+        "1": 0.137254998087883,
+        "2": 0
+      },
+      "Intensity": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0
+            }
+          },
+          {
+            "Frame": 1500,
+            "Vector": {
+              "0": 0
+            }
+          },
+          {
+            "Frame": 1700,
+            "Vector": {
+              "0": 4
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 12
+            }
+          },
+          {
+            "Frame": 2200,
+            "Vector": {
+              "0": 0
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "AmbColor": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "AmbIntensity": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Trail",
+      "ObjectId": 4,
+      "Parent": 2,
+      "Flags": 0,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": 0
+      },
+      "PivotPoint": {
+        "0": 300,
+        "1": -300,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Impact",
+      "ObjectId": 5,
+      "Parent": 0,
+      "Flags": 0,
+      "Translation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 20
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 20
+            }
+          }
+        ],
+        "LineType": 1,
+        "GlobalSeqId": null
+      },
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Ribmaster",
+      "ObjectId": 6,
+      "Parent": 2,
+      "Flags": 0,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": -0.4999989867210388,
+              "1": 0.5000010132789612,
+              "2": -0.4999989867210388,
+              "3": 0.5000010132789612
+            }
+          },
+          {
+            "Frame": 3000,
+            "Vector": {
+              "0": -0.4999989867210388,
+              "1": 0.5000010132789612,
+              "2": -0.4999989867210388,
+              "3": 0.5000010132789612
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Flames Med",
+      "ObjectId": 7,
+      "Parent": 4,
+      "Flags": 102400,
+      "Speed": 230,
+      "Variation": 1.7999999523162842,
+      "Latitude": 5,
+      "Gravity": 0,
+      "LifeSpan": 0.800000011920929,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 60
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 7,
+      "Length": 7,
+      "FilterMode": 0,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.4000000059604645,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.3882350027561188,
+          "2": 0.01568629965186119
+        },
+        {
+          "0": 1,
+          "1": 0.3921569883823395,
+          "2": 0.1333329975605011
+        },
+        {
+          "0": 1,
+          "1": 0.19215700030326843,
+          "2": 0.050980400294065475
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 20,
+        "1": 20,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 0,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Red Dead",
+      "ObjectId": 8,
+      "Parent": 5,
+      "Flags": 1085440,
+      "Speed": 1,
+      "Variation": 1,
+      "Latitude": 1,
+      "Gravity": 0,
+      "LifeSpan": 0.36000001430511475,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 24
+            }
+          },
+          {
+            "Frame": 2000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.11999999731779099,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.8274509906768799,
+          "2": 0.4313730001449585
+        },
+        {
+          "0": 1,
+          "1": 0.564706027507782,
+          "2": 0.17647099494934082
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.4117650091648102,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 30,
+        "1": 50,
+        "2": 150
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Clouds",
+      "ObjectId": 9,
+      "Parent": 4,
+      "Flags": 102400,
+      "Speed": 150,
+      "Variation": 1.5,
+      "Latitude": 10,
+      "Gravity": 0,
+      "LifeSpan": 0.800000011920929,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 90
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 20,
+      "Length": 20,
+      "FilterMode": 0,
+      "Rows": 8,
+      "Columns": 8,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.30000001192092896,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.4627450108528137,
+          "2": 0.06666669994592667
+        },
+        {
+          "0": 1,
+          "1": 0.23921599984169006,
+          "2": 0.01568629965186119
+        },
+        {
+          "0": 0.9019610285758972,
+          "1": 0.10980399698019028,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 200,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 40,
+        "1": 25,
+        "2": 15
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 32,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 33,
+        "1": 64,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 1,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Lumps Small",
+      "ObjectId": 10,
+      "Parent": 4,
+      "Flags": 102400,
+      "Speed": 220,
+      "Variation": 1.5,
+      "Latitude": 20,
+      "Gravity": 0,
+      "LifeSpan": 0.5400000214576721,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 120
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 10,
+      "Length": 10,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0,
+      "Time": 0.18000000715255737,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.7294120192527771,
+          "2": 0.5294119715690613
+        },
+        {
+          "0": 1,
+          "1": 0.6392160058021545,
+          "2": 0.3098039925098419
+        },
+        {
+          "0": 1,
+          "1": 0.6470590233802795,
+          "2": 0.5019609928131104
+        }
+      ],
+      "Alpha": {
+        "0": 120,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 8,
+        "1": 9,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Tails Short",
+      "ObjectId": 11,
+      "Parent": 4,
+      "Flags": 364544,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Speed": 480,
+      "Variation": 0.5,
+      "Latitude": 15,
+      "Gravity": 0,
+      "LifeSpan": 0.5400000214576721,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 75
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 2,
+      "Length": 2,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 2,
+      "TailLength": 0.12999999523162842,
+      "Time": 0.18000000715255737,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.6588240265846252,
+          "2": 0.4039219915866852
+        },
+        {
+          "0": 1,
+          "1": 0.4196079969406128,
+          "2": 0.23137299716472626
+        },
+        {
+          "0": 0.9137259721755981,
+          "1": 0.20392200350761414,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 120
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 22,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 3,
+        "1": 3,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Tails Yellow",
+      "ObjectId": 12,
+      "Parent": 4,
+      "Flags": 364544,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Speed": 480,
+      "Variation": 0.4000000059604645,
+      "Latitude": 15,
+      "Gravity": 0,
+      "LifeSpan": 0.47999998927116394,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 40
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 2,
+      "Length": 2,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 2,
+      "TailLength": 0.10000000149011612,
+      "Time": 0.1599999964237213,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.6588240265846252,
+          "2": 0.4039219915866852
+        },
+        {
+          "0": 0.9960780143737793,
+          "1": 0.7294120192527771,
+          "2": 0.05490199849009514
+        },
+        {
+          "0": 0.9960780143737793,
+          "1": 0.7294120192527771,
+          "2": 0.05490199849009514
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 120
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 22,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 3,
+        "1": 3,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Tails Hetero",
+      "ObjectId": 13,
+      "Parent": 4,
+      "Flags": 364544,
+      "Rotation": {
+        "Keys": [
+          {
+            "Frame": 0,
+            "Vector": {
+              "0": 0,
+              "1": 0,
+              "2": 0,
+              "3": 1
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Speed": 360,
+      "Variation": 0.4000000059604645,
+      "Latitude": 0,
+      "Gravity": 0,
+      "LifeSpan": 0.5400000214576721,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 40
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 2,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.18000000715255737,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.4352940022945404,
+          "2": 0.24313700199127197
+        },
+        {
+          "0": 1,
+          "1": 0.274509996175766,
+          "2": 0.06666669994592667
+        },
+        {
+          "0": 1,
+          "1": 0.35686299204826355,
+          "2": 0.17647099494934082
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 15,
+        "2": 2
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Glow",
+      "ObjectId": 14,
+      "Parent": 4,
+      "Flags": 561152,
+      "Speed": 240,
+      "Variation": 0.30000001192092896,
+      "Latitude": 0,
+      "Gravity": 0,
+      "LifeSpan": 0.47999998927116394,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 30
+            }
+          },
+          {
+            "Frame": 1900,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.1599999964237213,
+      "SegmentColor": [
+        {
+          "0": 1,
+          "1": 0.8274509906768799,
+          "2": 0.4313730001449585
+        },
+        {
+          "0": 1,
+          "1": 0.5372549891471863,
+          "2": 0.3215689957141876
+        },
+        {
+          "0": 1,
+          "1": 0.6117650270462036,
+          "2": 0.3215689957141876
+        }
+      ],
+      "Alpha": {
+        "0": 10,
+        "1": 255,
+        "2": 10
+      },
+      "ParticleScaling": {
+        "0": 20,
+        "1": 20,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Rings",
+      "ObjectId": 15,
+      "Parent": 5,
+      "Flags": 1085440,
+      "Speed": 7,
+      "Variation": 1,
+      "Latitude": 180,
+      "Gravity": 0,
+      "LifeSpan": 0.33000001311302185,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 30
+            }
+          },
+          {
+            "Frame": 2000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 5,
+      "Length": 5,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.10999999940395355,
+      "SegmentColor": [
+        {
+          "0": 0.992156982421875,
+          "1": 0.6470590233802795,
+          "2": 0.4392159879207611
+        },
+        {
+          "0": 0.9137259721755981,
+          "1": 0.22745099663734436,
+          "2": 0
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.12156900018453598,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 5
+      },
+      "ParticleScaling": {
+        "0": 10,
+        "1": 25,
+        "2": 96
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 3,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Spark",
+      "ObjectId": 16,
+      "Parent": 5,
+      "Flags": 36864,
+      "Speed": 320,
+      "Variation": 0.30000001192092896,
+      "Latitude": 90,
+      "Gravity": 0,
+      "LifeSpan": 0.30000001192092896,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 160
+            }
+          },
+          {
+            "Frame": 2050,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 1,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.10000000149011612,
+      "SegmentColor": [
+        {
+          "0": 0.992156982421875,
+          "1": 0.6470590233802795,
+          "2": 0.4392159879207611
+        },
+        {
+          "0": 1,
+          "1": 0.4117650091648102,
+          "2": 0.05490199849009514
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.2862749993801117,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 22,
+        "1": 24,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 2,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Dust Clouds",
+      "ObjectId": 17,
+      "Parent": 4,
+      "Flags": 36864,
+      "Speed": 100,
+      "Variation": 1.899999976158142,
+      "Latitude": 6,
+      "Gravity": 0,
+      "LifeSpan": 0.8999999761581421,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1050,
+            "Vector": {
+              "0": 200
+            }
+          },
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 30,
+      "Length": 30,
+      "FilterMode": 0,
+      "Rows": 8,
+      "Columns": 8,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.4000000059604645,
+      "SegmentColor": [
+        {
+          "0": 0.4078429937362671,
+          "1": 0.3058820068836212,
+          "2": 0.20000000298023224
+        },
+        {
+          "0": 0.21176500618457794,
+          "1": 0.12156900018453598,
+          "2": 0.09411770105361938
+        },
+        {
+          "0": 0.137254998087883,
+          "1": 0.01568629965186119,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 120,
+        "2": 0
+      },
+      "ParticleScaling": {
+        "0": 14,
+        "1": 14,
+        "2": 30
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 32,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 33,
+        "1": 64,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 1,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    },
+    {
+      "Name": "Spark BFlares",
+      "ObjectId": 18,
+      "Parent": 5,
+      "Flags": 36864,
+      "Speed": 320,
+      "Variation": 0.30000001192092896,
+      "Latitude": 90,
+      "Gravity": 0,
+      "LifeSpan": 0.30000001192092896,
+      "EmissionRate": {
+        "Keys": [
+          {
+            "Frame": 1800,
+            "Vector": {
+              "0": 160
+            }
+          },
+          {
+            "Frame": 2050,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Width": 0,
+      "Length": 0,
+      "FilterMode": 0,
+      "Rows": 1,
+      "Columns": 1,
+      "FrameFlags": 1,
+      "TailLength": 0.20000000298023224,
+      "Time": 0.10000000149011612,
+      "SegmentColor": [
+        {
+          "0": 0.992156982421875,
+          "1": 0.6470590233802795,
+          "2": 0.4392159879207611
+        },
+        {
+          "0": 1,
+          "1": 0.4117650091648102,
+          "2": 0.05490199849009514
+        },
+        {
+          "0": 0.9686279892921448,
+          "1": 0.2862749993801117,
+          "2": 0
+        }
+      ],
+      "Alpha": {
+        "0": 0,
+        "1": 255,
+        "2": 255
+      },
+      "ParticleScaling": {
+        "0": 22,
+        "1": 24,
+        "2": 1
+      },
+      "LifeSpanUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "DecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TailDecayUVAnim": {
+        "0": 0,
+        "1": 0,
+        "2": 1
+      },
+      "TextureID": 0,
+      "Squirt": false,
+      "PriorityPlane": 0,
+      "ReplaceableId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": 0,
+        "2": 0
+      }
+    },
+    {
+      "Name": "Centro",
+      "ObjectId": 19,
+      "Parent": 6,
+      "Flags": 4194304,
+      "HeightAbove": 20,
+      "HeightBelow": 20,
+      "Alpha": {
+        "Keys": [
+          {
+            "Frame": 1000,
+            "Vector": {
+              "0": 1
+            }
+          },
+          {
+            "Frame": 2000,
+            "Vector": {
+              "0": 0
+            }
+          }
+        ],
+        "LineType": 0,
+        "GlobalSeqId": null
+      },
+      "Color": {
+        "0": 0.9960780143737793,
+        "1": 0.7294120192527771,
+        "2": 0.05490199849009514
+      },
+      "LifeSpan": 0.4000000059604645,
+      "TextureSlot": 0,
+      "EmissionRate": 0,
+      "Rows": 1,
+      "Columns": 1,
+      "MaterialID": 0,
+      "Gravity": 0,
+      "PivotPoint": {
+        "0": 200,
+        "1": -200,
+        "2": 1200
+      }
+    }
+  ]
+}

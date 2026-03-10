@@ -18,6 +18,7 @@ function copyIfExists(src, dst) {
 
 function main() {
   const curated = readJson("boss_hero_model_curated_manifest_v1.json");
+  const candidates = readJson("boss_hero_model_candidates_v2.json");
   const deps = readJson("boss_hero_model_deps_manifest_v1.json");
   const textures = readJson("godot_texture_manifest_v1.json");
 
@@ -26,17 +27,32 @@ function main() {
   const textureOut = path.join(outRoot, "textures");
   ensureDir(modelOut);
   ensureDir(textureOut);
+  const oldModels = fs.existsSync(modelOut) ? fs.readdirSync(modelOut) : [];
+  for (const f of oldModels) {
+    if (/\.(mdx|mdl)$/i.test(f)) {
+      fs.unlinkSync(path.join(modelOut, f));
+    }
+  }
 
+  const curatedMeta = new Map((curated.models || []).map((m) => [String(m.name || "").toLowerCase(), m]));
   const modelRows = [];
-  for (const m of curated.models || []) {
-    const src = m.srcPath || m.curatedPath || "";
+  const selectedByName = new Map();
+  for (const c of candidates.candidates || []) {
+    const src = String(c.outPath || "");
     const file = path.basename(src);
-    const dst = path.join(modelOut, file);
+    if (!/\.(mdx|mdl)$/i.test(file)) continue;
+    if (!selectedByName.has(file.toLowerCase())) selectedByName.set(file.toLowerCase(), { src, file });
+  }
+  for (const picked of selectedByName.values()) {
+    const src = picked.src;
+    const f = picked.file;
+    const dst = path.join(modelOut, f);
     const ok = copyIfExists(src, dst);
+    const meta = curatedMeta.get(f.toLowerCase());
     modelRows.push({
-      name: m.name,
-      guessClass: m.guessClass,
-      guessScore: m.guessScore,
+      name: f,
+      guessClass: meta?.guessClass || "unknown",
+      guessScore: Number(meta?.guessScore || 0),
       sourcePath: src.replace(/\\/g, "/"),
       packedPath: dst.replace(/\\/g, "/"),
       ok
@@ -79,7 +95,9 @@ function main() {
       generatedAt: "2026-03-10"
     },
     stats: {
-      curatedModels: modelRows.length,
+      sourcePoolModels: modelRows.length,
+      sourceCandidateModels: selectedByName.size,
+      curatedModels: (curated.models || []).length,
       modelDeps: depRows.length,
       textures: texRows.length
     },

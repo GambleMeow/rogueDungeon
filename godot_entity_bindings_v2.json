@@ -7,7 +7,9 @@
   "stats": {
     "bossModelBindingCount": 21,
     "heroModelBindingCount": 43,
-    "abilityEffectBindingCount": 441
+    "abilityEffectBindingCount": 441,
+    "bossGltfResolvedCount": 21,
+    "heroGltfResolvedCount": 43
   },
   "bossModelBindings": [
     {
@@ -16,7 +18,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_02",
@@ -24,7 +27,8 @@
       "modelName": "HeroDemonHunter.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
       "confidence": "high",
-      "score": 10
+      "score": 10,
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf"
     },
     {
       "bossId": "boss_03",
@@ -32,7 +36,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_04",
@@ -40,7 +45,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_05",
@@ -48,7 +54,8 @@
       "modelName": "herowarden.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
       "confidence": "high",
-      "score": 12
+      "score": 12,
+      "gltfPath": "godot-assets/models_gltf/herowarden_mdx.gltf"
     },
     {
       "bossId": "boss_06",
@@ -56,7 +63,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "high",
-      "score": 16
+      "score": 16,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_07",
@@ -64,7 +72,8 @@
       "modelName": "HeroTyrael.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
       "confidence": "high",
-      "score": 10
+      "score": 10,
+      "gltfPath": "godot-assets/models_gltf/HeroTyrael_mdx.gltf"
     },
     {
       "bossId": "boss_08",
@@ -72,7 +81,8 @@
       "modelName": "hero_invoker_n3s_d_mover.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
       "confidence": "high",
-      "score": 20
+      "score": 20,
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf"
     },
     {
       "bossId": "boss_09",
@@ -80,7 +90,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_10",
@@ -88,7 +99,8 @@
       "modelName": "HeroDemonHunter.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
       "confidence": "high",
-      "score": 16
+      "score": 16,
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf"
     },
     {
       "bossId": "boss_11",
@@ -96,7 +108,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_12",
@@ -104,7 +117,8 @@
       "modelName": "HeroDemonHunter.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
       "confidence": "high",
-      "score": 10
+      "score": 10,
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf"
     },
     {
       "bossId": "boss_13",
@@ -112,7 +126,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_14",
@@ -120,7 +135,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_15",
@@ -128,7 +144,8 @@
       "modelName": "herowarden.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
       "confidence": "high",
-      "score": 12
+      "score": 12,
+      "gltfPath": "godot-assets/models_gltf/herowarden_mdx.gltf"
     },
     {
       "bossId": "boss_16",
@@ -136,7 +153,8 @@
       "modelName": "HeroTyrael.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
       "confidence": "high",
-      "score": 12
+      "score": 12,
+      "gltfPath": "godot-assets/models_gltf/HeroTyrael_mdx.gltf"
     },
     {
       "bossId": "boss_17",
@@ -144,7 +162,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "medium",
-      "score": 8
+      "score": 8,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_18",
@@ -152,7 +171,8 @@
       "modelName": "hero_invoker_n3s_d_mover.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
       "confidence": "high",
-      "score": 20
+      "score": 20,
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf"
     },
     {
       "bossId": "boss_19",
@@ -160,7 +180,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "high",
-      "score": 16
+      "score": 16,
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "bossId": "boss_20",
@@ -168,7 +189,8 @@
       "modelName": "NightmareSpiderBoss.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/NightmareSpiderBoss.mdx",
       "confidence": "high",
-      "score": 16
+      "score": 16,
+      "gltfPath": "godot-assets/models_gltf/NightmareSpiderBoss_mdx.gltf"
     },
     {
       "bossId": "boss_21",
@@ -176,7 +198,8 @@
       "modelName": "hero_invoker_n3s_d_mover.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
       "confidence": "high",
-      "score": 12
+      "score": 12,
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf"
     }
   ],
   "heroModelBindings": [
@@ -186,7 +209,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "heroId": 2,
@@ -194,7 +218,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdx.gltf"
     },
     {
       "heroId": 3,
@@ -202,7 +227,8 @@
       "modelName": "herowarden.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/herowarden_mdx.gltf"
     },
     {
       "heroId": 4,
@@ -210,7 +236,8 @@
       "modelName": "NightmareSpiderBoss.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/NightmareSpiderBoss.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/NightmareSpiderBoss_mdx.gltf"
     },
     {
       "heroId": 52,
@@ -218,7 +245,8 @@
       "modelName": "HeroDemonHunter.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf"
     },
     {
       "heroId": 102,
@@ -226,7 +254,8 @@
       "modelName": "HeroTyrael.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroTyrael_mdx.gltf"
     },
     {
       "heroId": 103,
@@ -234,7 +263,8 @@
       "modelName": "hero_invoker_n3s_d_mover.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf"
     },
     {
       "heroId": 104,
@@ -242,7 +272,8 @@
       "modelName": "HeroDemonHunter_portrait.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter_portrait.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_portrait_mdx.gltf"
     },
     {
       "heroId": 105,
@@ -250,7 +281,8 @@
       "modelName": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/hai_pa_de_lao_ban_sha_boss_of_fear_mdx.gltf"
     },
     {
       "heroId": 106,
@@ -258,7 +290,8 @@
       "modelName": "boss_027.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/boss_027.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/boss_027_mdx.gltf"
     },
     {
       "heroId": 107,
@@ -266,7 +299,8 @@
       "modelName": "zsghero65.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/zsghero65.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/zsghero65_mdx.gltf"
     },
     {
       "heroId": 108,
@@ -274,7 +308,8 @@
       "modelName": "bossjinggaoh.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh_mdx.gltf"
     },
     {
       "heroId": 109,
@@ -282,7 +317,8 @@
       "modelName": "bossjinggaoh1.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh1.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh1_mdx.gltf"
     },
     {
       "heroId": 110,
@@ -290,7 +326,8 @@
       "modelName": "bossjinggaoh2.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh2.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh2_mdx.gltf"
     },
     {
       "heroId": 111,
@@ -298,7 +335,8 @@
       "modelName": "bossjinggaohzc.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaohzc.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaohzc_mdx.gltf"
     },
     {
       "heroId": 112,
@@ -306,7 +344,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "heroId": 113,
@@ -314,7 +353,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdx.gltf"
     },
     {
       "heroId": 114,
@@ -322,7 +362,8 @@
       "modelName": "herowarden.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/herowarden_mdx.gltf"
     },
     {
       "heroId": 115,
@@ -330,7 +371,8 @@
       "modelName": "NightmareSpiderBoss.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/NightmareSpiderBoss.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/NightmareSpiderBoss_mdx.gltf"
     },
     {
       "heroId": 116,
@@ -338,7 +380,8 @@
       "modelName": "HeroDemonHunter.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf"
     },
     {
       "heroId": 117,
@@ -346,7 +389,8 @@
       "modelName": "HeroTyrael.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroTyrael_mdx.gltf"
     },
     {
       "heroId": 118,
@@ -354,7 +398,8 @@
       "modelName": "hero_invoker_n3s_d_mover.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf"
     },
     {
       "heroId": 119,
@@ -362,7 +407,8 @@
       "modelName": "HeroDemonHunter_portrait.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter_portrait.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_portrait_mdx.gltf"
     },
     {
       "heroId": 120,
@@ -370,7 +416,8 @@
       "modelName": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/hai_pa_de_lao_ban_sha_boss_of_fear_mdx.gltf"
     },
     {
       "heroId": 121,
@@ -378,7 +425,8 @@
       "modelName": "boss_027.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/boss_027.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/boss_027_mdx.gltf"
     },
     {
       "heroId": 122,
@@ -386,7 +434,8 @@
       "modelName": "zsghero65.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/zsghero65.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/zsghero65_mdx.gltf"
     },
     {
       "heroId": 152,
@@ -394,7 +443,8 @@
       "modelName": "bossjinggaoh.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh_mdx.gltf"
     },
     {
       "heroId": 153,
@@ -402,7 +452,8 @@
       "modelName": "bossjinggaoh1.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh1.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh1_mdx.gltf"
     },
     {
       "heroId": 154,
@@ -410,7 +461,8 @@
       "modelName": "bossjinggaoh2.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh2.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh2_mdx.gltf"
     },
     {
       "heroId": 155,
@@ -418,7 +470,8 @@
       "modelName": "bossjinggaohzc.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaohzc.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaohzc_mdx.gltf"
     },
     {
       "heroId": 156,
@@ -426,7 +479,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdl",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf"
     },
     {
       "heroId": 157,
@@ -434,7 +488,8 @@
       "modelName": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdx.gltf"
     },
     {
       "heroId": 158,
@@ -442,7 +497,8 @@
       "modelName": "herowarden.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/herowarden.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/herowarden_mdx.gltf"
     },
     {
       "heroId": 159,
@@ -450,7 +506,8 @@
       "modelName": "NightmareSpiderBoss.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/NightmareSpiderBoss.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/NightmareSpiderBoss_mdx.gltf"
     },
     {
       "heroId": 160,
@@ -458,7 +515,8 @@
       "modelName": "HeroDemonHunter.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf"
     },
     {
       "heroId": 161,
@@ -466,7 +524,8 @@
       "modelName": "HeroTyrael.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroTyrael.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroTyrael_mdx.gltf"
     },
     {
       "heroId": 162,
@@ -474,7 +533,8 @@
       "modelName": "hero_invoker_n3s_d_mover.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hero_invoker_n3s_d_mover.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf"
     },
     {
       "heroId": 163,
@@ -482,7 +542,8 @@
       "modelName": "HeroDemonHunter_portrait.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter_portrait.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_portrait_mdx.gltf"
     },
     {
       "heroId": 164,
@@ -490,7 +551,8 @@
       "modelName": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/hai_pa_de_lao_ban_sha_boss_of_fear_mdx.gltf"
     },
     {
       "heroId": 168,
@@ -498,7 +560,8 @@
       "modelName": "boss_027.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/boss_027.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/boss_027_mdx.gltf"
     },
     {
       "heroId": 169,
@@ -506,7 +569,8 @@
       "modelName": "zsghero65.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/zsghero65.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/zsghero65_mdx.gltf"
     },
     {
       "heroId": 202,
@@ -514,7 +578,8 @@
       "modelName": "bossjinggaoh.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh_mdx.gltf"
     },
     {
       "heroId": 252,
@@ -522,7 +587,8 @@
       "modelName": "bossjinggaoh1.mdx",
       "modelPath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh1.mdx",
       "confidence": "low",
-      "policy": "pool_round_robin"
+      "policy": "pool_round_robin",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh1_mdx.gltf"
     }
   ],
   "abilityEffectBindings": [

@@ -10,6 +10,7 @@ var terrain_rule_by_id: Dictionary = {}
 var campaign_data: Dictionary = {}
 var hero_model_binding_by_id: Dictionary = {}
 var boss_model_binding_by_id: Dictionary = {}
+var boss_behavior_by_id: Dictionary = {}
 var ability_effect_binding_by_id: Dictionary = {}
 var ability_texture_fallback_by_id: Dictionary = {}
 
@@ -33,6 +34,7 @@ func _index_bundle() -> void:
 	terrain_rule_by_id.clear()
 	hero_model_binding_by_id.clear()
 	boss_model_binding_by_id.clear()
+	boss_behavior_by_id.clear()
 	ability_effect_binding_by_id.clear()
 	ability_texture_fallback_by_id.clear()
 	var runtime = bundle.get("runtime", {})
@@ -48,6 +50,8 @@ func _index_bundle() -> void:
 
 	for b in boss.get("bosses", []):
 		boss_by_id[b.get("id")] = b
+	for bb in boss.get("bossBehavior21", []):
+		boss_behavior_by_id[str(bb.get("bossId", ""))] = bb
 
 	for t in terrain.get("templates", []):
 		terrain_template_by_id[t.get("terrainId")] = t
@@ -132,6 +136,56 @@ func get_hero_model_binding(hero_id: int) -> Dictionary:
 
 func get_boss_model_binding(boss_id: String) -> Dictionary:
 	return boss_model_binding_by_id.get(boss_id, {})
+
+func get_boss_behavior(boss_id: String) -> Dictionary:
+	return boss_behavior_by_id.get(str(boss_id), {})
+
+func _to_res_path(raw_path: String) -> String:
+	var p := str(raw_path)
+	if p == "":
+		return ""
+	if p.begins_with("res://"):
+		return p
+	var i := p.find("godot-assets/")
+	if i >= 0:
+		return "res://" + p.substr(i, p.length() - i)
+	return ""
+
+func get_hero_gltf_path(hero_id: int) -> String:
+	var b := get_hero_model_binding(hero_id)
+	var gltf_path := _to_res_path(str(b.get("gltfPath", "")))
+	if gltf_path != "":
+		return gltf_path
+	return _to_res_path(str(b.get("modelPath", "")))
+
+func get_boss_gltf_path(boss_id: String) -> String:
+	var b := get_boss_model_binding(boss_id)
+	var gltf_path := _to_res_path(str(b.get("gltfPath", "")))
+	if gltf_path != "":
+		return gltf_path
+	return _to_res_path(str(b.get("modelPath", "")))
+
+func instantiate_hero_model(hero_id: int) -> Node3D:
+	var model_path := get_hero_gltf_path(hero_id)
+	if model_path == "":
+		return null
+	var packed := load(model_path)
+	if packed is PackedScene:
+		var inst = packed.instantiate()
+		if inst is Node3D:
+			return inst
+	return null
+
+func instantiate_boss_model(boss_id: String) -> Node3D:
+	var model_path := get_boss_gltf_path(boss_id)
+	if model_path == "":
+		return null
+	var packed := load(model_path)
+	if packed is PackedScene:
+		var inst = packed.instantiate()
+		if inst is Node3D:
+			return inst
+	return null
 
 func get_ability_effect_binding(ability_id: String) -> Dictionary:
 	return ability_effect_binding_by_id.get(str(ability_id), {})

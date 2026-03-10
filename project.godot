@@ -1,0 +1,19 @@
+; Engine configuration file.
+; Minimal Godot 4 project for rogueDungeon runtime preview.
+
+config_version=5
+
+[application]
+
+config/name="rogueDungeon"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.2")
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+
+[rendering]
+
+renderer/rendering_method="forward_plus"

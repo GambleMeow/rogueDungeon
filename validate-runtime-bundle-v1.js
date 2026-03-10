@@ -68,6 +68,11 @@ function main() {
     errors
   );
   assert(
+    Number(assets.godotModelGltfCount || 0) >= 1,
+    `godotModelGltfCount invalid: ${assets.godotModelGltfCount}`,
+    errors
+  );
+  assert(
     Number(assets.godotHeroBindingCount || 0) >= 40,
     `godotHeroBindingCount too small: ${assets.godotHeroBindingCount}`,
     errors
@@ -85,6 +90,28 @@ function main() {
   assert(
     Number(assets.godotResourceUnresolvedCount ?? 999999) === 0,
     `godotResourceUnresolvedCount not zero: ${assets.godotResourceUnresolvedCount}`,
+    errors
+  );
+  assert(
+    Number(assets.godotReplayComparedWaves || 0) >= 0,
+    `godotReplayComparedWaves invalid: ${assets.godotReplayComparedWaves}`,
+    errors
+  );
+  if (Number(assets.godotReplaySameResultRate ?? -1) >= 0) {
+    assert(
+      Number(assets.godotReplaySameResultRate) <= 1,
+      `godotReplaySameResultRate invalid: ${assets.godotReplaySameResultRate}`,
+      errors
+    );
+  }
+  assert(
+    Number(assets.godotTuningActionOverrideCount || 0) >= 0,
+    `godotTuningActionOverrideCount invalid: ${assets.godotTuningActionOverrideCount}`,
+    errors
+  );
+  assert(
+    Number(assets.godotTuningBossOverrideCount || 0) >= 0,
+    `godotTuningBossOverrideCount invalid: ${assets.godotTuningBossOverrideCount}`,
     errors
   );
   assert(

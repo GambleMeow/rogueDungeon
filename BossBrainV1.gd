@@ -4,10 +4,34 @@ class_name BossBrainV1
 var boss_data: Dictionary = {}
 var behavior_data: Dictionary = {}
 var combat_state: Dictionary = {}
+var runtime_loader: RuntimeDataLoaderV1 = null
+var boss_id: String = ""
 
 func setup(boss_info: Dictionary, behavior_info: Dictionary) -> void:
 	boss_data = boss_info
 	behavior_data = behavior_info
+	boss_id = str(boss_data.get("id", ""))
+
+func bind_runtime_loader(loader: RuntimeDataLoaderV1) -> void:
+	runtime_loader = loader
+
+func get_model_path() -> String:
+	if runtime_loader == null:
+		return ""
+	if boss_id == "":
+		boss_id = str(boss_data.get("id", ""))
+	if boss_id == "":
+		return ""
+	return runtime_loader.get_boss_gltf_path(boss_id)
+
+func instantiate_model() -> Node3D:
+	if runtime_loader == null:
+		return null
+	if boss_id == "":
+		boss_id = str(boss_data.get("id", ""))
+	if boss_id == "":
+		return null
+	return runtime_loader.instantiate_boss_model(boss_id)
 
 func tick(delta: float, state: Dictionary) -> Dictionary:
 	combat_state = state

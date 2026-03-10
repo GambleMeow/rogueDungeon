@@ -1,0 +1,229 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "convert-model-json-to-gltf-v1"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Rex-±¾Ö³-Test",
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Rex-±¾Ö³-Test",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 0
+        }
+      }
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1,
+        "baseColorTexture": {
+          "index": 1
+        }
+      }
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "images": [
+    {
+      "uri": "../textures/hero_ragnaros_lil01.png"
+    },
+    {
+      "uri": "../textures/hero_ragnaros_lil02.png"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "boss_027_mdx.bin",
+      "byteLength": 361496
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 71412,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 71412,
+      "byteLength": 71412,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 142824,
+      "byteLength": 47608,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 190432,
+      "byteLength": 115248,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 305680,
+      "byteLength": 12840,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 318520,
+      "byteLength": 12840,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 331360,
+      "byteLength": 8560,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 339920,
+      "byteLength": 21576,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 5951,
+      "type": "VEC3",
+      "min": [
+        -61.167301177978516,
+        -131.51499938964844,
+        25.425399780273438
+      ],
+      "max": [
+        166.6929931640625,
+        105.02899932861328,
+        321.51300048828125
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 5951,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 5951,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 28812,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 1070,
+      "type": "VEC3",
+      "min": [
+        -91.4520034790039,
+        -93.12830352783203,
+        -24.953100204467773
+      ],
+      "max": [
+        91.60099792480469,
+        91.6624984741211,
+        144.66400146484375
+      ]
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 1070,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 1070,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 5394,
+      "type": "SCALAR"
+    }
+  ]
+}

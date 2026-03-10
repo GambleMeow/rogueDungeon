@@ -3,9 +3,33 @@ class_name HeroBrainV1
 
 var hero_data: Dictionary = {}
 var combat_state: Dictionary = {}
+var runtime_loader: RuntimeDataLoaderV1 = null
+var hero_id: int = -1
 
 func setup(data: Dictionary) -> void:
 	hero_data = data
+	hero_id = int(hero_data.get("heroId", -1))
+
+func bind_runtime_loader(loader: RuntimeDataLoaderV1) -> void:
+	runtime_loader = loader
+
+func get_model_path() -> String:
+	if runtime_loader == null:
+		return ""
+	if hero_id <= 0:
+		hero_id = int(hero_data.get("heroId", -1))
+	if hero_id <= 0:
+		return ""
+	return runtime_loader.get_hero_gltf_path(hero_id)
+
+func instantiate_model() -> Node3D:
+	if runtime_loader == null:
+		return null
+	if hero_id <= 0:
+		hero_id = int(hero_data.get("heroId", -1))
+	if hero_id <= 0:
+		return null
+	return runtime_loader.instantiate_hero_model(hero_id)
 
 func tick(delta: float, state: Dictionary) -> Dictionary:
 	combat_state = state

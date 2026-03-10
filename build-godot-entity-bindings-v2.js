@@ -1,4 +1,5 @@
 const fs = require("fs");
+const path = require("path");
 
 function readJson(path) {
   return JSON.parse(fs.readFileSync(path, "utf8"));
@@ -14,6 +15,14 @@ function tokenize(s) {
     .split(/[^a-z0-9]+/)
     .map((x) => x.trim())
     .filter(Boolean);
+}
+
+function safeReadJson(pathLike, fallback) {
+  try {
+    return readJson(pathLike);
+  } catch (_) {
+    return fallback;
+  }
 }
 
 function modelTokenSet(name) {
@@ -111,6 +120,29 @@ function pickHeroBindings(heroes, modelCandidates) {
   return out;
 }
 
+function buildGltfMap(gltfManifest) {
+  const rows = gltfManifest?.rows || [];
+  const map = new Map();
+  for (const r of rows) {
+    if (!r.ok) continue;
+    const sourceJson = String(r.sourceJson || "");
+    const gltfPath = String(r.gltfPath || "");
+    const sourceBase = path.basename(sourceJson, ".json").toLowerCase();
+    map.set(sourceBase, gltfPath);
+  }
+  return map;
+}
+
+function tryResolveGltfPath(modelName, gltfByJsonBase) {
+  const ext = path.extname(modelName || "").toLowerCase();
+  const base = path.basename(modelName || "", ext).toLowerCase();
+  const extTag = ext.replace(".", "");
+  const k1 = `${base}_${extTag}`;
+  if (gltfByJsonBase.has(k1)) return gltfByJsonBase.get(k1);
+  if (gltfByJsonBase.has(base)) return gltfByJsonBase.get(base);
+  return "";
+}
+
 function extractAbilityBindings(mapDelta) {
   const arr = mapDelta?.raw?.w3a?.custom || [];
   const result = [];
@@ -150,6 +182,7 @@ function main() {
   const bossSchema = readJson("boss_wave_schema_v1.json");
   const candidates = readJson("boss_hero_model_candidates_v2.json");
   const mapDelta = readJson("map_delta_v1.json");
+  const gltfManifest = safeReadJson("godot_model_gltf_manifest_v1.json", { rows: [] });
 
   const heroes = runtime?.runtime?.hero?.heroes || [];
   const bosses = bossSchema?.bosses || [];
@@ -158,6 +191,13 @@ function main() {
   const bossModelBindings = pickBossBindings(bosses, modelCandidates);
   const heroModelBindings = pickHeroBindings(heroes, modelCandidates);
   const abilityEffectBindings = extractAbilityBindings(mapDelta);
+  const gltfByJsonBase = buildGltfMap(gltfManifest);
+  for (const b of bossModelBindings) {
+    b.gltfPath = tryResolveGltfPath(b.modelName, gltfByJsonBase);
+  }
+  for (const h of heroModelBindings) {
+    h.gltfPath = tryResolveGltfPath(h.modelName, gltfByJsonBase);
+  }
 
   const out = {
     meta: {
@@ -168,7 +208,9 @@ function main() {
     stats: {
       bossModelBindingCount: bossModelBindings.length,
       heroModelBindingCount: heroModelBindings.length,
-      abilityEffectBindingCount: abilityEffectBindings.length
+      abilityEffectBindingCount: abilityEffectBindings.length,
+      bossGltfResolvedCount: bossModelBindings.filter((x) => !!x.gltfPath).length,
+      heroGltfResolvedCount: heroModelBindings.filter((x) => !!x.gltfPath).length
     },
     bossModelBindings,
     heroModelBindings,

@@ -1,0 +1,404 @@
+{
+  "meta": {
+    "version": "1.0-model-json-to-gltf-v1",
+    "generatedAt": "2026-03-10",
+    "total": 57,
+    "okCount": 54,
+    "failedCount": 3
+  },
+  "rows": [
+    {
+      "sourceJson": "godot-assets/models_json/arise_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/arise_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/arise_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/AZ_Dragonus_C.MDX_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/AZ_Dragonus_C.MDX_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/AZ_Dragonus_C.MDX_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/AZ_F020_3.MDX_mdx.json",
+      "ok": false,
+      "reason": "no valid primitives"
+    },
+    {
+      "sourceJson": "godot-assets/models_json/az_firewall_mdx.json",
+      "ok": false,
+      "reason": "no valid primitives"
+    },
+    {
+      "sourceJson": "godot-assets/models_json/AZ_G029.MDX_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/AZ_G029.MDX_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/AZ_G029.MDX_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/AZ_G030_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/AZ_G030_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/AZ_G030_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/az_lanaya_d_ballistic_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/az_lanaya_d_ballistic_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/az_lanaya_d_ballistic_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Blizzard II_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Blizzard II_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Blizzard II_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/BonefireArrow1_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/BonefireArrow1_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/BonefireArrow1_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/bossjinggaoh1_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh1_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/bossjinggaoh1_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/bossjinggaoh2_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh2_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/bossjinggaoh2_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/bossjinggaohzc_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaohzc_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/bossjinggaohzc_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/bossjinggaoh_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/bossjinggaoh_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/bossjinggaoh_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/boss_027_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/boss_027_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/boss_027_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/ch2_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/ch2_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/ch2_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Cosmic Wings_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Cosmic Wings_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Cosmic Wings_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/daiweibadehuoyan_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/daiweibadehuoyan_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/daiweibadehuoyan_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/FirecrackerArrow_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/FirecrackerArrow_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/FirecrackerArrow_mdx.bin",
+      "primitiveCount": 5,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/gh_huanxianglingyu_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/gh_huanxianglingyu_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/gh_huanxianglingyu_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/hai_pa_de_lao_ban_sha_boss_of_fear_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/hai_pa_de_lao_ban_sha_boss_of_fear_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/hai_pa_de_lao_ban_sha_boss_of_fear_mdx.bin",
+      "primitiveCount": 41,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/HeroDemonHunter_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/HeroDemonHunter_mdx.bin",
+      "primitiveCount": 10,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/HeroDemonHunter_portrait_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/HeroDemonHunter_portrait_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/HeroDemonHunter_portrait_mdx.bin",
+      "primitiveCount": 6,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/HeroTyrael_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/HeroTyrael_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/HeroTyrael_mdx.bin",
+      "primitiveCount": 9,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/herowarden_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/herowarden_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/herowarden_mdx.bin",
+      "primitiveCount": 13,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/hero_invoker_n3s_d_mover_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/hero_invoker_n3s_d_mover_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.json",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.gltf",
+      "binPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdl.bin",
+      "primitiveCount": 7,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight_mdx.bin",
+      "primitiveCount": 7,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Interceptor Shell_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Interceptor Shell_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Interceptor Shell_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/jn_zx_lianhua_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/jn_zx_lianhua_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/jn_zx_lianhua_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/lansejian_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/lansejian_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/lansejian_mdx.bin",
+      "primitiveCount": 7,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Maiz con Arrow_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Maiz con Arrow_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Maiz con Arrow_mdx.bin",
+      "primitiveCount": 8,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/NightmareSpiderBoss_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/NightmareSpiderBoss_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/NightmareSpiderBoss_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/PrismBeam_Adept_mdx.json",
+      "ok": false,
+      "reason": "no valid primitives"
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Radiance Crimson_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Radiance Crimson_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Radiance Crimson_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Radiance Psionic_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Radiance Psionic_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Radiance Psionic_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Radiance Royal_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Radiance Royal_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Radiance Royal_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Rain of Fire Vol. II_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Rain of Fire Vol. II_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Rain of Fire Vol. II_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Armor Crimson_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Armor Crimson_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Armor Crimson_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Bow Enchantment Blood_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Bow Enchantment Blood_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Bow Enchantment Blood_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Bow Enchantment Chilled_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Bow Enchantment Chilled_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Bow Enchantment Chilled_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Bow Enchantment Cinder_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Bow Enchantment Cinder_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Bow Enchantment Cinder_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Bow Enchantment Necro_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Bow Enchantment Necro_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Bow Enchantment Necro_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Bow Enchantment Radiant_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Bow Enchantment Radiant_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Bow Enchantment Radiant_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Soul Bow Enchantment Void_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Soul Bow Enchantment Void_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Soul Bow Enchantment Void_mdx.bin",
+      "primitiveCount": 3,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/tx_25_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/tx_25_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/tx_25_mdx.bin",
+      "primitiveCount": 5,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/t_demonhuntermissile_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/t_demonhuntermissile_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/t_demonhuntermissile_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/t_rejuvenationtarget2_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/t_rejuvenationtarget2_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/t_rejuvenationtarget2_mdx.bin",
+      "primitiveCount": 4,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Voidfall Medium_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Voidfall Medium_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Voidfall Medium_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/war3AKE.com - ay_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/war3AKE.com - ay_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/war3AKE.com - ay_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/war3mapImported_BS002_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/war3mapImported_BS002_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/war3mapImported_BS002_mdx.bin",
+      "primitiveCount": 8,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Windwalk Blood_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Windwalk Blood_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Windwalk Blood_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/Windwalk Blue Soul_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/Windwalk Blue Soul_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/Windwalk Blue Soul_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/WuLe_Jin6_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/WuLe_Jin6_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/WuLe_Jin6_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/xiao_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/xiao_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/xiao_mdx.bin",
+      "primitiveCount": 1,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/zm(164)_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/zm(164)_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/zm(164)_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/zsghero65_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/zsghero65_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/zsghero65_mdx.bin",
+      "primitiveCount": 11,
+      "ok": true
+    },
+    {
+      "sourceJson": "godot-assets/models_json/[ake]330_mdx.json",
+      "gltfPath": "godot-assets/models_gltf/[ake]330_mdx.gltf",
+      "binPath": "godot-assets/models_gltf/[ake]330_mdx.bin",
+      "primitiveCount": 2,
+      "ok": true
+    }
+  ]
+}

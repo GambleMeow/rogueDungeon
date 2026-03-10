@@ -1,0 +1,335 @@
+{
+  "Version": 800,
+  "Info": {
+    "Name": "MilkshapeExported",
+    "MinimumExtent": {
+      "0": -3.9559800768529385e-8,
+      "1": -127.06199645996094,
+      "2": 53.39059829711914
+    },
+    "MaximumExtent": {
+      "0": 3.9559800768529385e-8,
+      "1": 129.31100463867188,
+      "2": 168.02999877929688
+    },
+    "BoundsRadius": 140.41799926757812,
+    "BlendTime": 0,
+    "NumGeosets": 1,
+    "NumGeosetAnims": 1,
+    "NumBones": 1,
+    "NumLights": 0,
+    "NumAttachments": 0,
+    "NumEvents": 0,
+    "NumParticleEmitters": 0,
+    "NumParticleEmitters2": 0,
+    "NumRibbonEmitters": 0
+  },
+  "Sequences": [
+    {
+      "Name": "Stand",
+      "Interval": {
+        "0": 0,
+        "1": 900
+      },
+      "MoveSpeed": 0,
+      "NonLooping": false,
+      "Rarity": 0,
+      "BoundsRadius": 211,
+      "MinimumExtent": {
+        "0": -5.946940007106605e-8,
+        "1": -208.72000122070312,
+        "2": 47.18439865112305
+      },
+      "MaximumExtent": {
+        "0": 5.946940007106605e-8,
+        "1": 176.67999267578125,
+        "2": 219.5189971923828
+      }
+    }
+  ],
+  "GlobalSequences": [
+    800
+  ],
+  "Textures": [
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing1.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing2.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing3.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing4.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing5.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing6.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing7.blp",
+      "Flags": 0
+    },
+    {
+      "ReplaceableId": 0,
+      "Image": "war3mapImported\\CH_BOSSKeXing8.blp",
+      "Flags": 0
+    }
+  ],
+  "Materials": [
+    {
+      "Layers": [
+        {
+          "FilterMode": 2,
+          "Shading": 17,
+          "TextureID": {
+            "Keys": [
+              {
+                "Frame": 0,
+                "Vector": {
+                  "0": 0
+                }
+              },
+              {
+                "Frame": 100,
+                "Vector": {
+                  "0": 1
+                }
+              },
+              {
+                "Frame": 200,
+                "Vector": {
+                  "0": 2
+                }
+              },
+              {
+                "Frame": 300,
+                "Vector": {
+                  "0": 3
+                }
+              },
+              {
+                "Frame": 400,
+                "Vector": {
+                  "0": 4
+                }
+              },
+              {
+                "Frame": 500,
+                "Vector": {
+                  "0": 5
+                }
+              },
+              {
+                "Frame": 600,
+                "Vector": {
+                  "0": 6
+                }
+              },
+              {
+                "Frame": 700,
+                "Vector": {
+                  "0": 7
+                }
+              },
+              {
+                "Frame": 800,
+                "Vector": {
+                  "0": 8
+                }
+              }
+            ],
+            "LineType": 0,
+            "GlobalSeqId": 0
+          },
+          "TVertexAnimId": null,
+          "CoordId": 0,
+          "Alpha": 1
+        }
+      ],
+      "PriorityPlane": 0,
+      "RenderMode": 0
+    }
+  ],
+  "TextureAnims": [],
+  "Geosets": [
+    {
+      "Vertices": {
+        "0": -5.6570577555703494e-8,
+        "1": -181.69842529296875,
+        "2": 203.88282775878906,
+        "3": 5.6570577555703494e-8,
+        "4": -181.69842529296875,
+        "5": 39.948577880859375,
+        "6": -5.6570577555703494e-8,
+        "7": 184.91416931152344,
+        "8": 203.88282775878906,
+        "9": 5.6570577555703494e-8,
+        "10": 184.91416931152344,
+        "11": 39.948577880859375
+      },
+      "Normals": {
+        "0": 1,
+        "1": 0,
+        "2": 6.901618165855439e-10,
+        "3": 1,
+        "4": 0,
+        "5": 6.901618165855439e-10,
+        "6": 1,
+        "7": 0,
+        "8": 6.901618165855439e-10,
+        "9": 1,
+        "10": 0,
+        "11": 6.901618165855439e-10
+      },
+      "Faces": {
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 2,
+        "5": 1
+      },
+      "VertexGroup": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "Groups": [
+        [
+          0
+        ]
+      ],
+      "TotalGroupsCount": 1,
+      "MaterialID": 0,
+      "SelectionGroup": 0,
+      "Unselectable": false,
+      "BoundsRadius": 401.5958557128906,
+      "MinimumExtent": {
+        "0": -5.6570577555703494e-8,
+        "1": -181.69842529296875,
+        "2": 39.948577880859375
+      },
+      "MaximumExtent": {
+        "0": 5.6570577555703494e-8,
+        "1": 184.91416931152344,
+        "2": 203.88282775878906
+      },
+      "Anims": [
+        {
+          "BoundsRadius": 401.5958557128906,
+          "MinimumExtent": {
+            "0": -5.6570577555703494e-8,
+            "1": -181.69842529296875,
+            "2": 39.948577880859375
+          },
+          "MaximumExtent": {
+            "0": 5.6570577555703494e-8,
+            "1": 184.91416931152344,
+            "2": 203.88282775878906
+          }
+        },
+        {
+          "BoundsRadius": 401.5958557128906,
+          "MinimumExtent": {
+            "0": -5.6570577555703494e-8,
+            "1": -181.69842529296875,
+            "2": 39.948577880859375
+          },
+          "MaximumExtent": {
+            "0": 5.6570577555703494e-8,
+            "1": 184.91416931152344,
+            "2": 203.88282775878906
+          }
+        }
+      ],
+      "TVertices": [
+        {
+          "0": 0.007476107683032751,
+          "1": -0.037764281034469604,
+          "2": 0.008678281679749489,
+          "3": 1.0071396827697754,
+          "4": 1.0177420377731323,
+          "5": -0.06649921834468842,
+          "6": 1.0189433097839355,
+          "7": 0.9784044623374939
+        }
+      ]
+    }
+  ],
+  "GeosetAnims": [
+    {
+      "Alpha": 1,
+      "Flags": 2,
+      "Color": {
+        "0": 1,
+        "1": 1,
+        "2": 1
+      },
+      "GeosetId": 0
+    }
+  ],
+  "Bones": [
+    {
+      "Name": "Default",
+      "ObjectId": 0,
+      "Parent": null,
+      "Flags": 264,
+      "GeosetId": 0,
+      "GeosetAnimId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": -2.384185791015625e-7,
+        "2": 60.60606384277344
+      }
+    }
+  ],
+  "Helpers": [],
+  "Attachments": [],
+  "EventObjects": [],
+  "ParticleEmitters": [],
+  "ParticleEmitters2": [],
+  "Cameras": [],
+  "Lights": [],
+  "RibbonEmitters": [],
+  "CollisionShapes": [],
+  "PivotPoints": [
+    {
+      "0": 0,
+      "1": -2.384185791015625e-7,
+      "2": 60.60606384277344
+    }
+  ],
+  "Nodes": [
+    {
+      "Name": "Default",
+      "ObjectId": 0,
+      "Parent": null,
+      "Flags": 264,
+      "GeosetId": 0,
+      "GeosetAnimId": 0,
+      "PivotPoint": {
+        "0": 0,
+        "1": -2.384185791015625e-7,
+        "2": 60.60606384277344
+      }
+    }
+  ]
+}

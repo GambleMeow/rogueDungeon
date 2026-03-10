@@ -10,6 +10,12 @@ function main() {
   const inDir = "godot-assets/models_war3";
   const outDir = "godot-assets/models_json";
   fs.mkdirSync(outDir, { recursive: true });
+  const oldOut = fs.existsSync(outDir) ? fs.readdirSync(outDir) : [];
+  for (const f of oldOut) {
+    if (/\.json$/i.test(f)) {
+      fs.unlinkSync(path.join(outDir, f));
+    }
+  }
 
   const rows = [];
   const files = fs.existsSync(inDir) ? fs.readdirSync(inDir) : [];
@@ -20,10 +26,13 @@ function main() {
     try {
       const raw = fs.readFileSync(srcPath);
       const model = ext === ".mdx" ? parseMDX(toArrayBuffer(raw)) : parseMDL(raw.toString("utf8"));
-      const outPath = path.join(outDir, f.replace(/\.(mdx|mdl)$/i, ".json"));
+      const base = path.basename(f, ext);
+      const extTag = ext === ".mdx" ? "_mdx" : "_mdl";
+      const outPath = path.join(outDir, `${base}${extTag}.json`);
       fs.writeFileSync(outPath, JSON.stringify(model, null, 2), "utf8");
       rows.push({
         sourcePath: srcPath.replace(/\\/g, "/"),
+        sourceName: f,
         jsonPath: outPath.replace(/\\/g, "/"),
         ok: true
       });

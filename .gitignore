@@ -9,6 +9,7 @@ Thumbs.db
 # 编辑器/IDE
 .vscode/
 .idea/
+.godot/
 
 # Python/临时缓存
 __pycache__/
@@ -19,6 +20,7 @@ __pycache__/
 # 下载与解包产物（体积大）
 *.rar
 *.zip
+map-archive-extract/
 
 # 终端/日志输出
 *.log

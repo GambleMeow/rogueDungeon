@@ -77,11 +77,15 @@ function main() {
   const godotAssetMap = tryReadJson("godot_asset_map_v1.json");
   const godotModelPack = tryReadJson("godot_model_pack_manifest_v1.json");
   const godotModelJson = tryReadJson("godot_model_json_manifest_v1.json");
+  const godotModelGltf = tryReadJson("godot_model_gltf_manifest_v1.json");
   const godotEntityBindings =
     tryReadJson("godot_entity_bindings_v2.json") || tryReadJson("godot_entity_bindings_v1.json");
   const godotResourceHealth = tryReadJson("godot_resource_health_v1.json");
   const godotTextureFallback = tryReadJson("godot_texture_fallback_map_v1.json");
   const godotResourceHealthEffective = tryReadJson("godot_resource_health_effective_v1.json");
+  const godotReplayCompare = tryReadJson("battle_replay_compare_godot_v1.json");
+  const godotTuningSuggestions = tryReadJson("godot_tuning_suggestions_v1.json");
+  const godotTuningOverrides = tryReadJson("godot_tuning_overrides_v1.json");
   const terrainImageById = indexBy((terrainImages && terrainImages.terrains) || [], "terrainId");
 
   const out = {
@@ -141,6 +145,7 @@ function main() {
         godotAssetMapManifest: godotAssetMap ? "godot_asset_map_v1.json" : "",
         godotModelPackManifest: godotModelPack ? "godot_model_pack_manifest_v1.json" : "",
         godotModelJsonManifest: godotModelJson ? "godot_model_json_manifest_v1.json" : "",
+        godotModelGltfManifest: godotModelGltf ? "godot_model_gltf_manifest_v1.json" : "",
         godotEntityBindingsManifest: godotEntityBindings
           ? (tryReadJson("godot_entity_bindings_v2.json") ? "godot_entity_bindings_v2.json" : "godot_entity_bindings_v1.json")
           : "",
@@ -149,12 +154,16 @@ function main() {
         godotResourceHealthEffectiveManifest: godotResourceHealthEffective
           ? "godot_resource_health_effective_v1.json"
           : "",
+        godotReplayCompareManifest: godotReplayCompare ? "battle_replay_compare_godot_v1.json" : "",
+        godotTuningSuggestionsManifest: godotTuningSuggestions ? "godot_tuning_suggestions_v1.json" : "",
+        godotTuningOverridesManifest: godotTuningOverrides ? "godot_tuning_overrides_v1.json" : "",
         bossHeroModelCandidatesCount: bossHeroModelCandidates ? (bossHeroModelCandidates.candidates || []).length : 0,
         bossHeroModelCuratedCount: bossHeroModelCurated ? (bossHeroModelCurated.models || []).length : 0,
         godotAssetMapModelCount: godotAssetMap ? Number(godotAssetMap?.sanity?.curatedModelCount || 0) : 0,
         godotModelPackModelCount: godotModelPack ? Number(godotModelPack?.stats?.curatedModels || 0) : 0,
         godotModelPackTextureCount: godotModelPack ? Number(godotModelPack?.stats?.textures || 0) : 0,
         godotModelJsonCount: godotModelJson ? Number(godotModelJson?.meta?.okCount || 0) : 0,
+        godotModelGltfCount: godotModelGltf ? Number(godotModelGltf?.meta?.okCount || 0) : 0,
         godotBossBindingCount: godotEntityBindings ? Number(godotEntityBindings?.stats?.bossModelBindingCount || 0) : 0,
         godotHeroBindingCount: godotEntityBindings ? Number(godotEntityBindings?.stats?.heroModelBindingCount || 0) : 0,
         godotAbilityEffectBindingCount: godotEntityBindings ? Number(godotEntityBindings?.stats?.abilityEffectBindingCount || 0) : 0,
@@ -162,7 +171,15 @@ function main() {
         godotFallbackCoverageCount: godotTextureFallback ? Number(godotTextureFallback?.summary?.withFallback || 0) : 0,
         godotResourceUnresolvedCount: godotResourceHealthEffective
           ? Number(godotResourceHealthEffective?.stats?.unresolvedCount || 0)
-          : -1
+          : -1,
+        godotReplayComparedWaves: godotReplayCompare ? Number(godotReplayCompare?.meta?.comparedWaves || 0) : 0,
+        godotReplaySameResultRate: godotReplayCompare ? Number(godotReplayCompare?.meta?.sameResultRate || 0) : -1,
+        godotTuningActionOverrideCount: godotTuningSuggestions
+          ? Number(godotTuningSuggestions?.summary?.actionOverrideCount || 0)
+          : 0,
+        godotTuningBossOverrideCount: godotTuningSuggestions
+          ? Number(godotTuningSuggestions?.summary?.bossOverrideCount || 0)
+          : 0
       },
       sourceMapDelta: mapDelta
         ? {
@@ -214,13 +231,22 @@ function main() {
       godotModelPackModelCount: godotModelPack ? Number(godotModelPack?.stats?.curatedModels || 0) : 0,
       godotModelPackTextureCount: godotModelPack ? Number(godotModelPack?.stats?.textures || 0) : 0,
       godotModelJsonCount: godotModelJson ? Number(godotModelJson?.meta?.okCount || 0) : 0,
+      godotModelGltfCount: godotModelGltf ? Number(godotModelGltf?.meta?.okCount || 0) : 0,
       godotBossBindingCount: godotEntityBindings ? Number(godotEntityBindings?.stats?.bossModelBindingCount || 0) : 0,
       godotHeroBindingCount: godotEntityBindings ? Number(godotEntityBindings?.stats?.heroModelBindingCount || 0) : 0,
       godotAbilityEffectBindingCount: godotEntityBindings ? Number(godotEntityBindings?.stats?.abilityEffectBindingCount || 0) : 0,
       godotFallbackCoverageCount: godotTextureFallback ? Number(godotTextureFallback?.summary?.withFallback || 0) : 0,
       godotResourceUnresolvedCount: godotResourceHealthEffective
         ? Number(godotResourceHealthEffective?.stats?.unresolvedCount || 0)
-        : -1
+        : -1,
+      godotReplayComparedWaves: godotReplayCompare ? Number(godotReplayCompare?.meta?.comparedWaves || 0) : 0,
+      godotReplaySameResultRate: godotReplayCompare ? Number(godotReplayCompare?.meta?.sameResultRate || 0) : -1,
+      godotTuningActionOverrideCount: godotTuningSuggestions
+        ? Number(godotTuningSuggestions?.summary?.actionOverrideCount || 0)
+        : 0,
+      godotTuningBossOverrideCount: godotTuningSuggestions
+        ? Number(godotTuningSuggestions?.summary?.bossOverrideCount || 0)
+        : 0
     }
   };
 

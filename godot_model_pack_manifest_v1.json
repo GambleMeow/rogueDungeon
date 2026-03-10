@@ -4,6 +4,8 @@
     "generatedAt": "2026-03-10"
   },
   "stats": {
+    "sourcePoolModels": 57,
+    "sourceCandidateModels": 57,
     "curatedModels": 8,
     "modelDeps": 69,
     "textures": 68
@@ -71,6 +73,398 @@
       "guessScore": 6,
       "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/HeroDemonHunter_portrait.mdx",
       "packedPath": "godot-assets/models_war3/HeroDemonHunter_portrait.mdx",
+      "ok": true
+    },
+    {
+      "name": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "packedPath": "godot-assets/models_war3/hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+      "ok": true
+    },
+    {
+      "name": "boss_027.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/boss_027.mdx",
+      "packedPath": "godot-assets/models_war3/boss_027.mdx",
+      "ok": true
+    },
+    {
+      "name": "zsghero65.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/zsghero65.mdx",
+      "packedPath": "godot-assets/models_war3/zsghero65.mdx",
+      "ok": true
+    },
+    {
+      "name": "t_demonhuntermissile.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/t_demonhuntermissile.mdx",
+      "packedPath": "godot-assets/models_war3/t_demonhuntermissile.mdx",
+      "ok": true
+    },
+    {
+      "name": "bossjinggaoh.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh.mdx",
+      "packedPath": "godot-assets/models_war3/bossjinggaoh.mdx",
+      "ok": true
+    },
+    {
+      "name": "bossjinggaoh1.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh1.mdx",
+      "packedPath": "godot-assets/models_war3/bossjinggaoh1.mdx",
+      "ok": true
+    },
+    {
+      "name": "bossjinggaoh2.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaoh2.mdx",
+      "packedPath": "godot-assets/models_war3/bossjinggaoh2.mdx",
+      "ok": true
+    },
+    {
+      "name": "bossjinggaohzc.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/boss-hero-models/bossjinggaohzc.mdx",
+      "packedPath": "godot-assets/models_war3/bossjinggaohzc.mdx",
+      "ok": true
+    },
+    {
+      "name": "AZ_G029.MDX",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_G029.MDX",
+      "packedPath": "godot-assets/models_war3/AZ_G029.MDX",
+      "ok": true
+    },
+    {
+      "name": "jn_zx_lianhua.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/jn_zx_lianhua.mdx",
+      "packedPath": "godot-assets/models_war3/jn_zx_lianhua.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Armor Crimson.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Armor Crimson.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Armor Crimson.mdx",
+      "ok": true
+    },
+    {
+      "name": "Cosmic Wings.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Cosmic Wings.mdx",
+      "packedPath": "godot-assets/models_war3/Cosmic Wings.mdx",
+      "ok": true
+    },
+    {
+      "name": "Interceptor Shell.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Interceptor Shell.mdx",
+      "packedPath": "godot-assets/models_war3/Interceptor Shell.mdx",
+      "ok": true
+    },
+    {
+      "name": "AZ_G030.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_G030.mdx",
+      "packedPath": "godot-assets/models_war3/AZ_G030.mdx",
+      "ok": true
+    },
+    {
+      "name": "war3mapImported_BS002.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/war3mapImported_BS002.mdx",
+      "packedPath": "godot-assets/models_war3/war3mapImported_BS002.mdx",
+      "ok": true
+    },
+    {
+      "name": "t_rejuvenationtarget2.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/t_rejuvenationtarget2.mdx",
+      "packedPath": "godot-assets/models_war3/t_rejuvenationtarget2.mdx",
+      "ok": true
+    },
+    {
+      "name": "Maiz con Arrow.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Maiz con Arrow.mdx",
+      "packedPath": "godot-assets/models_war3/Maiz con Arrow.mdx",
+      "ok": true
+    },
+    {
+      "name": "zm(164).mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/zm(164).mdx",
+      "packedPath": "godot-assets/models_war3/zm(164).mdx",
+      "ok": true
+    },
+    {
+      "name": "[ake]330.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/[ake]330.mdx",
+      "packedPath": "godot-assets/models_war3/[ake]330.mdx",
+      "ok": true
+    },
+    {
+      "name": "lansejian.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/lansejian.mdx",
+      "packedPath": "godot-assets/models_war3/lansejian.mdx",
+      "ok": true
+    },
+    {
+      "name": "Voidfall Medium.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Voidfall Medium.mdx",
+      "packedPath": "godot-assets/models_war3/Voidfall Medium.mdx",
+      "ok": true
+    },
+    {
+      "name": "WuLe_Jin6.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/WuLe_Jin6.mdx",
+      "packedPath": "godot-assets/models_war3/WuLe_Jin6.mdx",
+      "ok": true
+    },
+    {
+      "name": "Blizzard II.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Blizzard II.mdx",
+      "packedPath": "godot-assets/models_war3/Blizzard II.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Bow Enchantment Chilled.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Chilled.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Bow Enchantment Chilled.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Bow Enchantment Void.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Void.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Bow Enchantment Void.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Bow Enchantment Cinder.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Cinder.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Bow Enchantment Cinder.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Bow Enchantment Necro.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Necro.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Bow Enchantment Necro.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Bow Enchantment Radiant.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Radiant.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Bow Enchantment Radiant.mdx",
+      "ok": true
+    },
+    {
+      "name": "FirecrackerArrow.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/FirecrackerArrow.mdx",
+      "packedPath": "godot-assets/models_war3/FirecrackerArrow.mdx",
+      "ok": true
+    },
+    {
+      "name": "Soul Bow Enchantment Blood.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Soul Bow Enchantment Blood.mdx",
+      "packedPath": "godot-assets/models_war3/Soul Bow Enchantment Blood.mdx",
+      "ok": true
+    },
+    {
+      "name": "BonefireArrow1.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/BonefireArrow1.mdx",
+      "packedPath": "godot-assets/models_war3/BonefireArrow1.mdx",
+      "ok": true
+    },
+    {
+      "name": "AZ_Dragonus_C.MDX",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_Dragonus_C.MDX",
+      "packedPath": "godot-assets/models_war3/AZ_Dragonus_C.MDX",
+      "ok": true
+    },
+    {
+      "name": "PrismBeam_Adept.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/PrismBeam_Adept.mdx",
+      "packedPath": "godot-assets/models_war3/PrismBeam_Adept.mdx",
+      "ok": true
+    },
+    {
+      "name": "Windwalk Blood.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Windwalk Blood.mdx",
+      "packedPath": "godot-assets/models_war3/Windwalk Blood.mdx",
+      "ok": true
+    },
+    {
+      "name": "Windwalk Blue Soul.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Windwalk Blue Soul.mdx",
+      "packedPath": "godot-assets/models_war3/Windwalk Blue Soul.mdx",
+      "ok": true
+    },
+    {
+      "name": "daiweibadehuoyan.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/daiweibadehuoyan.mdx",
+      "packedPath": "godot-assets/models_war3/daiweibadehuoyan.mdx",
+      "ok": true
+    },
+    {
+      "name": "Rain of Fire Vol. II.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Rain of Fire Vol. II.mdx",
+      "packedPath": "godot-assets/models_war3/Rain of Fire Vol. II.mdx",
+      "ok": true
+    },
+    {
+      "name": "az_lanaya_d_ballistic.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/az_lanaya_d_ballistic.mdx",
+      "packedPath": "godot-assets/models_war3/az_lanaya_d_ballistic.mdx",
+      "ok": true
+    },
+    {
+      "name": "tx_25.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/tx_25.mdx",
+      "packedPath": "godot-assets/models_war3/tx_25.mdx",
+      "ok": true
+    },
+    {
+      "name": "AZ_F020_3.MDX",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/AZ_F020_3.MDX",
+      "packedPath": "godot-assets/models_war3/AZ_F020_3.MDX",
+      "ok": true
+    },
+    {
+      "name": "Radiance Crimson.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Crimson.mdx",
+      "packedPath": "godot-assets/models_war3/Radiance Crimson.mdx",
+      "ok": true
+    },
+    {
+      "name": "Radiance Psionic.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Psionic.mdx",
+      "packedPath": "godot-assets/models_war3/Radiance Psionic.mdx",
+      "ok": true
+    },
+    {
+      "name": "Radiance Royal.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/Radiance Royal.mdx",
+      "packedPath": "godot-assets/models_war3/Radiance Royal.mdx",
+      "ok": true
+    },
+    {
+      "name": "gh_huanxianglingyu.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/gh_huanxianglingyu.mdx",
+      "packedPath": "godot-assets/models_war3/gh_huanxianglingyu.mdx",
+      "ok": true
+    },
+    {
+      "name": "az_firewall.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/az_firewall.mdx",
+      "packedPath": "godot-assets/models_war3/az_firewall.mdx",
+      "ok": true
+    },
+    {
+      "name": "war3AKE.com - ay.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/war3AKE.com - ay.mdx",
+      "packedPath": "godot-assets/models_war3/war3AKE.com - ay.mdx",
+      "ok": true
+    },
+    {
+      "name": "ch2.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/ch2.mdx",
+      "packedPath": "godot-assets/models_war3/ch2.mdx",
+      "ok": true
+    },
+    {
+      "name": "arise.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/arise.mdx",
+      "packedPath": "godot-assets/models_war3/arise.mdx",
+      "ok": true
+    },
+    {
+      "name": "xiao.mdx",
+      "guessClass": "unknown",
+      "guessScore": 0,
+      "sourcePath": "C:/Users/Administrator/Desktop/personal/rogueDungeon/unit-models-from-refs/xiao.mdx",
+      "packedPath": "godot-assets/models_war3/xiao.mdx",
       "ok": true
     }
   ],
