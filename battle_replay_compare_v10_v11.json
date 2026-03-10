@@ -1,0 +1,204 @@
+{
+  "meta": {
+    "version": "1.0-compare-v10-v11",
+    "generatedAt": "2026-03-10"
+  },
+  "summary": {
+    "winsV10": 15,
+    "winsV11": 15,
+    "winDelta": 0,
+    "improvedWaves": [],
+    "regressedWaves": []
+  },
+  "waveDiffs": [
+    {
+      "wave": 1,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 2,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 3,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 4,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 5,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 6,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 7,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 8,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 9,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 10,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 11,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 12,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 13,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 14,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 15,
+      "resultV10": "lose",
+      "resultV11": "lose",
+      "bossHpLeftV10": 906,
+      "bossHpLeftV11": 353,
+      "bossHpDelta": -553,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 16,
+      "resultV10": "lose",
+      "resultV11": "lose",
+      "bossHpLeftV10": 2864,
+      "bossHpLeftV11": 2232,
+      "bossHpDelta": -632,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 17,
+      "resultV10": "win",
+      "resultV11": "win",
+      "bossHpLeftV10": 0,
+      "bossHpLeftV11": 0,
+      "bossHpDelta": 0,
+      "planModeV11": "defense_first"
+    },
+    {
+      "wave": 18,
+      "resultV10": "lose",
+      "resultV11": "lose",
+      "bossHpLeftV10": 5218,
+      "bossHpLeftV11": 3465,
+      "bossHpDelta": -1753,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 19,
+      "resultV10": "lose",
+      "resultV11": "lose",
+      "bossHpLeftV10": 6318,
+      "bossHpLeftV11": 5571,
+      "bossHpDelta": -747,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 20,
+      "resultV10": "lose",
+      "resultV11": "lose",
+      "bossHpLeftV10": 7132,
+      "bossHpLeftV11": 6237,
+      "bossHpDelta": -895,
+      "planModeV11": "mobility_first"
+    },
+    {
+      "wave": 21,
+      "resultV10": "lose",
+      "resultV11": "lose",
+      "bossHpLeftV10": 3820,
+      "bossHpLeftV11": 2586,
+      "bossHpDelta": -1234,
+      "planModeV11": "mobility_first"
+    }
+  ]
+}

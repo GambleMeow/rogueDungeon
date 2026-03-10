@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "version": "1.0-compare-v11-v12",
+    "generatedAt": "2026-03-10"
+  },
+  "summary": {
+    "winsV11": 15,
+    "winsV12": 17,
+    "winDelta": 2,
+    "improvedWaves": [
+      15,
+      21
+    ],
+    "regressedWaves": []
+  },
+  "waveDiffs": [
+    {
+      "wave": 1,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 2,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 3,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 4,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 5,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 6,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 7,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 8,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 9,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 10,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 11,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 12,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 13,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 14,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 15,
+      "resultV11": "lose",
+      "resultV12": "win",
+      "bossHpLeftV11": 353,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": -353
+    },
+    {
+      "wave": 16,
+      "resultV11": "lose",
+      "resultV12": "lose",
+      "bossHpLeftV11": 2232,
+      "bossHpLeftV12": 56,
+      "bossHpDelta": -2176
+    },
+    {
+      "wave": 17,
+      "resultV11": "win",
+      "resultV12": "win",
+      "bossHpLeftV11": 0,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": 0
+    },
+    {
+      "wave": 18,
+      "resultV11": "lose",
+      "resultV12": "lose",
+      "bossHpLeftV11": 3465,
+      "bossHpLeftV12": 1289,
+      "bossHpDelta": -2176
+    },
+    {
+      "wave": 19,
+      "resultV11": "lose",
+      "resultV12": "lose",
+      "bossHpLeftV11": 5571,
+      "bossHpLeftV12": 2371,
+      "bossHpDelta": -3200
+    },
+    {
+      "wave": 20,
+      "resultV11": "lose",
+      "resultV12": "lose",
+      "bossHpLeftV11": 6237,
+      "bossHpLeftV12": 1821,
+      "bossHpDelta": -4416
+    },
+    {
+      "wave": 21,
+      "resultV11": "lose",
+      "resultV12": "win",
+      "bossHpLeftV11": 2586,
+      "bossHpLeftV12": 0,
+      "bossHpDelta": -2586
+    }
+  ]
+}

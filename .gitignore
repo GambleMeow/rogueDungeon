@@ -24,13 +24,8 @@ map-archive-extract/
 # 终端/日志输出
 *.log
 
-# 本地生成的模拟与对比结果
-battle_replay*.json
 
 # 本地模型/贴图中间产物（可由脚本重建）
 boss-hero-models/
 boss-hero-model-deps/
 unit-models-from-refs/
-
-# 运行时重建产物（如需提交可删掉此条）
-runtime_bundle_v1.json
