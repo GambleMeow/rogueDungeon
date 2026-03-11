@@ -1,0 +1,182 @@
+[
+  {
+    "model": "Rain of Fire Vol. II.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Rain of Fire Vol. II/Rain of Fire Vol. II.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "redimpact.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/redimpact/redimpact.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Shock Blast Blue.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Shock Blast Blue/Shock Blast Blue.glb",
+    "skins": 1,
+    "animations": 10,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Shock Blast Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Shock Blast Red/Shock Blast Red.glb",
+    "skins": 1,
+    "animations": 10,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Singularity I Blue.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity I Blue/Singularity I Blue.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Singularity I Green.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity I Green/Singularity I Green.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Singularity I Orange.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity I Orange/Singularity I Orange.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Singularity I Purple.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity I Purple/Singularity I Purple.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Singularity I Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity I Red/Singularity I Red.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Singularity I White.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity I White/Singularity I White.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Singularity II Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Singularity II Red/Singularity II Red.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Soul Bow Enchantment Void.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Soul Bow Enchantment Void/Soul Bow Enchantment Void.glb",
+    "skins": 1,
+    "animations": 17,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Spell Marker Blue.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Spell Marker Blue/Spell Marker Blue.glb",
+    "skins": 1,
+    "animations": 29,
+    "materials": 4,
+    "textures": 1
+  },
+  {
+    "model": "Spell Marker Gray.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Spell Marker Gray/Spell Marker Gray.glb",
+    "skins": 1,
+    "animations": 29,
+    "materials": 4,
+    "textures": 1
+  },
+  {
+    "model": "StarfallCaster.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/StarfallCaster/StarfallCaster.glb",
+    "skins": 1,
+    "animations": 29,
+    "materials": 8,
+    "textures": 2
+  },
+  {
+    "model": "Stormfall Orange.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Stormfall Orange/Stormfall Orange.glb",
+    "skins": 1,
+    "animations": 11,
+    "materials": 4,
+    "textures": 1
+  },
+  {
+    "model": "Stormfall Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Stormfall Red/Stormfall Red.glb",
+    "skins": 1,
+    "animations": 11,
+    "materials": 4,
+    "textures": 2
+  },
+  {
+    "model": "t_divineshieldtarget.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/t_divineshieldtarget/t_divineshieldtarget.glb",
+    "skins": 1,
+    "animations": 71,
+    "materials": 5,
+    "textures": 4
+  },
+  {
+    "model": "Valiant Charge Void.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Valiant Charge Void/Valiant Charge Void.glb",
+    "skins": 1,
+    "animations": 17,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Void Disc.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Void Disc/Void Disc.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 1,
+    "textures": 1
+  }
+]

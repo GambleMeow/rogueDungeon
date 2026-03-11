@@ -1,0 +1,182 @@
+[
+  {
+    "model": "Culling Slash II Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Culling Slash II Red/Culling Slash II Red.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Culling Slash II Silver.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Culling Slash II Silver/Culling Slash II Silver.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Culling Slash Purple.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Culling Slash Purple/Culling Slash Purple.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Culling Slash Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Culling Slash Red/Culling Slash Red.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Culling Slash Silver.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Culling Slash Silver/Culling Slash Silver.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "effect_az_fenghuang.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/effect_az_fenghuang/effect_az_fenghuang.glb",
+    "skins": 1,
+    "animations": 3,
+    "materials": 4,
+    "textures": 1
+  },
+  {
+    "model": "Effect_chuanfengjian.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Effect_chuanfengjian/Effect_chuanfengjian.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Effect_RiftRed.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Effect_RiftRed/Effect_RiftRed.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 2,
+    "textures": 0
+  },
+  {
+    "model": "Ephemeral Slash Purple.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Ephemeral Slash Purple/Ephemeral Slash Purple.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 5,
+    "textures": 1
+  },
+  {
+    "model": "Ephemeral Slash Silver.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Ephemeral Slash Silver/Ephemeral Slash Silver.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 5,
+    "textures": 1
+  },
+  {
+    "model": "Ephemeral Slash Teal.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Ephemeral Slash Teal/Ephemeral Slash Teal.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 5,
+    "textures": 1
+  },
+  {
+    "model": "Ephemeral Slash Yellow.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Ephemeral Slash Yellow/Ephemeral Slash Yellow.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 5,
+    "textures": 1
+  },
+  {
+    "model": "Fire Spear.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Fire Spear/Fire Spear.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Firebrand Shot Blue.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Firebrand Shot Blue/Firebrand Shot Blue.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Firebrand Shot Green.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Firebrand Shot Green/Firebrand Shot Green.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Firebrand Shot Orange.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Firebrand Shot Orange/Firebrand Shot Orange.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Firebrand Shot Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Firebrand Shot Red/Firebrand Shot Red.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Firebrand Shot Teal.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Firebrand Shot Teal/Firebrand Shot Teal.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Firebrand Shot Yellow.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Firebrand Shot Yellow/Firebrand Shot Yellow.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "FirecrackerArrow.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/FirecrackerArrow/FirecrackerArrow.glb",
+    "skins": 1,
+    "animations": 25,
+    "materials": 4,
+    "textures": 1
+  }
+]

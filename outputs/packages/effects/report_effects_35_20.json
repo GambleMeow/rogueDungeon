@@ -1,0 +1,158 @@
+[
+  {
+    "model": "Fireravengodmount.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Fireravengodmount/Fireravengodmount.glb",
+    "skins": 1,
+    "animations": 31,
+    "materials": 4,
+    "textures": 2
+  },
+  {
+    "model": "Flamestrike Dark Blood I.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Flamestrike Dark Blood I/Flamestrike Dark Blood I.glb",
+    "skins": 1,
+    "animations": 21,
+    "materials": 8,
+    "textures": 0
+  },
+  {
+    "model": "flamestrike i.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/flamestrike i/flamestrike i.glb",
+    "skins": 1,
+    "animations": 21,
+    "materials": 8,
+    "textures": 1
+  },
+  {
+    "model": "Flamestrike Starfire I.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Flamestrike Starfire I/Flamestrike Starfire I.glb",
+    "skins": 1,
+    "animations": 21,
+    "materials": 8,
+    "textures": 2
+  },
+  {
+    "model": "Flamestrike Starfire II.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Flamestrike Starfire II/Flamestrike Starfire II.glb",
+    "skins": 1,
+    "animations": 23,
+    "materials": 9,
+    "textures": 2
+  },
+  {
+    "model": "GlowingAura.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/GlowingAura/GlowingAura.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "Holy Light Royal.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Holy Light Royal/Holy Light Royal.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Holy Light Void.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Holy Light Void/Holy Light Void.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Holy Light.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Holy Light/Holy Light.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Kil'jaedenrage.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\Kil'jaedenrage\\Kil'jaedenrage.glb'"
+  },
+  {
+    "model": "lightningfloor.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/lightningfloor/lightningfloor.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "LordofFlameMissile.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/LordofFlameMissile/LordofFlameMissile.glb",
+    "skins": 1,
+    "animations": 29,
+    "materials": 5,
+    "textures": 1
+  },
+  {
+    "model": "MirrorZI_effect_03_02_01.MDX",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\MirrorZI_effect_03_02_01.MDX\\MirrorZI_effect_03_02_01.MDX.glb'"
+  },
+  {
+    "model": "PrismBeam_Adept.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/PrismBeam_Adept/PrismBeam_Adept.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "PrismBeam_Initiate.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/PrismBeam_Initiate/PrismBeam_Initiate.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "PrismBeam_Master.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/PrismBeam_Master/PrismBeam_Master.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Radiance Crimson.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\Radiance Crimson\\Radiance Crimson.glb'"
+  },
+  {
+    "model": "Radiance Holy.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\Radiance Holy\\Radiance Holy.glb'"
+  },
+  {
+    "model": "Radiance Psionic.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\Radiance Psionic\\Radiance Psionic.glb'"
+  },
+  {
+    "model": "Radiance Royal.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\Radiance Royal\\Radiance Royal.glb'"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "model": "Void Teleport Red To.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\Void Teleport Red To\\Void Teleport Red To.glb'"
+  },
+  {
+    "model": "Voidfall Major.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Voidfall Major/Voidfall Major.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Voidfall Medium.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Voidfall Medium/Voidfall Medium.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Windwalk Fire.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Windwalk Fire/Windwalk Fire.glb",
+    "skins": 1,
+    "animations": 11,
+    "materials": 1,
+    "textures": 1
+  }
+]

@@ -1,0 +1,121 @@
+[
+  {
+    "model": "[effect][0010].mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/[effect][0010]/[effect][0010].glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "[effect][0014].mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/[effect][0014]/[effect][0014].glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 3,
+    "textures": 3
+  },
+  {
+    "model": "[spell]_042.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\[spell]_042\\[spell]_042.glb'"
+  },
+  {
+    "model": "[Spell]_072.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\[Spell]_072\\[Spell]_072.glb'"
+  },
+  {
+    "model": "[Spell]_074.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\[Spell]_074\\[Spell]_074.glb'"
+  },
+  {
+    "model": "[Spell]Rifleman_Hailofbullets.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\effects\\[Spell]Rifleman_Hailofbullets\\[Spell]Rifleman_Hailofbullets.glb'"
+  },
+  {
+    "model": "ArcaneWave.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/ArcaneWave/ArcaneWave.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "az_firewall.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/az_firewall/az_firewall.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Blink Blue Target.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Blink Blue Target/Blink Blue Target.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Blink Red Target.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Blink Red Target/Blink Red Target.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Blink Teal Caster.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Blink Teal Caster/Blink Teal Caster.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "Blizzard II.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Blizzard II/Blizzard II.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "BonefireArrow1.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/BonefireArrow1/BonefireArrow1.glb",
+    "skins": 1,
+    "animations": 17,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "Burning Rage Teal.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Burning Rage Teal/Burning Rage Teal.glb",
+    "skins": 1,
+    "animations": 31,
+    "materials": 5,
+    "textures": 2
+  },
+  {
+    "model": "Culling Slash II Purple.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/effects/Culling Slash II Purple/Culling Slash II Purple.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 1
+  }
+]
