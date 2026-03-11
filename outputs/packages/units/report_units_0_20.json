@@ -1,0 +1,182 @@
+[
+  {
+    "model": "airen_portrait.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/airen_portrait/airen_portrait.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "airen.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/airen/airen.glb",
+    "skins": 1,
+    "animations": 111,
+    "materials": 4,
+    "textures": 1
+  },
+  {
+    "model": "ArthaswithSword.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/ArthaswithSword/ArthaswithSword.glb",
+    "skins": 1,
+    "animations": 241,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "az_doomdragon_v1_big.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/az_doomdragon_v1_big/az_doomdragon_v1_big.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "AZ_Dragonus_C.MDX",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/AZ_Dragonus_C.MDX/AZ_Dragonus_C.MDX.glb",
+    "skins": 1,
+    "animations": 16,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "boss_027.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/boss_027/boss_027.glb",
+    "skins": 1,
+    "animations": 19,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "bossjinggaoh.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaoh/bossjinggaoh.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "bossjinggaoh1.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaoh1/bossjinggaoh1.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "bossjinggaoh2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaoh2/bossjinggaoh2.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "bossjinggaohzc.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaohzc/bossjinggaohzc.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "celestialserpent.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/celestialserpent/celestialserpent.glb",
+    "skins": 1,
+    "animations": 14,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight/h_e_r_o_d_e_a_t_h_k_n_i_g_h_t_hero_death_knight.glb",
+    "skins": 1,
+    "animations": 35,
+    "materials": 7,
+    "textures": 7
+  },
+  {
+    "model": "hai_pa_de_lao_ban_sha_boss_of_fear.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/hai_pa_de_lao_ban_sha_boss_of_fear/hai_pa_de_lao_ban_sha_boss_of_fear.glb",
+    "skins": 1,
+    "animations": 57,
+    "materials": 8,
+    "textures": 6
+  },
+  {
+    "model": "hero_invoker_n3s_d_mover.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/hero_invoker_n3s_d_mover/hero_invoker_n3s_d_mover.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "HeroDemonHunter_portrait.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/HeroDemonHunter_portrait/HeroDemonHunter_portrait.glb",
+    "skins": 1,
+    "animations": 4,
+    "materials": 6,
+    "textures": 5
+  },
+  {
+    "model": "HeroDemonHunter.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/HeroDemonHunter/HeroDemonHunter.glb",
+    "skins": 1,
+    "animations": 51,
+    "materials": 9,
+    "textures": 7
+  },
+  {
+    "model": "HeroTyrael.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/HeroTyrael/HeroTyrael.glb",
+    "skins": 1,
+    "animations": 27,
+    "materials": 8,
+    "textures": 1
+  },
+  {
+    "model": "herowarden.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/herowarden/herowarden.glb",
+    "skins": 1,
+    "animations": 99,
+    "materials": 4,
+    "textures": 4
+  },
+  {
+    "model": "NightmareSpiderBoss.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/NightmareSpiderBoss/NightmareSpiderBoss.glb",
+    "skins": 1,
+    "animations": 40,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "seawitch.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/seawitch/seawitch.glb",
+    "skins": 1,
+    "animations": 31,
+    "materials": 8,
+    "textures": 2
+  }
+]

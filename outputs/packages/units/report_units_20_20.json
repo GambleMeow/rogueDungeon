@@ -1,0 +1,38 @@
+[
+  {
+    "model": "sniper.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/sniper/sniper.glb",
+    "skins": 1,
+    "animations": 67,
+    "materials": 4,
+    "textures": 2
+  },
+  {
+    "model": "units\\creeps\\DarkTrollTrapper\\DarkTrollTrappe.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/DarkTrollTrappe/DarkTrollTrappe.glb",
+    "skins": 1,
+    "animations": 97,
+    "materials": 5,
+    "textures": 0
+  },
+  {
+    "model": "units\\creeps\\DarkTrollTrapper\\DarkTrollTrappe2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/DarkTrollTrappe2/DarkTrollTrappe2.glb",
+    "skins": 1,
+    "animations": 97,
+    "materials": 5,
+    "textures": 0
+  },
+  {
+    "model": "zsghero65.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/zsghero65/zsghero65.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 4,
+    "textures": 3
+  }
+]

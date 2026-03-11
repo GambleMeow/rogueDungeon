@@ -1,0 +1,92 @@
+[
+  {
+    "model": "airen.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/airen/airen.glb",
+    "skins": 1,
+    "animations": 111,
+    "materials": 4,
+    "textures": 1
+  },
+  {
+    "model": "ArthaswithSword.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/ArthaswithSword/ArthaswithSword.glb",
+    "skins": 1,
+    "animations": 241,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "az_doomdragon_v1_big.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/az_doomdragon_v1_big/az_doomdragon_v1_big.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "AZ_Dragonus_C.MDX",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/AZ_Dragonus_C.MDX/AZ_Dragonus_C.MDX.glb",
+    "skins": 1,
+    "animations": 16,
+    "materials": 3,
+    "textures": 2
+  },
+  {
+    "model": "boss_027.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/boss_027/boss_027.glb",
+    "skins": 1,
+    "animations": 19,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "bossjinggaoh.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaoh/bossjinggaoh.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "bossjinggaoh1.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaoh1/bossjinggaoh1.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "bossjinggaoh2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaoh2/bossjinggaoh2.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "bossjinggaohzc.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/bossjinggaohzc/bossjinggaohzc.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "celestialserpent.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/units/celestialserpent/celestialserpent.glb",
+    "skins": 1,
+    "animations": 14,
+    "materials": 2,
+    "textures": 2
+  }
+]
