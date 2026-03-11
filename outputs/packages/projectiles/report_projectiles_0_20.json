@@ -1,0 +1,178 @@
+[
+  {
+    "model": "[Missile]RiflemanMissile.mdx",
+    "ok": false,
+    "reason": "ENOENT: no such file or directory, open 'C:\\Users\\Administrator\\Desktop\\personal\\rogueDungeon2\\outputs\\packages\\projectiles\\[Missile]RiflemanMissile\\[Missile]RiflemanMissile.glb'"
+  },
+  {
+    "model": "Arcade Bolt Blues.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Arcade Bolt Blues/Arcade Bolt Blues.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Arcade Bolt Lime.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Arcade Bolt Lime/Arcade Bolt Lime.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Cannonball D Rain.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Cannonball D Rain/Cannonball D Rain.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Chain Grenade Blue.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Chain Grenade Blue/Chain Grenade Blue.glb",
+    "skins": 1,
+    "animations": 17,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "Chain Grenade Orange.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Chain Grenade Orange/Chain Grenade Orange.glb",
+    "skins": 1,
+    "animations": 17,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "Incendiary Bullet Blue.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Incendiary Bullet Blue/Incendiary Bullet Blue.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 2,
+    "textures": 1
+  },
+  {
+    "model": "Incendiary Bullet Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Incendiary Bullet Red/Incendiary Bullet Red.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 2,
+    "textures": 0
+  },
+  {
+    "model": "Interceptor Shell Rain.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Interceptor Shell Rain/Interceptor Shell Rain.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "Interceptor Shell.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Interceptor Shell/Interceptor Shell.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 3,
+    "textures": 1
+  },
+  {
+    "model": "LavaBreath.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/LavaBreath/LavaBreath.glb",
+    "skins": 1,
+    "animations": 7,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Maiz con Arrow.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Maiz con Arrow/Maiz con Arrow.glb",
+    "skins": 1,
+    "animations": 37,
+    "materials": 7,
+    "textures": 2
+  },
+  {
+    "model": "Piercing Thrust.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Piercing Thrust/Piercing Thrust.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Psionic Shot Orange.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Psionic Shot Orange/Psionic Shot Orange.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Psionic Shot Pink.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Psionic Shot Pink/Psionic Shot Pink.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Psionic Shot Purple.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Psionic Shot Purple/Psionic Shot Purple.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Psionic Shot Red.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Psionic Shot Red/Psionic Shot Red.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Psionic Shot Teal.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Psionic Shot Teal/Psionic Shot Teal.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Sonic Missile.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/Sonic Missile/Sonic Missile.glb",
+    "skins": 1,
+    "animations": 9,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "t_demonhuntermissile.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/projectiles/t_demonhuntermissile/t_demonhuntermissile.glb",
+    "skins": 1,
+    "animations": 13,
+    "materials": 2,
+    "textures": 0
+  }
+]
