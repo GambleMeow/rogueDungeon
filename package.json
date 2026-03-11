@@ -1,0 +1,21 @@
+{
+  "name": "roguedungeon2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gltf-transform/core": "^4.3.0",
+    "@gltf-transform/extensions": "^4.3.0",
+    "@gltf-transform/functions": "^4.3.0",
+    "node-unrar-js": "^2.0.2",
+    "pngjs": "^7.0.0",
+    "w3x-parser": "^2.0.0",
+    "war3-model": "^4.0.0"
+  }
+}

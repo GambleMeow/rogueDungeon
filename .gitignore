@@ -1,0 +1,47 @@
+# =========================
+# Node.js
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Build / runtime caches
+# =========================
+.cache/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# =========================
+# Generated conversion outputs
+# =========================
+archive/
+
+# Temporary texture/cache folders created during conversion
+**/_gltf_textures/
+
+# =========================
+# Downloaded tools / archives (local only)
+# =========================
+tools/*.vsix
+tools/*.zip
+tools/*.7z
+
+# =========================
+# Blender temporary files
+# =========================
+*.blend1
+*.blend2
+
+# =========================
+# OS / editor noise
+# =========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+*.bak
