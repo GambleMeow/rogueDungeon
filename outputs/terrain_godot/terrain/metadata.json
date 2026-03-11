@@ -1,0 +1,59 @@
+{
+  "map": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/archive/map_source/3DMGAME-KKrgdlV29982/1462FAF4C66A5DA039CC9CC506A457EB.w3x",
+  "terrain": {
+    "tileset": "Y",
+    "size": [
+      129,
+      193
+    ],
+    "centerOffset": [
+      -7168,
+      -6144
+    ],
+    "groundHeightMin": -0.365234375,
+    "groundHeightMax": 0,
+    "groundTilesets": [
+      "Ydrt",
+      "Ydtr",
+      "Ybtl",
+      "Ysqd",
+      "Yrtl",
+      "Ygsb",
+      "Yhdg",
+      "Oaby",
+      "Adrg",
+      "Osmb"
+    ],
+    "cliffTilesets": [
+      "CYdi",
+      "CYsq",
+      "COrd"
+    ]
+  },
+  "pathing": {
+    "size": [
+      512,
+      768
+    ],
+    "note": "walkable_mask 使用 wpm bit 0x02 作为不可行走判定"
+  },
+  "doodads": {
+    "count": 1543,
+    "terrainDoodads": 0
+  },
+  "mapInfo": {
+    "playableSize": [
+      116,
+      180
+    ],
+    "tileset": "Y"
+  },
+  "outputs": {
+    "height16": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/terrain_godot/terrain/heightmap_16.png",
+    "heightPreview8": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/terrain_godot/terrain/heightmap_preview_8.png",
+    "walkableMask": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/terrain_godot/terrain/walkable_mask.png",
+    "props": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/terrain_godot/terrain/props.json",
+    "regions": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/terrain_godot/terrain/regions.json",
+    "raw": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/terrain_godot/raw"
+  }
+}
