@@ -1,0 +1,102 @@
+[
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree8D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree8D/NorthrendTree8D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree8S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree8S/NorthrendTree8S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree9.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree9/NorthrendTree9.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree9D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree9D/NorthrendTree9D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree9S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree9S/NorthrendTree9S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "fountain2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/fountain2/fountain2.glb",
+    "skins": 1,
+    "animations": 3,
+    "materials": 0,
+    "textures": 0
+  },
+  {
+    "model": "Grave.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/Grave/Grave.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 2,
+    "textures": 2
+  },
+  {
+    "model": "Objects\\Spawnmodels\\Human\\FragmentationShards\\FragBoomSpawn.mdx",
+    "ok": false,
+    "reason": "Not a mdx model"
+  },
+  {
+    "model": "Objects\\Spawnmodels\\Other\\ToonBoom\\ToonBoom.mdx",
+    "ok": false,
+    "reason": "Not a mdx model"
+  },
+  {
+    "model": "sc2-mineral-field-bravo-1.0edited.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/sc2-mineral-field-bravo-1.0edited/sc2-mineral-field-bravo-1.0edited.glb",
+    "skins": 1,
+    "animations": 22,
+    "materials": 4,
+    "textures": 4
+  },
+  {
+    "model": "tpdoor2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/tpdoor2/tpdoor2.glb",
+    "skins": 1,
+    "animations": 19,
+    "materials": 4,
+    "textures": 4
+  },
+  {
+    "model": "war3mapImported\\LoadingScreen.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/LoadingScreen/LoadingScreen.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  }
+]

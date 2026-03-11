@@ -1,0 +1,182 @@
+[
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree0.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree0/AshenTree0.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree0D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree0D/AshenTree0D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree0S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree0S/AshenTree0S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree1.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree1/AshenTree1.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree1D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree1D/AshenTree1D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree1S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree1S/AshenTree1S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree2/AshenTree2.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree2D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree2D/AshenTree2D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree2S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree2S/AshenTree2S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree3.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree3/AshenTree3.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree3D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree3D/AshenTree3D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree3S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree3S/AshenTree3S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree4.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree4/AshenTree4.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree4D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree4D/AshenTree4D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\AshenTree\\AshenTree4S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/AshenTree4S/AshenTree4S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 0
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree0.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree0/NorthrendTree0.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree0D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree0D/NorthrendTree0D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree0S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree0S/NorthrendTree0S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree1.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree1/NorthrendTree1.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree1D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree1D/NorthrendTree1D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  }
+]

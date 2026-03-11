@@ -1,0 +1,182 @@
+[
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree1S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree1S/NorthrendTree1S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree2.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree2/NorthrendTree2.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree2D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree2D/NorthrendTree2D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree2S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree2S/NorthrendTree2S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree3.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree3/NorthrendTree3.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree3D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree3D/NorthrendTree3D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree3S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree3S/NorthrendTree3S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree4.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree4/NorthrendTree4.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree4D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree4D/NorthrendTree4D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree4S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree4S/NorthrendTree4S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree5.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree5/NorthrendTree5.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree5D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree5D/NorthrendTree5D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree5S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree5S/NorthrendTree5S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree6.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree6/NorthrendTree6.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree6D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree6D/NorthrendTree6D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree6S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree6S/NorthrendTree6S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree7.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree7/NorthrendTree7.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree7D.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree7D/NorthrendTree7D.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree7S.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree7S/NorthrendTree7S.glb",
+    "skins": 1,
+    "animations": 2,
+    "materials": 1,
+    "textures": 1
+  },
+  {
+    "model": "Doodads\\Terrain\\NorthrendTree\\NorthrendTree8.mdx",
+    "ok": true,
+    "glb": "C:/Users/Administrator/Desktop/personal/rogueDungeon2/outputs/packages/environment/NorthrendTree8/NorthrendTree8.glb",
+    "skins": 1,
+    "animations": 5,
+    "materials": 1,
+    "textures": 1
+  }
+]
