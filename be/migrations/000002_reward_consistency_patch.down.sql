@@ -1,0 +1,3 @@
+-- This migration only backfills legacy schemas using IF NOT EXISTS.
+-- Down migration is intentionally a no-op to avoid dropping objects
+-- that may already belong to base migration 000001.

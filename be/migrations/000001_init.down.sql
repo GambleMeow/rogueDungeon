@@ -1,0 +1,22 @@
+DROP INDEX IF EXISTS idx_idempotency_expires;
+DROP INDEX IF EXISTS idx_run_results_verdict_created;
+DROP INDEX IF EXISTS idx_run_sessions_status_created;
+DROP INDEX IF EXISTS idx_run_sessions_host_created;
+DROP INDEX IF EXISTS idx_entitlements_user_owned;
+DROP INDEX IF EXISTS idx_risk_flags_status_created;
+DROP INDEX IF EXISTS idx_admin_audit_logs_created;
+DROP INDEX IF EXISTS idx_reward_grants_user_created;
+DROP INDEX IF EXISTS idx_reward_jobs_status_retry;
+
+DROP TABLE IF EXISTS idempotency_keys;
+DROP TABLE IF EXISTS admin_audit_logs;
+DROP TABLE IF EXISTS risk_flags;
+DROP TABLE IF EXISTS reward_jobs;
+DROP TABLE IF EXISTS reward_grants;
+DROP TABLE IF EXISTS run_results;
+DROP TABLE IF EXISTS run_session_members;
+DROP TABLE IF EXISTS run_sessions;
+DROP TABLE IF EXISTS entitlements;
+DROP TABLE IF EXISTS inventories;
+DROP TABLE IF EXISTS player_profiles;
+DROP TABLE IF EXISTS users;
