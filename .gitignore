@@ -16,6 +16,8 @@ build/
 coverage/
 *.tsbuildinfo
 
+outputs/
+
 # =========================
 # Generated conversion outputs
 # =========================
