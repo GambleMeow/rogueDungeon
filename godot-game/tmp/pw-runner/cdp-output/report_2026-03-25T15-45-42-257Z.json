@@ -1,0 +1,22 @@
+{
+  "success": false,
+  "startedAt": "2026-03-25T15:45:42.256Z",
+  "targetUrl": "https://www.doubao.com/chat/create-image",
+  "imagePath": "C:\\Users\\LENOVO\\Documents\\qqq\\icons\\passives\\PASBTNBash.png",
+  "loginRequired": true,
+  "loginCompleted": true,
+  "actions": [
+    "打开豆包图片生成页面",
+    "检测到登录，等待手动扫码登录（最长3分钟）",
+    "登录完成，继续执行"
+  ],
+  "networkHits": [],
+  "output": {
+    "loadedScreenshot": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\cdp-output\\01_loaded_2026-03-25T15-45-42-257Z.png",
+    "uploadedScreenshot": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\cdp-output\\02_uploaded_2026-03-25T15-45-42-257Z.png",
+    "resultScreenshot": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\cdp-output\\03_result_2026-03-25T15-45-42-257Z.png",
+    "networkJson": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\cdp-output\\network_2026-03-25T15-45-42-257Z.json",
+    "reportJson": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\cdp-output\\report_2026-03-25T15-45-42-257Z.json"
+  },
+  "error": "未找到上传入口，无法上传参考图"
+}

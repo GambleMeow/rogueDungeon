@@ -1,0 +1,27 @@
+{
+  "targetDir": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain",
+  "totalFiles": 5,
+  "totalChangedInfos": 11,
+  "items": [
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\WarStomp\\WarStompCaster.glb",
+      "changedTextureInfoCount": 2
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Shockwave\\ShockwaveMissile.glb",
+      "changedTextureInfoCount": 2
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Reincarnation\\ReincarnationTarget.glb",
+      "changedTextureInfoCount": 5
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAuraTarget\\CommandAuraTarget.glb",
+      "changedTextureInfoCount": 1
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAura\\CommandAura.glb",
+      "changedTextureInfoCount": 1
+    }
+  ]
+}

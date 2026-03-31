@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "mcp-feedback-enhanced": {
+      "command": "node",
+      "args": [
+        "c:\\Users\\LENOVO\\.cursor\\extensions\\mcp-feedback.cursor-feedback-2-2.0.18\\dist\\mcp-server.cjs"
+      ],
+      "env": {
+        "MCP_FEEDBACK_WORKSPACE_ID": "95f91e590e0f"
+      },
+      "timeout": 600,
+      "autoApprove": [
+        "interactive_feedback"
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+2026/03/25-23:44:01.327 5a20 Creating DB C:\Users\LENOVO\Documents\qqq\tmp\edge-devtools-profile\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/03/25-23:44:01.336 5a20 Reusing MANIFEST C:\Users\LENOVO\Documents\qqq\tmp\edge-devtools-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/03/25-23:44:01.450 4848 Level-0 table #5: started
+2026/03/25-23:44:01.457 4848 Level-0 table #5: 681825 bytes OK
+2026/03/25-23:44:01.460 4848 Delete type=0 #3

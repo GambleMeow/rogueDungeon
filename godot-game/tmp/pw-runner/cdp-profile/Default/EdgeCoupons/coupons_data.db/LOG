@@ -1,0 +1,15 @@
+2026/03/26-00:28:13.581 27ec Reusing MANIFEST c:\Users\LENOVO\Documents\qqq\tmp\pw-runner\cdp-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/03/26-00:28:13.583 27ec Recovering log #55
+2026/03/26-00:28:13.584 27ec Reusing old log c:\Users\LENOVO\Documents\qqq\tmp\pw-runner\cdp-profile\Default\EdgeCoupons/coupons_data.db/000055.log 
+2026/03/26-00:28:13.617 6db0 Level-0 table #59: started
+2026/03/26-00:28:13.620 6db0 Level-0 table #59: 681928 bytes OK
+2026/03/26-00:28:13.624 6db0 Delete type=0 #55
+2026/03/26-00:28:13.625 6db0 Compacting 4@0 + 1@1 files
+2026/03/26-00:28:13.630 6db0 Generated table #60@0: 3 keys, 681928 bytes
+2026/03/26-00:28:13.630 6db0 Compacted 4@0 + 1@1 files => 681928 bytes
+2026/03/26-00:28:13.631 6db0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2026/03/26-00:28:13.632 6db0 Delete type=2 #47
+2026/03/26-00:28:13.632 6db0 Delete type=2 #50
+2026/03/26-00:28:13.632 6db0 Delete type=2 #53
+2026/03/26-00:28:13.632 6db0 Delete type=2 #56
+2026/03/26-00:28:13.632 6db0 Delete type=2 #59

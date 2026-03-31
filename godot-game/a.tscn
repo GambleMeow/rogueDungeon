@@ -1,0 +1,288 @@
+[gd_scene format=3 uid="uid://brfytsm7n3kyj"]
+
+[ext_resource type="PackedScene" uid="uid://b24di3qxpp2f5" path="res://modles/herowarden.glb" id="2_hero"]
+[ext_resource type="Script" uid="uid://csfribledihga" path="res://hero_controller.gd" id="3_hero_script"]
+[ext_resource type="Script" uid="uid://dychc5hq1t4k5" path="res://enemy_ai.gd" id="4_enemy_script"]
+[ext_resource type="PackedScene" uid="uid://dccma01231fvu" path="res://modles/HeroTaurenChieftain.glb" id="5_hraqv"]
+[ext_resource type="Texture2D" uid="uid://fcvuckyvake0" path="res://modles/Lords_GrassDark.png" id="6_grass"]
+[ext_resource type="PackedScene" uid="uid://v78ps101r2x" path="res://effects/ground/Village_FenceshortAngled.glb" id="7_fence"]
+[ext_resource type="PackedScene" uid="uid://dvqetls6fsatl" path="res://effects/ground/FelwoodBush1.glb" id="8_tree"]
+[ext_resource type="Script" uid="uid://bmuxopgsltmkr" path="res://nav_setup.gd" id="9_nav"]
+[ext_resource type="Script" uid="uid://cdhjq840j324o" path="res://game_ui.gd" id="10_ui"]
+[ext_resource type="PackedScene" uid="uid://dylj4se3dspai" path="res://modles/VoodooLounge.glb" id="11_shop"]
+[ext_resource type="Script" uid="uid://c0avpq6pft4w5" path="res://tauren_spawner.gd" id="12_tauren_spawner"]
+[ext_resource type="Script" path="res://scene_flow_controller.gd" id="13_scene_flow"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_floor"]
+size = Vector2(10000, 10000)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_floor"]
+albedo_texture = ExtResource("6_grass")
+uv1_scale = Vector3(20, 20, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_floor_col"]
+size = Vector3(10000, 2, 10000)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fence"]
+size = Vector3(80, 40, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tree"]
+size = Vector3(18, 40, 18)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_shop"]
+size = Vector3(200, 200, 200)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_hero"]
+radius = 50.0
+height = 150.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_enemy"]
+radius = 50.0
+height = 150.0
+
+[node name="A" type="Node3D" unique_id=1033004452]
+script = ExtResource("13_scene_flow")
+
+[node name="Floor" type="MeshInstance3D" parent="." unique_id=33748721]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.427757, -23.854263, 36.254517)
+mesh = SubResource("PlaneMesh_floor")
+surface_material_override/0 = SubResource("StandardMaterial3D_floor")
+
+[node name="NavigationRegion" type="NavigationRegion3D" parent="." unique_id=1663630020]
+script = ExtResource("9_nav")
+
+[node name="FloorBody" type="StaticBody3D" parent="NavigationRegion" unique_id=326945752]
+
+[node name="FloorCollision" type="CollisionShape3D" parent="NavigationRegion/FloorBody" unique_id=521786549]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+shape = SubResource("BoxShape3D_floor_col")
+
+[node name="Obstacles" type="Node3D" parent="NavigationRegion" unique_id=1567551910]
+
+[node name="FenceA1" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=205609350]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -240)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceA1" unique_id=2084837258 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -4.7266235, 0, -53.14682)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceA1" unique_id=1705253751]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceA1/Body" unique_id=1373646948]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -4.7266235, 20, -53.14682)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceA2" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1241548102]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -200)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceA2" unique_id=811214971 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -6.050171, 0, 263.87982)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceA2" unique_id=484659897]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceA2/Body" unique_id=398536133]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -6.050171, 20, 263.87982)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceA3" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1880919868]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -160)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceA3" unique_id=2008777629 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 0, 0, 0)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceA3" unique_id=1298216469]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceA3/Body" unique_id=1360088114]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 0, 20, 0)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceA4" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1359670506]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -120)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceA4" unique_id=2095318728 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -7.157379, 0, 290.3403)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceA4" unique_id=38768681]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceA4/Body" unique_id=1900149545]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, -7.157379, 20, 290.3403)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceA5" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1028516841]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -80)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceA5" unique_id=496662571 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 221.01384, 0, -275.02048)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceA5" unique_id=661008348]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceA5/Body" unique_id=1975638297]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 221.01384, 20, -275.02048)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceA6" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=353898559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -300, 0, -40)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceA6" unique_id=1488707046 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 0, 0, 0)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceA6" unique_id=559070920]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceA6/Body" unique_id=417391847]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 0, 20, 0)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceB1" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1878322730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -260, 0, -40)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceB1" unique_id=376883319 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 191.37874, -3.0517578e-05, -178.20505)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceB1" unique_id=719029148]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceB1/Body" unique_id=1885763717]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 28.819824, 20, -172.17969)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceB2" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1458695519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -220, 0, -40)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceB2" unique_id=1009140393 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 157.46693, 0, 163.0697)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceB2" unique_id=657301050]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceB2/Body" unique_id=1584293021]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 10.545776, 20, -86.28317)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceB3" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=345707656]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -180, 0, -40)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceB3" unique_id=1289982426 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 113.85129, -3.0517578e-05, -70.81313)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceB3" unique_id=213651446]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceB3/Body" unique_id=1701583430]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 5.7485657, 20, -0.18102264)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="FenceB4" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1107994289]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -140, 0, -40)
+
+[node name="Model" parent="NavigationRegion/Obstacles/FenceB4" unique_id=19196250 instance=ExtResource("7_fence")]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 74.834595, -1.5258789e-05, 51.07094)
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/FenceB4" unique_id=1718677328]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/FenceB4/Body" unique_id=869297046]
+transform = Transform3D(-0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, -0.70710677, 7.1198425, 20, 87.66084)
+shape = SubResource("BoxShape3D_fence")
+
+[node name="Tree1" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1275980834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -700, 0, 300)
+
+[node name="Model" parent="NavigationRegion/Obstacles/Tree1" unique_id=2114793967 instance=ExtResource("8_tree")]
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/Tree1" unique_id=19838291]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/Tree1/Body" unique_id=1541956091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+shape = SubResource("BoxShape3D_tree")
+
+[node name="Tree2" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=914350504]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -200, 0, -400)
+
+[node name="Model" parent="NavigationRegion/Obstacles/Tree2" unique_id=626729350 instance=ExtResource("8_tree")]
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/Tree2" unique_id=1655009619]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/Tree2/Body" unique_id=151195897]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+shape = SubResource("BoxShape3D_tree")
+
+[node name="Tree3" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1010064476]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 300, 0, 250)
+
+[node name="Model" parent="NavigationRegion/Obstacles/Tree3" unique_id=1195173646 instance=ExtResource("8_tree")]
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/Tree3" unique_id=540241475]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/Tree3/Body" unique_id=1652217239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+shape = SubResource("BoxShape3D_tree")
+
+[node name="Tree4" type="Node3D" parent="NavigationRegion/Obstacles" unique_id=1939599505]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600, 0, -200)
+
+[node name="Model" parent="NavigationRegion/Obstacles/Tree4" unique_id=865217324 instance=ExtResource("8_tree")]
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Obstacles/Tree4" unique_id=2019671916]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Obstacles/Tree4/Body" unique_id=299556013]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20, 0)
+shape = SubResource("BoxShape3D_tree")
+
+[node name="Shop" type="Node3D" parent="NavigationRegion" unique_id=427280062]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -800, 0, 500)
+
+[node name="Model" parent="NavigationRegion/Shop" unique_id=727920282 instance=ExtResource("11_shop")]
+
+[node name="Body" type="StaticBody3D" parent="NavigationRegion/Shop" unique_id=2125985865 groups=["shop"]]
+
+[node name="Col" type="CollisionShape3D" parent="NavigationRegion/Shop/Body" unique_id=284088824]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 100, 0)
+shape = SubResource("BoxShape3D_shop")
+
+[node name="HeroController" type="Node3D" parent="." unique_id=448244168]
+script = ExtResource("3_hero_script")
+idle_animation = "Stand Ready 1_GLTF"
+walk_animation = "Walk_GLTF"
+attack_animation_1 = "Attack 1_GLTF"
+attack_animation_2 = "Attack 2_GLTF"
+attack_animation_3 = "Attack 3_GLTF"
+
+[node name="herowarden" parent="HeroController" unique_id=479886834 groups=["hero"] instance=ExtResource("2_hero")]
+transform = Transform3D(0.9408808, 0, -0.3387379, 0, 1, 0, 0.3387379, 0, 0.9408808, -1171.0723, 0, -381.0182)
+
+[node name="CollisionBody" type="StaticBody3D" parent="HeroController/herowarden" unique_id=998324667]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HeroController/herowarden/CollisionBody" unique_id=936529979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 75, 0)
+shape = SubResource("CapsuleShape3D_hero")
+
+[node name="EnemyAI" type="Node3D" parent="." unique_id=1038211244]
+script = ExtResource("4_enemy_script")
+enemy_path = NodePath("HeroTaurenChieftain2")
+death_animation = "Death"
+idle_animation = "Stand - 1"
+walk_animation = "Walk"
+attack_animation_1 = "Attack - 1"
+attack_animation_2 = "Attack - 2"
+attack_animation_3 = ""
+skill_animation = "Attack Slam"
+skill2_animation = "Spell Slam"
+
+[node name="HeroTaurenChieftain2" parent="EnemyAI" unique_id=1817734612 instance=ExtResource("5_hraqv")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 500, 0, 0)
+
+[node name="CollisionBody" type="StaticBody3D" parent="EnemyAI/HeroTaurenChieftain2" unique_id=989835315 groups=["enemy"]]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="EnemyAI/HeroTaurenChieftain2/CollisionBody" unique_id=1179526517]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 75, 0)
+shape = SubResource("CapsuleShape3D_enemy")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=401387349]
+transform = Transform3D(1, 0, 0, 0, 0.422618, 0.906308, 0, -0.906308, 0.422618, 0, 1700, 1050)
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=975485470]
+transform = Transform3D(1, 0, 0, 0, 0.9063078, 0.42261827, 0, -0.42261827, 0.9063078, -1568.3192, -454.6485, 100.8739)
+
+[node name="TaurenSpawner" type="Node3D" parent="." unique_id=2067088140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 0, 80)
+script = ExtResource("12_tauren_spawner")
+unit_scale = Vector3(1.5, 1.5, 1.5)
+
+[node name="GameUI" type="CanvasLayer" parent="." unique_id=1389545792]
+script = ExtResource("10_ui")

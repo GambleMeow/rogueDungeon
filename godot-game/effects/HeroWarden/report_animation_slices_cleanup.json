@@ -1,0 +1,276 @@
+{
+  "targetDir": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden",
+  "totalFiles": 9,
+  "totalBefore": 187,
+  "totalAfter": 19,
+  "items": [
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\WardenMissile\\WardenMissile.glb",
+      "before": 7,
+      "after": 2,
+      "kept": [
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED WardenMissile_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Death WardenMissile_GLTF",
+        "Stand WardenMissile_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\SpiritOfVengeanceBirthMissile\\SpiritOfVengeanceBirthMissile.glb",
+      "before": 13,
+      "after": 3,
+      "kept": [
+        "Birth",
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED SpiritOfVengeanceBirthMissile.001_GLTF",
+        "#UNANIMATED SpiritOfVengeanceBirthMissile_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth SpiritOfVengeanceBirthMissile.001_GLTF",
+        "Birth SpiritOfVengeanceBirthMissile_GLTF",
+        "Death SpiritOfVengeanceBirthMissile.001_GLTF",
+        "Death SpiritOfVengeanceBirthMissile_GLTF",
+        "Stand SpiritOfVengeanceBirthMissile.001_GLTF",
+        "Stand SpiritOfVengeanceBirthMissile_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrikeMissile\\ShadowStrikeMissile.glb",
+      "before": 21,
+      "after": 3,
+      "kept": [
+        "Birth",
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED ShadowStrikeMissile.001_GLTF",
+        "#UNANIMATED ShadowStrikeMissile.002_GLTF",
+        "#UNANIMATED ShadowStrikeMissile.003_GLTF",
+        "#UNANIMATED ShadowStrikeMissile_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth ShadowStrikeMissile.001_GLTF",
+        "Birth ShadowStrikeMissile.002_GLTF",
+        "Birth ShadowStrikeMissile.003_GLTF",
+        "Birth ShadowStrikeMissile_GLTF",
+        "Death ShadowStrikeMissile.001_GLTF",
+        "Death ShadowStrikeMissile.002_GLTF",
+        "Death ShadowStrikeMissile.003_GLTF",
+        "Death ShadowStrikeMissile_GLTF",
+        "Stand ShadowStrikeMissile.001_GLTF",
+        "Stand ShadowStrikeMissile.002_GLTF",
+        "Stand ShadowStrikeMissile.003_GLTF",
+        "Stand ShadowStrikeMissile_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrike\\shadowstrike.glb",
+      "before": 17,
+      "after": 3,
+      "kept": [
+        "Birth",
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED shadowstrike.001_GLTF",
+        "#UNANIMATED shadowstrike.002_GLTF",
+        "#UNANIMATED shadowstrike_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth shadowstrike.001_GLTF",
+        "Birth shadowstrike.002_GLTF",
+        "Birth shadowstrike_GLTF",
+        "Death shadowstrike.001_GLTF",
+        "Death shadowstrike.002_GLTF",
+        "Death shadowstrike_GLTF",
+        "Stand shadowstrike.001_GLTF",
+        "Stand shadowstrike.002_GLTF",
+        "Stand shadowstrike_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\HeroModel\\HeroWarden.glb",
+      "before": 79,
+      "after": 2,
+      "kept": [
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED HeroWarden.001_GLTF",
+        "#UNANIMATED HeroWarden.002_GLTF",
+        "#UNANIMATED HeroWarden.003_GLTF",
+        "#UNANIMATED HeroWarden.004_GLTF",
+        "#UNANIMATED HeroWarden_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Attack - 1 HeroWarden.001_GLTF",
+        "Attack - 1 HeroWarden.002_GLTF",
+        "Attack - 1 HeroWarden.003_GLTF",
+        "Attack - 1 HeroWarden.004_GLTF",
+        "Attack - 1 HeroWarden_GLTF",
+        "Attack - 1_GLTF",
+        "Attack - 2 HeroWarden.001_GLTF",
+        "Attack - 2 HeroWarden.002_GLTF",
+        "Attack - 2 HeroWarden.003_GLTF",
+        "Attack - 2 HeroWarden.004_GLTF",
+        "Attack - 2 HeroWarden_GLTF",
+        "Attack - 2_GLTF",
+        "Death HeroWarden.001_GLTF",
+        "Death HeroWarden.002_GLTF",
+        "Death HeroWarden.003_GLTF",
+        "Death HeroWarden.004_GLTF",
+        "Death HeroWarden_GLTF",
+        "Dissipate HeroWarden.001_GLTF",
+        "Dissipate HeroWarden.002_GLTF",
+        "Dissipate HeroWarden.003_GLTF",
+        "Dissipate HeroWarden.004_GLTF",
+        "Dissipate HeroWarden_GLTF",
+        "Dissipate_GLTF",
+        "Spell HeroWarden.001_GLTF",
+        "Spell HeroWarden.002_GLTF",
+        "Spell HeroWarden.003_GLTF",
+        "Spell HeroWarden.004_GLTF",
+        "Spell HeroWarden_GLTF",
+        "Spell Slam HeroWarden.001_GLTF",
+        "Spell Slam HeroWarden.002_GLTF",
+        "Spell Slam HeroWarden.003_GLTF",
+        "Spell Slam HeroWarden.004_GLTF",
+        "Spell Slam HeroWarden_GLTF",
+        "Spell Slam_GLTF",
+        "Spell Throw HeroWarden.001_GLTF",
+        "Spell Throw HeroWarden.002_GLTF",
+        "Spell Throw HeroWarden.003_GLTF",
+        "Spell Throw HeroWarden.004_GLTF",
+        "Spell Throw HeroWarden_GLTF",
+        "Spell Throw_GLTF",
+        "Spell_GLTF",
+        "Stand - 1 HeroWarden.001_GLTF",
+        "Stand - 1 HeroWarden.002_GLTF",
+        "Stand - 1 HeroWarden.003_GLTF",
+        "Stand - 1 HeroWarden.004_GLTF",
+        "Stand - 1 HeroWarden_GLTF",
+        "Stand - 2 HeroWarden.001_GLTF",
+        "Stand - 2 HeroWarden.002_GLTF",
+        "Stand - 2 HeroWarden.003_GLTF",
+        "Stand - 2 HeroWarden.004_GLTF",
+        "Stand - 2 HeroWarden_GLTF",
+        "Stand - 2_GLTF",
+        "Stand Channel HeroWarden.001_GLTF",
+        "Stand Channel HeroWarden.002_GLTF",
+        "Stand Channel HeroWarden.003_GLTF",
+        "Stand Channel HeroWarden.004_GLTF",
+        "Stand Channel HeroWarden_GLTF",
+        "Stand Channel_GLTF",
+        "Stand Ready HeroWarden.001_GLTF",
+        "Stand Ready HeroWarden.002_GLTF",
+        "Stand Ready HeroWarden.003_GLTF",
+        "Stand Ready HeroWarden.004_GLTF",
+        "Stand Ready HeroWarden_GLTF",
+        "Stand Ready_GLTF",
+        "Walk HeroWarden.001_GLTF",
+        "Walk HeroWarden.002_GLTF",
+        "Walk HeroWarden.003_GLTF",
+        "Walk HeroWarden.004_GLTF",
+        "Walk HeroWarden_GLTF",
+        "Walk_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesMissile\\FanOfKnivesMissile.glb",
+      "before": 16,
+      "after": 2,
+      "kept": [
+        "Birth",
+        "Death"
+      ],
+      "removed": [
+        "#UNANIMATED FanOfKnivesMissile.001_GLTF",
+        "#UNANIMATED FanOfKnivesMissile_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth - 1 FanOfKnivesMissile.001_GLTF",
+        "Birth - 1 FanOfKnivesMissile_GLTF",
+        "Birth - 2 FanOfKnivesMissile.001_GLTF",
+        "Birth - 2 FanOfKnivesMissile_GLTF",
+        "Birth - 2_GLTF",
+        "Birth - 3 FanOfKnivesMissile.001_GLTF",
+        "Birth - 3 FanOfKnivesMissile_GLTF",
+        "Birth - 3_GLTF",
+        "Death FanOfKnivesMissile.001_GLTF",
+        "Death FanOfKnivesMissile_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesCaster\\FanOfKnivesCaster.glb",
+      "before": 16,
+      "after": 2,
+      "kept": [
+        "Birth",
+        "Death"
+      ],
+      "removed": [
+        "#UNANIMATED FanOfKnivesCaster.001_GLTF",
+        "#UNANIMATED FanOfKnivesCaster_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth - 1 FanOfKnivesCaster.001_GLTF",
+        "Birth - 1 FanOfKnivesCaster_GLTF",
+        "Birth - 2 FanOfKnivesCaster.001_GLTF",
+        "Birth - 2 FanOfKnivesCaster_GLTF",
+        "Birth - 2_GLTF",
+        "Birth - 3 FanOfKnivesCaster.001_GLTF",
+        "Birth - 3 FanOfKnivesCaster_GLTF",
+        "Birth - 3_GLTF",
+        "Death FanOfKnivesCaster.001_GLTF",
+        "Death FanOfKnivesCaster_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkTarget\\BlinkTarget.glb",
+      "before": 9,
+      "after": 1,
+      "kept": [
+        "Birth"
+      ],
+      "removed": [
+        "#UNANIMATED BlinkTarget.001_GLTF",
+        "#UNANIMATED BlinkTarget.002_GLTF",
+        "#UNANIMATED BlinkTarget_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth BlinkTarget.001_GLTF",
+        "Birth BlinkTarget.002_GLTF",
+        "Birth BlinkTarget_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkCaster\\BlinkCaster.glb",
+      "before": 9,
+      "after": 1,
+      "kept": [
+        "Birth"
+      ],
+      "removed": [
+        "#UNANIMATED BlinkCaster.001_GLTF",
+        "#UNANIMATED BlinkCaster.002_GLTF",
+        "#UNANIMATED BlinkCaster_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth BlinkCaster.001_GLTF",
+        "Birth BlinkCaster.002_GLTF",
+        "Birth BlinkCaster_GLTF"
+      ]
+    }
+  ]
+}

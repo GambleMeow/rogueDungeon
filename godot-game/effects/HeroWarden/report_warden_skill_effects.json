@@ -1,0 +1,101 @@
+{
+  "source": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish",
+  "archives": [
+    "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3Patch.mpq",
+    "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+    "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq"
+  ],
+  "outRoot": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden",
+  "total": 10,
+  "success": 9,
+  "failed": 1,
+  "items": [
+    {
+      "skill": "HeroModel",
+      "sourceModel": "Units\\NightElf\\HeroWarden\\HeroWarden.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\HeroModel\\HeroWarden.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\HeroModel\\HeroWarden.glb",
+      "texturesExtracted": 2
+    },
+    {
+      "skill": "FanOfKnivesCaster",
+      "sourceModel": "Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesCaster.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesCaster\\FanOfKnivesCaster.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesCaster\\FanOfKnivesCaster.glb",
+      "texturesExtracted": 3
+    },
+    {
+      "skill": "FanOfKnivesMissile",
+      "sourceModel": "Abilities\\Spells\\NightElf\\FanOfKnives\\FanOfKnivesMissile.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesMissile\\FanOfKnivesMissile.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesMissile\\FanOfKnivesMissile.glb",
+      "texturesExtracted": 4
+    },
+    {
+      "skill": "BlinkCaster",
+      "sourceModel": "Abilities\\Spells\\NightElf\\Blink\\BlinkCaster.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkCaster\\BlinkCaster.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkCaster\\BlinkCaster.glb",
+      "texturesExtracted": 5
+    },
+    {
+      "skill": "BlinkTarget",
+      "sourceModel": "Abilities\\Spells\\NightElf\\Blink\\BlinkTarget.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkTarget\\BlinkTarget.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkTarget\\BlinkTarget.glb",
+      "texturesExtracted": 4
+    },
+    {
+      "skill": "ShadowStrike",
+      "sourceModel": "Abilities\\Spells\\NightElf\\shadowstrike\\shadowstrike.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3Patch.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrike\\shadowstrike.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrike\\shadowstrike.glb",
+      "texturesExtracted": 4
+    },
+    {
+      "skill": "ShadowStrikeMissile",
+      "sourceModel": "Abilities\\Spells\\NightElf\\shadowstrike\\ShadowStrikeMissile.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrikeMissile\\ShadowStrikeMissile.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrikeMissile\\ShadowStrikeMissile.glb",
+      "texturesExtracted": 4
+    },
+    {
+      "skill": "SpiritOfVengeanceBirthMissile",
+      "sourceModel": "Abilities\\Spells\\NightElf\\SpiritOfVengeance\\SpiritOfVengeanceBirthMissile.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\SpiritOfVengeanceBirthMissile\\SpiritOfVengeanceBirthMissile.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\SpiritOfVengeanceBirthMissile\\SpiritOfVengeanceBirthMissile.glb",
+      "texturesExtracted": 4
+    },
+    {
+      "skill": "SpiritOfVengeance",
+      "sourceModel": "Units\\NightElf\\SpiritOfVengeance\\SpiritOfVengeance.mdx",
+      "ok": false,
+      "reason": "转换 SpiritOfVengeance 为GLB失败\nexit=1\nstdout=Blender 2.83.4 (hash c113af82881a built 2020-08-05 04:04:17)\nRead prefs: C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\config\\userpref.blend\nfound bundled python: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\python\nInfo: Deleted 3 object(s)\nERROR (bke.lib_id): C:\\b\\buildbot-worker-windows\\windows_lts_283\\blender.git\\source\\blender\\blenkernel\\intern\\lib_id.c:342 id_us_min: ID user decrement error: MADots Stroke (from '[Main]'): 0 <= 0\nError: Traceback (most recent call last):\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\operators.py\", line 79, in execute\n    load_mdx(import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\load_mdx.py\", line 11, in load_mdx\n    parse_mdx(mdx_file_data, import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\parse_mdx.py\", line 61, in parse_mdx\n    importer.load_warcraft_3_model(model, import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\importer.py\", line 18, in load_warcraft_3_model\n    armature_object: Object = create_armature_object(model, bpy_mesh_objects, import_properties.bone_size)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\create_armature_object.py\", line 28, in create_armature_object\n    parent = bpy_armature.edit_bones[node.parent]\nIndexError: bpy_prop_collection[index]: index 129 out of range, size 129\n\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\n\ninit first load\r\nload plugin\r\nInfo: Deleted 3 object(s)\r\nmdl version:  800\r\nVRTX\r\n825\r\nVRTX\r\n34\r\nVRTX\r\n32\r\nVRTX\r\n48\r\ncreating materials\r\nNo resource folder set in addon preferences\r\nNo alt resource folder set in addon preferences\r\nfolders size:  1\r\nloading: units\\NightElf\\SpiritOfVengeance\\Black128.png\r\nloading: ReplaceableTextures\\TeamGlow\\TeamGlow00.png\r\nloading: Textures\\Clouds8x8Mod.png\r\nloading: Textures\\RibbonBlur1b.png\r\nloading: Textures\\Purple_Glow.png\r\nloading: Textures\\ShockwaveWater1.png\r\nloading: Textures\\Purple_Star.png\r\ncreating mesh\r\ncreating armature\r\n<bpy_struct, EditBone(\"Object11\")>\r\nError: Traceback (most recent call last):\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\operators.py\", line 79, in execute\r\n    load_mdx(import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\load_mdx.py\", line 11, in load_mdx\r\n    parse_mdx(mdx_file_data, import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\parse_mdx.py\", line 61, in parse_mdx\r\n    importer.load_warcraft_3_model(model, import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\importer.py\", line 18, in load_warcraft_3_model\r\n    armature_object: Object = create_armature_object(model, bpy_mesh_objects, import_properties.bone_size)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_... truncated\nBlender quit\n\nstderr=Traceback (most recent call last):\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\operators.py\", line 79, in execute\n    load_mdx(import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\load_mdx.py\", line 11, in load_mdx\n    parse_mdx(mdx_file_data, import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\parse_mdx.py\", line 61, in parse_mdx\n    importer.load_warcraft_3_model(model, import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\importer.py\", line 18, in load_warcraft_3_model\n    armature_object: Object = create_armature_object(model, bpy_mesh_objects, import_properties.bone_size)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\create_armature_object.py\", line 28, in create_armature_object\n    parent = bpy_armature.edit_bones[node.parent]\nIndexError: bpy_prop_collection[index]: index 129 out of range, size 129\n\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\n\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\nTraceback (most recent call last):\r\n  File \"C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\addon_utils.py\", line 351, in enable\r\n    mod = __import__(module_name)\r\nModuleNotFoundError: No module named 'io_scene_warcraft'\r\nTraceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\blender_convert_temp_33256_1773847374940_rnccdhei8x.py\", line 270, in <module>\r\n    import_model(input_path)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\blender_convert_temp_33256_1773847374940_rnccdhei8x.py\", line 75, in import_model\r\n    + str(last_err)\r\nRuntimeError: MDX/MDL 导入失败。可用 import_scene 操作: fbx, gltf, obj, x3d; 最后错误: Error: Traceback (most recent call last):\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\operators.py\", line 79, in execute\r\n    load_mdx(import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\load_mdx.py\", line 11, in load_mdx\r\n    parse_mdx(mdx_file_data, import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\parse_mdx.py\", line 61, in parse_mdx\r\n    importer.load_warcraft_3_model(model, import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\importer.py\", line 18, in load_warcraft_3_model\r\n    armature_object: Object = create_armature_object(model, bpy_mesh_objects, import_properties.bone_size)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\create_armature_object.py\", line 28, in create_armature_object\r\n    parent = bpy_armature.edit_bones[node.parent]\r\nIndexError: bpy_prop_collection[index]: index 129 out of range, size 129\r\n\r\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\r\n\r\n\r\nBlender 返回成功但未生成输出文件: C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\SpiritOfVengeance\\SpiritOfVengeance.glb\nTraceback (most recent call last):\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\operators.py\", line 79, in execute\n    load_mdx(import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\load_mdx.py\", line 11, in load_mdx\n    parse_mdx(mdx_file_data, import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\parse_mdx.py\", line 61, in parse_mdx\n    importer.load_warcraft_3_model(model, import_properties)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\importer.py\", line 18, in load_warcraft_3_model\n    armature_object: Object = create_armature_object(model, bpy_mesh_objects, import_properties.bone_size)\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\create_armature_object.py\", line 28, in create_armature_object\n    parent = bpy_armature.edit_bones[node.parent]\nIndexError: bpy_prop_collection[index]: index 129 out of range, size 129\n\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\n\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\nTraceback (most recent call last):\r\n  File \"C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\addon_utils.py\", line 351, in enable\r\n    mod = __import__(module_name)\r\nModuleNotFoundError: No module named 'io_scene_warcraft'\r\nTraceback (most recent call last):\r\n  File \"<string>\", line 1, in <module>\r\n  File \"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\blender_convert_temp_33256_1773847374940_rnccdhei8x.py\", line 270, in <module>\r\n    import_model(input_path)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Local\\Temp\\blender_convert_temp_33256_1773847374940_rnccdhei8x.py\", line 75, in import_model\r\n    + str(last_err)\r\nRuntimeError: MDX/MDL 导入失败。可用 import_scene 操作: fbx, gltf, obj, x3d; 最后错误: Error: Traceback (most recent call last):\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\operators.py\", line 79, in execute\r\n    load_mdx(import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\load_mdx.py\", line 11, in load_mdx\r\n    parse_mdx(mdx_file_data, import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\mdx_parser\\parse_mdx.py\", line 61, in parse_mdx\r\n    importer.load_warcraft_3_model(model, import_properties)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\importer.py\", line 18, in load_warcraft_3_model\r\n    armature_object: Object = create_armature_object(model, bpy_mesh_objects, import_properties.bone_size)\r\n  File \"C:\\Users\\LENOVO\\AppData\\Roaming\\Blender Foundation\\Blender\\2.83\\scripts\\addons\\io_scene_warcraft_3\\importer\\create_armature_object.py\", line 28, in create_armature_object\r\n    parent = bpy_armature.edit_bones[node.parent]\r\nIndexError: bpy_prop_collection[index]: index 129 out of range, size 129\r\n\r\nlocation: C:\\Program Files\\Blender Foundation\\Blender 2.83\\2.83\\scripts\\modules\\bpy\\ops.py:201\r\n\r\n\r\n\n"
+    },
+    {
+      "skill": "WardenMissile",
+      "sourceModel": "Abilities\\Weapons\\WardenMissile\\WardenMissile.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\WardenMissile\\WardenMissile.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\WardenMissile\\WardenMissile.glb",
+      "texturesExtracted": 3
+    }
+  ]
+}

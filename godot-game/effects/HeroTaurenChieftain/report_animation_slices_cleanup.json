@@ -1,0 +1,112 @@
+{
+  "targetDir": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain",
+  "totalFiles": 5,
+  "totalBefore": 59,
+  "totalAfter": 9,
+  "items": [
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\WarStomp\\WarStompCaster.glb",
+      "before": 7,
+      "after": 1,
+      "kept": [
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED WarStompCaster.001_GLTF",
+        "#UNANIMATED WarStompCaster_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "stand WarStompCaster.001_GLTF",
+        "stand WarStompCaster_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Shockwave\\ShockwaveMissile.glb",
+      "before": 13,
+      "after": 3,
+      "kept": [
+        "Birth",
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED ShockwaveMissile.001_GLTF",
+        "#UNANIMATED ShockwaveMissile_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth ShockwaveMissile.001_GLTF",
+        "Birth ShockwaveMissile_GLTF",
+        "Death ShockwaveMissile.001_GLTF",
+        "Death ShockwaveMissile_GLTF",
+        "stand ShockwaveMissile.001_GLTF",
+        "stand ShockwaveMissile_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Reincarnation\\ReincarnationTarget.glb",
+      "before": 29,
+      "after": 3,
+      "kept": [
+        "Birth",
+        "Death",
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED ReincarnationTarget.001_GLTF",
+        "#UNANIMATED ReincarnationTarget.002_GLTF",
+        "#UNANIMATED ReincarnationTarget.003_GLTF",
+        "#UNANIMATED ReincarnationTarget.004_GLTF",
+        "#UNANIMATED ReincarnationTarget.005_GLTF",
+        "#UNANIMATED ReincarnationTarget_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Birth ReincarnationTarget.001_GLTF",
+        "Birth ReincarnationTarget.002_GLTF",
+        "Birth ReincarnationTarget.003_GLTF",
+        "Birth ReincarnationTarget.004_GLTF",
+        "Birth ReincarnationTarget.005_GLTF",
+        "Birth ReincarnationTarget_GLTF",
+        "Death ReincarnationTarget.001_GLTF",
+        "Death ReincarnationTarget.002_GLTF",
+        "Death ReincarnationTarget.003_GLTF",
+        "Death ReincarnationTarget.004_GLTF",
+        "Death ReincarnationTarget.005_GLTF",
+        "Death ReincarnationTarget_GLTF",
+        "Stand ReincarnationTarget.001_GLTF",
+        "Stand ReincarnationTarget.002_GLTF",
+        "Stand ReincarnationTarget.003_GLTF",
+        "Stand ReincarnationTarget.004_GLTF",
+        "Stand ReincarnationTarget.005_GLTF",
+        "Stand ReincarnationTarget_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAuraTarget\\CommandAuraTarget.glb",
+      "before": 5,
+      "after": 1,
+      "kept": [
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED CommandAuraTarget_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Stand CommandAuraTarget_GLTF"
+      ]
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAura\\CommandAura.glb",
+      "before": 5,
+      "after": 1,
+      "kept": [
+        "Stand"
+      ],
+      "removed": [
+        "#UNANIMATED CommandAura_GLTF",
+        "#UNANIMATED_GLTF",
+        "all sequences_GLTF",
+        "Stand CommandAura_GLTF"
+      ]
+    }
+  ]
+}

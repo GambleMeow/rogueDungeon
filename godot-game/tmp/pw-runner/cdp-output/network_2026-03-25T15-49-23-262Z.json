@@ -1,0 +1,30 @@
+[
+  {
+    "type": "request",
+    "at": "2026-03-25T15:49:31.643Z",
+    "method": "POST",
+    "url": "https://www.doubao.com/top/v1?Action=CommitImageUpload&Version=2018-08-01&ServiceId=a9rns2rl98",
+    "headers": {
+      "x-amz-content-sha256": "e3a7ed6c24d78d033eb4f87614cfea8df7d74a922b0662b7842e2254b25a9b23",
+      "sec-ch-ua-platform": "\"Windows\"",
+      "authorization": "AWS4-HMAC-SHA256 Credential=AKTPYjIxMWI4YjQwYWJmNDk4ZDljOWM4ZGU2NmNiYmY2NzQ/20260325/cn-north-1/imagex/aws4_request, SignedHeaders=x-amz-content-sha256;x-amz-date;x-amz-security-token, Signature=450e39b93bb011c65fde897ed5b665a51adc28f587e575d1cbefe9df3599561c",
+      "referer": "https://www.doubao.com/chat/create-image",
+      "sec-ch-ua": "\"Chromium\";v=\"146\", \"Not-A.Brand\";v=\"24\", \"Microsoft Edge\";v=\"146\"",
+      "sec-ch-ua-mobile": "?0",
+      "x-amz-security-token": "STS2eyJMVEFjY2Vzc0tleUlkIjoiQUtMVFlUZGhPR0ptWVRNNFl6ZG1OR1JoWVRoaE0yWTJPVFl5TW1SbU0yRmhNREEiLCJBY2Nlc3NLZXlJZCI6IkFLVFBZakl4TVdJNFlqUXdZV0ptTkRrNFpEbGpPV000WkdVMk5tTmlZbVkyTnpRIiwiU2lnbmVkU2VjcmV0QWNjZXNzS2V5IjoibjNaWWJnemNHRDgzb0hkM2tSM2x4d1FPYk5EOEZsZmo2OE1Gb3NyTXJLOElvL0ErcWxvZTdrNmo3OXlUUysyUElETDNFUHpmb0JsRlluanFaOEdpNzN2RmQrMGpnbEdIdU9NVkwxc2E2S1E9IiwiRXhwaXJlZFRpbWUiOjE3NzQ0NTczNzAsIlBvbGljeVN0cmluZyI6IntcIlN0YXRlbWVudFwiOlt7XCJFZmZlY3RcIjpcIkFsbG93XCIsXCJBY3Rpb25cIjpbXCJJbWFnZVg6QXBwbHlJbWFnZVVwbG9hZFwiLFwiSW1hZ2VYOkNvbW1pdEltYWdlVXBsb2FkXCJdLFwiUmVzb3VyY2VcIjpbXCJ0cm46SW1hZ2VYOio6KjpTZXJ2aWNlSWQvYTlybnMycmw5OFwiXX0se1wiRWZmZWN0XCI6XCJBbGxvd1wiLFwiQWN0aW9uXCI6W1wiUFNNXCJdLFwiUmVzb3VyY2VcIjpbXCJmbG93LmFsaWNlLnJlc291cmNlX2NlbnRlclwiXX1dfSIsIlNpZ25hdHVyZSI6Ijc3YmI0NTUwOWY4ZGE0ZDkzODdjZjEwYjMyODc3ZGFiNmIxNDRmNzQyYzFhMGM3YzI3NjdhZGMwMTA5ZjU5MWEifQ==",
+      "x-amz-date": "20260325T154931Z",
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36 Edg/146.0.0.0",
+      "content-type": "application/json"
+    },
+    "postData": "{\"SessionKey\":\"eyJhY2NvdW50VHlwZSI6IkltYWdlWCIsImFwcElkIjoiIiwiYml6VHlwZSI6IiIsImZpbGVUeXBlIjoiaW1hZ2UiLCJsZWdhbCI6IiIsInN0b3JlSW5mb3MiOiJbe1wiU3RvcmVVcmlcIjpcInRvcy1jbi1pLWE5cm5zMnJsOTgvY2RhZDUyYTc5ZmQ2NDcxNzgwOGJjOTcxYzQ1NTYzY2MucG5nXCIsXCJBdXRoXCI6XCJTcGFjZUtleS9hOXJuczJybDk4LzEvOnZlcnNpb246djI6ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmxlSEFpT2pFM056UTBOelV6TnpBc0luTnBaMjVoZEhWeVpVbHVabThpT25zaVlXTmpaWE56UzJWNUlqb2labUZyWlY5aFkyTmxjM05mYTJWNUlpd2lZblZqYTJWMElqb2lkRzl6TFdOdUxXa3RZVGx5Ym5NeWNtdzVPQ0lzSW1WNGNHbHlaU0k2TVRjM05EUTNOVE0zTUN3aVptbHNaVWx1Wm05eklqcGJleUp2YVdSTFpYa2lPaUpqWkdGa05USmhOemxtWkRZME56RTNPREE0WW1NNU56RmpORFUxTmpOall5NXdibWNpTENKbWFXeGxWSGx3WlNJNklqRWlmVjBzSW1WNGRISmhJanA3SW1GalkyOTFiblJmY0hKdlpIVmpkQ0k2SW1sdFlXZGxlQ0lzSW1Kc2IyTnJYMjF2WkdVaU9pSWlMQ0pqYjI1MFpXNTBYM1I1Y0dWZllteHZZMnNpT2lKN1hDSnRhVzFsWDNCamRGd2lPakFzWENKdGIyUmxYQ0k2TUN4Y0ltMXBiV1ZmYkdsemRGd2lPbTUxYkd3c1hDSmpiMjVtYkdsamRGOWliRzlqYTF3aU9tWmhiSE5sZlNJc0ltVnVZM0o1Y0hSZllXeG5ieUk2SWlJc0ltVnVZM0o1Y0hSZmEyVjVJam9pSWl3aVpYaDBYMk52Ym5SbGJuUmZkSGx3WlNJNkltbHRZV2RsTDNCdVp5SXNJbWx6WDJsdFlXZGxlQ0k2ZEhKMVpTd2ljM0JoWTJVaU9pSmhPWEp1Y3pKeWJEazRJbjE5ZlEuRGNIWUFyeGRLdU9vVlVDLXBzOXN0bmMwd2ZKazktNlZwcFFhdXY1am5uY1wiLFwiVXBsb2FkSURcIjpcImQ0MTY4ZjE4YjYwYTQwMGY4MjM4ZDhiNjk2NWNhZjgyXCIsXCJVcGxvYWRIZWFkZXJcIjpudWxsLFwiU3RvcmFnZUhlYWRlclwiOm51bGx9XSIsInVwbG9hZEhvc3QiOiJ0b3MtbGYteC5zbnNzZGsuY29tIiwidXJpIjoidG9zLWNuLWktYTlybnMycmw5OC9jZGFkNTJhNzlmZDY0NzE3ODA4YmM5NzFjNDU1NjNjYy5wbmciLCJ1c2VySWQiOiIifQ==\"}"
+  },
+  {
+    "type": "response",
+    "at": "2026-03-25T15:49:31.991Z",
+    "method": "POST",
+    "url": "https://www.doubao.com/top/v1?Action=CommitImageUpload&Version=2018-08-01&ServiceId=a9rns2rl98",
+    "status": 200,
+    "statusText": "",
+    "bodyText": "{\"ResponseMetadata\":{\"RequestId\":\"20260325234932AFD039B819F5B8A89CA0\",\"Action\":\"CommitImageUpload\",\"Version\":\"2018-08-01\",\"Service\":\"imagex\",\"Region\":\"cn-north-1\"},\"Result\":{\"Results\":[{\"Uri\":\"tos-cn-i-a9rns2rl98/cdad52a79fd64717808bc971c45563cc.png\",\"UriStatus\":2000}],\"RequestId\":\"20260325234932AFD039B819F5B8A89CA0\",\"PluginResult\":[{\"FileName\":\"cdad52a79fd64717808bc971c45563cc.png\",\"SourceUri\":\"tos-cn-i-a9rns2rl98/cdad52a79fd64717808bc971c45563cc.png\",\"ImageUri\":\"tos-cn-i-a9rns2rl98/cdad52a79fd64717808bc971c45563cc.png\",\"ImageWidth\":64,\"ImageHeight\":64,\"ImageMd5\":\"085930e8af2a936363274b7e8d264f3c\",\"ImageFormat\":\"png\",\"ImageSize\":9057,\"FrameCnt\":1,\"ContentType\":\"application/json; charset=utf-8\",\"NotFound\":false,\"Orientation\":{\"Rotation\":0,\"Fliph\":false,\"Flipv\":false},\"ColorModel\":\"nrgba\",\"ImageAve\":\"\"}]}}"
+  }
+]

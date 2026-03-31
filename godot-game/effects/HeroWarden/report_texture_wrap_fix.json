@@ -1,0 +1,43 @@
+{
+  "targetDir": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden",
+  "totalFiles": 9,
+  "totalChangedInfos": 21,
+  "items": [
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\WardenMissile\\WardenMissile.glb",
+      "changedTextureInfoCount": 1
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\SpiritOfVengeanceBirthMissile\\SpiritOfVengeanceBirthMissile.glb",
+      "changedTextureInfoCount": 3
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrikeMissile\\ShadowStrikeMissile.glb",
+      "changedTextureInfoCount": 2
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\ShadowStrike\\shadowstrike.glb",
+      "changedTextureInfoCount": 2
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\HeroModel\\HeroWarden.glb",
+      "changedTextureInfoCount": 3
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesMissile\\FanOfKnivesMissile.glb",
+      "changedTextureInfoCount": 2
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\FanOfKnivesCaster\\FanOfKnivesCaster.glb",
+      "changedTextureInfoCount": 2
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkTarget\\BlinkTarget.glb",
+      "changedTextureInfoCount": 3
+    },
+    {
+      "file": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroWarden\\BlinkCaster\\BlinkCaster.glb",
+      "changedTextureInfoCount": 3
+    }
+  ]
+}

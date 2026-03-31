@@ -1,0 +1,6 @@
+2026/03/26-00:27:04.947 7e0c Reusing MANIFEST c:\Users\LENOVO\Documents\qqq\tmp\pw-runner\cdp-profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/03/26-00:27:04.949 7e0c Recovering log #52
+2026/03/26-00:27:04.951 7e0c Reusing old log c:\Users\LENOVO\Documents\qqq\tmp\pw-runner\cdp-profile\Default\EdgeCoupons/coupons_data.db/000052.log 
+2026/03/26-00:27:05.029 3730 Level-0 table #56: started
+2026/03/26-00:27:05.032 3730 Level-0 table #56: 681928 bytes OK
+2026/03/26-00:27:05.035 3730 Delete type=0 #52

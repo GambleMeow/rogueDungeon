@@ -1,0 +1,15 @@
+{
+  "success": false,
+  "loginRequired": true,
+  "sourceImage": "C:\\Users\\LENOVO\\Documents\\qqq\\icons\\passives\\PASBTNBash.png",
+  "steps": [
+    "打开豆包图片页面",
+    "检测到登录提示，停止后续自动操作"
+  ],
+  "error": "",
+  "files": {
+    "loadedScreenshot": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\output\\01_loaded.png",
+    "uploadedScreenshot": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\output\\02_uploaded.png",
+    "resultScreenshot": "C:\\Users\\LENOVO\\Documents\\qqq\\tmp\\pw-runner\\output\\03_result.png"
+  }
+}

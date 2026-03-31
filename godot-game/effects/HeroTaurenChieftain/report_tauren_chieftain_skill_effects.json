@@ -1,0 +1,59 @@
+{
+  "source": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish",
+  "archives": [
+    "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3Patch.mpq",
+    "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\War3x.mpq",
+    "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq"
+  ],
+  "outRoot": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain",
+  "total": 5,
+  "success": 5,
+  "failed": 0,
+  "items": [
+    {
+      "skill": "WarStomp",
+      "sourceModel": "Abilities\\Spells\\Orc\\WarStomp\\WarStompCaster.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\WarStomp\\WarStompCaster.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\WarStomp\\WarStompCaster.glb",
+      "texturesExtracted": 3
+    },
+    {
+      "skill": "Shockwave",
+      "sourceModel": "Abilities\\Spells\\Orc\\Shockwave\\ShockwaveMissile.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Shockwave\\ShockwaveMissile.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Shockwave\\ShockwaveMissile.glb",
+      "texturesExtracted": 4
+    },
+    {
+      "skill": "EnduranceAura",
+      "sourceModel": "Abilities\\Spells\\Orc\\CommandAura\\CommandAura.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAura\\CommandAura.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAura\\CommandAura.glb",
+      "texturesExtracted": 1
+    },
+    {
+      "skill": "EnduranceAuraTarget",
+      "sourceModel": "Abilities\\Spells\\Orc\\CommandAura\\CommandAuraTarget.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAuraTarget\\CommandAuraTarget.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\EnduranceAuraTarget\\CommandAuraTarget.glb",
+      "texturesExtracted": 1
+    },
+    {
+      "skill": "Reincarnation",
+      "sourceModel": "Abilities\\Spells\\Orc\\Reincarnation\\ReincarnationTarget.mdx",
+      "archive": "C:\\Users\\LENOVO\\Desktop\\download\\Warcraft III Frozen Throne 1.27a publish\\war3.mpq",
+      "ok": true,
+      "mdx": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Reincarnation\\ReincarnationTarget.mdx",
+      "glb": "C:\\Users\\LENOVO\\Desktop\\personal\\rogueDungeon\\outputs\\skill_effects\\HeroTaurenChieftain\\Reincarnation\\ReincarnationTarget.glb",
+      "texturesExtracted": 8
+    }
+  ]
+}
