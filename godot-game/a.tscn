@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://dylj4se3dspai" path="res://modles/VoodooLounge.glb" id="11_shop"]
 [ext_resource type="Script" uid="uid://c0avpq6pft4w5" path="res://tauren_spawner.gd" id="12_tauren_spawner"]
 [ext_resource type="Script" path="res://scene_flow_controller.gd" id="13_scene_flow"]
+[ext_resource type="Script" path="res://net_session_controller.gd" id="14_net"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_floor"]
 size = Vector2(10000, 10000)
@@ -283,6 +284,11 @@ transform = Transform3D(1, 0, 0, 0, 0.9063078, 0.42261827, 0, -0.42261827, 0.906
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -100, 0, 80)
 script = ExtResource("12_tauren_spawner")
 unit_scale = Vector3(1.5, 1.5, 1.5)
+
+[node name="NetworkPlayers" type="Node3D" parent="."]
+
+[node name="NetSessionController" type="Node" parent="."]
+script = ExtResource("14_net")
 
 [node name="GameUI" type="CanvasLayer" parent="." unique_id=1389545792]
 script = ExtResource("10_ui")

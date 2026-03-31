@@ -101,6 +101,10 @@ extends Node3D
 @export var ranged_q_ray_thickness: float = 8.0
 @export var ranged_q_ray_height_offset: float = 80.0
 @export var ranged_q_ray_lifetime: float = 0.2
+@export var dynamic_detour_enabled: bool = true
+@export var dynamic_detour_duration_sec: float = 0.45
+@export var dynamic_detour_side_strength: float = 0.95
+@export var dynamic_blocker_avoid_radius: float = 88.0
 
 var _hero: Node3D
 var _animation_player: AnimationPlayer
@@ -197,6 +201,10 @@ var _ranged_q_backstep_end_pos: Vector3 = Vector3.ZERO
 var _resolved_idle_animation: String = ""
 var _resolved_walk_animation: String = ""
 var _resolved_death_animation: String = ""
+var _network_skill_event_seq: int = 0
+var _network_last_skill_event: Dictionary = {}
+var _dynamic_detour_time_left: float = 0.0
+var _dynamic_detour_side: float = 1.0
 
 const STR_HP_PER_POINT: int = 25
 const INT_MANA_PER_POINT: int = 15
@@ -823,6 +831,11 @@ func _handle_flash_click() -> void:
 	_hero.global_position = target
 	_apply_flash_area_damage(target, flash_destination_damage_radius, flash_damage)
 	_flash_cooldown = _compute_skill_cooldown(flash_cooldown_time)
+	_push_network_skill_event("q", skill_q_id, {
+		"from_pos": current,
+		"to_pos": target,
+		"yaw": _hero.rotation.y
+	})
 	_stop_animation()
 	if had_enemy_target:
 		_resume_enemy_target_after_skill()
@@ -847,6 +860,11 @@ func _cast_ranged_q(target: Vector3) -> void:
 	_face_toward(current + direction * 10.0)
 	_spawn_ranged_q_ray(current, ray_end)
 	_apply_ranged_q_ray_damage(current, ray_end)
+	_push_network_skill_event("q", skill_q_id, {
+		"from_pos": current,
+		"to_pos": ray_end,
+		"yaw": _hero.rotation.y
+	})
 	_interrupt_attack_for_move()
 	_has_move_target = false
 	_is_moving = false
@@ -997,7 +1015,26 @@ func _activate_haste() -> void:
 	_haste_active = true
 	_haste_time_left = haste_duration
 	_haste_cooldown = _compute_skill_cooldown(haste_cooldown_time)
+	var event_pos: Vector3 = Vector3.ZERO
+	if _hero != null:
+		event_pos = _hero.global_position
+	_push_network_skill_event("w", skill_w_id, {
+		"pos": event_pos
+	})
 	_sync_walk_animation_speed_if_needed()
+
+
+func _push_network_skill_event(event_type: String, event_skill_id: int, extra: Dictionary = {}) -> void:
+	_network_skill_event_seq += 1
+	var payload: Dictionary = {
+		"seq": _network_skill_event_seq,
+		"type": event_type,
+		"skill_id": event_skill_id,
+		"t_ms": Time.get_ticks_msec()
+	}
+	for key_variant in extra.keys():
+		payload[key_variant] = extra[key_variant]
+	_network_last_skill_event = payload
 
 
 func _apply_poison_to_enemy(enemy: Node3D) -> void:
@@ -1413,13 +1450,21 @@ func _handle_attack_click() -> void:
 		var nearest_enemy: Node3D = _find_nearest_enemy()
 		if nearest_enemy != null:
 			var nearest_distance: float = _distance_xz(_hero.global_position, nearest_enemy.global_position)
-			if nearest_distance <= engage_range:
+			if nearest_distance <= attack_range:
+				selected_enemy = nearest_enemy
+			elif nearest_distance <= engage_range:
 				selected_enemy = nearest_enemy
 
 	if selected_enemy != null and is_instance_valid(selected_enemy) and not _is_enemy_dead(selected_enemy):
 		_target_enemy = selected_enemy
 		_has_move_target = false
 		_focus_lock = true
+	else:
+		# A 键攻击点击未命中且附近没有可索敌目标时，取消当前攻击目标。
+		_target_enemy = null
+		_has_move_target = false
+		_focus_lock = false
+		_interrupt_attack_for_chase()
 
 
 func _get_ground_position(mouse_pos: Vector2) -> Vector3:
@@ -1518,7 +1563,7 @@ func _process(delta: float) -> void:
 				var next_nav := _nav_agent.get_next_path_position()
 				if _distance_xz(next_nav, current) > 1.0:
 					move_target = next_nav
-			var next := _compute_next_move_with_obstacle_avoidance(current, move_target, _get_current_move_speed() * delta)
+			var next := _compute_next_move_with_obstacle_avoidance(current, move_target, _get_current_move_speed() * delta, delta)
 			next.y = _plane_height
 			_hero.global_position = next
 			_look_at_target(move_target)
@@ -1546,7 +1591,7 @@ func _process(delta: float) -> void:
 				var next_nav := _nav_agent.get_next_path_position()
 				if _distance_xz(next_nav, current) > 1.0:
 					move_target = next_nav
-			var next := _compute_next_move_with_obstacle_avoidance(current, move_target, _get_current_move_speed() * delta)
+			var next := _compute_next_move_with_obstacle_avoidance(current, move_target, _get_current_move_speed() * delta, delta)
 			next.y = _plane_height
 			_hero.global_position = next
 			_look_at_target(move_target)
@@ -1778,7 +1823,7 @@ func _is_move_segment_blocked(from_pos: Vector3, to_pos: Vector3, probe_half_wid
 	return false
 
 
-func _compute_next_move_with_obstacle_avoidance(current: Vector3, move_target: Vector3, max_step: float) -> Vector3:
+func _compute_next_move_with_obstacle_avoidance(current: Vector3, move_target: Vector3, max_step: float, delta: float = 0.0) -> Vector3:
 	var to_target: Vector3 = move_target - current
 	to_target.y = 0.0
 	if to_target.length() <= 0.01 or max_step <= 0.0:
@@ -1786,24 +1831,78 @@ func _compute_next_move_with_obstacle_avoidance(current: Vector3, move_target: V
 
 	var step: float = minf(max_step, to_target.length())
 	var forward_dir: Vector3 = to_target.normalized()
-	var direct_next: Vector3 = current + forward_dir * step
-	if not _is_move_segment_blocked(current, direct_next, 42.0, 38.0):
+	var steer_dir: Vector3 = forward_dir
+	if dynamic_detour_enabled and delta > 0.0 and _dynamic_detour_time_left > 0.0:
+		var side_vec: Vector3 = forward_dir.cross(Vector3.UP)
+		if side_vec.length() > 0.001:
+			side_vec = side_vec.normalized()
+			steer_dir = (forward_dir + side_vec * _dynamic_detour_side * maxf(dynamic_detour_side_strength, 0.0)).normalized()
+		_dynamic_detour_time_left = maxf(_dynamic_detour_time_left - delta, 0.0)
+	var direct_next: Vector3 = current + steer_dir * step
+	var dynamic_blocked: bool = _is_dynamic_unit_blocking_segment(current, direct_next, maxf(dynamic_blocker_avoid_radius, 32.0))
+	if not _is_move_segment_blocked(current, direct_next, 42.0, 38.0) and not dynamic_blocked:
 		return direct_next
+	if dynamic_detour_enabled and delta > 0.0 and _dynamic_detour_time_left <= 0.0:
+		_dynamic_detour_time_left = maxf(dynamic_detour_duration_sec, 0.08)
+		_dynamic_detour_side = -_dynamic_detour_side
 
 	var best_next: Vector3 = current
 	var best_score: float = -INF
 	for angle_deg in OBSTACLE_STEER_ANGLES:
-		var steer_dir: Vector3 = forward_dir.rotated(Vector3.UP, deg_to_rad(angle_deg))
-		var candidate_next: Vector3 = current + steer_dir * step
-		if _is_move_segment_blocked(current, candidate_next, 42.0, 38.0):
+		var candidate_dir: Vector3 = forward_dir.rotated(Vector3.UP, deg_to_rad(angle_deg))
+		var candidate_next: Vector3 = current + candidate_dir * step
+		var blocked_static: bool = _is_move_segment_blocked(current, candidate_next, 42.0, 38.0)
+		var blocked_dynamic: bool = _is_dynamic_unit_blocking_segment(current, candidate_next, maxf(dynamic_blocker_avoid_radius, 32.0))
+		if blocked_static or blocked_dynamic:
 			continue
 		var remain: Vector3 = move_target - candidate_next
 		remain.y = 0.0
 		var score: float = -remain.length()
+		var angle_sign: float = sign(float(angle_deg))
+		if dynamic_detour_enabled and angle_sign != 0.0 and angle_sign == _dynamic_detour_side:
+			score += 3.5
 		if score > best_score:
 			best_score = score
 			best_next = candidate_next
 	return best_next
+
+
+func _is_dynamic_unit_blocking_segment(from_pos: Vector3, to_pos: Vector3, probe_radius: float) -> bool:
+	if _hero == null:
+		return false
+	var seg: Vector3 = to_pos - from_pos
+	seg.y = 0.0
+	var seg_len: float = seg.length()
+	if seg_len <= 0.01:
+		return false
+	var seg_dir: Vector3 = seg / seg_len
+	var safe_radius: float = maxf(probe_radius, 8.0)
+
+	var groups: Array[StringName] = [enemy_group_name, StringName("hero")]
+	for group_name in groups:
+		var candidates: Array = get_tree().get_nodes_in_group(group_name)
+		for candidate_variant in candidates:
+			var candidate_node: Node = candidate_variant as Node
+			var blocker: Node3D = candidate_node as Node3D
+			if blocker == null:
+				continue
+			if blocker == _hero:
+				continue
+			if not is_instance_valid(blocker):
+				continue
+			if not blocker.visible:
+				continue
+			var blocker_pos: Vector3 = blocker.global_position
+			var rel: Vector3 = blocker_pos - from_pos
+			rel.y = 0.0
+			var proj: float = rel.dot(seg_dir)
+			if proj < 0.0 or proj > seg_len:
+				continue
+			var nearest: Vector3 = from_pos + seg_dir * proj
+			var lateral_dist: float = _distance_xz(blocker_pos, nearest)
+			if lateral_dist <= safe_radius:
+				return true
+	return false
 
 
 func _update_auto_attack_target() -> void:

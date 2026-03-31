@@ -1,5 +1,7 @@
-extends P2PTransportBase
+extends Node
 class_name SteamP2PTransport
+
+signal event_emitted(message: String)
 
 @export var listen_port: int = 19090
 @export var default_remote_host: String = ""
@@ -47,7 +49,7 @@ func connect_to_host(target_host_steam_id: String) -> Dictionary:
 		return _start_as_host(target)
 	return await _connect_as_client(target)
 
-func disconnect(reason_code: String = "MANUAL_STOP") -> void:
+func disconnect_transport(reason_code: String = "MANUAL_STOP") -> void:
 	emit_signal("event_emitted", "steam_stub transport disconnect reason=%s" % reason_code)
 	_reset_peer()
 	_state = "DISCONNECTED"
@@ -64,7 +66,7 @@ func get_host_steam_id() -> String:
 	return _host_steam_id
 
 func _start_as_host(target: String) -> Dictionary:
-	var port := max(listen_port, 1)
+	var port: int = max(listen_port, 1)
 	var err := _peer.create_server(port, 8)
 	if err != OK:
 		_reset_peer()
@@ -182,7 +184,7 @@ func _parse_endpoint_map(raw_text: String) -> Dictionary:
 			continue
 
 		var host := endpoint
-		var port := max(default_remote_port, 1)
+		var port: int = max(default_remote_port, 1)
 		var colon_idx := endpoint.rfind(":")
 		if colon_idx > 0 and colon_idx < endpoint.length() - 1:
 			host = endpoint.substr(0, colon_idx).strip_edges()

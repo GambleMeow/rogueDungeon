@@ -28,6 +28,11 @@ extends Node3D
 @export var skill2_damage: int = 50
 @export var skill2_cooldown_time: float = 10.0
 @export var skill2_hit_range: float = 150.0
+@export var network_authoritative: bool = true
+@export var remote_sync_position_smooth_speed: float = 12.0
+@export var remote_sync_rotation_smooth_speed: float = 10.0
+@export var remote_sync_snap_distance: float = 320.0
+@export var remote_sync_prediction_sec: float = 0.10
 
 var _enemy: Node3D
 var _hero: Node3D
@@ -61,6 +66,11 @@ var _skill2_end_pos: Vector3
 var _skill2_total_time: float = 0.0
 var _skill2_hit_applied: bool = false
 var _pending_idle_after_animation: bool = false
+var _remote_target_position: Vector3 = Vector3.ZERO
+var _remote_target_yaw: float = 0.0
+var _remote_velocity: Vector3 = Vector3.ZERO
+var _remote_last_receive_ms: int = 0
+var _remote_has_target: bool = false
 const OBSTACLE_RAY_MASK: int = 1 << 0
 const OBSTACLE_STEER_ANGLES := [20.0, -20.0, 40.0, -40.0, 60.0, -60.0, 80.0, -80.0, 100.0, -100.0]
 
@@ -96,6 +106,10 @@ func _ready() -> void:
 	for a in _raw:
 		_attack_animations.append(a)
 	_current_hp = max_hp
+	_remote_target_position = _enemy.global_position
+	_remote_target_yaw = _enemy.rotation.y
+	_remote_last_receive_ms = Time.get_ticks_msec()
+	_remote_has_target = true
 	_create_hp_bar()
 	_update_hp_bar()
 	_play_idle_animation()
@@ -111,6 +125,9 @@ func _play_idle_animation() -> void:
 
 func _process(delta: float) -> void:
 	if _enemy == null or _is_dead:
+		return
+	if not network_authoritative:
+		_update_remote_sync_smoothing(delta)
 		return
 	
 	if _hero == null or not is_instance_valid(_hero) or _is_hero_dead(_hero) or not _hero.visible:
@@ -154,11 +171,21 @@ func _process(delta: float) -> void:
 			if dist <= skill2_hit_range:
 				_skill2_hit_applied = true
 				var hero_controller := _hero.get_parent()
-				if hero_controller != null:
-					if hero_controller.has_method("apply_damage"):
-						hero_controller.call("apply_damage", skill2_damage, false, _enemy)
-					if hero_controller.has_method("apply_temporary_slow"):
-						hero_controller.call("apply_temporary_slow", 50.0, 1.5)
+				var handled: bool = false
+				if hero_controller != null and hero_controller.has_method("apply_damage"):
+					hero_controller.call("apply_damage", skill2_damage, false, _enemy)
+					handled = true
+				if hero_controller != null and hero_controller.has_method("apply_temporary_slow"):
+					hero_controller.call("apply_temporary_slow", 50.0, 1.5)
+				if not handled:
+					var target_peer_id: int = _get_remote_target_peer_id(_hero)
+					if target_peer_id > 0:
+						var net_ctrl: Node = _get_network_session_controller()
+						if net_ctrl != null:
+							if net_ctrl.has_method("request_damage_remote_hero"):
+								net_ctrl.call("request_damage_remote_hero", target_peer_id, skill2_damage, false)
+							if net_ctrl.has_method("request_slow_remote_hero"):
+								net_ctrl.call("request_slow_remote_hero", target_peer_id, 50.0, 1.5)
 		if _skill2_timer >= _skill2_total_time:
 			_finish_skill2()
 		return
@@ -493,6 +520,12 @@ func _try_apply_damage_to_hero() -> void:
 		hero_controller.call("apply_damage", damage_per_hit, false, _enemy)
 		if _is_hero_dead(_hero):
 			_retarget_hero_after_kill()
+		return
+	var target_peer_id: int = _get_remote_target_peer_id(_hero)
+	if target_peer_id > 0:
+		var net_ctrl: Node = _get_network_session_controller()
+		if net_ctrl != null and net_ctrl.has_method("request_damage_remote_hero"):
+			net_ctrl.call("request_damage_remote_hero", target_peer_id, damage_per_hit, false)
 
 
 func _retarget_hero_after_kill() -> void:
@@ -607,6 +640,26 @@ func _is_hero_dead(hero: Node3D) -> bool:
 	if hero_controller != null and hero_controller.has_method("is_dead"):
 		return bool(hero_controller.call("is_dead"))
 	return false
+
+
+func _get_network_session_controller() -> Node:
+	var tree: SceneTree = get_tree()
+	if tree == null:
+		return null
+	return tree.get_first_node_in_group("net_session_controller")
+
+
+func _get_remote_target_peer_id(target: Node3D) -> int:
+	if target == null or not is_instance_valid(target):
+		return 0
+	if not target.has_meta("network_peer_id"):
+		return 0
+	var peer_variant: Variant = target.get_meta("network_peer_id")
+	if peer_variant is int:
+		return int(peer_variant)
+	if peer_variant is String and String(peer_variant).is_valid_int():
+		return int(String(peer_variant).to_int())
+	return 0
 
 
 func _get_attack_speed_scale() -> float:
@@ -779,3 +832,186 @@ func _finalize_death() -> void:
 	
 	if _enemy != null:
 		_enemy.visible = false
+
+
+func set_network_authority(enabled: bool) -> void:
+	network_authoritative = enabled
+	if enabled:
+		if _enemy != null and is_instance_valid(_enemy):
+			_remote_target_position = _enemy.global_position
+			_remote_target_yaw = _enemy.rotation.y
+			_remote_velocity = Vector3.ZERO
+			_remote_last_receive_ms = Time.get_ticks_msec()
+			_remote_has_target = true
+		return
+	_is_moving = false
+	_is_attacking = false
+	_is_casting_skill = false
+	_is_casting_skill2 = false
+	_pending_idle_after_animation = false
+	_hide_skill_warning()
+	if _enemy != null and is_instance_valid(_enemy):
+		_remote_target_position = _enemy.global_position
+		_remote_target_yaw = _enemy.rotation.y
+		_remote_velocity = Vector3.ZERO
+		_remote_last_receive_ms = Time.get_ticks_msec()
+		_remote_has_target = true
+
+
+func export_network_state() -> Dictionary:
+	var state: Dictionary = {}
+	if _enemy != null and is_instance_valid(_enemy):
+		state["pos"] = _enemy.global_position
+		state["yaw"] = _enemy.rotation.y
+		state["visible"] = _enemy.visible
+	state["hp"] = _current_hp
+	state["max_hp"] = max_hp
+	state["dead"] = _is_dead
+	state["is_moving"] = _is_moving
+	state["is_attacking"] = _is_attacking
+	state["casting_skill"] = _is_casting_skill
+	state["casting_skill2"] = _is_casting_skill2
+	var warning_visible: bool = _skill_warning != null and is_instance_valid(_skill_warning)
+	state["skill_warning_visible"] = warning_visible
+	if warning_visible:
+		state["skill_warning_pos"] = _skill_warning.global_position
+	if _animation_player != null:
+		state["anim_name"] = String(_animation_player.current_animation)
+		state["anim_playing"] = _animation_player.is_playing()
+		state["anim_speed"] = _animation_player.speed_scale
+	return state
+
+
+func apply_network_state(state: Dictionary) -> void:
+	if _enemy == null or not is_instance_valid(_enemy):
+		return
+	var pos_variant: Variant = state.get("pos", _enemy.global_position)
+	if pos_variant is Vector3:
+		_on_remote_enemy_position_received(pos_variant)
+	_on_remote_enemy_yaw_received(float(state.get("yaw", _enemy.rotation.y)))
+
+	if state.has("max_hp"):
+		max_hp = maxi(int(state["max_hp"]), 1)
+	if state.has("hp"):
+		_current_hp = clampi(int(state["hp"]), 0, maxi(max_hp, 1))
+	if state.has("dead"):
+		_is_dead = bool(state["dead"])
+	if state.has("is_moving"):
+		_is_moving = bool(state["is_moving"])
+	if state.has("is_attacking"):
+		_is_attacking = bool(state["is_attacking"])
+	if state.has("casting_skill"):
+		_is_casting_skill = bool(state["casting_skill"])
+	if state.has("casting_skill2"):
+		_is_casting_skill2 = bool(state["casting_skill2"])
+
+	var visible_target: bool = not _is_dead
+	if state.has("visible"):
+		visible_target = bool(state["visible"])
+	_enemy.visible = visible_target
+	if _hp_bar != null:
+		_hp_bar.visible = visible_target and not _is_dead
+	var warning_visible: bool = bool(state.get("skill_warning_visible", false))
+	if _is_dead:
+		warning_visible = false
+	if warning_visible:
+		_show_skill_warning()
+		var warning_pos_variant: Variant = state.get("skill_warning_pos", null)
+		if warning_pos_variant is Vector3 and _skill_warning != null:
+			_skill_warning.global_position = warning_pos_variant
+	else:
+		_hide_skill_warning()
+	_update_hp_bar()
+	_apply_network_animation_state(state)
+
+
+func _apply_network_animation_state(state: Dictionary) -> void:
+	if _animation_player == null:
+		return
+	var desired_anim: String = str(state.get("anim_name", "")).strip_edges()
+	var should_play: bool = bool(state.get("anim_playing", true))
+	var speed_scale: float = clampf(float(state.get("anim_speed", 1.0)), 0.05, 8.0)
+
+	if desired_anim != "" and _animation_player.has_animation(desired_anim):
+		if should_play:
+			if not _animation_player.is_playing() or String(_animation_player.current_animation) != desired_anim:
+				_animation_player.play(desired_anim)
+			_animation_player.speed_scale = speed_scale
+		elif _animation_player.is_playing():
+			_animation_player.stop()
+		return
+
+	if _is_dead:
+		if death_animation != "" and _animation_player.has_animation(death_animation):
+			if String(_animation_player.current_animation) != death_animation:
+				_animation_player.play(death_animation, -1.0, 1.0, false)
+		return
+	if _is_casting_skill2 and skill2_animation != "" and _animation_player.has_animation(skill2_animation):
+		if String(_animation_player.current_animation) != skill2_animation:
+			_animation_player.play(skill2_animation, -1.0, 1.0, false)
+		return
+	if _is_casting_skill and skill_animation != "" and _animation_player.has_animation(skill_animation):
+		if String(_animation_player.current_animation) != skill_animation:
+			_animation_player.play(skill_animation, -1.0, 1.0, false)
+		return
+	if _is_attacking and _attack_animations.size() > 0:
+		var fallback_attack_anim: String = String(_attack_animations[0])
+		if fallback_attack_anim != "" and _animation_player.has_animation(fallback_attack_anim):
+			if String(_animation_player.current_animation) != fallback_attack_anim:
+				_animation_player.play(fallback_attack_anim, -1.0, maxf(_get_attack_speed_scale(), 0.05), false)
+			return
+	if _is_moving:
+		_play_walk_animation()
+	else:
+		_play_idle_animation()
+
+
+func _on_remote_enemy_position_received(incoming_pos: Vector3) -> void:
+	if network_authoritative:
+		_enemy.global_position = incoming_pos
+		return
+	var now_ms: int = Time.get_ticks_msec()
+	if _remote_has_target:
+		var delta_sec: float = maxf(float(now_ms - _remote_last_receive_ms) * 0.001, 0.016)
+		var delta_pos: Vector3 = incoming_pos - _remote_target_position
+		delta_pos.y = 0.0
+		_remote_velocity = delta_pos / delta_sec
+	else:
+		_remote_velocity = Vector3.ZERO
+	_remote_target_position = incoming_pos
+	_remote_last_receive_ms = now_ms
+	_remote_has_target = true
+	if _enemy.global_position.distance_to(incoming_pos) >= maxf(remote_sync_snap_distance, 1.0):
+		_enemy.global_position = incoming_pos
+
+
+func _on_remote_enemy_yaw_received(incoming_yaw: float) -> void:
+	if network_authoritative:
+		var rot: Vector3 = _enemy.rotation
+		rot.y = incoming_yaw
+		_enemy.rotation = rot
+		return
+	_remote_target_yaw = incoming_yaw
+
+
+func _update_remote_sync_smoothing(delta: float) -> void:
+	if _enemy == null or not is_instance_valid(_enemy):
+		return
+	if not _remote_has_target:
+		return
+	var safe_delta: float = maxf(delta, 0.0)
+	if safe_delta <= 0.0:
+		return
+	var pos_alpha: float = 1.0 - exp(-maxf(remote_sync_position_smooth_speed, 0.01) * safe_delta)
+	var rot_alpha: float = 1.0 - exp(-maxf(remote_sync_rotation_smooth_speed, 0.01) * safe_delta)
+	var predicted_pos: Vector3 = _remote_target_position
+	var predict_sec: float = maxf(remote_sync_prediction_sec, 0.0)
+	if predict_sec > 0.0:
+		var projected_vel: Vector3 = _remote_velocity
+		projected_vel.y = 0.0
+		predicted_pos += projected_vel * predict_sec
+	predicted_pos.y = _remote_target_position.y
+	_enemy.global_position = _enemy.global_position.lerp(predicted_pos, pos_alpha)
+	var next_rot: Vector3 = _enemy.rotation
+	next_rot.y = lerp_angle(next_rot.y, _remote_target_yaw, rot_alpha)
+	_enemy.rotation = next_rot

@@ -17,10 +17,29 @@ extends Node
 @export var auto_switch_p2p_on_host_change: bool = true
 @export var auto_return_to_lobby_on_failure: bool = true
 
-var _api: BackendApi
-var _migration: HostMigrationController
-var _p2p: P2PSessionAdapter
-var _lobby: LobbyFlowController
+const LOCAL_RUN_ID := "local_test_001"
+const LOCAL_HOST_STEAM_ID := "76561198000000001"
+const LOCAL_CLIENT_STEAM_ID := "76561198000000002"
+const LOCAL_ENDPOINT_MAP := "76561198000000001=127.0.0.1:19090,76561198000000002=127.0.0.1:19091"
+
+const BACKEND_API_SCRIPT_PATH := "res://scripts/backend_api.gd"
+const HOST_MIGRATION_CONTROLLER_SCRIPT_PATH := "res://scripts/host_migration_controller.gd"
+const P2P_SESSION_ADAPTER_SCRIPT_PATH := "res://scripts/p2p_session_adapter.gd"
+const LOBBY_FLOW_CONTROLLER_SCRIPT_PATH := "res://scripts/lobby_flow_controller.gd"
+const STEAM_P2P_TRANSPORT_SCRIPT_PATH := "res://scripts/steam_p2p_transport.gd"
+const SIMULATED_P2P_TRANSPORT_SCRIPT_PATH := "res://scripts/simulated_p2p_transport.gd"
+
+# Keep local enum values in sync with host_migration_controller.gd NetState.
+const NET_STATE_RUNNING := 0
+const NET_STATE_MIGRATION_WAIT := 1
+const NET_STATE_MIGRATION_CANDIDATE := 2
+const NET_STATE_MIGRATION_FOLLOWER := 3
+const NET_STATE_ABORTED := 4
+
+var _api = null
+var _migration = null
+var _p2p = null
+var _lobby = null
 var _host_switch_in_flight: bool = false
 var _pending_host_target: String = ""
 
@@ -54,6 +73,7 @@ var _start_button: Button
 var _stop_button: Button
 
 func _ready() -> void:
+	_apply_cmdline_overrides()
 	_build_debug_ui()
 	_seed_inputs()
 	_set_status("IDLE", Color(0.7, 0.7, 0.7))
@@ -245,6 +265,81 @@ func _seed_inputs() -> void:
 	_update_transport_dependent_inputs()
 	_update_backend_dependent_inputs()
 
+func _apply_cmdline_overrides() -> void:
+	var args := OS.get_cmdline_user_args()
+	if args.is_empty():
+		return
+	for raw_arg in args:
+		var arg := raw_arg.strip_edges()
+		if arg.is_empty():
+			continue
+		var key := arg
+		var value := "true"
+		var eq_idx := arg.find("=")
+		if eq_idx >= 0:
+			key = arg.substr(0, eq_idx)
+			value = arg.substr(eq_idx + 1)
+		key = key.strip_edges().to_lower()
+		if key.begins_with("--"):
+			key = key.substr(2)
+		_apply_cmdline_pair(key, value.strip_edges())
+
+func _apply_cmdline_pair(key: String, value: String) -> void:
+	match key:
+		"instance", "profile":
+			_apply_local_instance_profile(value)
+		"run-id", "run_id":
+			run_id = value
+		"steam-id", "steam_id":
+			local_steam_id = value
+		"backend", "enable-backend", "enable_backend":
+			enable_backend_session = _parse_bool_or_default(value, enable_backend_session)
+		"auto-start", "auto_start":
+			auto_start_on_ready = _parse_bool_or_default(value, auto_start_on_ready)
+		"transport", "p2p-transport", "p2p_transport":
+			p2p_transport_mode = value
+		"listen-port", "listen_port":
+			steam_stub_listen_port = _parse_int_or_default(value, steam_stub_listen_port)
+		"remote-host", "remote_host":
+			steam_stub_remote_host = value
+		"remote-port", "remote_port":
+			steam_stub_remote_port = _parse_int_or_default(value, steam_stub_remote_port)
+		"endpoint-map", "endpoint_map":
+			steam_stub_endpoint_map_csv = value
+		"manual-host", "manual_host":
+			p2p_only_manual_host_steam_id = value
+		"sim-fail-hosts", "sim_fail_hosts":
+			simulated_fail_hosts_csv = value
+		"sim-delay", "sim_delay":
+			simulated_connect_delay_sec = _parse_float_or_default(value, simulated_connect_delay_sec)
+
+func _apply_local_instance_profile(profile_raw: String) -> void:
+	var profile := profile_raw.strip_edges().to_lower()
+	if profile == "host" or profile == "a" or profile == "1":
+		enable_backend_session = false
+		auto_start_on_ready = true
+		p2p_transport_mode = "steam_stub"
+		run_id = LOCAL_RUN_ID
+		local_steam_id = LOCAL_HOST_STEAM_ID
+		p2p_only_manual_host_steam_id = LOCAL_HOST_STEAM_ID
+		steam_stub_listen_port = 19090
+		steam_stub_remote_host = "127.0.0.1"
+		steam_stub_remote_port = 19090
+		steam_stub_endpoint_map_csv = LOCAL_ENDPOINT_MAP
+		return
+
+	if profile == "client" or profile == "b" or profile == "2":
+		enable_backend_session = false
+		auto_start_on_ready = true
+		p2p_transport_mode = "steam_stub"
+		run_id = LOCAL_RUN_ID
+		local_steam_id = LOCAL_CLIENT_STEAM_ID
+		p2p_only_manual_host_steam_id = LOCAL_HOST_STEAM_ID
+		steam_stub_listen_port = 19091
+		steam_stub_remote_host = "127.0.0.1"
+		steam_stub_remote_port = 19090
+		steam_stub_endpoint_map_csv = LOCAL_ENDPOINT_MAP
+
 func _on_start_pressed() -> void:
 	_start_integration()
 
@@ -264,7 +359,7 @@ func _on_manual_connect_pressed() -> void:
 func _on_manual_disconnect_pressed() -> void:
 	if _p2p == null:
 		return
-	_p2p.disconnect("MANUAL_DISCONNECT")
+	_p2p.disconnect_session("MANUAL_DISCONNECT")
 	_set_p2p_role_text("none")
 	_set_p2p_connection_text(_p2p.get_connection_state_text())
 
@@ -343,12 +438,16 @@ func _start_integration() -> void:
 		return
 
 	if enable_backend_session:
-		_api = BackendApi.new()
+		_api = _new_script_instance(BACKEND_API_SCRIPT_PATH)
+		if _api == null:
+			_set_error_text("BACKEND_API_SCRIPT_MISSING")
+			_append_log("Start rejected: backend api script missing.")
+			return
 		_api.base_url = backend_base_url
 		_api.access_token = backend_access_token
 		add_child(_api)
 
-	var transport := _create_p2p_transport()
+	var transport = _create_p2p_transport()
 	if transport == null:
 		if _api != null:
 			_api.queue_free()
@@ -357,7 +456,14 @@ func _start_integration() -> void:
 		_append_log("Start rejected: transport create failed.")
 		return
 
-	_p2p = P2PSessionAdapter.new()
+	_p2p = _new_script_instance(P2P_SESSION_ADAPTER_SCRIPT_PATH)
+	if _p2p == null:
+		if _api != null:
+			_api.queue_free()
+			_api = null
+		_set_error_text("P2P_ADAPTER_SCRIPT_MISSING")
+		_append_log("Start rejected: p2p adapter script missing.")
+		return
 	add_child(_p2p)
 	_p2p.setup(run_id, local_steam_id, transport)
 	_p2p.role_changed.connect(_on_p2p_role_changed)
@@ -365,7 +471,16 @@ func _start_integration() -> void:
 	_p2p.connection_failed.connect(_on_p2p_connection_failed)
 	_p2p.transport_event.connect(_on_p2p_transport_event)
 
-	_lobby = LobbyFlowController.new()
+	_lobby = _new_script_instance(LOBBY_FLOW_CONTROLLER_SCRIPT_PATH)
+	if _lobby == null:
+		_p2p.queue_free()
+		_p2p = null
+		if _api != null:
+			_api.queue_free()
+			_api = null
+		_set_error_text("LOBBY_SCRIPT_MISSING")
+		_append_log("Start rejected: lobby script missing.")
+		return
 	add_child(_lobby)
 	_lobby.lobby_state_changed.connect(_on_lobby_state_changed)
 	_lobby.lobby_event.connect(_on_lobby_event)
@@ -375,7 +490,12 @@ func _start_integration() -> void:
 	_pending_host_target = ""
 
 	if enable_backend_session:
-		_migration = HostMigrationController.new()
+		_migration = _new_script_instance(HOST_MIGRATION_CONTROLLER_SCRIPT_PATH)
+		if _migration == null:
+			_stop_integration()
+			_set_error_text("MIGRATION_SCRIPT_MISSING")
+			_append_log("Start rejected: migration script missing.")
+			return
 		add_child(_migration)
 		_migration.setup(_api, run_id, local_steam_id)
 		_migration.state_changed.connect(_on_state_changed)
@@ -422,7 +542,7 @@ func _stop_integration() -> void:
 		_migration.queue_free()
 		_migration = null
 	if _p2p != null:
-		_p2p.disconnect("MANUAL_STOP")
+		_p2p.disconnect_session("MANUAL_STOP")
 		_p2p.queue_free()
 		_p2p = null
 	if _lobby != null:
@@ -450,15 +570,15 @@ func _on_state_changed(next_state: int) -> void:
 	var text := _state_to_text(next_state)
 	var color := Color(0.7, 0.7, 0.7)
 	match next_state:
-		HostMigrationController.NetState.RUNNING:
+		NET_STATE_RUNNING:
 			color = Color(0.2, 0.8, 0.2)
-		HostMigrationController.NetState.MIGRATION_WAIT:
+		NET_STATE_MIGRATION_WAIT:
 			color = Color(0.95, 0.85, 0.2)
-		HostMigrationController.NetState.MIGRATION_CANDIDATE:
+		NET_STATE_MIGRATION_CANDIDATE:
 			color = Color(0.95, 0.6, 0.2)
-		HostMigrationController.NetState.MIGRATION_FOLLOWER:
+		NET_STATE_MIGRATION_FOLLOWER:
 			color = Color(0.7, 0.7, 1.0)
-		HostMigrationController.NetState.ABORTED:
+		NET_STATE_ABORTED:
 			color = Color(1.0, 0.3, 0.3)
 	_set_status(text, color)
 	_append_log("state => %s" % text)
@@ -501,7 +621,7 @@ func _drain_host_switch_queue() -> void:
 		var target := _pending_host_target
 		_pending_host_target = ""
 		_append_log("switch p2p target => %s" % target)
-		var result := await _p2p.switch_host(target)
+		var result = await _p2p.switch_host(target)
 		if not bool(result.get("ok", false)):
 			var code := str(result.get("code", "P2P_SWITCH_FAILED"))
 			_set_error_text(code)
@@ -542,17 +662,34 @@ func _on_lobby_state_changed(next_state: String) -> void:
 func _on_lobby_event(message: String) -> void:
 	_append_log("[lobby] %s" % message)
 
-func _create_p2p_transport() -> P2PTransportBase:
+func _new_script_instance(script_path: String):
+	var script = load(script_path)
+	if script == null:
+		push_error("failed to load script: %s" % script_path)
+		return null
+	if not (script is GDScript):
+		push_error("resource is not GDScript: %s" % script_path)
+		return null
+	if not script.can_instantiate():
+		push_error("script cannot instantiate: %s" % script_path)
+		return null
+	return script.new()
+
+func _create_p2p_transport():
 	match p2p_transport_mode:
 		"steam_stub":
-			var stub := SteamP2PTransport.new()
+			var stub = _new_script_instance(STEAM_P2P_TRANSPORT_SCRIPT_PATH)
+			if stub == null:
+				return null
 			stub.listen_port = max(steam_stub_listen_port, 1)
 			stub.default_remote_host = steam_stub_remote_host
 			stub.default_remote_port = max(steam_stub_remote_port, 1)
 			stub.endpoint_map_csv = steam_stub_endpoint_map_csv
 			return stub
 		_:
-			var sim := SimulatedP2PTransport.new()
+			var sim = _new_script_instance(SIMULATED_P2P_TRANSPORT_SCRIPT_PATH)
+			if sim == null:
+				return null
 			sim.connect_delay_sec = max(simulated_connect_delay_sec, 0.01)
 			sim.simulated_fail_hosts = _parse_csv_hosts(simulated_fail_hosts_csv)
 			return sim
@@ -572,6 +709,16 @@ func _parse_int_or_default(raw_text: String, fallback: int) -> int:
 	if not text.is_valid_int():
 		return fallback
 	return text.to_int()
+
+func _parse_bool_or_default(raw_text: String, fallback: bool) -> bool:
+	var text := raw_text.strip_edges().to_lower()
+	if text.is_empty():
+		return fallback
+	if text == "1" or text == "true" or text == "yes" or text == "on":
+		return true
+	if text == "0" or text == "false" or text == "no" or text == "off":
+		return false
+	return fallback
 
 func _parse_csv_hosts(raw_text: String) -> PackedStringArray:
 	var out := PackedStringArray()
@@ -616,15 +763,15 @@ func _append_log(message: String) -> void:
 
 func _state_to_text(state: int) -> String:
 	match state:
-		HostMigrationController.NetState.RUNNING:
+		NET_STATE_RUNNING:
 			return "RUNNING"
-		HostMigrationController.NetState.MIGRATION_WAIT:
+		NET_STATE_MIGRATION_WAIT:
 			return "MIGRATION_WAIT"
-		HostMigrationController.NetState.MIGRATION_CANDIDATE:
+		NET_STATE_MIGRATION_CANDIDATE:
 			return "MIGRATION_CANDIDATE"
-		HostMigrationController.NetState.MIGRATION_FOLLOWER:
+		NET_STATE_MIGRATION_FOLLOWER:
 			return "MIGRATION_FOLLOWER"
-		HostMigrationController.NetState.ABORTED:
+		NET_STATE_ABORTED:
 			return "ABORTED"
 		_:
 			return "UNKNOWN"

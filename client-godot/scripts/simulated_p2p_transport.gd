@@ -1,5 +1,7 @@
-extends P2PTransportBase
+extends Node
 class_name SimulatedP2PTransport
+
+signal event_emitted(message: String)
 
 @export var connect_delay_sec: float = 0.15
 @export var simulated_fail_hosts: PackedStringArray = []
@@ -54,7 +56,7 @@ func connect_to_host(target_host_steam_id: String) -> Dictionary:
 		"hostSteamId": _host_steam_id,
 	}
 
-func disconnect(reason_code: String = "MANUAL_STOP") -> void:
+func disconnect_transport(reason_code: String = "MANUAL_STOP") -> void:
 	emit_signal("event_emitted", "sim transport disconnect reason=%s" % reason_code)
 	_state = "DISCONNECTED"
 	_role = "none"

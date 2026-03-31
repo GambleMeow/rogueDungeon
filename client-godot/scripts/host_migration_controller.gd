@@ -25,14 +25,14 @@ var net_state: int = NetState.RUNNING
 var run_id: String = ""
 var local_steam_id: String = ""
 
-var _api: BackendApi
+var _api = null
 var _active: bool = false
 var _claiming: bool = false
 var _last_host_steam_id: String = ""
 var _consecutive_poll_failures: int = 0
 var _last_claim_epoch: int = -1
 
-func setup(api: BackendApi, p_run_id: String, p_local_steam_id: String) -> void:
+func setup(api, p_run_id: String, p_local_steam_id: String) -> void:
 	_api = api
 	run_id = p_run_id.strip_edges()
 	local_steam_id = p_local_steam_id.strip_edges()

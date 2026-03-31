@@ -2,13 +2,16 @@ extends CanvasLayer
 
 @export var hero_controller_path: NodePath = NodePath("../HeroController")
 @export var enemy_ai_path: NodePath = NodePath("../EnemyAI")
+@export var net_session_controller_path: NodePath = NodePath("../NetSessionController")
 
 var _hero_ctrl: Node3D
 var _enemy_ai: Node3D
+var _net_ctrl: Node
 var _hero_hp_bar: ProgressBar
 var _hero_hp_label: Label
 var _hero_mp_bar: ProgressBar
 var _hero_mp_label: Label
+var _hero_name_label: Label
 var _boss_hp_bar: ProgressBar
 var _boss_hp_label: Label
 var _flash_cd_label: Label
@@ -43,6 +46,11 @@ var _gold: int = 10000
 var _shop_offered: Array[int] = []
 var _destroy_mode: bool = false
 var _destroy_hover_index: int = -1
+var _observed_peer_id: int = 0
+var _self_peer_id: int = 0
+var _observed_remote_hero_state: Dictionary = {}
+var _observed_remote_equipment_state: Dictionary = {}
+var _last_inventory_signature: String = ""
 var _shop_level_label: Label
 var _gold_label: Label
 var _upgrade_btn: Button
@@ -200,20 +208,26 @@ var PANEL_HEIGHT := 240
 func _ready() -> void:
 	_hero_ctrl = get_node_or_null(hero_controller_path)
 	_enemy_ai = get_node_or_null(enemy_ai_path)
+	_net_ctrl = get_node_or_null(net_session_controller_path)
 	_build_ui()
 	_apply_inventory_bonuses_to_hero()
 	if _hero_ctrl != null and _hero_ctrl.has_method("set_destroy_cursor_mode"):
 		_hero_ctrl.call("set_destroy_cursor_mode", false)
 	_sync_destroy_hover_cursor()
+	_refresh_inventory()
 
 
 func _process(_delta: float) -> void:
+	_update_network_view_state()
 	_update_hero_info()
 	_update_boss_info()
 	_update_skill_name_labels()
 	_update_flash_cd()
 	_update_haste_cd()
 	_check_shop_click()
+	if _shop_visible:
+		_update_shop_info()
+	_refresh_inventory()
 
 
 func _build_ui() -> void:
@@ -337,6 +351,7 @@ func _build_hero_info_section(parent: HBoxContainer) -> void:
 	name_label.add_theme_color_override("font_color", COLOR_BORDER)
 	name_label.add_theme_font_size_override("font_size", 16)
 	info_vbox.add_child(name_label)
+	_hero_name_label = name_label
 
 	var hp_container := _create_bar_row("HP", COLOR_HP_FULL)
 	info_vbox.add_child(hp_container)
@@ -668,7 +683,106 @@ func _create_skill_button(key: String, skill_name: String, active: bool) -> Pane
 	return panel
 
 
+func set_observed_peer(peer_id: int) -> void:
+	var safe_peer_id: int = maxi(peer_id, 0)
+	if _observed_peer_id == safe_peer_id:
+		return
+	_observed_peer_id = safe_peer_id
+	_last_inventory_signature = ""
+	if _is_observing_remote():
+		_destroy_mode = false
+		_destroy_hover_index = -1
+		if _hero_ctrl != null and _hero_ctrl.has_method("set_destroy_cursor_mode"):
+			_hero_ctrl.call("set_destroy_cursor_mode", false)
+	_sync_destroy_hover_cursor()
+	_update_destroy_visual()
+	_update_shop_info()
+
+
+func _update_network_view_state() -> void:
+	if _net_ctrl == null:
+		_net_ctrl = get_node_or_null(net_session_controller_path)
+	if _net_ctrl == null:
+		_self_peer_id = 0
+		_observed_remote_hero_state.clear()
+		_observed_remote_equipment_state.clear()
+		return
+	if _net_ctrl.has_method("get_ui_self_peer_id"):
+		_self_peer_id = int(_net_ctrl.call("get_ui_self_peer_id"))
+	else:
+		_self_peer_id = 0
+
+	if _observed_peer_id > 0 and _self_peer_id > 0 and _observed_peer_id == _self_peer_id:
+		set_observed_peer(0)
+
+	if _observed_peer_id <= 0:
+		_observed_remote_hero_state.clear()
+		_observed_remote_equipment_state.clear()
+		return
+
+	_observed_remote_hero_state = {}
+	_observed_remote_equipment_state = {}
+	if _net_ctrl.has_method("get_ui_peer_hero_state"):
+		var hero_state_variant: Variant = _net_ctrl.call("get_ui_peer_hero_state", _observed_peer_id)
+		if hero_state_variant is Dictionary:
+			_observed_remote_hero_state = hero_state_variant
+	if _net_ctrl.has_method("get_ui_peer_equipment_state"):
+		var equip_state_variant: Variant = _net_ctrl.call("get_ui_peer_equipment_state", _observed_peer_id)
+		if equip_state_variant is Dictionary:
+			_observed_remote_equipment_state = equip_state_variant
+	if _observed_remote_hero_state.is_empty() and _observed_remote_equipment_state.is_empty():
+		set_observed_peer(0)
+
+
+func _is_observing_remote() -> bool:
+	return _observed_peer_id > 0 and (_self_peer_id <= 0 or _observed_peer_id != _self_peer_id)
+
+
+func _get_observed_hero_state() -> Dictionary:
+	if not _is_observing_remote():
+		return {}
+	return _observed_remote_hero_state
+
+
+func _get_observed_equipment_state() -> Dictionary:
+	if not _is_observing_remote():
+		return {}
+	return _observed_remote_equipment_state
+
+
+func _skill_name_from_id(skill_id: int, is_q: bool) -> String:
+	match skill_id:
+		101:
+			return "闪现"
+		102:
+			return "急速"
+		201:
+			return "战术翻滚"
+		202:
+			return "火力全开"
+		_:
+			if is_q:
+				return "Q技能"
+			return "W技能"
+
+
 func _update_skill_name_labels() -> void:
+	if _is_observing_remote():
+		var hero_state: Dictionary = _get_observed_hero_state()
+		if hero_state.is_empty():
+			return
+		if _q_skill_name_label != null:
+			var q_name: String = str(hero_state.get("skill_q_name", "")).strip_edges()
+			if q_name.is_empty():
+				q_name = _skill_name_from_id(int(hero_state.get("skill_q_id", 0)), true)
+			_q_skill_name_label.text = q_name
+		if _w_skill_name_label != null:
+			var w_name: String = str(hero_state.get("skill_w_name", "")).strip_edges()
+			if w_name.is_empty():
+				w_name = _skill_name_from_id(int(hero_state.get("skill_w_id", 0)), false)
+			_w_skill_name_label.text = w_name
+		return
+
 	if _hero_ctrl == null:
 		return
 	if _q_skill_name_label != null:
@@ -682,8 +796,16 @@ func _update_skill_name_labels() -> void:
 
 
 func _update_hero_info() -> void:
+	if _is_observing_remote():
+		_update_remote_hero_info()
+		return
 	if _hero_ctrl == null or _hero_hp_bar == null:
 		return
+	if _hero_name_label != null:
+		var local_profile: String = str(_hero_ctrl.get("hero_profile"))
+		if local_profile.strip_edges().is_empty():
+			local_profile = "本地"
+		_hero_name_label.text = "你自己 · %s" % local_profile
 
 	var current_hp = _hero_ctrl.get("_current_hp")
 	var max_hp = _hero_ctrl.get("max_hp")
@@ -868,6 +990,121 @@ func _update_hero_info() -> void:
 		_set_tooltip_if_changed(_int_label, int_tip)
 
 
+func _update_remote_hero_info() -> void:
+	var hero_state: Dictionary = _get_observed_hero_state()
+	if hero_state.is_empty():
+		return
+	if _hero_hp_bar == null:
+		return
+
+	var current_hp: int = int(hero_state.get("hp", 0))
+	var max_hp: int = maxi(int(hero_state.get("max_hp", 1)), 1)
+	var hp_ratio: float = clampf(float(current_hp) / float(max_hp) * 100.0, 0.0, 100.0)
+	_hero_hp_bar.value = hp_ratio
+	if _hero_hp_label != null:
+		_hero_hp_label.text = "%d / %d" % [current_hp, max_hp]
+
+	var fill_sb := _hero_hp_bar.get_theme_stylebox("fill") as StyleBoxFlat
+	if fill_sb != null:
+		fill_sb.bg_color = COLOR_HP_LOW.lerp(COLOR_HP_FULL, float(current_hp) / float(max_hp))
+
+	var current_mp: int = int(hero_state.get("mana", 0))
+	var max_mp: int = maxi(int(hero_state.get("max_mana", 1)), 1)
+	if _hero_mp_bar != null:
+		_hero_mp_bar.value = clampf(float(current_mp) / float(max_mp) * 100.0, 0.0, 100.0)
+	if _hero_mp_label != null:
+		_hero_mp_label.text = "%d / %d" % [current_mp, max_mp]
+
+	var profile_text: String = str(hero_state.get("hero_profile", ""))
+	if profile_text.strip_edges().is_empty():
+		profile_text = "远端英雄"
+	if _hero_name_label != null:
+		_hero_name_label.text = "玩家P%d · %s" % [_observed_peer_id, profile_text]
+
+	if _atk_label != null:
+		if hero_state.has("damage"):
+			_atk_label.text = "攻击: %d" % int(hero_state.get("damage", 0))
+		else:
+			_atk_label.text = "攻击: -"
+	if _def_label != null:
+		if hero_state.has("armor"):
+			_def_label.text = "护甲: %.1f" % float(hero_state.get("armor", 0.0))
+		else:
+			_def_label.text = "护甲: -"
+	if _spd_label != null:
+		if hero_state.has("move_speed"):
+			_spd_label.text = "移速: %d" % int(round(float(hero_state.get("move_speed", 0.0))))
+		else:
+			_spd_label.text = "移速: -"
+
+	if _atk_speed_label != null:
+		if hero_state.has("attack_speed"):
+			_atk_speed_label.text = "攻速: %.2f" % float(hero_state.get("attack_speed", 0.0))
+		else:
+			_atk_speed_label.text = "攻速: -"
+	if _atk_interval_label != null:
+		if hero_state.has("attack_interval"):
+			_atk_interval_label.text = "攻间隔: %.2f" % float(hero_state.get("attack_interval", 0.0))
+		else:
+			_atk_interval_label.text = "攻间隔: -"
+	if _atk_range_label != null:
+		if hero_state.has("attack_range"):
+			_atk_range_label.text = "攻距: %d" % int(round(float(hero_state.get("attack_range", 0.0))))
+		else:
+			_atk_range_label.text = "攻距: -"
+	if _cdr_label != null:
+		if hero_state.has("cooldown_reduction_percent_total"):
+			_cdr_label.text = "冷却减免: %.1f%%" % float(hero_state.get("cooldown_reduction_percent_total", 0.0))
+		else:
+			_cdr_label.text = "冷却减免: -"
+	if _phys_crit_rate_label != null:
+		if hero_state.has("physical_crit_chance"):
+			_phys_crit_rate_label.text = "物暴率: %.1f%%" % float(hero_state.get("physical_crit_chance", 0.0))
+		else:
+			_phys_crit_rate_label.text = "物暴率: -"
+	if _phys_crit_mul_label != null:
+		if hero_state.has("physical_crit_multiplier"):
+			_phys_crit_mul_label.text = "物暴倍: %.2fx" % float(hero_state.get("physical_crit_multiplier", 0.0))
+		else:
+			_phys_crit_mul_label.text = "物暴倍: -"
+	if _spell_crit_rate_label != null:
+		if hero_state.has("spell_crit_chance"):
+			_spell_crit_rate_label.text = "法暴率: %.1f%%" % float(hero_state.get("spell_crit_chance", 0.0))
+		else:
+			_spell_crit_rate_label.text = "法暴率: -"
+	if _spell_crit_mul_label != null:
+		if hero_state.has("spell_crit_multiplier"):
+			_spell_crit_mul_label.text = "法暴倍: %.2fx" % float(hero_state.get("spell_crit_multiplier", 0.0))
+		else:
+			_spell_crit_mul_label.text = "法暴倍: -"
+
+	if _hp_regen_label != null:
+		if hero_state.has("hp_regen_per_second"):
+			_hp_regen_label.text = "回血: %.2f/s" % float(hero_state.get("hp_regen_per_second", 0.0))
+		else:
+			_hp_regen_label.text = "回血: -"
+	if _mp_regen_label != null:
+		if hero_state.has("mana_regen_per_second"):
+			_mp_regen_label.text = "回蓝: %.2f/s" % float(hero_state.get("mana_regen_per_second", 0.0))
+		else:
+			_mp_regen_label.text = "回蓝: -"
+	if _str_label != null:
+		if hero_state.has("strength"):
+			_str_label.text = "力量: %d" % int(hero_state.get("strength", 0))
+		else:
+			_str_label.text = "力量: -"
+	if _agi_label != null:
+		if hero_state.has("agility"):
+			_agi_label.text = "敏捷: %d" % int(hero_state.get("agility", 0))
+		else:
+			_agi_label.text = "敏捷: -"
+	if _int_label != null:
+		if hero_state.has("intelligence"):
+			_int_label.text = "智力: %d" % int(hero_state.get("intelligence", 0))
+		else:
+			_int_label.text = "智力: -"
+
+
 func _update_boss_info() -> void:
 	if _enemy_ai == null or _boss_hp_bar == null:
 		return
@@ -883,7 +1120,20 @@ func _update_boss_info() -> void:
 
 
 func _update_flash_cd() -> void:
-	if _hero_ctrl == null or _flash_cd_label == null:
+	if _flash_cd_label == null:
+		return
+	if _is_observing_remote():
+		var hero_state: Dictionary = _get_observed_hero_state()
+		if hero_state.is_empty():
+			_flash_cd_label.text = ""
+			return
+		var remote_cd: float = float(hero_state.get("flash_cd", 0.0))
+		if remote_cd > 0.0:
+			_flash_cd_label.text = "%.1f" % remote_cd
+		else:
+			_flash_cd_label.text = ""
+		return
+	if _hero_ctrl == null:
 		return
 
 	var cd = _hero_ctrl.get("_flash_cooldown")
@@ -897,7 +1147,24 @@ func _update_flash_cd() -> void:
 
 
 func _update_haste_cd() -> void:
-	if _hero_ctrl == null or _haste_cd_label == null:
+	if _haste_cd_label == null:
+		return
+	if _is_observing_remote():
+		var hero_state: Dictionary = _get_observed_hero_state()
+		if hero_state.is_empty():
+			_haste_cd_label.text = ""
+			return
+		var haste_active: bool = bool(hero_state.get("haste_active", false))
+		var haste_left: float = float(hero_state.get("haste_left", 0.0))
+		var haste_cd: float = float(hero_state.get("haste_cd", 0.0))
+		if haste_active and haste_left > 0.0:
+			_haste_cd_label.text = "↑%.1f" % haste_left
+		elif haste_cd > 0.0:
+			_haste_cd_label.text = "%.1f" % haste_cd
+		else:
+			_haste_cd_label.text = ""
+		return
+	if _hero_ctrl == null:
 		return
 
 	var haste_cd = _hero_ctrl.get("_haste_cooldown")
@@ -917,6 +1184,7 @@ func _check_shop_click() -> void:
 	var clicked = _hero_ctrl.get("shop_clicked")
 	if clicked == true:
 		_hero_ctrl.set("shop_clicked", false)
+		set_observed_peer(0)
 		_toggle_shop()
 
 
@@ -1038,15 +1306,27 @@ func _get_item_level(item: Dictionary) -> int:
 
 
 func _update_shop_info() -> void:
+	var display_shop_level: int = _shop_level
+	var display_gold: int = _gold
+	var is_remote_view: bool = _is_observing_remote()
+	if is_remote_view:
+		var eq_state: Dictionary = _get_observed_equipment_state()
+		if not eq_state.is_empty():
+			display_shop_level = maxi(int(eq_state.get("shop_level", _shop_level)), 1)
+			display_gold = int(eq_state.get("gold", _gold))
 	if _shop_level_label:
 		var stars := ""
 		for i in range(7):
-			stars += "★" if i < _shop_level else "☆"
-		_shop_level_label.text = "商店等级: %s Lv%d" % [stars, _shop_level]
+			stars += "★" if i < display_shop_level else "☆"
+		var owner_text: String = "（玩家P%d）" % _observed_peer_id if is_remote_view else ""
+		_shop_level_label.text = "商店等级: %s Lv%d %s" % [stars, display_shop_level, owner_text]
 	if _gold_label:
-		_gold_label.text = "金币: %d" % _gold
+		_gold_label.text = "金币: %d" % display_gold
 	if _upgrade_btn:
-		if _shop_level >= 7:
+		if is_remote_view:
+			_upgrade_btn.text = "观战中"
+			_upgrade_btn.disabled = true
+		elif _shop_level >= 7:
 			_upgrade_btn.text = "已满级"
 			_upgrade_btn.disabled = true
 		else:
@@ -1054,8 +1334,12 @@ func _update_shop_info() -> void:
 			_upgrade_btn.text = "升级商店 (%d金)" % cost
 			_upgrade_btn.disabled = _gold < cost
 	if _refresh_btn:
-		_refresh_btn.text = "刷新商品 (%d金)" % SHOP_REFRESH_COST
-		_refresh_btn.disabled = _gold < SHOP_REFRESH_COST
+		if is_remote_view:
+			_refresh_btn.text = "观战中"
+			_refresh_btn.disabled = true
+		else:
+			_refresh_btn.text = "刷新商品 (%d金)" % SHOP_REFRESH_COST
+			_refresh_btn.disabled = _gold < SHOP_REFRESH_COST
 
 
 func _roll_shop_items() -> void:
@@ -1100,6 +1384,8 @@ func _populate_offered_items() -> void:
 
 
 func _on_refresh_pressed() -> void:
+	if _is_observing_remote():
+		return
 	if _gold < SHOP_REFRESH_COST:
 		return
 	_gold -= SHOP_REFRESH_COST
@@ -1109,6 +1395,8 @@ func _on_refresh_pressed() -> void:
 
 
 func _on_upgrade_shop() -> void:
+	if _is_observing_remote():
+		return
 	if _shop_level >= 7:
 		return
 	var cost: int = SHOP_UPGRADE_COST[_shop_level]
@@ -1222,6 +1510,8 @@ func _create_shop_item(data: Dictionary, index: int) -> PanelContainer:
 
 
 func _on_buy_item(index: int) -> void:
+	if _is_observing_remote():
+		return
 	if _hero_ctrl == null:
 		return
 	var inv: Array = _hero_ctrl.get("inventory")
@@ -1416,34 +1706,70 @@ func _try_synthesize() -> void:
 		return
 
 
-func _refresh_inventory() -> void:
+func _get_display_inventory() -> Array:
+	var out: Array = []
+	if _is_observing_remote():
+		var eq_state: Dictionary = _get_observed_equipment_state()
+		var inv_variant: Variant = eq_state.get("inventory", [])
+		if inv_variant is Array:
+			for value in inv_variant:
+				out.append(int(value))
+		return out
 	if _hero_ctrl == null:
+		return out
+	var inv_variant: Variant = _hero_ctrl.get("inventory")
+	if inv_variant is Array:
+		for value in inv_variant:
+			out.append(int(value))
+	return out
+
+
+func _build_inventory_signature(inv: Array) -> String:
+	var parts: Array[String] = []
+	for value in inv:
+		parts.append(str(int(value)))
+	var owner_key: int = 0
+	if _is_observing_remote():
+		owner_key = _observed_peer_id
+	return "%d|%s" % [owner_key, ",".join(parts)]
+
+
+func _refresh_inventory() -> void:
+	var inv: Array = _get_display_inventory()
+	var signature: String = _build_inventory_signature(inv)
+	if signature == _last_inventory_signature:
+		_sync_destroy_hover_cursor()
 		return
-	var inv: Array = _hero_ctrl.get("inventory")
-	if inv == null:
-		return
+	_last_inventory_signature = signature
 	for i in range(6):
 		if i < inv.size():
 			var item_idx: int = inv[i]
-			var icon_path: String = P + ITEM_DB[item_idx]["icon"]
-			var tex := load(icon_path) as Texture2D
-			if tex and i < _inventory_icons.size():
-				_inventory_icons[i].texture = tex
-				_inventory_icons[i].visible = true
+			if item_idx >= 0 and item_idx < ITEM_DB.size():
+				var icon_path: String = P + ITEM_DB[item_idx]["icon"]
+				var tex := load(icon_path) as Texture2D
+				if tex and i < _inventory_icons.size():
+					_inventory_icons[i].texture = tex
+					_inventory_icons[i].visible = true
+				if i < _inventory_slots.size():
+					_inventory_slots[i].tooltip_text = str(ITEM_DB[item_idx].get("name", ""))
+			else:
+				if i < _inventory_icons.size():
+					_inventory_icons[i].visible = false
+				if i < _inventory_slots.size():
+					_inventory_slots[i].tooltip_text = ""
 		else:
 			if i < _inventory_icons.size():
 				_inventory_icons[i].visible = false
-	_apply_inventory_bonuses_to_hero()
+			if i < _inventory_slots.size():
+				_inventory_slots[i].tooltip_text = ""
+	if not _is_observing_remote():
+		_apply_inventory_bonuses_to_hero()
 	_update_destroy_visual()
 	_sync_destroy_hover_cursor()
 
 
 func _is_inventory_slot_has_item(index: int) -> bool:
-	if _hero_ctrl == null:
-		return false
-	var inv: Array = _hero_ctrl.get("inventory")
-	if inv == null:
-		return false
+	var inv: Array = _get_display_inventory()
 	return index >= 0 and index < inv.size()
 
 
@@ -1460,6 +1786,10 @@ func _find_hovered_inventory_index() -> int:
 
 func _sync_destroy_hover_cursor() -> void:
 	if _hero_ctrl == null or not _hero_ctrl.has_method("set_destroy_cursor_item_hover"):
+		return
+	if _is_observing_remote():
+		_destroy_hover_index = -1
+		_hero_ctrl.call("set_destroy_cursor_item_hover", false)
 		return
 	if not _destroy_mode:
 		_destroy_hover_index = -1
@@ -1489,6 +1819,8 @@ func _input(event: InputEvent) -> void:
 
 
 func _toggle_destroy_mode() -> void:
+	if _is_observing_remote():
+		return
 	_destroy_mode = not _destroy_mode
 	if _hero_ctrl != null and _hero_ctrl.has_method("set_destroy_cursor_mode"):
 		_hero_ctrl.call("set_destroy_cursor_mode", _destroy_mode)
@@ -1535,6 +1867,8 @@ func _update_destroy_visual() -> void:
 
 
 func _on_inv_slot_input(event: InputEvent, index: int) -> void:
+	if _is_observing_remote():
+		return
 	if not _destroy_mode:
 		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
@@ -1542,6 +1876,8 @@ func _on_inv_slot_input(event: InputEvent, index: int) -> void:
 
 
 func _destroy_item(index: int) -> void:
+	if _is_observing_remote():
+		return
 	if _hero_ctrl == null:
 		return
 	var inv: Array = _hero_ctrl.get("inventory")

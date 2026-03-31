@@ -12,8 +12,12 @@ const DEFAULT_CAMERA_OFFSET := Vector3(0.0, 1700.0, 1050.0)
 
 @export var start_point: Vector3 = Vector3(-4500.0, 0.0, 0.0)
 @export var hero_start_offset: Vector3 = Vector3(-220.0, 0.0, 140.0)
+@export var host_start_extra_offset: Vector3 = Vector3(-180.0, 0.0, 0.0)
+@export var client_start_extra_offset: Vector3 = Vector3(180.0, 0.0, 0.0)
+@export var hero_spawn_min_radius: float = 560.0
 @export var gate_offset: Vector3 = Vector3(0.0, 0.0, -280.0)
 @export var boss_entry_offset: Vector3 = Vector3(-260.0, 0.0, -100.0)
+@export var boss_battle_role_offset_scale: float = 1.0
 @export var camera_focus_height: float = 120.0
 @export var edge_scroll_enabled: bool = true
 @export var edge_scroll_margin_px: int = 24
@@ -23,6 +27,7 @@ const DEFAULT_CAMERA_OFFSET := Vector3(0.0, 1700.0, 1050.0)
 @export var camera_height_max: float = 3200.0
 @export var camera_height_wheel_step: float = 120.0
 @export var camera_height_anim_duration: float = 0.18
+@export var camera_refocus_double_tap_ms: int = 320
 
 @export var gate_scene: PackedScene = preload("res://modles/CityEnteranceGate.glb")
 @export var gate_model_scale: Vector3 = Vector3(1.3333334, 1.3333334, 1.3333334)
@@ -38,11 +43,15 @@ var _hero_selected: bool = false
 var _hero_select_layer: CanvasLayer
 var _camera_height_target: float = DEFAULT_CAMERA_OFFSET.y
 var _camera_height_tween: Tween
+var _network_role: String = "offline"
+var _last_refocus_key_time_ms: int = -1000000
+var _boss_battle_started: bool = false
 
 
 func _ready() -> void:
 	set_process(true)
 	set_process_input(true)
+	_parse_network_role_from_cmdline()
 	var hero := _get_current_hero()
 	var camera := get_node_or_null(camera_path) as Camera3D
 	if hero != null and camera != null:
@@ -62,6 +71,15 @@ func _ready() -> void:
 func _input(event: InputEvent) -> void:
 	if not _hero_selected:
 		return
+	if event is InputEventKey:
+		var key_event := event as InputEventKey
+		if key_event.pressed and not key_event.echo and (key_event.keycode == KEY_1 or key_event.keycode == KEY_KP_1):
+			var now_ms: int = Time.get_ticks_msec()
+			var elapsed_ms: int = now_ms - _last_refocus_key_time_ms
+			_last_refocus_key_time_ms = now_ms
+			if elapsed_ms <= maxi(camera_refocus_double_tap_ms, 1):
+				_refocus_camera_to_hero()
+			return
 	if not (event is InputEventMouseButton):
 		return
 	var mouse_event := event as InputEventMouseButton
@@ -71,6 +89,14 @@ func _input(event: InputEvent) -> void:
 		_adjust_camera_height(-absf(camera_height_wheel_step))
 	elif mouse_event.button_index == MOUSE_BUTTON_WHEEL_DOWN:
 		_adjust_camera_height(absf(camera_height_wheel_step))
+
+
+func _refocus_camera_to_hero() -> void:
+	var camera := get_node_or_null(camera_path) as Camera3D
+	var hero := _get_current_hero()
+	if camera == null or hero == null:
+		return
+	_focus_camera_on(hero.global_position, camera)
 
 
 func _adjust_camera_height(delta_y: float) -> void:
@@ -353,19 +379,40 @@ func _move_hero_to_start_point() -> void:
 	var hero := _get_current_hero()
 	if hero == null:
 		return
-	var target := start_point + hero_start_offset
+	var target: Vector3 = _get_spawn_position_around_shop()
 	target.y = hero.global_position.y
 	hero.global_position = target
 	_reset_hero_controller_state(target)
 
 
 func _on_gate_destroyed() -> void:
-	var hero := _get_current_hero()
-	var boss := get_node_or_null(boss_path) as Node3D
-	if hero == null or boss == null:
+	if _boss_battle_started:
 		return
+	var boss := get_node_or_null(boss_path) as Node3D
+	if boss == null:
+		return
+	var boss_anchor: Vector3 = boss.global_position
+	if _network_role == "host" and multiplayer.multiplayer_peer != null:
+		rpc("rpc_start_boss_battle", boss_anchor)
+	elif _network_role == "client":
+		# 客户端等待 host 广播统一开战时机，避免本地误触发。
+		return
+	_start_boss_battle_locally(boss_anchor)
 
-	var entry_position := boss.global_position + boss_entry_offset
+
+@rpc("authority", "call_remote", "reliable")
+func rpc_start_boss_battle(boss_anchor: Vector3) -> void:
+	_start_boss_battle_locally(boss_anchor)
+
+
+func _start_boss_battle_locally(boss_anchor: Vector3) -> void:
+	if _boss_battle_started:
+		return
+	var hero := _get_current_hero()
+	if hero == null:
+		return
+	_boss_battle_started = true
+	var entry_position := _get_boss_battle_entry_position(boss_anchor)
 	entry_position.y = hero.global_position.y
 	hero.global_position = entry_position
 	_reset_hero_controller_state(entry_position)
@@ -416,3 +463,57 @@ func _disable_collision_on_model(root: Node) -> void:
 		var child_node := child as Node
 		if child_node != null:
 			_disable_collision_on_model(child_node)
+
+
+func _parse_network_role_from_cmdline() -> void:
+	_network_role = "offline"
+	var args: PackedStringArray = OS.get_cmdline_user_args()
+	for raw_arg in args:
+		var arg: String = raw_arg.strip_edges()
+		if arg.is_empty():
+			continue
+		var key: String = arg
+		var value: String = "true"
+		var eq_idx: int = arg.find("=")
+		if eq_idx >= 0:
+			key = arg.substr(0, eq_idx)
+			value = arg.substr(eq_idx + 1)
+		key = key.strip_edges().to_lower()
+		if key.begins_with("--"):
+			key = key.substr(2)
+		value = value.strip_edges().to_lower()
+		if key == "net" or key == "network" or key == "mode" or key == "net-mode" or key == "net_mode":
+			if value == "host" or value == "client" or value == "offline":
+				_network_role = value
+				return
+
+
+func _get_network_spawn_extra_offset() -> Vector3:
+	if _network_role == "host":
+		return host_start_extra_offset
+	if _network_role == "client":
+		return client_start_extra_offset
+	return Vector3.ZERO
+
+
+func _get_spawn_position_around_shop() -> Vector3:
+	var center: Vector3 = _get_shop_center_position()
+	var desired: Vector3 = hero_start_offset + _get_network_spawn_extra_offset()
+	desired.y = 0.0
+	if desired.length_squared() <= 0.0001:
+		desired = Vector3(-1.0, 0.0, 0.0)
+	var dir: Vector3 = desired.normalized()
+	var spawn_radius: float = maxf(hero_spawn_min_radius, desired.length())
+	return center + dir * spawn_radius
+
+
+func _get_shop_center_position() -> Vector3:
+	var shop := get_node_or_null(shop_path) as Node3D
+	if shop != null:
+		return shop.global_position
+	return start_point
+
+
+func _get_boss_battle_entry_position(boss_anchor: Vector3) -> Vector3:
+	var role_offset: Vector3 = _get_network_spawn_extra_offset() * maxf(boss_battle_role_offset_scale, 0.0)
+	return boss_anchor + boss_entry_offset + role_offset

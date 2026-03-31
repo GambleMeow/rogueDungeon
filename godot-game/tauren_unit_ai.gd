@@ -22,6 +22,16 @@ class_name TaurenUnitAI
 @export_flags_3d_physics var movement_collision_mask: int = 9
 @export_flags_3d_physics var click_collision_layer: int = 2
 @export_flags_3d_physics var click_collision_mask: int = 0
+@export var network_authoritative: bool = true
+@export var remote_sync_position_smooth_speed: float = 14.0
+@export var remote_sync_rotation_smooth_speed: float = 12.0
+@export var remote_sync_snap_distance: float = 260.0
+@export var remote_sync_prediction_sec: float = 0.10
+@export var dynamic_detour_enabled: bool = true
+@export var dynamic_detour_trigger_sec: float = 0.18
+@export var dynamic_detour_duration_sec: float = 0.55
+@export var dynamic_detour_side_strength: float = 0.95
+@export var dynamic_detour_progress_ratio_threshold: float = 0.25
 
 var _model: Node3D
 var _target: Node3D = null
@@ -41,6 +51,14 @@ var _resolved_walk_animation: String = ""
 var _resolved_death_animation: String = ""
 var _warned_missing_walk: bool = false
 var _pending_idle_after_animation: bool = false
+var _remote_target_position: Vector3 = Vector3.ZERO
+var _remote_target_yaw: float = 0.0
+var _remote_velocity: Vector3 = Vector3.ZERO
+var _remote_last_receive_ms: int = 0
+var _remote_has_target: bool = false
+var _dynamic_detour_time_left: float = 0.0
+var _dynamic_detour_side: float = 1.0
+var _dynamic_blocked_time: float = 0.0
 
 
 func setup_unit(model_scene: PackedScene, spawn_pos: Vector3, spawn_scale: Vector3) -> void:
@@ -71,6 +89,10 @@ func _ready() -> void:
 	add_child(_nav_agent)
 
 	_current_hp = max_hp
+	_remote_target_position = global_position
+	_remote_target_yaw = rotation.y
+	_remote_last_receive_ms = Time.get_ticks_msec()
+	_remote_has_target = true
 
 	if _model == null:
 		push_warning("TaurenUnitAI 缺少模型实例。等待 setup_unit 初始化。")
@@ -94,6 +116,11 @@ func _bind_runtime_after_model_ready() -> void:
 
 func _process(delta: float) -> void:
 	if _is_dead:
+		if not network_authoritative:
+			_update_remote_sync_smoothing(delta)
+		return
+	if not network_authoritative:
+		_update_remote_sync_smoothing(delta)
 		return
 
 	if _attack_cooldown > 0.0:
@@ -120,8 +147,9 @@ func _process(delta: float) -> void:
 		return
 
 	if distance > attack_range:
-		_chase_target(target_pos)
+		_chase_target(target_pos, delta)
 	else:
+		_reset_dynamic_detour_runtime()
 		_stop_move_and_idle()
 		_face_toward(target_pos)
 		if _attack_cooldown <= 0.0:
@@ -212,6 +240,8 @@ func _find_nearest_target() -> Node3D:
 		var target := node as Node3D
 		if target == null:
 			continue
+		if not target.visible:
+			continue
 		if _is_target_dead(target):
 			continue
 		var distance: float = _distance_xz(global_position, target.global_position)
@@ -230,7 +260,7 @@ func _is_target_dead(target: Node3D) -> bool:
 	return false
 
 
-func _chase_target(target_pos: Vector3) -> void:
+func _chase_target(target_pos: Vector3, delta: float) -> void:
 	_nav_agent.target_position = target_pos
 	var move_target := target_pos
 	if not _nav_agent.is_navigation_finished():
@@ -240,12 +270,36 @@ func _chase_target(target_pos: Vector3) -> void:
 
 	var move_dir := move_target - global_position
 	move_dir.y = 0.0
-	if move_dir.length() > 0.01:
-		move_dir = move_dir.normalized()
-		velocity = Vector3(move_dir.x * move_speed, 0.0, move_dir.z * move_speed)
-		move_and_slide()
-	else:
+	var has_move_intent: bool = move_dir.length() > 0.01
+	if not has_move_intent:
 		velocity = Vector3.ZERO
+		_reset_dynamic_detour_runtime()
+		return
+
+	var base_dir: Vector3 = move_dir.normalized()
+	var steering_dir: Vector3 = base_dir
+	if dynamic_detour_enabled and _dynamic_detour_time_left > 0.0:
+		var side_vec: Vector3 = base_dir.cross(Vector3.UP)
+		if side_vec.length() > 0.001:
+			side_vec = side_vec.normalized()
+			steering_dir = (base_dir + side_vec * _dynamic_detour_side * maxf(dynamic_detour_side_strength, 0.0)).normalized()
+		_dynamic_detour_time_left = maxf(_dynamic_detour_time_left - maxf(delta, 0.0), 0.0)
+
+	var before_pos: Vector3 = global_position
+	velocity = Vector3(steering_dir.x * move_speed, 0.0, steering_dir.z * move_speed)
+	move_and_slide()
+	if dynamic_detour_enabled:
+		var moved_dist: float = _distance_xz(global_position, before_pos)
+		var expected_step: float = maxf(move_speed * maxf(delta, 0.0), 0.001)
+		var progress_ratio: float = moved_dist / expected_step
+		if progress_ratio < clampf(dynamic_detour_progress_ratio_threshold, 0.05, 0.95):
+			_dynamic_blocked_time += maxf(delta, 0.0)
+			if _dynamic_blocked_time >= maxf(dynamic_detour_trigger_sec, 0.05):
+				_dynamic_detour_time_left = maxf(dynamic_detour_duration_sec, 0.08)
+				_dynamic_blocked_time = 0.0
+				_dynamic_detour_side = -_dynamic_detour_side
+		else:
+			_dynamic_blocked_time = maxf(_dynamic_blocked_time - maxf(delta, 0.0) * 1.6, 0.0)
 
 	_look_at_target(move_target)
 	if not _is_moving:
@@ -291,6 +345,12 @@ func _try_apply_damage_to_target() -> void:
 			if _target == null:
 				_is_attacking = false
 				_queue_idle_after_current_animation()
+		return
+	var target_peer_id: int = _get_remote_target_peer_id(_target)
+	if target_peer_id > 0:
+		var net_ctrl: Node = _get_network_session_controller()
+		if net_ctrl != null and net_ctrl.has_method("request_damage_remote_hero"):
+			net_ctrl.call("request_damage_remote_hero", target_peer_id, damage_per_hit, false)
 
 
 func _on_animation_finished(_anim_name: StringName) -> void:
@@ -303,6 +363,7 @@ func _on_animation_finished(_anim_name: StringName) -> void:
 
 func _stop_move_and_idle() -> void:
 	velocity = Vector3.ZERO
+	_reset_dynamic_detour_runtime()
 	if _is_moving:
 		_is_moving = false
 	_play_idle_animation()
@@ -343,6 +404,7 @@ func _die() -> void:
 	_is_attacking = false
 	_pending_idle_after_animation = false
 	_is_moving = false
+	_reset_dynamic_detour_runtime()
 	velocity = Vector3.ZERO
 	_target = null
 	if _hp_bar != null:
@@ -472,6 +534,31 @@ func _distance_xz(a: Vector3, b: Vector3) -> float:
 	return delta.length()
 
 
+func _reset_dynamic_detour_runtime() -> void:
+	_dynamic_detour_time_left = 0.0
+	_dynamic_blocked_time = 0.0
+
+
+func _get_network_session_controller() -> Node:
+	var tree: SceneTree = get_tree()
+	if tree == null:
+		return null
+	return tree.get_first_node_in_group("net_session_controller")
+
+
+func _get_remote_target_peer_id(target: Node3D) -> int:
+	if target == null or not is_instance_valid(target):
+		return 0
+	if not target.has_meta("network_peer_id"):
+		return 0
+	var peer_variant: Variant = target.get_meta("network_peer_id")
+	if peer_variant is int:
+		return int(peer_variant)
+	if peer_variant is String and String(peer_variant).is_valid_int():
+		return int(String(peer_variant).to_int())
+	return 0
+
+
 func _get_attack_speed_scale() -> float:
 	return maxf(attack_speed, 0.05)
 
@@ -502,3 +589,154 @@ func _update_hp_bar() -> void:
 		_hp_bar_material.set_shader_parameter("hp_ratio", 0.0)
 		return
 	_hp_bar_material.set_shader_parameter("hp_ratio", float(_current_hp) / float(max_hp))
+
+
+func set_network_authority(enabled: bool) -> void:
+	network_authoritative = enabled
+	if enabled:
+		_remote_target_position = global_position
+		_remote_target_yaw = rotation.y
+		_remote_velocity = Vector3.ZERO
+		_remote_last_receive_ms = Time.get_ticks_msec()
+		_remote_has_target = true
+		_reset_dynamic_detour_runtime()
+		return
+	velocity = Vector3.ZERO
+	_is_moving = false
+	_is_attacking = false
+	_pending_idle_after_animation = false
+	_remote_target_position = global_position
+	_remote_target_yaw = rotation.y
+	_remote_velocity = Vector3.ZERO
+	_remote_last_receive_ms = Time.get_ticks_msec()
+	_remote_has_target = true
+	_reset_dynamic_detour_runtime()
+
+
+func export_network_state() -> Dictionary:
+	var state: Dictionary = {}
+	state["id"] = name
+	state["pos"] = global_position
+	state["yaw"] = rotation.y
+	state["hp"] = _current_hp
+	state["max_hp"] = max_hp
+	state["dead"] = _is_dead
+	state["visible"] = visible
+	state["is_moving"] = _is_moving
+	state["is_attacking"] = _is_attacking
+	if _animation_player != null:
+		state["anim_name"] = String(_animation_player.current_animation)
+		state["anim_playing"] = _animation_player.is_playing()
+		state["anim_speed"] = _animation_player.speed_scale
+	return state
+
+
+func apply_network_state(state: Dictionary) -> void:
+	var pos_variant: Variant = state.get("pos", global_position)
+	if pos_variant is Vector3:
+		_on_remote_position_received(pos_variant)
+	_on_remote_yaw_received(float(state.get("yaw", rotation.y)))
+
+	if state.has("max_hp"):
+		max_hp = maxi(int(state["max_hp"]), 1)
+	if state.has("hp"):
+		_current_hp = clampi(int(state["hp"]), 0, maxi(max_hp, 1))
+	if state.has("dead"):
+		_is_dead = bool(state["dead"])
+	if state.has("is_moving"):
+		_is_moving = bool(state["is_moving"])
+	if state.has("is_attacking"):
+		_is_attacking = bool(state["is_attacking"])
+
+	var visible_target: bool = not _is_dead
+	if state.has("visible"):
+		visible_target = bool(state["visible"])
+	visible = visible_target
+	if _hp_bar != null:
+		_hp_bar.visible = visible_target and not _is_dead
+	_update_hp_bar()
+	_apply_network_animation_state(state)
+
+
+func _apply_network_animation_state(state: Dictionary) -> void:
+	if _animation_player == null:
+		return
+	var desired_anim: String = str(state.get("anim_name", "")).strip_edges()
+	var should_play: bool = bool(state.get("anim_playing", true))
+	var speed_scale: float = clampf(float(state.get("anim_speed", 1.0)), 0.05, 8.0)
+
+	if desired_anim != "" and _animation_player.has_animation(desired_anim):
+		if should_play:
+			if not _animation_player.is_playing() or String(_animation_player.current_animation) != desired_anim:
+				_animation_player.play(desired_anim)
+			_animation_player.speed_scale = speed_scale
+		elif _animation_player.is_playing():
+			_animation_player.stop()
+		return
+
+	if _is_dead:
+		if _resolved_death_animation != "" and _animation_player.has_animation(_resolved_death_animation):
+			if String(_animation_player.current_animation) != _resolved_death_animation:
+				_animation_player.play(_resolved_death_animation, -1.0, 1.0, false)
+		return
+	if _is_attacking:
+		var fallback_attack_anim: String = ""
+		if not _attack_anims.is_empty():
+			fallback_attack_anim = String(_attack_anims[0])
+		if fallback_attack_anim != "" and _animation_player.has_animation(fallback_attack_anim):
+			if String(_animation_player.current_animation) != fallback_attack_anim:
+				_animation_player.play(fallback_attack_anim, -1.0, maxf(_get_attack_speed_scale(), 0.05), false)
+			return
+	if _is_moving:
+		_play_walk_animation()
+	else:
+		_play_idle_animation()
+
+
+func _on_remote_position_received(incoming_pos: Vector3) -> void:
+	if network_authoritative:
+		global_position = incoming_pos
+		return
+	var now_ms: int = Time.get_ticks_msec()
+	if _remote_has_target:
+		var delta_sec: float = maxf(float(now_ms - _remote_last_receive_ms) * 0.001, 0.016)
+		var delta_pos: Vector3 = incoming_pos - _remote_target_position
+		delta_pos.y = 0.0
+		_remote_velocity = delta_pos / delta_sec
+	else:
+		_remote_velocity = Vector3.ZERO
+	_remote_target_position = incoming_pos
+	_remote_last_receive_ms = now_ms
+	_remote_has_target = true
+	if global_position.distance_to(incoming_pos) >= maxf(remote_sync_snap_distance, 1.0):
+		global_position = incoming_pos
+
+
+func _on_remote_yaw_received(incoming_yaw: float) -> void:
+	if network_authoritative:
+		var rot: Vector3 = rotation
+		rot.y = incoming_yaw
+		rotation = rot
+		return
+	_remote_target_yaw = incoming_yaw
+
+
+func _update_remote_sync_smoothing(delta: float) -> void:
+	if not _remote_has_target:
+		return
+	var safe_delta: float = maxf(delta, 0.0)
+	if safe_delta <= 0.0:
+		return
+	var pos_alpha: float = 1.0 - exp(-maxf(remote_sync_position_smooth_speed, 0.01) * safe_delta)
+	var rot_alpha: float = 1.0 - exp(-maxf(remote_sync_rotation_smooth_speed, 0.01) * safe_delta)
+	var predicted_pos: Vector3 = _remote_target_position
+	var predict_sec: float = maxf(remote_sync_prediction_sec, 0.0)
+	if predict_sec > 0.0:
+		var projected_vel: Vector3 = _remote_velocity
+		projected_vel.y = 0.0
+		predicted_pos += projected_vel * predict_sec
+	predicted_pos.y = _remote_target_position.y
+	global_position = global_position.lerp(predicted_pos, pos_alpha)
+	var next_rot: Vector3 = rotation
+	next_rot.y = lerp_angle(next_rot.y, _remote_target_yaw, rot_alpha)
+	rotation = next_rot

@@ -20,6 +20,8 @@ func _ready() -> void:
 
 
 func apply_damage(amount: int, _attacker: Node3D = null) -> void:
+	if multiplayer.multiplayer_peer != null and not multiplayer.is_server():
+		return
 	if _is_dead:
 		return
 	var real_damage: int = maxi(amount, 0)

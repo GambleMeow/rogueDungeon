@@ -18,9 +18,9 @@ var local_steam_id: String = ""
 var current_role: String = "none"
 var current_host_steam_id: String = ""
 var _connection_state: int = ConnectionState.DISCONNECTED
-var _transport: P2PTransportBase
+var _transport = null
 
-func setup(p_run_id: String, p_local_steam_id: String, transport: P2PTransportBase) -> void:
+func setup(p_run_id: String, p_local_steam_id: String, transport) -> void:
 	run_id = p_run_id.strip_edges()
 	local_steam_id = p_local_steam_id.strip_edges()
 	current_role = "none"
@@ -29,7 +29,7 @@ func setup(p_run_id: String, p_local_steam_id: String, transport: P2PTransportBa
 	_set_connection_state(ConnectionState.DISCONNECTED)
 
 func switch_host(target_host_steam_id: String) -> Dictionary:
-	var target := target_host_steam_id.strip_edges()
+	var target = target_host_steam_id.strip_edges()
 	if run_id.is_empty() or local_steam_id.is_empty():
 		return _fail("P2P_NOT_INITIALIZED")
 	if _transport == null:
@@ -49,7 +49,7 @@ func switch_host(target_host_steam_id: String) -> Dictionary:
 	emit_signal("host_target_changed", target)
 	emit_signal("transport_event", "adapter switching host=%s run=%s" % [target, run_id])
 
-	var result := await _transport.connect_to_host(target)
+	var result = await _transport.connect_to_host(target)
 	if not bool(result.get("ok", false)):
 		_set_connection_state(ConnectionState.DISCONNECTED)
 		return _fail(str(result.get("code", "P2P_CONNECT_FAILED")))
@@ -58,7 +58,7 @@ func switch_host(target_host_steam_id: String) -> Dictionary:
 	if current_host_steam_id.is_empty():
 		current_host_steam_id = target
 
-	var next_role := str(result.get("role", _transport.get_role()))
+	var next_role = str(result.get("role", _transport.get_role()))
 	if next_role.is_empty():
 		next_role = "client"
 		if current_host_steam_id == local_steam_id:
@@ -76,11 +76,11 @@ func switch_host(target_host_steam_id: String) -> Dictionary:
 		"hostSteamId": current_host_steam_id,
 	}
 
-func disconnect(reason_code: String = "MANUAL_STOP") -> void:
+func disconnect_session(reason_code: String = "MANUAL_STOP") -> void:
 	if _connection_state == ConnectionState.DISCONNECTED:
 		return
 	if _transport != null:
-		_transport.disconnect(reason_code)
+		_transport.disconnect_transport(reason_code)
 	emit_signal("transport_event", "adapter disconnect reason=%s" % reason_code)
 	current_role = "none"
 	current_host_steam_id = ""
@@ -108,7 +108,7 @@ func _set_connection_state(next_state: int) -> void:
 	_connection_state = next_state
 	emit_signal("connection_state_changed", get_connection_state_text())
 
-func _bind_transport(transport: P2PTransportBase) -> void:
+func _bind_transport(transport) -> void:
 	if _transport != null and is_instance_valid(_transport):
 		if _transport.event_emitted.is_connected(_on_transport_event):
 			_transport.event_emitted.disconnect(_on_transport_event)

@@ -12,7 +12,7 @@ func connect_to_host(_target_host_steam_id: String) -> Dictionary:
 		"code": "TRANSPORT_NOT_IMPLEMENTED",
 	}
 
-func disconnect(_reason_code: String = "MANUAL_STOP") -> void:
+func disconnect_transport(_reason_code: String = "MANUAL_STOP") -> void:
 	pass
 
 func get_connection_state_text() -> String:
